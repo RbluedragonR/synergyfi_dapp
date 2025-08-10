@@ -1,0 +1,33 @@
+.syn-trade-earn-tabs {
+  display: flex;
+  a {
+    transition: all 0.3s ease;
+    width: 50%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--solid-2, #f4fbfb);
+    color: var(--text-weak-prompt, #94b8bf);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px; /* 114.286% */
+  }
+  .syn-trade-earn-tab.active {
+    background: transparent;
+    color: var(--text-black, #000);
+  }
+
+  .syn-trade-earn-tabs-earn {
+    &.inactive {
+      border-bottom-left-radius: var(--spacing-16, 16px);
+    }
+  }
+  .syn-trade-earn-tabs-trade {
+    &.inactive {
+      border-bottom-right-radius: var(--spacing-16, 16px);
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

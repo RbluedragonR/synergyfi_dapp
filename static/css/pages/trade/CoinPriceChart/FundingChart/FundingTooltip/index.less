@@ -1,0 +1,32 @@
+.syn-funding-tooltip {
+  padding: 8px 6px;
+  outline: unset;
+  font-size: 12px;
+
+  background: var(--solid-white-card, #fff);
+  border-radius: @space;
+  box-shadow: @chart-tooltip-shadow;
+  color: var(--text-black, #000);
+  min-width: 144px;
+  &-title,
+  &-date {
+    color: var(--text-main-body, #333);
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    &-left {
+      display: flex;
+      flex-direction: column;
+    }
+    &-right {
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+      align-items: flex-end;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

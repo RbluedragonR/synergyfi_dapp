@@ -1,0 +1,32 @@
+@import '~@/themes/func.less';
+@values-pie-chart-prefix: ~'@{syn-prefix}-values-pie-chart';
+.@{values-pie-chart-prefix} {
+  svg {
+    path {
+      stroke: none;
+    }
+  }
+}
+.account-chart_custom-tooltip {
+  min-width: 160px;
+  text-align: center;
+  background: @bg;
+  border-radius: @space;
+  padding: @space-2x;
+  &-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-dot {
+    width: @space-3x;
+    height: @space-3x;
+    border-radius: 50%;
+    margin-right: @space-2x;
+  }
+  &__item {
+    font-weight: 700;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

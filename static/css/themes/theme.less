@@ -1,0 +1,1104 @@
+// define theme color
+@import './antd.customize.less';
+@import './themeColors.less';
+
+@colors: {
+  light3: rgba(255, 255, 255, 0.6);
+  light4: rgba(255, 255, 255, 0.7);
+  light5: #ffffff;
+  light6: rgba(27, 31, 38, 0.02);
+  dark4: #363d4d; //#292F3A
+  dark5: #2d333d; //#22242A
+  dark6: rgba(72, 77, 90, 1);
+  dark7: rgba(44, 44, 44, 1); //#2C2C2C
+  dark8: #1b1f26;
+  gray1: var(--day-gray-2-text, rgba(31, 41, 46, 0.6));
+  gray3: #a1a7b2;
+  gray4: #f2f7f7;
+  gray5: #ebf2f2;
+  white: #ffffff;
+  black: #000000;
+  black2: #222429;
+  primary: #00bfbf;
+
+  primary2: #1f8599;
+  primary-bg: rgba(41, 181, 188, 0.07);
+  secondary: #1f292e99;
+  blue1: #29b5bc;
+  danger: #ff4d6a;
+  warning: #ffaa00;
+  success: #00bf80;
+  green1: #52c6cc;
+  green2: #00bf80;
+  green3: #039da5;
+  green4: #00bf00;
+  red1: #ff4d6a;
+  red2: #ff4d5b;
+  favorite: #ffaa00;
+  linear1: linear-gradient(180deg, #003133 0%, #1b1f26 50.52%);
+  linear-btn: linear-gradient(to right, #b294ff, #57e6e6);
+  primary_hover: #2fd1d9;
+  primary_block_hover: #4dc7c9;
+  success_hover: #00d991;
+  secondary_hover: #363d4d;
+  danger_hover: #ff6680;
+  primary_hover_bg: rgba(41, 181, 188, 0.1);
+  success_hover_bg: rgba(0, 191, 128, 0.1);
+  danger_hover_bg: rgba(255, 77, 106, 0.1);
+  ghost_disabled: #252b36;
+  solid_disabled: #474d59;
+  input-gray: #f7fafa;
+  linear_gradient_black: linear-gradient(180deg, #2d333d 0%, #262b33 100%);
+
+  // theme mapping
+
+  bg-light: #ffffff;
+  bg-dark: #1b1f26;
+
+  body-bg-light: linear-gradient(180deg, #f2f7f7 0%, #ffffff 100%);
+  body-bg-dark: linear-gradient(180deg, #22262e 0%, #1b1f26 100%);
+
+  primary-nav-light: #fff;
+  primary-nav-dark: #13161c;
+
+  second-nav-light: #fafcfc;
+  second-nav-dark: #1b1f26;
+
+  primary-border-light: #e2e7e9;
+  primary-border-dark: #363d4d;
+
+  second-border-light: #f0f4f5;
+  second-border-dark: #363d4d;
+
+  third-border-light: #a1a7b2;
+  third-border-dark: #363d4d;
+
+  primary-text-light: #1f292e;
+  primary-text-dark: #fff;
+  // If the button is solid, the text color is reversed
+  primary-solid-text-light: #fff;
+  primary-solid-text-dark: #1b1f26;
+
+  second-text-light: #1f292e99;
+  second-text-dark: #6c7280;
+
+  third-text-light: #1b1f26;
+  third-text-dark: #6c7280;
+
+  icon-light: #a1a7b2;
+  icon-dark: #fff;
+
+  icon-reverse-light: #fff;
+  icon-reverse-dark: #6c7280;
+
+  icon-1-light: #a1a7b2;
+  icon-1-dark: #475266;
+
+  icon-2-light: #1b1f26;
+  icon-2-dark: #ffffff;
+
+  icon-4-light: #dfe4e5;
+  icon-4-dark: #6c7280;
+
+  icon-5-light: #a1a7b2;
+  icon-5-dark: #6c7280;
+
+  dialog-title-bg-light: linear-gradient(180deg, #ffffff 0%, #f2f7f7 100%);
+  dialog-title-bg-dark: linear-gradient(180deg, #2d333d 0%, #262b33 100%);
+
+  dialog-content-bg-light: #fafcfc;
+  dialog-content-bg-dark: #2d333d;
+
+  dialog-content-text-light: #6c7280;
+  dialog-content-text-dark: #fff;
+
+  text-bg-light: rgba(0, 191, 0, 0.1);
+  text-bg-dark: rgba(0, 191, 128, 0.1);
+
+  text-bg-short-light: rgba(255, 77, 91, 0.1);
+  text-bg-short-dark: rgba(255, 77, 91, 0.1);
+
+  switch-btn-bg-light: #a1a7b2;
+  switch-btn-bg-dark: #6c7280;
+
+  switch-icon-light: #363d4d;
+  switch-icon-dark: #fff;
+
+  switch-btn-active-bg-light: rgba(41, 181, 188, 0.1);
+  switch-btn-active-bg-dark: rgba(41, 181, 188, 0.07);
+
+  form-bg-light: #fff;
+  form-bg-dark: #2d333d;
+
+  form-content-bg-light: #fafcfc;
+  form-content-bg-dark: #1b1f26;
+
+  pair-banner-bg-light: linear-gradient(180deg, #c2f2f2 0%, #e6ffe6 100%);
+  pair-banner-bg-dark: linear-gradient(180deg, #142e33 0%, #131d26 100%);
+
+  scroll-bar-light: #f0f4f5;
+  scroll-bar-dark: #252b36;
+  // slider
+  slider-bar-dot-light: #dfe4e5;
+  slider-bar-dot-dark: #475266;
+
+  card-wrapper-footer-bg: linear-gradient(180deg, #ffffff 0%, #f2f7f7 100%);
+
+  // input
+  input-bg-light: #f7fafa;
+  input-bg-dark: #252b36;
+
+  search-input-bg-light: #ebf2f2;
+  search-input-bg-dark: #1b1f26;
+
+  search-input-show-bg-light: #fff;
+  search-input-show-bg-dark: #1b1f26;
+  // chart
+  chart-tooltip-background-light: rgba(255, 255, 255, 0.9);
+  chart-tooltip-background-dark: rgba(0, 0, 0, 0.8);
+
+  // button
+  btn-disabled-text-dark: rgba(255, 255, 255, 0.2);
+
+  //pair card
+  pair-card-hover-bg-light: linear-gradient(180deg, #e6feff 0%, #ffffff 50.52%);
+  pair-card-hover-bg-dark: linear-gradient(180deg, #0a3333 0%, #1b1f26 50%);
+
+  //pair card sub
+  pair-card-sub-bg-dark: #22262e;
+
+  // ripple wrapper
+  use-1-light: #e9f7f7;
+  use-2-light: #f3fbfc;
+  use-3-light: #ffffff;
+  use-1-dark: #1c2b32;
+  use-2-dark: #1b242b;
+  use-3-dark: #1b1f26;
+
+  //position card bg
+  position-bg-light: linear-gradient(180deg, rgba(41, 181, 188, 0.07) 0%, rgba(41, 181, 188, 0) 50%);
+
+  card-wrapper-sub-bg-dark: linear-gradient(180deg, #252b36 0%, rgba(37, 43, 54, 0) 100%);
+  card-wrapper-sub-bg-light: linear-gradient(180deg, #f0f4f5 0%, rgba(240, 244, 245, 0) 100%);
+  card-wrapper-box-shadow-light: 0px 10px 20px rgba(75, 76, 77, 0.03);
+  card-wrapper-box-shadow-dark: 0px 10px 20px rgba(0, 0, 0, 0.15);
+
+  // mobile-tab-bg:
+  mobile-tab-bg-light: #f0f4f5;
+  mobile-tab-bg-dark: #252b36;
+
+  // guidance
+  guidance-close-bg-dark: rgba(0, 0, 0, 0.2);
+  guidance-close-bg-light: rgba(0, 0, 0, 0.1);
+
+  // row disabled bg
+  emergency-row-bg-light: rgba(255, 170, 0, 0.05);
+  emergency-row-bg-dark: rgba(255, 170, 0, 0.05);
+
+  // new colors
+  // border
+  border-light: #3663631a;
+  border-dark: rgba(17, 120, 178, 0.15);
+  day-border-light: #f0f3f5;
+  day-border-dark: #f0f3f5;
+  warning-border: #cc8800;
+  // text
+  text-emphasis-light: #1f292e;
+  text-emphasis-dark: #1f292e;
+  day-grey-2-light: rgba(31, 41, 46, 0.6);
+  day-grey-2-dark: rgba(31, 41, 46, 0.6);
+
+  popover-text-color-light: rgba(255, 255, 255, 0.7);
+  popover-text-color-dark: rgba(255, 255, 255, 0.7);
+
+  //bg
+  bg-hover-light: rgba(0, 191, 191, 0.05);
+  bg-hover-dark: rgba(0, 191, 191, 0.05);
+  bg-icon-light: #e2e7e9;
+  bg-icon-dark: #e2e7e9;
+
+  bg-input-light: #f9fbfb;
+  bg-input-dark: #071827;
+  white-40-light: rgba(255, 255, 255, 0.4);
+  white-40-dark: rgba(255, 255, 255, 0.4);
+  trending-wallet-bg-light: rgba(0, 191, 191, 0.1);
+  trending-wallet-bg-dark: rgba(0, 191, 191, 0.1);
+
+  bg-secondary-hover-light: #1e878c;
+  bg-secondary-hover-dark: #1e878c;
+
+  radio-bg-light: rgba(41, 181, 188, 0.12);
+  radio-bg-dark: rgba(41, 181, 188, 0.12);
+
+  network-bg: linear-gradient(to right, #8095ff, #0098a6, #00e5d2, #00bfbf, #8095ff, #0098a6);
+  network-bg-after: linear-gradient(to right, #e87de8, #0098a6, #00e5d2, #00bfbf, #e87de8, #0098a6);
+  network-bg-ghost: linear-gradient(to right, #b294ff, #57e6e6, #feffb8, #57e6e6, #b294ff, #57e6e6);
+  guidance-bg: linear-gradient(90deg, #3dcc9c 0%, #4dc3ff 50%, #bb99ff 100%);
+  global-form-warning: rgba(204, 136, 0, 0.15);
+  price-range-bg: linear-gradient(90deg, #40bfbf 0%, #85e094 51.56%, #40bfbf 100%);
+
+  portfolio-ad-bg-light: var(--theme-night-ad-gradient);
+  portfolio-ad-bg-dark: var(--theme-night-ad-gradient);
+
+  sidebar-header-bg-light: rgba(232, 254, 251, 0.95);
+  sidebar-header-bg-dark: rgba(232, 254, 251, 0.95);
+
+  sidebar-container-bg-light: rgba(#000000, 0.6);
+  sidebar-container-bg-dark: rgba(#000000, 0.6);
+
+  side-menu-bg-light: #e4f0ef;
+  side-menu-bg-dark: #e4f0ef;
+
+  overview-bg-light: var(--theme-night-overview-gradient);
+  overview-bg-dark: var(--theme-night-overview-gradient);
+
+  rail-bg: linear-gradient(90deg, #00bfbf 0%, #8095ff 100%);
+  rail-step-bg: rgba(255, 255, 255, 0.4);
+
+  liq-red-bg: rgba(255, 0, 0, 0.6);
+
+  confirm-bg: linear-gradient(90deg, #57d9d9 0%, #73ace5 100%);
+
+  day-tooltip-bg-light: rgba(31, 41, 46, 0.9);
+  day-tooltip-bg-dark: rgba(31, 41, 46, 0.9);
+
+  buy-loading: linear-gradient(90deg, #6bd18d 0%, #57d9d9 100%);
+  short-loading: linear-gradient(90deg, #f99 0%, #d982d9 100%);
+
+  button-radio-bg-light: rgba(255, 255, 255, 0.12);
+  button-radio-bg-dark: rgba(255, 255, 255, 0.12);
+
+  empty-mask-bg-light: rgba(0, 0, 0, 0.45);
+  empty-mask-bg-dark: rgba(0, 0, 0, 0.45);
+
+  goerli-indicator-bg: #9064ff;
+  portfolio-allocation-position-bg: #00bfbf;
+  portfolio-allocation-range-bg: #99bbff;
+  portfolio-allocation-order-bg: #66ccff;
+  popover-bg-light: rgba(27, 31, 38, 1);
+  popover-bg-dark: rgba(27, 31, 38, 1);
+  main-bg-light: #f7f9f9;
+  main-bg-dark: var(--theme-night-bg-solid, #040c16);
+  //text
+  long: #14b84b;
+  short: #ff6666;
+  text-secondary-light: rgba(31, 41, 46, 0.6);
+  text-secondary-dark: rgba(31, 41, 46, 0.6);
+  text-blue: rgba(#29b5bc, 0.6);
+
+  //box-shadow
+
+  card-shadow-light: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  card-shadow-dark: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+
+  input-wrapper-shadow-light: 0px 0px 0px 2px rgba(41, 181, 188, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.08);
+  input-wrapper-shadow-dark: 0px 0px 0px 2px rgba(41, 181, 188, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.08);
+
+  confirm-shadow-light: 0px 10px 20px rgba(75, 76, 77, 0.1);
+  confirm-shadow-dark: 0px 10px 20px rgba(75, 76, 77, 0.1);
+
+  box-shadow-light: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow-dark: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+
+  flex-table-shadow-light: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  flex-table-shadow-dark: 0px 10px 20px rgba(0, 0, 0, 0.05);
+
+  header-menu-pop-shadow-light: 6px 6px 5px rgba(176, 230, 225, 0.25);
+  header-menu-pop-shadow-dark: 6px 6px 5px rgba(176, 230, 225, 0.25);
+
+  pair-banner-shadow-light: 0px 10px 20px 0px #29b5bc1a;
+  pair-banner-shadow-dark: 0px 10px 20px 0px #29b5bc1a;
+
+  signup-wrapper-shadow-light: 0px 10px 40px 0px rgba(0, 0, 0, 0.2);
+  signup-wrapper-shadow-dark: 0px 10px 40px 0px rgba(0, 0, 0, 0.2);
+
+  toast-shadow-light: 0px 5px 20px -5px rgba(0, 0, 0, 0.1);
+  toast-shadow-dark: 0px 5px 20px -5px rgba(0, 0, 0, 0.1);
+
+  //tag
+  tag-light: rgba(255, 140, 140, 0.15);
+  tag-dark: rgba(255, 140, 140, 0.15);
+  tag-success: rgba(20, 184, 75, 0.15);
+  tag-error: rgba(255, 102, 102, 0.15);
+  //alert
+  alert-error: rgba(243, 126, 126, 0.15);
+  alert-warning: rgba(255, 170, 0, 0.15);
+  //selection
+  selection-light: #00bfbf26;
+  selection-dark: #00bfbf26;
+  //
+};
+
+// Figma token: https://www.figma.com/design/6APij2KNdDD4jtOUwkY2Xg/New-style?node-id=22313-15&node-type=FRAME&m=dev
+// Copy .figma-token by app: https://www.figma.com/community/plugin/1261234393153346915
+// Add custom token in .custom-token
+// /* Tokens */
+.figma-light-token {
+  /* light */
+  /* color */
+  --border-brand: var(--brand-5);
+  --border-dark-line-1: var(--brand-8);
+  --border-light-line-1: var(--secondary-2);
+  --border-white: var(--grey-0);
+  --brand-0: rgb(244 251 251);
+  --brand-1: rgb(231 251 251);
+  --brand-10: rgb(1 56 64);
+  --brand-11: rgb(1 37 41);
+  --brand-12: rgb(0 26 27);
+  --brand-2: rgb(198 236 236);
+  --brand-3: rgb(158 220 220);
+  --brand-4: rgb(111 214 214);
+  --brand-5: rgb(0 191 191);
+  --brand-6: rgb(0 162 167);
+  --brand-7: rgb(0 117 128);
+  --brand-8: rgb(4 96 110);
+  --brand-9: rgb(4 73 83);
+  --button-black: var(--grey-10);
+  --button-brand: var(--brand-5);
+  --button-disable: var(--secondary-2);
+  --button-epoch: var(--brand-2);
+  --button-number-hover: var(--brand-0);
+  --button-secondary: var(--function-yellow-6);
+  --button-unchecked-1: var(--brand-0);
+  --button-weak-button: var(--secondary-3);
+  --button-weak1: var(--brand-2);
+  --button-white: var(--grey-0);
+  --function-blue-1: rgb(237 243 255);
+  --function-blue-10: rgb(35 61 115);
+  --function-blue-2: rgb(212 226 255);
+  --function-blue-3: rgb(178 204 255);
+  --function-blue-4: rgb(143 180 255);
+  --function-blue-5: rgb(109 157 255);
+  --function-blue-6: rgb(77 136 255);
+  --function-blue-7: rgb(65 116 217);
+  --function-blue-8: rgb(55 97 181);
+  --function-blue-9: rgb(44 78 145);
+  --function-green-1: rgb(232 248 237);
+  --function-green-10: rgb(9 83 34);
+  --function-green-2: rgb(199 238 212);
+  --function-green-3: rgb(154 224 178);
+  --function-green-4: rgb(107 210 142);
+  --function-green-5: rgb(62 197 107);
+  --function-green-6: rgb(20 184 75);
+  --function-green-7: rgb(17 156 64);
+  --function-green-8: rgb(14 131 53);
+  --function-green-9: rgb(11 105 43);
+  --function-red-1: rgb(255 240 240);
+  --function-red-10: rgb(115 46 46);
+  --function-red-2: rgb(255 218 218);
+  --function-red-3: rgb(255 189 189);
+  --function-red-4: rgb(255 159 159);
+  --function-red-5: rgb(255 130 130);
+  --function-red-6: rgb(255 102 102);
+  --function-red-7: rgb(217 87 87);
+  --function-red-8: rgb(181 72 72);
+  --function-red-9: rgb(145 58 58);
+  --function-yellow-1: rgb(255 247 230);
+  --function-yellow-10: rgb(115 76 0);
+  --function-yellow-2: rgb(255 235 194);
+  --function-yellow-3: rgb(255 218 145);
+  --function-yellow-4: rgb(255 201 94);
+  --function-yellow-5: rgb(255 185 46);
+  --function-yellow-6: rgb(255 170 0);
+  --function-yellow-7: rgb(217 145 0);
+  --function-yellow-8: rgb(181 121 0);
+  --function-yellow-9: rgb(145 97 0);
+  --grey-0: rgb(255 255 255);
+  --grey-1: rgb(250 250 250);
+  --grey-10: rgb(0 0 0);
+  --grey-2: rgb(245 245 245);
+  --grey-3: rgb(240 240 240);
+  --grey-4: rgb(217 217 217);
+  --grey-5: rgb(191 191 191);
+  --grey-6: rgb(140 140 140);
+  --grey-7: rgb(89 89 89);
+  --grey-8: rgb(51 51 51);
+  --grey-9: rgb(31 31 31);
+  --icon-black: var(--grey-10);
+  --icon-brand: var(--brand-5);
+  --icon-grey1: var(--secondary-3);
+  --icon-grey2: var(--secondary-2);
+  --icon-logo: var(--brand-8);
+  --icon-white: var(--grey-0);
+  --secondary-1: rgb(225 243 243);
+  --secondary-2: rgb(195 231 231);
+  --secondary-3: rgb(148 184 191);
+  --solid-1: var(--secondary-1);
+  --solid-2: var(--brand-0);
+  --solid-bg: var(--secondary-1);
+  --solid-bottom-bar: var(--secondary-1);
+  --solid-brand: var(--brand-5);
+  --solid-footer: var(--brand-10);
+  --solid-hint: var(--grey-3);
+  --solid-list-card: var(--brand-0);
+  --solid-list-card-hover: var(--grey-0);
+  --solid-list-card-selected: var(--brand-2);
+  --solid-mode-switch: var(--brand-3);
+  --solid-mode-switch2: var(--grey-0);
+  --solid-nav-bar: var(--secondary-1);
+  --solid-rewards-card: rgb(255 255 255 / 0.4);
+  --solid-search: var(--secondary-2);
+  --solid-slider-bar: var(--brand-2);
+  --solid-toast-tips: rgb(0 0 0 / 0.9);
+  --solid-white-card: var(--grey-0);
+  --text-black: var(--grey-10);
+  --text-brand: var(--brand-5);
+  --text-main-body: var(--grey-8);
+  --text-strong-prompt: var(--brand-7);
+  --text-weak-prompt: var(--secondary-3);
+  --text-white: var(--grey-0);
+  /* number */
+  --radius-0: 0px;
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-32: 32px;
+  --radius-48: 48px;
+  --radius-64: 64px;
+  --radius-128: 128px;
+  --radius-256: 256px;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-128: 128px;
+  --spacing-256: 256px;
+}
+.figma-dark-token {
+  /* Tokens */
+  /* Dark */
+  /* color */
+  --border-brand: var(--brand-5);
+  --border-dark-line-1: var(--brand-6);
+  --border-light-line-1: var(--brand-8);
+  --border-white: var(--brand-7);
+  --brand-0: rgb(244 251 251);
+  --brand-1: rgb(231 251 251);
+  --brand-10: rgb(1 56 64);
+  --brand-11: rgb(1 37 41);
+  --brand-12: rgb(0 26 27);
+  --brand-2: rgb(198 236 236);
+  --brand-3: rgb(158 220 220);
+  --brand-4: rgb(111 214 214);
+  --brand-5: rgb(0 191 191);
+  --brand-6: rgb(0 162 167);
+  --brand-7: rgb(0 117 128);
+  --brand-8: rgb(4 96 110);
+  --brand-9: rgb(4 73 83);
+  --button-black: var(--grey-0);
+  --button-brand: var(--brand-5);
+  --button-disable: var(--brand-7);
+  --button-epoch: var(--brand-8);
+  --button-number-hover: var(--brand-7);
+  --button-secondary: var(--function-yellow-6);
+  --button-unchecked-1: var(--brand-9);
+  --button-weak-button: var(--brand-7);
+  --button-weak1: var(--brand-10);
+  --button-white: var(--brand-8);
+  --function-blue-1: rgb(237 243 255);
+  --function-blue-10: rgb(35 61 115);
+  --function-blue-2: rgb(212 226 255);
+  --function-blue-3: rgb(178 204 255);
+  --function-blue-4: rgb(143 180 255);
+  --function-blue-5: rgb(109 157 255);
+  --function-blue-6: rgb(77 136 255);
+  --function-blue-7: rgb(65 116 217);
+  --function-blue-8: rgb(55 97 181);
+  --function-blue-9: rgb(44 78 145);
+  --function-green-1: rgb(232 248 237);
+  --function-green-10: rgb(9 83 34);
+  --function-green-2: rgb(199 238 212);
+  --function-green-3: rgb(154 224 178);
+  --function-green-4: rgb(107 210 142);
+  --function-green-5: rgb(62 197 107);
+  --function-green-6: rgb(20 184 75);
+  --function-green-7: rgb(17 156 64);
+  --function-green-8: rgb(14 131 53);
+  --function-green-9: rgb(11 105 43);
+  --function-red-1: rgb(255 240 240);
+  --function-red-10: rgb(115 46 46);
+  --function-red-2: rgb(255 218 218);
+  --function-red-3: rgb(255 189 189);
+  --function-red-4: rgb(255 159 159);
+  --function-red-5: rgb(255 130 130);
+  --function-red-6: rgb(255 102 102);
+  --function-red-7: rgb(217 87 87);
+  --function-red-8: rgb(181 72 72);
+  --function-red-9: rgb(145 58 58);
+  --function-yellow-1: rgb(255 247 230);
+  --function-yellow-10: rgb(115 76 0);
+  --function-yellow-2: rgb(255 235 194);
+  --function-yellow-3: rgb(255 218 145);
+  --function-yellow-4: rgb(255 201 94);
+  --function-yellow-5: rgb(255 185 46);
+  --function-yellow-6: rgb(255 170 0);
+  --function-yellow-7: rgb(217 145 0);
+  --function-yellow-8: rgb(181 121 0);
+  --function-yellow-9: rgb(145 97 0);
+  --grey-0: rgb(255 255 255);
+  --grey-1: rgb(250 250 250);
+  --grey-10: rgb(0 0 0);
+  --grey-2: rgb(245 245 245);
+  --grey-3: rgb(240 240 240);
+  --grey-4: rgb(217 217 217);
+  --grey-5: rgb(191 191 191);
+  --grey-6: rgb(140 140 140);
+  --grey-7: rgb(89 89 89);
+  --grey-8: rgb(51 51 51);
+  --grey-9: rgb(31 31 31);
+  --icon-black: var(--grey-0);
+  --icon-brand: var(--brand-5);
+  --icon-grey1: var(--brand-6);
+  --icon-grey2: var(--brand-8);
+  --icon-logo: var(--grey-0);
+  --icon-white: var(--grey-10);
+  --secondary-1: rgb(225 243 243);
+  --secondary-2: rgb(195 231 231);
+  --secondary-3: rgb(148 184 191);
+  --solid-1: var(--brand-11);
+  --solid-2: var(--brand-10);
+  --solid-bg: var(--brand-11);
+  --solid-bottom-bar: var(--brand-11);
+  --solid-brand: var(--brand-5);
+  --solid-footer: var(--brand-11);
+  --solid-hint: var(--brand-8);
+  --solid-list-card: var(--brand-10);
+  --solid-list-card-hover: var(--brand-9);
+  --solid-list-card-selected: var(--brand-8);
+  --solid-mode-switch: var(--brand-10);
+  --solid-mode-switch2: var(--brand-7);
+  --solid-nav-bar: var(--brand-11);
+  --solid-rewards-card: var(--brand-11);
+  --solid-search: var(--brand-10);
+  --solid-slider-bar: var(--brand-7);
+  --solid-toast-tips: rgb(6 88 97 / 0.95);
+  --solid-white-card: var(--brand-9);
+  --text-black: var(--grey-0);
+  --text-brand: var(--brand-5);
+  --text-main-body: var(--brand-3);
+  --text-strong-prompt: var(--brand-4);
+  --text-weak-prompt: var(--brand-7);
+  --text-white: var(--grey-0);
+  /* number */
+  --radius-0: 0px;
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-32: 32px;
+  --radius-48: 48px;
+  --radius-64: 64px;
+  --radius-128: 128px;
+  --radius-256: 256px;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-128: 128px;
+  --spacing-256: 256px;
+}
+.custom-light-token {
+  --skeleton: linear-gradient(90deg, #eff7f7 0%, #e1f3f2 58.5%, #eff7f7 100%);
+  --portfolio-bg: linear-gradient(184deg, #ddfafc -28.14%, #fff 80%);
+  --bg-sort: #c3e7e7;
+  --icon-community: var(--bg-sort);
+  --table-selected: var(--brand-2);
+  --big-circle: #fff;
+  --bg-modal-gradient: linear-gradient(180deg, #e1f3f3 0%, #fff 100%);
+  --odyssey-points-bg: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 20%,
+    #fff 40%,
+    #fff 60%,
+    #fff 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  --solid-rewards-card: rgba(255, 255, 255, 0.4);
+  --button-disabled: #94b8bf;
+  --winners-bg: linear-gradient(180deg, #c6ecec 0%, #fff 100%);
+  --star-color: #007580;
+  --liq-chart-cover-left: linear-gradient(180deg, rgba(0, 191, 191, 0) 0%, rgba(0, 191, 191, 0.4) 100%);
+  --liq-chart-cover-right: linear-gradient(180deg, rgba(255, 102, 102, 0) 0%, rgba(255, 102, 102, 0.4) 100%);
+}
+.custom-dark-token {
+  --skeleton: linear-gradient(90deg, #04606e 0%, #004a55 48.5%, #04606e 100%);
+  --portfolio-bg: linear-gradient(184deg, #054b4f -28.14%, #01363b 68.25%);
+  --bg-sort: #04606e;
+  --icon-community: #fff;
+  --theme-bg: var(--brand-10);
+  --table-selected: var(--brand-8);
+  --big-circle: #14353a;
+  --bg-modal-gradient: linear-gradient(180deg, #012529 0%, #013840 100%);
+  --odyssey-points-bg: linear-gradient(
+    270deg,
+    rgba(4, 73, 83, 0) 0%,
+    #044953 20%,
+    #044953 40%,
+    #044953 60%,
+    #044953 80%,
+    rgba(4, 73, 83, 0) 100%
+  );
+  --solid-rewards-card: #012529;
+  --button-disabled: #00a2a7;
+  --winners-bg: linear-gradient(180deg, #003c49 0%, #004c55 100%);
+  --star-color: #6fd6d6;
+  --liq-chart-cover-left: linear-gradient(180deg, rgba(0, 191, 191, 0) 0%, rgba(0, 191, 191, 0.4) 100%);
+  --liq-chart-cover-right: linear-gradient(180deg, rgba(255, 102, 102, 0) 0%, rgba(255, 102, 102, 0.4) 100%);
+}
+
+.tokens {
+  /* #old Variable */
+  :root {
+    /* Mode 1 */
+    /* color */
+    --cyan: rgb(0 191 191);
+    --cyan-disable: rgb(26 68 77);
+    --cyan-hlight: rgb(19 236 200);
+    --gray-text: rgb(54 113 125);
+    --hlight: rgb(0 255 255);
+    --orange: rgb(214 133 92);
+    --orange-hlight: rgb(229 184 92);
+    --white: rgb(255 255 255);
+  }
+}
+
+// public color
+.base-color {
+  .antd-reset(@colors);
+  // base color
+  --primary-color: @colors[primary];
+  --primary-secondary-color: @colors[primary2];
+  --secondary-color: @colors[secondary];
+  --danger-color: @colors[short];
+  --warning-color: @colors[warning];
+  --success-color: @colors[long];
+  //border
+  --border-color: @colors[dark4];
+  --btn-linear-border-color: @colors[linear-btn];
+  //text
+  --text-color: var(--text-black, #000);
+  --text-gray-color: @colors[gray1];
+  --text-gray-color2: @colors[gray3];
+  --text4: @colors[light4];
+  --text3: @colors[green1];
+  --text2: @colors[gray3];
+  --text-chart-label: @colors[light3];
+  --text-chart-label-solid: @colors[primary-solid-text-light];
+  //link
+  --link-color: @colors [primary];
+  --link-selected-color: @colors [primary];
+  //modal
+  --modal-close-color: @colors[dark4];
+  --green1: @colors[green1];
+  --green2: @colors[green2];
+  --green4: @colors[green4];
+  --red1: @colors[red1];
+  --red2: @colors[red2];
+  --blue1: @colors[blue1];
+  --favorite: @colors[favorite];
+  //status
+  --primary_hover: @colors[primary_hover];
+  --primary_block_hover: @colors[primary_block_hover];
+  --secondary-color: @colors[secondary];
+  --secondary_hover: @colors[secondary_hover];
+  --success_hover: @colors[success_hover];
+  --danger_hover: @colors[danger_hover];
+  --primary_hover_bg: @colors[primary_hover_bg];
+  --secondary_hover_bg: @colors[primary_hover_bg];
+  --success_hover_bg: @colors[success_hover_bg];
+  --danger_hover_bg: @colors[danger_hover_bg];
+  --ghost_disabled: @colors[ghost_disabled];
+  --solid_disabled: @colors[solid_disabled];
+  --card-wrapper-sub-bg: @colors[card-wrapper-sub-bg-light];
+  --card-wrapper-box-shadow: @colors[card-wrapper-box-shadow-light];
+  // input
+  --input-background: @colors[input-bg-dark];
+  --input-background-focus: @colors[dark8];
+
+  // button
+  --trade-buy-button: @colors[green4];
+  --trade-sell-button: @colors[red2];
+  --btn-disabled-text-color: @colors[white];
+  // bg
+  --primary-bg: @colors[primary-bg];
+  --card-wrapper-footer-bg: none;
+  --body-bg: @colors[body-bg-light];
+  // chart
+  --chart-tooltip-background: @colors[chart-tooltip-background-light];
+
+  //slider
+  --slider-bar-dot: @colors[slider-bar-dot-light];
+
+  // change
+  --lose-color: @colors[short];
+  --gain-color: @colors[long];
+
+  //new
+  //text
+  --long: @colors[long];
+  --short: @colors[short];
+  --text-blue: @colors[text-blue];
+  //border
+  --warning-border: @colors[warning-border];
+  // nav
+  --day-nav: #ffffff;
+  //bg
+  --network-bg: @colors[network-bg];
+  --network-bg-after: @colors[network-bg-after];
+  --network-bg-ghost: @colors[network-bg-ghost];
+  --guidance-bg: @colors[guidance-bg];
+  --global-form-warning: @colors[global-form-warning];
+  --liq-red-bg: @colors[liq-red-bg];
+  --confirm-bg: @colors[confirm-bg];
+  --short-loading-bg: @colors[short-loading];
+  --buy-loading-bg: @colors[buy-loading];
+  --goerli-indicator-bg: @colors[goerli-indicator-bg];
+  --portfolio-allocation-position-bg: @colors[portfolio-allocation-position-bg];
+  --portfolio-allocation-range-bg: @colors[portfolio-allocation-range-bg];
+  --portfolio-allocation-order-bg: @colors[portfolio-allocation-order-bg];
+  --rail-bg: @colors[rail-bg];
+  --rail-step-bg: @colors[rail-step-bg];
+  --price-range-bg: @colors[price-range-bg];
+
+  //alert
+  --alert-warning: @colors[alert-warning];
+  --alert-error: @colors[alert-error];
+  //tag
+  --tag-success: @colors[tag-success];
+  --tag-error: @colors[tag-error];
+}
+
+.light-theme {
+  .base-color();
+  .light-theme-colors();
+  .figma-light-token();
+  .custom-light-token();
+  .tokens();
+  color-scheme: light;
+  // height
+  --doc-height: 100%; // doc window height, for fix mobile height
+  //   text
+  --text-primary-color: @colors[primary-text-light];
+  --text-primary-solid-color: @colors[primary-solid-text-light];
+  --text-chart-label: @colors[gray3];
+  --text-chart-label-solid: @colors[dark8];
+  --secondary-text: @colors[second-text-light];
+  --third-text: @colors[third-text-light];
+  // linear-gradient-bg
+  --linear_gradient_bg_1: @colors[white];
+  // layout
+  --layout-header-height: 32px;
+  --theme-bg-1: #f9fbfb;
+  //bg
+  --menu-bg: transparent;
+  --bg: @colors[bg-light];
+  --bg1: @colors[primary-nav-light];
+  --bg2: @colors[second-nav-light];
+  --bg3: @colors[light3];
+  --bg4: @colors[light4];
+  --bg5: @colors[light5];
+  --bg6: @colors[light5];
+  --bg7: @colors[light5];
+  --bg8: @colors[light5];
+  --bgl: @colors[light5];
+  --bg9: @colors[light6];
+  --bg10: @colors[gray5];
+  --pair-card-hover-bg: @colors[pair-card-hover-bg-light];
+  --bgPairTitle: @colors[second-border-light];
+  --primary-nav-bg: @colors[primary-nav-light];
+  --dialog-title-bg: @colors[dialog-title-bg-light];
+  --dialog-content-bg: @colors[dialog-content-bg-light];
+  --pair-banner-bg: @colors[pair-banner-bg-light];
+  --scroll-bar: @colors[scroll-bar-light];
+
+  //input
+  --input-background: @colors[input-bg-light];
+  --input-background-focus: @colors[white];
+
+  --card-wrapper-footer-bg: none;
+  --card-background: @colors[white];
+
+  // text
+  --text-bg: @colors[text-bg-light];
+  --text-green: @colors[green4];
+  --text-bg-short: @colors[text-bg-short-light];
+  --dialog-content-text: @colors[dialog-content-text-light];
+
+  // border
+  --input-border-color: @colors[primary-border-light];
+  --input-border-hover-color: @colors[primary];
+  --border-color: @colors[primary-border-light];
+  --second-border-color: @colors[second-border-light];
+  --third-border-color: @colors[third-border-light];
+
+  // switch
+  --switch-slider-bg: @colors[gray3];
+  --switch-border-color: @colors[gray3];
+  --switch-bg: @colors[white];
+  --switch-btn-bg: @colors[switch-btn-bg-light];
+  --switch-icon: @colors[switch-icon-light];
+  --switch-btn-active-bg: @colors[switch-btn-active-bg-light];
+  // icon
+  --icon-color: @colors[icon-light];
+  --icon-reverse-color: @colors[icon-reverse-light];
+  --icon-1-color: @colors[icon-1-light];
+  --icon-2-color: @colors[icon-2-light];
+  --icon-4-color: @colors[icon-4-light];
+  --icon-5-color: @colors[icon-5-light];
+  --form-bg: @colors[form-bg-light];
+  --form-content-bg: @colors[form-content-bg-light];
+
+  --search-input-bg: @colors[search-input-bg-light];
+  --search-input-show-bg: @colors[search-input-show-bg-light];
+  //ripple
+  --use-1: @colors[use-1-light];
+  --use-2: @colors[use-2-light];
+  --use-3: @colors[use-3-light];
+
+  // guidance
+  --guidance-close-bg: @colors[guidance-close-bg-light];
+
+  --emergency-row-bg: @colors[emergency-row-bg-light];
+
+  // new colors
+  // border
+  --border-new-color: @colors[border-light];
+  --day-border: @colors[day-border-light];
+  // text
+  --text-emphasis: @colors[text-emphasis-light];
+  --text-secondary: @colors[text-secondary-light];
+  --text-day-gray-2: @colors[day-grey-2-light];
+  --popover-text-color: @colors[popover-text-color-light];
+
+  //shadow
+  --box-shadow: @colors[box-shadow-light];
+  --card-shadow: @colors[card-shadow-light];
+  --input-wrapper-shadow: @colors[input-wrapper-shadow-light];
+  --confirm-shadow: @colors[confirm-shadow-light];
+  --flex-table-shadow: @colors[flex-table-shadow-light];
+  --header-menu-pop-shadow: @colors[header-menu-pop-shadow-light];
+  --pair-banner-shadow: @colors[pair-banner-shadow-light];
+  --signup-wrapper-shadow: @colors[signup-wrapper-shadow-light];
+  --toast-shadow: @colors[toast-shadow-light];
+
+  //bg
+  --bg-hover: @colors[bg-hover-light];
+  --bg-icon: @colors[bg-icon-light];
+  --bg-input: @colors[bg-input-light];
+  --bg-white-40: var(--theme-night-glass);
+  --bg-secondary-hover: @colors[bg-secondary-hover-light];
+  --radio-bg: @colors[radio-bg-light];
+  --trending-wallet-bg: @colors[trending-wallet-bg-light];
+  --sidebar-header-bg: @colors[sidebar-header-bg-light];
+  --side-menu-bg: @colors[side-menu-bg-light];
+  --sidebar-container-bg: @colors[sidebar-container-bg-light];
+  --overview-bg: @colors[overview-bg-light];
+  --day-tooltip-bg: @colors[day-tooltip-bg-light];
+  --portfolio-ad-bg: @colors[portfolio-ad-bg-light];
+  --button-radio-bg: @colors[button-radio-bg-light];
+  --empty-mask-bg: @colors[empty-mask-bg-light];
+  --popover-bg: @colors[popover-bg-light];
+  --main-bg: @colors[main-bg-light];
+  --theme-border-2: #d3d3d3;
+  //tag
+  --tag: @colors[tag-light];
+  //selection
+  --selection-color: @colors[selection-light];
+}
+
+.dark-theme {
+  .base-color();
+  .dark-theme-colors();
+  color-scheme: dark;
+  .figma-dark-token();
+  .custom-dark-token();
+  .tokens();
+  --theme-bg-1: #0b2c41;
+  //   link
+  --link-color: @colors[white];
+  --link-selected-color: @colors[primary];
+  --link-hover: @colors[white];
+  --link-visited: @colors[white];
+  --border-color: @colors[primary-border-dark];
+  // text
+  --text-primary-solid-color: @colors[primary-solid-text-dark];
+  --secondary-text: @colors[second-text-dark];
+  --third-text: @colors[third-text-dark];
+  --secondary-color: @colors[white];
+
+  --text-blue: #59f;
+  --text2: @colors[gray1];
+  --text3: @colors[green1];
+  --text4: @colors[light4];
+  --text-color: @colors[white];
+  --text-color-black: @colors[dark8];
+  --text-gray-color: @colors[gray1];
+  --text-primary-color: @colors[white];
+  --text-bg: @colors[text-bg-dark];
+  --text-bg-short: @colors[text-bg-short-dark];
+  --dialog-content-text: @colors[dialog-content-text-dark];
+  // ticks
+  --tick-body: #e5e5e5;
+  --tick-active: #00bfbf;
+  --theme-border-2: #00bfbf;
+  //modal
+  --modal-close-color: @colors[white];
+  --campaign-bar-hover: @colors[white];
+
+  // bg
+  --bg: @colors[bg-dark];
+  --bg1: @colors[primary-nav-dark];
+  --bg2: @colors[second-nav-dark];
+  --bg4: @colors[dark4];
+  --bg5: @colors[dark5];
+  --bg6: @colors[dark6];
+  --bg7: @colors[dark7];
+  --bg8: @colors[green3];
+  --bgl: @colors[linear1];
+  --bg9: @colors[black2];
+  --bg10: @colors[dark8];
+  --pair-card-hover-bg: @colors[pair-card-hover-bg-dark];
+  --bgPairTitle: @colors[second-border-dark];
+  --primary-nav-bg: @colors[primary-nav-dark];
+  --dialog-title-bg: @colors[dialog-title-bg-dark];
+  --dialog-content-bg: @colors[dialog-content-bg-dark];
+  --pair-banner-bg: @colors[pair-banner-bg-dark];
+  --scroll-bar: @colors[scroll-bar-dark];
+  --card-background: #061c2d;
+  --card-wrapper-footer-bg: none;
+  --card-wrapper-sub-bg: @colors[card-wrapper-sub-bg-dark];
+  --card-wrapper-box-shadow: @colors[card-wrapper-box-shadow-dark];
+  --body-bg: @colors[body-bg-dark];
+  --empty-mask-bg: @colors[empty-mask-bg-dark];
+
+  // bg-linear-gradient
+  --linear_gradient_bg_1: @colors[linear_gradient_black];
+  // border
+  --input-border-color: var(--border-color);
+  --second-border-color: @colors[second-border-dark];
+  --third-border-color: @colors[third-border-dark];
+
+  // switch
+  --switch-slider-bg: @colors[white];
+  --switch-border-color: @colors[white];
+  --switch-bg: @colors[second-nav-dark];
+  --switch-btn-bg: @colors[switch-btn-bg-dark];
+  --switch-icon: @colors[switch-icon-dark];
+  --switch-btn-active-bg: @colors[switch-btn-active-bg-dark];
+
+  // icon
+  --icon-color: @colors[icon-dark];
+  --icon-reverse-color: @colors[icon-reverse-dark];
+  --icon-1-color: @colors[icon-1-dark];
+  --icon-2-color: @colors[icon-2-dark];
+  --icon-4-color: @colors[icon-4-dark];
+  --icon-5-color: @colors[icon-5-dark];
+  --form-bg: @colors[form-bg-dark];
+  --form-content-bg: @colors[form-content-bg-dark];
+
+  --search-input-bg: @colors[search-input-bg-dark];
+  --search-input-show-bg: @colors[search-input-show-bg-dark];
+  // chart
+  --chart-tooltip-background: @colors[chart-tooltip-background-dark];
+
+  //button
+  --btn-disabled-text-color: @colors[btn-disabled-text-dark];
+
+  //slider
+  --slider-bar-dot: @colors[slider-bar-dot-dark];
+
+  //ripple
+  --use-1: @colors[use-1-dark];
+  --use-2: @colors[use-2-dark];
+  --use-3: @colors[use-3-dark];
+
+  //position
+  --position-card-bg: @colors[position-bg-light];
+  --mobile-tab-bg: @colors[mobile-tab-bg-dark];
+
+  // guidance
+  --guidance-close-bg: @colors[guidance-close-bg-dark];
+  --emergency-row-bg: @colors[emergency-row-bg-dark];
+
+  //new colors
+  //border
+  --border-new-color: @colors[border-dark];
+  --day-border: @colors[day-border-dark];
+  // text
+  --text-primary-color: @colors[primary-text-dark];
+  --text-emphasis: @colors[text-emphasis-dark];
+  --text-secondary: @colors[text-secondary-dark];
+  --text-day-gray-2: @colors[day-grey-2-dark];
+  --popover-text-color: @colors[popover-text-color-dark];
+
+  //shadow
+  --box-shadow: @colors[box-shadow-dark];
+  --card-shadow: @colors[card-shadow-dark];
+  --input-wrapper-shadow: @colors[input-wrapper-shadow-dark];
+  --confirm-shadow: @colors[confirm-shadow-dark];
+  --flex-table-shadow: @colors[flex-table-shadow-dark];
+  --header-menu-pop-shadow: @colors[header-menu-pop-shadow-dark];
+  --pair-banner-shadow: @colors[pair-banner-shadow-dark];
+  --signup-wrapper-shadow: @colors[signup-wrapper-shadow-dark];
+  --toast-shadow: @colors[toast-shadow-dark];
+  //bg
+  --bg-hover: @colors[bg-hover-dark];
+  --bg-icon: @colors[bg-icon-dark];
+  --bg-input: @colors[bg-input-dark];
+  --bg-white-40: var(--theme-night-glass);
+  --bg-secondary-hover: @colors[bg-secondary-hover-dark];
+  --radio-bg: @colors[radio-bg-dark];
+  --trending-wallet-bg: @colors[trending-wallet-bg-dark];
+  --sidebar-header-bg: @colors[sidebar-header-bg-dark];
+  --side-menu-bg: @colors[side-menu-bg-dark];
+  --sidebar-container-bg: @colors[sidebar-container-bg-dark];
+  --overview-bg: @colors[overview-bg-dark];
+  --day-tooltip-bg: @colors[day-tooltip-bg-dark];
+  --portfolio-ad-bg: @colors[portfolio-ad-bg-dark];
+  --button-radio-bg: @colors[button-radio-bg-dark];
+  --popover-bg: @colors[popover-bg-dark];
+  --main-bg: @colors[main-bg-dark];
+
+  //tag
+  --tag: @colors[tag-dark];
+  //selection
+  --selection-color: @colors[selection-light];
+}
+
+:root {
+  .dark-theme();
+  .light-theme();
+}
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     .dark-theme();
+//   }
+// }
+
+html[data-theme='light-theme'] {
+  .light-theme();
+}
+
+// TODO: dark mode
+html[data-theme='dark-theme'] {
+  .dark-theme();
+}

@@ -1,0 +1,43 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgGps = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 14,
+    height: 14,
+    viewBox: "0 0 14 14",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    id: "Linear / Map & Location / GPS",
+    clipPath: "url(#clip0_19344_132960)"
+  }, /*#__PURE__*/React.createElement("path", {
+    id: "Vector (Stroke)",
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M6.99984 0.666504C7.27598 0.666504 7.49984 0.890362 7.49984 1.1665V1.85705C9.95417 2.09274 11.9069 4.04551 12.1426 6.49984H12.8332C13.1093 6.49984 13.3332 6.72369 13.3332 6.99984C13.3332 7.27598 13.1093 7.49984 12.8332 7.49984H12.1426C11.9069 9.95417 9.95417 11.9069 7.49984 12.1426V12.8332C7.49984 13.1093 7.27598 13.3332 6.99984 13.3332C6.72369 13.3332 6.49984 13.1093 6.49984 12.8332V12.1426C4.04551 11.9069 2.09274 9.95417 1.85705 7.49984H1.1665C0.890362 7.49984 0.666504 7.27598 0.666504 6.99984C0.666504 6.72369 0.890362 6.49984 1.1665 6.49984H1.85705C2.09274 4.04551 4.04551 2.09274 6.49984 1.85705V1.1665C6.49984 0.890362 6.72369 0.666504 6.99984 0.666504ZM6.99984 2.83317C4.69865 2.83317 2.83317 4.69865 2.83317 6.99984C2.83317 9.30102 4.69865 11.1665 6.99984 11.1665C9.30102 11.1665 11.1665 9.30102 11.1665 6.99984C11.1665 4.69865 9.30102 2.83317 6.99984 2.83317ZM6.99984 5.74984C6.30948 5.74984 5.74984 6.30948 5.74984 6.99984C5.74984 7.69019 6.30948 8.24984 6.99984 8.24984C7.69019 8.24984 8.24984 7.69019 8.24984 6.99984C8.24984 6.30948 7.69019 5.74984 6.99984 5.74984ZM4.74984 6.99984C4.74984 5.7572 5.7572 4.74984 6.99984 4.74984C8.24248 4.74984 9.24984 5.7572 9.24984 6.99984C9.24984 8.24248 8.24248 9.24984 6.99984 9.24984C5.7572 9.24984 4.74984 8.24248 4.74984 6.99984Z",
+    fill: "#000000"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_19344_132960"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 14,
+    height: 14,
+    fill: "white"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgGps);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/GPS.cf970d007b96d9f77449a092da88c191.svg";

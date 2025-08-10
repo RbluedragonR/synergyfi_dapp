@@ -1,0 +1,40 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgDropdown = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 17,
+    viewBox: "0 0 16 17",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_2606_31270)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M8.00005 11.7002C7.82985 11.6993 7.66198 11.6606 7.50862 11.5868C7.35526 11.513 7.22024 11.406 7.11338 11.2735L4.30671 7.87353C4.14271 7.66884 4.0395 7.4222 4.00886 7.16171C3.97821 6.90122 4.02136 6.63736 4.13338 6.4002C4.22423 6.19408 4.37249 6.01847 4.56046 5.89434C4.74842 5.77022 4.96814 5.70282 5.19338 5.7002H10.8067C11.0319 5.70282 11.2517 5.77022 11.4396 5.89434C11.6276 6.01847 11.7759 6.19408 11.8667 6.4002C11.9787 6.63736 12.0219 6.90122 11.9912 7.16171C11.9606 7.4222 11.8574 7.66884 11.6934 7.87353L8.88671 11.2735C8.77985 11.406 8.64484 11.513 8.49147 11.5868C8.33811 11.6606 8.17024 11.6993 8.00005 11.7002Z",
+    fill: "#1F292E"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_2606_31270"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 16,
+    height: 16,
+    fill: "white",
+    transform: "translate(0 0.700195)"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgDropdown);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/dropdown.c07c0c3873fe56d1b0e1b45b84c1c7ec.svg";

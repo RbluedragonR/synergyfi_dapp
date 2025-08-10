@@ -1,0 +1,50 @@
+@import '~@/themes/func.less';
+@trade-history-prefix: ~'@{syn-prefix}-trade-history';
+.@{trade-history-prefix} {
+  height: 100%;
+  width: 100%;
+  .syn-history-table {
+    &-header {
+      // position: sticky;
+      // top: 48px;
+      // z-index: 100;
+
+      padding-bottom: 8px;
+      // &.is-pinned {
+      //   background: @main-bg;
+      // }
+    }
+    .ant-table {
+      .ant-table-container {
+        overflow: unset;
+        .ant-table-thead {
+          position: sticky;
+          z-index: 100;
+          top: calc(48px + 48px + 40px + 8px);
+        }
+      }
+    }
+    &.lean {
+      .ant-table {
+        .ant-table-container {
+          overflow: unset;
+          .ant-table-thead {
+            top: calc(48px + 48px + 8px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.syn-futures-table_card-fee {
+  display: flex;
+  align-items: center;
+  gap: @space;
+  justify-content: flex-end;
+  &-icon {
+    display: flex;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,63 @@
+var _circle, _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconRenzoEzpoints = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _circle || (_circle = /*#__PURE__*/React.createElement("circle", {
+    cx: 8,
+    cy: 8,
+    r: 6.6665,
+    fill: "url(#paint0_linear_14205_639)"
+  })), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_14205_639)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M11.9758 8.36523C11.9758 8.37151 11.9737 8.37986 11.9737 8.38613C11.8 10.2952 10.281 11.7839 8.43144 11.9763C8.4189 11.9784 8.40634 11.9784 8.3938 11.9805L11.9758 8.36523Z",
+    fill: "#C4FF61"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M9.74961 4.41967C9.64918 4.37157 9.54666 4.32557 9.44204 4.28585C9.23909 4.20639 9.02569 4.14366 8.80808 4.09975C8.54655 4.04539 8.27455 4.01611 7.99627 4.01611C7.86236 4.01611 7.73055 4.02239 7.59874 4.03493C6.67813 4.12484 5.85168 4.5284 5.2219 5.13477L5.2198 5.13686C5.17796 5.17868 5.13611 5.2205 5.09427 5.26232L5.09217 5.26441C4.49169 5.89796 4.09624 6.73015 4.01465 7.65227C4.00418 7.76937 4 7.88854 4 8.00772C4 8.30675 4.03348 8.59738 4.09415 8.87548C4.14018 9.08665 4.20504 9.29365 4.28455 9.4902C4.32849 9.59893 4.37661 9.70558 4.42892 9.81013C4.52098 9.98996 4.62559 10.1635 4.74277 10.3266L5.39974 9.66375L9.62827 5.39614L10.2852 4.73331C10.1158 4.61622 9.93793 4.51167 9.74961 4.41967ZM5.01058 8.76047C5.0043 8.73329 4.99802 8.70611 4.99174 8.67893V8.67684C4.94362 8.45937 4.91852 8.23356 4.91852 8.00772C4.91852 7.21735 5.21353 6.47298 5.75334 5.90215L5.75543 5.90006L5.86423 5.78923L5.86632 5.78714C6.4417 5.23304 7.19702 4.92986 7.99836 4.92986C8.20969 4.92986 8.42102 4.95077 8.62607 4.99258C8.65745 4.99886 8.68883 5.00722 8.72231 5.01349L5.01058 8.76047Z",
+    fill: "#C4FF61"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M6.61747 11.7567C6.51913 11.7212 6.42288 11.6793 6.32664 11.6375C6.12996 11.5476 5.94165 11.441 5.76172 11.3197L11.2854 5.74316C11.4046 5.91462 11.5113 6.09862 11.6013 6.2889C11.6494 6.38718 11.6913 6.48963 11.731 6.59209L6.61747 11.7567Z",
+    fill: "#C4FF61"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint0_linear_14205_639",
+    x1: 1.3335,
+    y1: 1.3335,
+    x2: 14.6665,
+    y2: 14.6665,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#363663"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#1F2247"
+  })), /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_14205_639"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 8,
+    height: 7.96802,
+    fill: "white",
+    transform: "translate(4 4.01611)"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconRenzoEzpoints);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_renzo_ezpoints.2bfe41f9b15d71f15d48d92d02be33e1.svg";

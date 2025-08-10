@@ -1,0 +1,95 @@
+@import '~@/themes/func.less';
+@trade-form-mobile-prefix: ~'@{syn-prefix}-trade-form-mobile';
+.@{trade-form-mobile-prefix} {
+  flex: 1;
+  &.syn-card_wrapper {
+    justify-content: space-between;
+    .ant-card {
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      box-shadow: none;
+      overflow: unset;
+      height: 100%;
+      .ant-card-head {
+        min-height: 24px;
+        border-bottom-color: @mobile-trade-border-color;
+        .ant-tabs {
+          .ant-tabs-nav {
+            .ant-tabs-nav-operations {
+              //  this must be set to noe
+              display: none !important;
+            }
+            .ant-tabs-nav-wrap {
+              justify-content: stretch;
+              &::after,
+              &::before {
+                display: none;
+              }
+              .ant-tabs-nav-list {
+                flex: 1;
+              }
+
+              .ant-tabs-tab {
+                display: flex;
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+                margin: 0;
+                height: 24px;
+                .font12;
+                .ant-tabs-tab-btn {
+                  font-weight: 400;
+                }
+                text-align: center;
+                &.ant-tabs-tab-active {
+                  .ant-tabs-tab-btn {
+                    font-weight: 700;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .ant-card-body {
+        width: 100%;
+        row-gap: 8px;
+        background: transparent;
+        .syn-card_wrapper-content {
+          display: flex;
+          row-gap: 8px;
+          width: 100%;
+          flex-direction: column;
+          background: transparent;
+        }
+        .syn-card_wrapper-footerSlidebar {
+          margin: 0;
+          background: none;
+        }
+      }
+    }
+  }
+  &-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .disabled {
+      opacity: 0.2;
+    }
+    &-container {
+      position: relative;
+      width: fit-content;
+      display: flex;
+      column-gap: 4px;
+      align-items: center;
+      svg {
+        width: 32px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

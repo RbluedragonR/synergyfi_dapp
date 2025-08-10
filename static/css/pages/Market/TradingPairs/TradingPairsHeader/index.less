@@ -1,0 +1,61 @@
+@import '~@/themes/func.less';
+
+.syn-trading-pairs-header {
+  color: @text-primary-color;
+  display: flex;
+  padding-bottom: 24px;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 10;
+  background: var(--solid-nav-bar, #e1f3f3);
+  top: 0;
+  &-left {
+    display: flex;
+    align-items: baseline;
+    column-gap: 16px;
+
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 100% */
+    &-chains {
+      display: flex;
+      gap: var(--spacing-8, 8px);
+      &-btn {
+        cursor: pointer;
+
+        display: flex;
+        padding: 6px var(--spacing-8, 8px);
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-4, 4px);
+        border-radius: 6px;
+        background: var(--button-unchecked-1, #f4fbfb);
+
+        color: var(--text-strong-prompt, #006a80);
+        font-feature-settings: 'liga' off, 'clig' off;
+
+        /* 4 size/12R */
+        font-family: Ubuntu;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px; /* 100% */
+        &.selected {
+          background: var(--Button-Brand, #00bfbf);
+          color: #fff;
+        }
+        &.reset {
+          background: transparent;
+          color: var(--text-brand, #00bfbf);
+          padding: 6px 0;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

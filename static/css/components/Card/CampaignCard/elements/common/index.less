@@ -1,0 +1,147 @@
+.syn-campaign-card-container {
+  * {
+    transition: all ease 0.3s;
+  }
+  &:hover {
+    color: initial;
+  }
+  cursor: pointer;
+}
+
+.syn-campaign-card-tag {
+  transition: all ease 0.3s;
+  display: flex;
+  padding: 4px 6px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: rgba(100, 255, 178, 0.15);
+  color: #64ffb2;
+  /* 4 size/12R */
+  font-family: Ubuntu;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 100% */
+  width: fit-content;
+  &:hover {
+    color: initial;
+    color: #000a29;
+  }
+}
+
+.syn-campaign-card-tags {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  .syn-campaign-card-tags-hovered {
+    display: none;
+  }
+  &-items {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    .syn-campaign-card-tags-hovered {
+      border-radius: 14px;
+      display: flex;
+      z-index: 100;
+      border: var(--spacing-8, 8px) solid var(--solid-list-card, #f4fbfb);
+      background: var(--solid-list-card, #f4fbfb);
+      transform: translateY(-10px);
+      gap: 8px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    &-items {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.syn-campaign-status-tag {
+  display: inline-flex;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  border-radius: 99px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  color: white;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
+  &-circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.syn-campaign-leaderboard-tag {
+  border-radius: 99px;
+  background: rgba(0, 0, 0, 0.4);
+
+  /* tag blur */
+  backdrop-filter: blur(5px);
+  padding: 8px 12px;
+  display: flex;
+  color: var(--text-white, #fff);
+  font-feature-settings: 'liga' off, 'clig' off;
+  text-transform: uppercase;
+  /* 4 size/14B 16 */
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
+  gap: 8px;
+  align-items: center;
+  width: fit-content;
+  margin: 16px 0 0 16px;
+  position: relative;
+
+  // animated bg
+  padding: @space-2x @space-3x;
+  border: 1.5px solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-position: 0% 0%;
+  background: linear-gradient(
+    to right,
+    rgba(178, 148, 255, 1),
+    rgba(87, 230, 230, 1),
+    rgba(254, 255, 184, 1),
+    rgba(87, 230, 230, 1),
+    rgba(178, 148, 255, 1),
+    rgba(87, 230, 230, 1)
+  );
+  background-size: 500% auto;
+  box-shadow: 2px 1000px 1px rgba(0, 0, 0, 0.8) inset;
+  animation: gradient 3s linear infinite;
+
+  &:hover {
+    background: linear-gradient(90deg, #00bfbf 0%, #8095ff 100%);
+    box-shadow: none;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

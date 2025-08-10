@@ -1,0 +1,24 @@
+@import '~@/themes/func.less';
+@mobile-header-prefix: ~'@{syn-prefix}-mobile-header';
+.@{mobile-header-prefix} {
+  // z-index: 10;
+  padding: @space-4x;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  .logo {
+    height: 24px;
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    .syn-btn.syn-btn-text {
+      padding: 0;
+      height: auto;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

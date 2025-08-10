@@ -1,0 +1,67 @@
+@import '@/layout/index.less';
+
+.syn-earn {
+  display: flex;
+  column-gap: @space-6x;
+  flex: 1;
+  padding-bottom: 24px;
+  &-wrapper {
+    min-width: fit-content;
+    display: flex;
+    padding: 16px 24px 0 24px;
+    flex-direction: column;
+  }
+  &-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: @space-6x;
+    overflow-x: hidden;
+  }
+  &-right {
+    flex: 0 0 392px;
+    min-width: 392px;
+    max-width: 392px;
+  }
+
+  &-info-area {
+    border-radius: 0;
+    margin-bottom: @space-6x;
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+  &-portfolio-area {
+    flex: 1;
+    // height: @page-position-height;
+    min-height: @page-position-height;
+    // max-height: @page-position-height;
+    border-radius: 0;
+    background-color: transparent;
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+
+  &-chart-area {
+    // flex: 1;
+    border-radius: 0px;
+    border-bottom-left-radius: var(--spacing-16, 16px);
+    border-bottom-right-radius: var(--spacing-16, 16px);
+    background: var(--solid-2, #f4fbfb);
+    padding: var(--spacing-16, 16px);
+    // height: @page-charts-height;
+    // height: 280px;
+    height: 488px;
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+  @media screen and (min-width: 1280px) and (max-width: 1440px) {
+    .syn-earn-right {
+      width: 344px;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

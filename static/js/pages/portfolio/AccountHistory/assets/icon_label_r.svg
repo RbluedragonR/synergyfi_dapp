@@ -1,0 +1,38 @@
+var _rect, _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconLabelR = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    x: 1.33337,
+    y: 1.33334,
+    width: 13.3333,
+    height: 13.3333,
+    rx: 4,
+    fill: "#14B84B"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M5.32483 4.79332C5.32483 4.24221 5.63483 3.89777 6.20927 3.89777H8.23038C9.99889 3.89777 11.0896 4.69036 11.0896 6.49294C11.0896 7.75627 10.1367 8.47961 8.96519 8.66331L10.9178 10.7537C11.0781 10.9259 11.147 11.0981 11.147 11.2589C11.147 11.7066 10.7911 12.1429 10.2863 12.1429C10.0793 12.1429 9.80371 12.0626 9.62 11.8444L7.07075 8.75516H7.04779V11.247C7.04779 11.8214 6.68038 12.1426 6.18631 12.1426C5.69224 12.1426 5.32483 11.8214 5.32483 11.247V4.79332ZM7.04742 7.51479H8.23001C8.86149 7.51479 9.29815 7.13591 9.29815 6.49294C9.29815 5.8385 8.86112 5.48221 8.23001 5.48221H7.04742V7.51479Z",
+    fill: "white"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconLabelR);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_label_r.aff9341fd7da1ed769e7bd54c669a9cc.svg";

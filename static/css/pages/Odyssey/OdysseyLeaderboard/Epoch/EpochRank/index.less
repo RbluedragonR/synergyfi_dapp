@@ -1,0 +1,26 @@
+@import '~@/themes/func.less';
+@epoch-rank-prefix: ~'@{syn-prefix}-epoch-rank';
+.@{epoch-rank-prefix} {
+  width: 52px;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .font16;
+  .number {
+    padding: 0 8px;
+    border-radius: 99px;
+    background: var(--icon-grey2, #04606e);
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  line-height: 16px;
+  font-weight: 700;
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

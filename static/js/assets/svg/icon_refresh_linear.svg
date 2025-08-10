@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconRefreshLinear = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 20,
+    height: 20,
+    viewBox: "0 0 20 20",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M10 4.0625C6.60877 4.0625 4.0625 6.4979 4.0625 9.175C4.0625 9.69277 3.64277 10.1125 3.125 10.1125C2.60723 10.1125 2.1875 9.69277 2.1875 9.175C2.1875 5.2521 5.79683 2.1875 10 2.1875C12.3581 2.1875 14.2795 3.28549 15.57 4.31794C15.698 4.42032 15.8206 4.52266 15.9375 4.62398V3.125C15.9375 2.60723 16.3572 2.1875 16.875 2.1875C17.3928 2.1875 17.8125 2.60723 17.8125 3.125V6.975C17.8125 7.49277 17.3928 7.9125 16.875 7.9125H13.575C13.0572 7.9125 12.6375 7.49277 12.6375 6.975C12.6375 6.45723 13.0572 6.0375 13.575 6.0375H14.7056C14.6078 5.95285 14.5054 5.86743 14.3987 5.78206C13.283 4.88951 11.7669 4.0625 10 4.0625ZM16.1132 7.52139C16.1133 7.5216 16.1133 7.52158 16.1131 7.52133L16.1132 7.52139ZM16.875 9.8875C17.3928 9.8875 17.8125 10.3072 17.8125 10.825C17.8125 14.7479 14.2032 17.8125 10 17.8125C7.64188 17.8125 5.72053 16.7145 4.42997 15.6821C4.30199 15.5797 4.17944 15.4773 4.0625 15.376V16.875C4.0625 17.3928 3.64277 17.8125 3.125 17.8125C2.60723 17.8125 2.1875 17.3928 2.1875 16.875V13.025C2.1875 12.5072 2.60723 12.0875 3.125 12.0875H6.425C6.94277 12.0875 7.3625 12.5072 7.3625 13.025C7.3625 13.5428 6.94277 13.9625 6.425 13.9625H5.29442C5.39223 14.0472 5.49457 14.1326 5.60128 14.2179C6.71697 15.1105 8.23312 15.9375 10 15.9375C13.3912 15.9375 15.9375 13.5021 15.9375 10.825C15.9375 10.3072 16.3572 9.8875 16.875 9.8875Z",
+    fill: "#1F292E"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconRefreshLinear);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_refresh_linear.bb1d5d6e0f044db658185ccd5b1b5c6b.svg";

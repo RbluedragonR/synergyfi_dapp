@@ -1,0 +1,23 @@
+@import '~@/themes/func.less';
+@trade-history-drawer-prefix: ~'@{syn-prefix}-trade-history-drawer';
+.@{trade-history-drawer-prefix} {
+  background: var(--solid-bg, #e1f3f3);
+  z-index: 100;
+  &-info {
+    padding: 16px;
+    .font12;
+    color: var(--text-weak-prompt);
+  }
+  &-bottom {
+    flex: 1;
+    overflow-y: auto;
+  }
+  &-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,31 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconSocialTelegram = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M20.665 3.71291L2.93497 10.5499C1.72497 11.0359 1.73197 11.7109 2.71297 12.0119L7.26497 13.4319L17.797 6.78691C18.295 6.48391 18.75 6.64691 18.376 6.97891L9.84297 14.6799H9.84097L9.84297 14.6809L9.52897 19.3729C9.98897 19.3729 10.192 19.1619 10.45 18.9129L12.661 16.7629L17.26 20.1599C18.108 20.6269 18.717 20.3869 18.928 19.3749L21.947 5.14691C22.256 3.90791 21.474 3.34691 20.665 3.71291Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconSocialTelegram);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_social_telegram.6a9be30574e3e14fafe16337d629ec03.svg";

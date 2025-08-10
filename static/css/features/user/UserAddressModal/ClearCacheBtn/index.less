@@ -1,0 +1,25 @@
+.clear-cache-btn {
+  &.syn-btn {
+    // background: @scroll-bar;
+    border-radius: @space-2x;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: @text-color;
+    text-decoration: underline;
+    padding: 0;
+    height: 16px;
+    .font14;
+    & > svg {
+      path {
+        fill: var(--text-black, #000);
+      }
+    }
+    &:not(:disabled):not(.syn-btn-disabled):hover {
+      color: @primary-color;
+      background-color: transparent;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

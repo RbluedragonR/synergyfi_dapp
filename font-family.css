@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "DINPro";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("DINPro"), url("/fonts/DINPro-Light tr.woff") format("woff");
+}
+@font-face {
+  font-family: "DINPro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("DINPro"), url("/fonts/DINPro-Medium tr.woff") format("woff");
+}
+@font-face {
+  font-family: "DINPro";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("DINPro"), url("/fonts/DINPro-Bold tr.woff") format("woff");
+}
+@font-face {
+  font-family: "DINPro";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("DINPro"), url("/fonts/DINPro-Black tr.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Magistral";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Magistral"),
+    url("/fonts/Magistral Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Magistral";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Magistral"), url("/fonts/Magistral Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Magistral";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Magistral"), url("/fonts/MagistralBlack.otf") format("opentype");
+}

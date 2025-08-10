@@ -1,0 +1,63 @@
+@import '~@/themes/variable.less';
+.empty-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  // padding-top: @space-10x;
+  // // background: @bg;
+  // padding-bottom: @space-12x;
+  padding: 48px 0;
+  gap: 8px;
+  &.empty-wrap-horizontal {
+    flex-direction: row;
+    gap: 24px;
+  }
+  &-icon {
+    // width: 48px;
+    // height: 48px;
+    // margin-right: @space-4x;
+    // margin-bottom: @space-6x;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-text {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    align-items: center;
+
+    gap: 4px;
+    h2 {
+      .font16;
+      font-weight: 400;
+      line-height: 16px; /* 100% */
+      color: var(--text-weak-prompt, #94b8bf);
+      margin: 0;
+    }
+    & > section {
+      .font12;
+      font-weight: 400;
+      color: @text-secondary;
+      margin-bottom: 0;
+      a {
+        color: @primary-color;
+        &.disabled {
+          color: var(--text-weak-prompt, #94b8bf);
+        }
+
+        text-decoration-line: underline;
+      }
+    }
+  }
+  &.empty-wrap-horizontal {
+    .empty-wrap-text {
+      align-items: flex-start;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconMoreWhitepaper = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 13,
+    height: 12,
+    viewBox: "0 0 13 12",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M3.63048 1.63073C3.14824 1.69559 2.9047 1.81265 2.73392 1.98358L2.73375 1.98375L2.73358 1.98392C2.56265 2.1547 2.44559 2.39824 2.38073 2.88048C2.3137 3.37889 2.3125 4.04134 2.3125 5V7C2.3125 7.95866 2.3137 8.62111 2.38073 9.11952C2.44559 9.60176 2.56265 9.8453 2.73358 10.0161L2.73375 10.0163L2.73392 10.0164C2.9047 10.1874 3.14824 10.3044 3.63048 10.3693C4.1289 10.4363 4.79134 10.4375 5.75 10.4375H6.75C7.70866 10.4375 8.37111 10.4363 8.86952 10.3693C9.35176 10.3044 9.5953 10.1874 9.76608 10.0164L9.76642 10.0161C9.93735 9.8453 10.0544 9.60176 10.1193 9.11952C10.1863 8.62111 10.1875 7.95866 10.1875 7V5C10.1875 4.04134 10.1863 3.3789 10.1193 2.88048C10.0544 2.39824 9.93735 2.1547 9.76642 1.98392L9.76625 1.98375L9.76608 1.98358C9.5953 1.81265 9.35176 1.69559 8.86952 1.63073C8.37111 1.5637 7.70866 1.5625 6.75 1.5625H5.75C4.79134 1.5625 4.1289 1.5637 3.63048 1.63073ZM5.70939 0.437501H6.79061C7.69883 0.437483 8.4373 0.437469 9.01948 0.515771C9.62646 0.597407 10.1472 0.773337 10.5619 1.18837C10.5619 1.18839 10.5619 1.1884 10.5619 1.18842C10.9767 1.60308 11.1526 2.12368 11.2342 2.73052C11.3125 3.3127 11.3125 4.05117 11.3125 4.95939V7.04062C11.3125 7.94883 11.3125 8.6873 11.2342 9.26948C11.1526 9.87632 10.9767 10.3969 10.5619 10.8116C10.1472 11.2266 9.62649 11.4026 9.01948 11.4842C8.43729 11.5625 7.69882 11.5625 6.79059 11.5625H5.70942C4.80118 11.5625 4.06271 11.5625 3.48052 11.4842C2.87351 11.4026 2.3528 11.2266 1.93808 10.8116C1.52326 10.3969 1.34739 9.87632 1.26577 9.26948C1.18747 8.6873 1.18748 7.94883 1.1875 7.04061V4.95939C1.18748 4.05117 1.18747 3.3127 1.26577 2.73052C1.3474 2.1236 1.5233 1.60295 1.93824 1.18826C2.35293 0.773308 2.87359 0.5974 3.48052 0.515771C4.0627 0.437469 4.80117 0.437483 5.70939 0.437501ZM3.6875 4C3.6875 3.68934 3.93934 3.4375 4.25 3.4375H8.25C8.56066 3.4375 8.8125 3.68934 8.8125 4C8.8125 4.31066 8.56066 4.5625 8.25 4.5625H4.25C3.93934 4.5625 3.6875 4.31066 3.6875 4ZM3.6875 6C3.6875 5.68934 3.93934 5.4375 4.25 5.4375H8.25C8.56066 5.4375 8.8125 5.68934 8.8125 6C8.8125 6.31066 8.56066 6.5625 8.25 6.5625H4.25C3.93934 6.5625 3.6875 6.31066 3.6875 6ZM3.6875 8C3.6875 7.68934 3.93934 7.4375 4.25 7.4375H6.75C7.06066 7.4375 7.3125 7.68934 7.3125 8C7.3125 8.31066 7.06066 8.5625 6.75 8.5625H4.25C3.93934 8.5625 3.6875 8.31066 3.6875 8Z",
+    fill: "#1F292E"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconMoreWhitepaper);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_more_whitepaper.ed577557730387aa3c3fcb528d74f1af.svg";

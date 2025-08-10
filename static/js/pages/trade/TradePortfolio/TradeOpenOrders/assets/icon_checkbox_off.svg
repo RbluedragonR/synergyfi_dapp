@@ -1,0 +1,31 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconCheckboxOff = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 17,
+    height: 17,
+    viewBox: "0 0 17 17",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M8.05469 15.5925C4.91202 15.5925 3.34069 15.5925 2.36402 14.6158C1.38802 13.6405 1.38802 12.0685 1.38802 8.92579C1.38802 5.78312 1.38802 4.21179 2.36402 3.23512C3.34136 2.25912 4.91202 2.25912 8.05469 2.25912C11.1974 2.25912 12.7687 2.25912 13.7447 3.23512C14.7214 4.21246 14.7214 5.78312 14.7214 8.92579C14.7214 12.0685 14.7214 13.6398 13.7447 14.6158C12.7694 15.5925 11.1974 15.5925 8.05469 15.5925Z",
+    fill: "#E2E7E9"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconCheckboxOff);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_checkbox_off.36d888dd3070850c7d46f2ac6889be30.svg";

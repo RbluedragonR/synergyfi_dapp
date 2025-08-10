@@ -1,0 +1,103 @@
+@import '~@/themes/func.less';
+@earn-liquidities-mobile-prefix: ~'@{syn-prefix}-earn-liquidities-mobile';
+.@{earn-liquidities-mobile-prefix} {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  &-item {
+    border-radius: var(--spacing-8, 8px);
+    background: var(--solid-list-card, #f4fbfb);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 24px;
+    }
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      dl {
+        margin: 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        align-items: flex-start;
+        &:last-of-type {
+          align-items: flex-end;
+        }
+        dt {
+          .font12;
+          line-height: 12px;
+          color: var(--text-weak-prompt, #94b8bf);
+        }
+        dd {
+          .font14;
+          line-height: 16px;
+          margin: 0;
+          display: flex;
+          column-gap: 4px;
+          color: var(--text-black, #000);
+        }
+      }
+    }
+  }
+  &-drawer {
+    &.ant-drawer-content {
+      padding: 0;
+      .ant-drawer-body {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+      }
+    }
+  }
+  &-skeleton {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 16px;
+    .ant-skeleton {
+      width: auto;
+      .ant-skeleton-content {
+        width: auto;
+        .ant-skeleton-title {
+          width: 93px;
+          height: 20px;
+        }
+      }
+    }
+    &-top,
+    &-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-top {
+      .ant-skeleton:first-of-type {
+        .ant-skeleton-title {
+          width: 48px;
+          height: 24px;
+        }
+      }
+      .ant-skeleton:last-of-type {
+        .ant-skeleton-title {
+          width: 64px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  .empty-wrap {
+    padding-top: 24px;
+    .empty-wrap-text {
+      align-items: center;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,60 @@
+@import '~@/themes/func.less';
+@trade-limit-form-prefix: ~'@{syn-prefix}-trade-limit-form';
+.@{trade-limit-form-prefix} {
+  display: flex;
+  flex-direction: column;
+  row-gap: @space-4x;
+
+  &-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: @space-2x;
+    .form-input-wrap {
+      flex: 1;
+    }
+  }
+  &-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: @space-2x;
+    &-title {
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+      .font14;
+      color: var(--text-strong-prompt, #006a80);
+      .rotate {
+        rotate: 180deg;
+      }
+      &-bid {
+        color: @primary-color;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      &-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+      }
+    }
+  }
+  &-number-tick.syn-input-number-ticks {
+    display: flex;
+    height: 48px;
+    align-items: center;
+  }
+
+  &-link {
+    margin-left: @space;
+    font-weight: 700;
+    // text-decoration-line: underline;
+    // color: @primary-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

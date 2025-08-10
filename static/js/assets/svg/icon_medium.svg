@@ -1,0 +1,31 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconMedium = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 14,
+    height: 8,
+    viewBox: "0 0 14 8",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M7.85408 4C7.85408 6.07084 6.17075 7.75 4.09325 7.75C3.60014 7.75066 3.11172 7.65418 2.65589 7.46608C2.20007 7.27799 1.78575 7.00195 1.4366 6.65373C1.08745 6.30551 0.81031 5.89193 0.620997 5.4366C0.431684 4.98127 0.333908 4.49312 0.333252 4C0.333252 1.92834 2.01658 0.250005 4.09325 0.250005C4.58643 0.249238 5.07494 0.345633 5.53086 0.533683C5.98679 0.721734 6.4012 0.997756 6.75044 1.34599C7.09968 1.69422 7.37689 2.10783 7.56626 2.56322C7.75562 3.0186 7.85343 3.50682 7.85408 4ZM11.9791 4C11.9791 5.95 11.1374 7.53 10.0991 7.53C9.06075 7.53 8.21908 5.94917 8.21908 4C8.21908 2.05 9.06075 0.470004 10.0991 0.470004C11.1374 0.470004 11.9791 2.05084 11.9791 4ZM13.6666 4C13.6666 5.74667 13.3707 7.1625 13.0049 7.1625C12.6399 7.1625 12.3441 5.74584 12.3441 4C12.3441 2.25334 12.6399 0.837504 13.0057 0.837504C13.3707 0.837504 13.6666 2.25334 13.6666 4Z",
+    fill: "#12100E"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconMedium);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_medium.8b0eb8604d8350272e72f14977f56eeb.svg";

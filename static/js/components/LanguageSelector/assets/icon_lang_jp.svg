@@ -1,0 +1,68 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconLangJp = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 32,
+    height: 32,
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_1800_5695)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M32 4.5H0V27.5H32V4.5Z",
+    fill: "url(#paint0_linear_1800_5695)"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M16.0002 22.9C19.7873 22.9 22.8574 19.8108 22.8574 16C22.8574 12.1892 19.7873 9.1 16.0002 9.1C12.2131 9.1 9.14307 12.1892 9.14307 16C9.14307 19.8108 12.2131 22.9 16.0002 22.9Z",
+    fill: "url(#paint1_linear_1800_5695)"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint0_linear_1800_5695",
+    x1: 16,
+    y1: 4.5,
+    x2: 16,
+    y2: 27.5,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "white"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#F0F0F0"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint1_linear_1800_5695",
+    x1: 16.0002,
+    y1: 9.1,
+    x2: 16.0002,
+    y2: 22.9,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#D81441"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#BB0831"
+  })), /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_1800_5695"
+  }, /*#__PURE__*/React.createElement("rect", {
+    y: 4.5,
+    width: 32,
+    height: 23,
+    rx: 4,
+    fill: "white"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconLangJp);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_lang_jp.fe729e5cea2fe33b6b62c61803ee3626.svg";

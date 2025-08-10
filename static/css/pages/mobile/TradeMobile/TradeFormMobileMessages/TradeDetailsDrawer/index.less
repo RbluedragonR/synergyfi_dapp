@@ -1,0 +1,37 @@
+@import '~@/themes/func.less';
+@trade-details-drawer-prefix: ~'@{syn-prefix}-trade-details-drawer';
+.@{trade-details-drawer-prefix} {
+  &.ant-drawer-content {
+    .ant-drawer-body {
+      padding: 0;
+      // padding-top: 16px;
+      .trade-form-details,
+      .syn-limit-form-detail {
+        padding: 0;
+        background: none;
+        row-gap: 0;
+        dl {
+          padding: 20px 0;
+          .trade-form-details-line,
+          .syn-limit-form-detail-line {
+            display: none;
+          }
+          dd,
+          dt {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  &-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    svg path {
+      fill: var(--text-black, #000);
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

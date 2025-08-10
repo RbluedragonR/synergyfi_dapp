@@ -1,0 +1,24 @@
+@import '~@/themes/func.less';
+@limit-disabled-drawer-prefix: ~'@{syn-prefix}-limit-disabled-drawer';
+.@{limit-disabled-drawer-prefix} {
+  &-title {
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    .font14;
+    font-weight: 700;
+  }
+  &.ant-drawer {
+    .ant-drawer-content {
+      .ant-drawer-body {
+        padding: 0;
+        padding-top: 16px;
+        color: @text-secondary;
+        .font14;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

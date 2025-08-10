@@ -1,0 +1,63 @@
+@import '~@/themes/func.less';
+@trading-pair-skeleton-prefix: ~'@{syn-prefix}-trading-pair-skeleton';
+.@{trading-pair-skeleton-prefix} {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  &-item {
+    background: var(--solid-list-card);
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: var(--spacing-8, 8px);
+    justify-content: space-between;
+    & > div {
+      &:first-of-type {
+        width: 130px;
+      }
+      &:nth-last-of-type(2) {
+        width: 64px;
+      }
+      &:last-of-type {
+        width: 70px;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    &-left {
+      display: flex;
+      column-gap: 8px;
+    }
+    .syn-skeleton {
+      justify-content: flex-end;
+      .ant-skeleton-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        align-items: flex-end;
+        .ant-skeleton-title {
+          margin: 0;
+          width: 100% !important;
+          height: 16px;
+          border-radius: 99px;
+        }
+        .ant-skeleton-paragraph {
+          margin: 0;
+          margin-block-start: 0;
+          width: 100%;
+          li {
+            height: 10px;
+            width: 61.5% !important;
+            border-radius: 99px;
+          }
+        }
+      }
+      .ant-skeleton-button {
+        border-radius: 99px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

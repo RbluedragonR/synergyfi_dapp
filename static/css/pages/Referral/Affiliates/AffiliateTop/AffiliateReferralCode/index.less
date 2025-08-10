@@ -1,0 +1,48 @@
+.syn-affiliate-referral-code {
+  border-radius: 16px;
+  background: var(--solid-white-card, #044953);
+  display: flex;
+  padding: 24px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  align-self: stretch;
+  color: var(--text-black, #fff);
+  .font20;
+  &-title {
+    color: var(--text-black, #000);
+
+    /* 4 size/20B 24 */
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 120% */
+  }
+
+  &__code {
+    color: var(--text-brand, #00bfbf);
+    &-container {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+    }
+  }
+  &-action {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  &.dark-theme {
+    .syn-affiliate-referral-code-action {
+      svg {
+        path {
+          fill: var(--text-black, #000);
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

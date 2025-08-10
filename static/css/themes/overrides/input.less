@@ -1,0 +1,49 @@
+.syn-input {
+  &.ant-input-affix-wrapper {
+    .ant-input {
+      &::placeholder {
+        color: var(--text-weak-prompt, #94b8bf);
+      }
+    }
+    &.syn-form-input {
+      border-radius: @space-2x;
+      box-shadow: none;
+    }
+    // height: 32px;
+    padding: @space-3x;
+    border-radius: @space-2x;
+    box-shadow: none;
+    border: var(--spacing-0, 1px) solid var(--solid-white-card, #fff);
+    background: var(--solid-2, #f4fbfb);
+    padding: 16px;
+    // gap: 8px;
+    .font14;
+    .ant-input {
+      .font-number;
+      padding: 0;
+      border: none;
+      border-radius: 0;
+      outline: none;
+    }
+    &:not(&-disabled):hover {
+      border-color: @primary-color;
+    }
+    &-disabled {
+      .ant-input[disabled] {
+        color: @text-color;
+      }
+    }
+    &-focused,
+    &:active,
+    &:focus {
+      box-shadow: none;
+      border: 1px solid @primary-color;
+      background: var(--solid-white-card, #fff);
+    }
+  }
+}
+
+.ant-input-number {
+  background-color: var(--input-background);
+  border: 1px solid var(--second-border-color);
+}

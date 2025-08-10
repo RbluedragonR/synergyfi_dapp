@@ -1,0 +1,56 @@
+.syn-tgp-community {
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+  background: url('../assets/images/community_bg_w.png') center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 24px;
+  font-size: 32px;
+  flex-direction: column;
+  font-weight: 700;
+  line-height: 48px;
+  color: var(--text-black);
+  &.dark-theme {
+    background: url('../assets/images/community_bg_w_dark.png') center no-repeat;
+    background-size: cover;
+  }
+
+  &-socials {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  }
+  &-social {
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 24px;
+      height: 24px;
+
+      // path:first-of-type {
+      //   fill: #fff;
+      // }
+      // .icon_youtube_middle {
+      //   fill: #000000;
+      // }
+      path {
+        fill: var(--icon-community);
+      }
+    }
+    &:hover {
+      svg {
+        path:first-of-type {
+          fill: #00bfbf;
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

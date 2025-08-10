@@ -1,0 +1,19 @@
+export enum HISTORY_TYPE {
+  TRADE = 'TRADE',
+  ORDERS = 'ORDERS',
+  LIQUIDITY = 'LIQUIDITY',
+  LIQUIDITY_MOBILE = 'LIQUIDITY_MOBILE',
+  TRANSFERS = 'TRANSFERS',
+  FUNDING = 'FUNDING',
+  ACCOUNT = 'ACCOUNT',
+}
+export enum HISTORY_RANGE {
+  ALL = 'ALL',
+  D_1 = '1D',
+  D_7 = '7D',
+  M_1 = '1M',
+  M_3 = '3M',
+}
+export const DEFAULT_HISTORY_PAGE_SIZE = 60;
+export const MAX_HISTORY_PAGE_SIZE = 1000;
+export const DEFAULT_HISTORY_PAGE_SIZE_LOCAL = 30;

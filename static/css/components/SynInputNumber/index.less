@@ -1,0 +1,64 @@
+.syn-input-number-ticks {
+  // padding: @space 0;
+  display: flex;
+
+  justify-content: center;
+  gap: @space-2x;
+  align-items: center;
+  box-sizing: content-box;
+  &.vertical {
+    flex-direction: column;
+  }
+
+  &-icon {
+    cursor: pointer;
+    padding: 0;
+    border-radius: var(--spacing-8, 8px);
+    border: 1px solid var(--border-light-line-1, #c3e7e7);
+    background: var(--solid-white-card);
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      height: 24px;
+      width: 24px;
+      path {
+        fill: var(--text-black);
+      }
+    }
+    &:hover {
+      path {
+        fill: @primary-color;
+      }
+    }
+    &.disabled {
+      cursor: not-allowed;
+      // pointer-events: none;
+      svg {
+        opacity: 0.2;
+      }
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+  }
+  &.mobile {
+    padding: 0;
+    .syn-input-number-ticks-icon {
+      width: 28px;
+      height: 28px;
+      background: @border-opacity-bg;
+      padding: 6px;
+      border: 0;
+      box-shadow: none;
+      svg {
+        height: 16px;
+        width: 16px;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

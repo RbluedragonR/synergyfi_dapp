@@ -1,0 +1,60 @@
+@import '~@/themes/func.less';
+.syn-spot-info {
+  display: flex;
+  padding: var(--spacing-16, 16px);
+  align-items: flex-start;
+  align-self: stretch;
+  &-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &-swap {
+      rotate: 90deg;
+      cursor: pointer;
+    }
+    path {
+      fill: var(--text-black, #000);
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 1px solid var(--border-light-line-1, #c3e7e7);
+    padding-left: 32px;
+    margin-left: 32px;
+    &-left {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+    }
+    &-middle {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+      dl {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        color: var(--text-main-body, #333);
+        .font12;
+        &,
+        dt,
+        dd {
+          margin: 0;
+        }
+        dd {
+          color: var(--text-black, #000);
+          .font14;
+          &.price {
+            font-size: 16px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

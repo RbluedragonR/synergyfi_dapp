@@ -1,0 +1,30 @@
+var map = {
+	"./en/notification.json": 2601,
+	"./es/notification.json": 52604,
+	"./fr/notification.json": 19647,
+	"./ja/notification.json": 66390,
+	"./kr/notification.json": 98414,
+	"./th/notification.json": 40305,
+	"./tr/notification.json": 56291,
+	"./vi/notification.json": 81455
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 53659;

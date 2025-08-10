@@ -1,0 +1,23 @@
+.syn-alert {
+  &.ant-alert {
+    .ant-alert-message {
+      .font12;
+      color: var(--text-black);
+    }
+    &.ant-alert-error {
+      background: rgba(255, 102, 102, 0.3);
+    }
+    &.ant-alert-warning {
+      background: rgba(255, 170, 0, 0.3);
+    }
+    &.ant-alert-info {
+      background: var(--solid-hint);
+
+      svg path {
+        fill: var(--text-black);
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

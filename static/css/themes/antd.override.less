@@ -1,0 +1,49 @@
+@import './overrides/button.less';
+@import './overrides/input.less';
+@import './overrides/card.less';
+@import './overrides/popover.less';
+@import './overrides/table.less';
+@import './overrides/segmented.less';
+@import './overrides/slider.less';
+@import './overrides/checkbox.less';
+@import './overrides/form.less';
+@import './overrides/modal.less';
+@import './overrides/select.less';
+@import './overrides/skeleton.less';
+@import './overrides/dropdown.less';
+@import './overrides/switch.less';
+@import './overrides/spin.less';
+@import './overrides/message.less';
+@import './overrides/tag.less';
+@import './overrides/tabs.less';
+@import './overrides/drawer.less';
+@import './overrides/collapse.less';
+@import './overrides/alert.less';
+@import './overrides/tooltip.less';
+@import './overrides/radio.less';
+@import './overrides/divider.less';
+html[data-theme='dark-theme'] {
+  .ant-drawer-mask {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .ant-table {
+    &.ant-table-empty {
+      .ant-table-tbody > tr.ant-table-placeholder {
+        &:hover > td {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .syn-select-dropdown {
+    .ant-select-item {
+      &:hover,
+      :visited {
+        background: @primary_hover_bg;
+      }
+    }
+    .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+      background: @primary-bg;
+    }
+  }
+}

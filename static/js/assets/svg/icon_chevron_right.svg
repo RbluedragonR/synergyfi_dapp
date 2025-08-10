@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconChevronRight = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 17,
+    viewBox: "0 0 16 17",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5.51192 3.64346C5.82641 3.3739 6.29989 3.41032 6.56946 3.72481L10.5695 8.39148C10.8102 8.67234 10.8102 9.0868 10.5695 9.36766L6.56946 14.0343C6.29989 14.3488 5.82641 14.3852 5.51192 14.1157C5.19743 13.8461 5.161 13.3726 5.43057 13.0581L9.01221 8.87957L5.43057 4.701C5.161 4.3865 5.19743 3.91303 5.51192 3.64346Z",
+    fill: "#ABB5BA"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconChevronRight);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_chevron_right.3ed57fed0f792d268a8381d1c9b27ffc.svg";

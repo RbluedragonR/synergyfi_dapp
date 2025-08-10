@@ -1,0 +1,148 @@
+var _path, _path2, _path3, _path4, _path5, _path6, _path7, _path8, _path9, _path10, _path11, _path12, _path13, _path14, _path15, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconConnectWallet = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 128,
+    height: 128,
+    viewBox: "0 0 128 128",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M19.8592 45.9711L86.0577 24.6847C90.5857 23.1951 94.2592 25.7285 94.2592 30.3436V70.0351C94.2592 74.6495 90.5857 79.5999 86.0577 81.0879L23.1808 101.769C18.6528 103.257 14.9824 100.726 14.9824 96.1087V50.1503C14.9824 47.4239 19.8592 45.9711 19.8592 45.9711Z",
+    fill: "#034650"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M31.528 45.4677L77.0096 32.2741C80.616 31.2309 83.5408 33.2565 83.5408 36.7989V64.9941C83.5408 68.5365 80.616 72.2581 77.0096 73.3045L31.528 86.4981C27.9216 87.5413 25 85.5157 25 81.9733V53.7781C25 50.2357 27.9216 46.5141 31.528 45.4677Z",
+    fill: "#00CBCB"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M70.8921 39.9671L77.1075 38.04C77.6003 37.8877 78 38.1835 78 38.7009V42.8191C78 43.3365 77.6003 43.8801 77.1075 44.0329L70.8921 45.96C70.3993 46.1123 70 45.8165 70 45.2991V41.1809C70 40.6635 70.3993 40.1199 70.8921 39.9671Z",
+    fill: "#8BF8F8"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M24.08 53.251L84.2241 41.1166C87.5809 40.4382 90.3009 42.7902 90.3009 46.3678V68.5342C90.3009 72.1118 87.5809 75.5613 84.2241 76.2365L24.08 88.3742C20.7232 89.0526 18 86.7006 18 83.123V60.9565C18 57.3789 20.7232 53.9294 24.08 53.251Z",
+    fill: "#006679"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M50.4194 48.1058L46.1538 46.7778L46.157 46.7681C41.533 45.3153 39.2962 38.8962 41.1522 32.2034C43.0082 25.5106 48.2754 21.0306 53.0338 21.9998L53.037 21.9883L58.0994 23.4658L50.4194 48.1058Z",
+    fill: "url(#paint0_linear_43489_189187)"
+  })), _path6 || (_path6 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M57.8753 23.364C62.7169 24.6146 65.1041 31.1781 63.2033 38.0226C61.3025 44.8671 55.8369 49.405 50.9953 48.1538C46.1537 46.9026 43.7697 40.3394 45.6673 33.4946C47.5649 26.6498 53.0337 22.1135 57.8753 23.364Z",
+    fill: "url(#paint1_linear_43489_189187)"
+  })), _path7 || (_path7 = /*#__PURE__*/React.createElement("path", {
+    d: "M25.5792 39.2721C26.8278 39.2721 27.84 38.2599 27.84 37.0113C27.84 35.7627 26.8278 34.7505 25.5792 34.7505C24.3306 34.7505 23.3184 35.7627 23.3184 37.0113C23.3184 38.2599 24.3306 39.2721 25.5792 39.2721Z",
+    fill: "#8CBEC7"
+  })), _path8 || (_path8 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M88.3038 19.2973L98.0511 16.5568C100.093 15.9827 101.747 17.3853 101.747 19.6896V30.816C101.747 33.12 100.093 35.4528 98.0511 36.0288L88.3038 38.768C86.2622 39.3408 84.6079 37.9392 84.6079 35.6352V24.5091C84.6079 22.2048 86.2622 19.8713 88.3038 19.2973Z",
+    fill: "#00D2D2"
+  })), _path9 || (_path9 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M93.6543 33.5902C93.6543 33.5902 89.6895 33.0174 89.6895 30.7221V25.636C89.6882 25.5139 89.72 25.3937 89.7814 25.2882C89.8428 25.1826 89.9316 25.0956 90.0383 25.0363C90.6749 24.6141 91.2724 24.1358 91.8239 23.6072C92.1119 23.3192 92.1919 23.1272 92.4351 23.06L94.8959 22.3675C95.1391 22.2994 95.2191 22.4446 95.5071 22.5717C96.0798 22.7949 96.6808 22.9379 97.2927 22.9966C97.3437 22.9951 97.3944 23.005 97.4411 23.0255C97.4877 23.046 97.5293 23.0766 97.5627 23.1151C97.5961 23.1537 97.6205 23.1991 97.6341 23.2483C97.6477 23.2974 97.6503 23.349 97.6415 23.3992V28.4853C97.6415 30.7794 93.6543 33.5902 93.6543 33.5902Z",
+    fill: "#448599"
+  })), _path10 || (_path10 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M33.7377 55.0945L100.33 48.0737C104.941 47.5777 108.682 50.9153 108.682 55.5329V95.2257C108.682 99.8401 104.941 103.984 100.33 104.48L33.7377 111.498C26.7041 112.266 14.9824 107.091 14.9824 100.288V50.8481C14.9824 50.8481 18.5409 56.6145 33.7377 55.0945Z",
+    fill: "url(#paint2_linear_43489_189187)"
+  })), _path11 || (_path11 = /*#__PURE__*/React.createElement("path", {
+    opacity: 0.3,
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M60.1461 80.0975C59.0227 81.221 58.3915 82.7447 58.3915 84.3335C58.3915 85.9223 59.0227 87.446 60.1461 88.5695C61.2696 89.6929 62.7933 90.3241 64.3821 90.3241C65.9709 90.3241 67.4947 89.6929 68.6181 88.5695L69.4871 87.7006C70.0269 87.1607 70.9023 87.1607 71.4421 87.7006C71.982 88.2405 71.982 89.1158 71.4421 89.6556L70.5732 90.5246C68.9312 92.1665 66.7042 93.089 64.3821 93.089C62.06 93.089 59.833 92.1665 58.1911 90.5246C56.5491 88.8826 55.6266 86.6556 55.6266 84.3335C55.6266 82.0114 56.5491 79.7844 58.1911 78.1424L59.06 77.2735C59.5999 76.7336 60.4752 76.7336 61.0151 77.2735C61.5549 77.8134 61.5549 78.6887 61.0151 79.2286L60.1461 80.0975ZM64.2735 74.015C63.7336 73.4752 63.7336 72.5999 64.2735 72.06L65.1424 71.191C66.7844 69.5491 69.0114 68.6266 71.3335 68.6266C73.6556 68.6266 75.8826 69.5491 77.5246 71.1911C79.1666 72.833 80.089 75.06 80.089 77.3821C80.089 79.7042 79.1666 81.9312 77.5246 83.5732L76.6557 84.4421C76.1158 84.982 75.2405 84.982 74.7006 84.4421C74.1607 83.9022 74.1607 83.0269 74.7006 82.487L75.5695 81.6181C76.693 80.4947 77.3241 78.9709 77.3241 77.3821C77.3241 75.7933 76.693 74.2696 75.5695 73.1461C74.4461 72.0227 72.9223 71.3915 71.3335 71.3915C69.7447 71.3915 68.221 72.0227 67.0975 73.1461L66.2286 74.015C65.6887 74.5549 64.8134 74.5549 64.2735 74.015ZM64.2735 84.4421C63.7336 83.9022 63.7336 83.0269 64.2735 82.487L69.4871 77.2735C70.0269 76.7336 70.9023 76.7336 71.4421 77.2735C71.982 77.8134 71.982 78.6887 71.4421 79.2286L66.2286 84.4421C65.6887 84.982 64.8134 84.982 64.2735 84.4421Z",
+    fill: "white"
+  })), _path12 || (_path12 = /*#__PURE__*/React.createElement("path", {
+    d: "M15.293 86.8608C17.5209 89.2337 20.4582 90.8202 23.6641 91.3824C33.7089 93.2896 41.517 90.8001 41.517 90.8001L45.5682 93.8785V100.144L48.0002 102.125L47.8594 109.546",
+    stroke: "#00D2D2",
+    strokeLinecap: "round"
+  })), _path13 || (_path13 = /*#__PURE__*/React.createElement("path", {
+    d: "M107.659 63.1455L104.635 66.5023V89.4591L107.659 91.9455",
+    stroke: "#00D2D2",
+    strokeLinecap: "round"
+  })), _path14 || (_path14 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M96.7682 70.1344L107.427 69.1104C110.583 68.8064 113.139 71.4848 113.139 75.088C113.139 78.6912 110.583 81.8624 107.427 82.1632L96.7682 83.1904C93.613 83.4944 91.0562 80.816 91.0562 77.2128C91.0562 73.6096 93.613 70.4384 96.7682 70.1344Z",
+    fill: "url(#paint3_linear_43489_189187)"
+  })), _path15 || (_path15 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M96.5697 74.5793C97.6673 74.4289 98.5569 75.4017 98.5569 76.7457C98.5569 78.0897 97.6673 79.3057 96.5697 79.4529C95.4721 79.6001 94.5825 78.6305 94.5825 77.2865C94.5825 75.9425 95.4721 74.7265 96.5697 74.5793Z",
+    fill: "#155C73"
+  })), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint0_linear_43489_189187",
+    x1: 49.2994,
+    y1: 21.8682,
+    x2: 49.2994,
+    y2: 48.1058,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#FEE552"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FFF19F"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint1_linear_43489_189187",
+    x1: 54.436,
+    y1: 23.1567,
+    x2: 54.436,
+    y2: 48.3612,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#ED9F00"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FFC03F"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint2_linear_43489_189187",
+    x1: 61.832,
+    y1: 48.0249,
+    x2: 61.832,
+    y2: 111.573,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#09BDC4"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#639FF1"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint3_linear_43489_189187",
+    x1: 96.0001,
+    y1: 69,
+    x2: 96.0001,
+    y2: 84.5,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#6DB6FF"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#11E4E6"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconConnectWallet);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_connect_wallet.c08bc0375bc9b2a5d30484fea87debe1.svg";

@@ -1,0 +1,31 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconArrow = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 10,
+    height: 4,
+    viewBox: "0 0 10 4",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M7.148 3.3C7.268 3.044 7.384 2.82 7.496 2.628C7.616 2.436 7.732 2.276 7.844 2.148H0.848V1.644H7.844C7.732 1.508 7.616 1.344 7.496 1.152C7.384 0.96 7.268 0.74 7.148 0.492H7.568C8.072 1.076 8.6 1.508 9.152 1.788V2.004C8.6 2.276 8.072 2.708 7.568 3.3H7.148Z",
+    fill: "#1F292E"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconArrow);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_arrow.8f35535a3098f303457fdb65bc8c3c64.svg";

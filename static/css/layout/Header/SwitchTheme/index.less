@@ -1,0 +1,26 @@
+.switch_theme {
+  padding: 4px;
+  display: flex;
+  width: 48px;
+  height: 32px;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 100px;
+  .font16;
+  background: var(--solid-mode-switch);
+  &-icon {
+    background: var(--solid-mode-switch2);
+    width: 24px;
+    height: 24px;
+    border-radius: 100px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    box-shadow: @card-shadow;
+  }
+  &.disable {
+    cursor: not-allowed;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

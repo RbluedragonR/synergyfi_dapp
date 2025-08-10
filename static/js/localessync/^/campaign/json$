@@ -1,0 +1,30 @@
+var map = {
+	"./en/campaign.json": 34529,
+	"./es/campaign.json": 98708,
+	"./fr/campaign.json": 43106,
+	"./ja/campaign.json": 19714,
+	"./kr/campaign.json": 5013,
+	"./th/campaign.json": 48714,
+	"./tr/campaign.json": 55643,
+	"./vi/campaign.json": 41882
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 51802;

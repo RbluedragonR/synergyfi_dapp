@@ -1,0 +1,23 @@
+.trade-form-alert {
+  .ant-alert {
+    margin-bottom: @space;
+    &.ant-alert-error {
+      .ant-alert-message {
+        color: var(--text-black, #000);
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &-link {
+    font-weight: 700;
+    text-decoration-line: underline;
+    // color: @primary-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

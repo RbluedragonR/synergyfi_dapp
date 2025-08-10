@@ -1,0 +1,56 @@
+.syn-vault-input-bottom-card-max {
+  color: var(--primary-color, #00bfbf);
+  cursor: pointer;
+  margin-left: 4px;
+  /* 4 size/14B 16 */
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
+}
+
+.syn-vault-input-withdraw-bottom-card-switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  margin-bottom: 16px;
+  .ant-switch {
+    margin-right: 0px;
+  }
+}
+
+.syn-vidbc-underline {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+.syn-vault-input-card-reminder {
+  color: var(--text-strong-prompt, #006a80);
+}
+
+.syn-vault-input-card-form-input-component {
+  .ant-form-item {
+    .ant-input-affix-wrapper {
+      border: 1px solid var(--border-light-line-1, #04606e);
+      &::placeholder {
+        color: var(--text-weak-prompt);
+      }
+    }
+  }
+}
+.syn-vault-input-card-btn {
+  &.syn-btn {
+    &:disabled {
+      background: var(--button-disable, #c3e7e7);
+    }
+    &.pending {
+      background: var(--Constant-switch-gradient, linear-gradient(90deg, #00bfbf 0%, #e87de8 100%));
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

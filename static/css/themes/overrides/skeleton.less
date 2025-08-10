@@ -1,0 +1,31 @@
+.ant-skeleton {
+  display: flex;
+  &.align-right {
+    text-align: right;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+  &.align-middle {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  &.ant-skeleton-active {
+    .ant-skeleton-content {
+      .ant-skeleton-title,
+      .ant-skeleton-paragraph > li {
+        background: var(--skeleton);
+        background-size: 400% 100%;
+      }
+      .ant-skeleton-title {
+        border-radius: 99px;
+        margin: 0;
+      }
+    }
+    .ant-skeleton-avatar,
+    .ant-skeleton-button {
+      background: var(--skeleton);
+      background-size: 400% 100%;
+    }
+  }
+}

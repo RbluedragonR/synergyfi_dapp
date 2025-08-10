@@ -1,0 +1,42 @@
+.syn-hrlmc {
+  padding: 24px;
+  padding-top: 16px;
+  &-center {
+    margin: 16px 0 24px 0;
+    background-color: var(--solid-list-card, #f4fbfb);
+    border-radius: 12px;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    color: var(--text-strong-prompt, #006a80);
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    &-line {
+      flex: 1;
+      height: 1px;
+      background-color: var(--border-light-line-1, #c3e7e7);
+    }
+  }
+  &-btns {
+    display: flex;
+    gap: 24px;
+    button {
+      flex: 1;
+    }
+  }
+  .syn-liquidation-prices {
+    color: var(--theme-text);
+    &-slash {
+      color: var(--theme-gray-text);
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,30 @@
+var map = {
+	"./en/mobile.json": 81755,
+	"./es/mobile.json": 31932,
+	"./fr/mobile.json": 79806,
+	"./ja/mobile.json": 7040,
+	"./kr/mobile.json": 81204,
+	"./th/mobile.json": 65379,
+	"./tr/mobile.json": 34688,
+	"./vi/mobile.json": 21536
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 77682;

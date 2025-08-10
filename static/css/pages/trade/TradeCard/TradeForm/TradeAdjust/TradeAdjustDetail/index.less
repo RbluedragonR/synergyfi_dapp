@@ -1,0 +1,64 @@
+@import '~@/themes/func.less';
+@trade-ajust-detail-prefix: ~'@{syn-prefix}-trade-adjust-detail';
+.@{trade-ajust-detail-prefix} {
+  background: var(--solid-2, #f4fbfb);
+  padding: @space-4x;
+  display: flex;
+  flex-direction: column;
+  row-gap: @space;
+  border-radius: @space-2x;
+  dl {
+    display: flex;
+    justify-content: space-between;
+    .font12;
+    color: var(--text-strong-prompt, #006a80);
+    align-items: center;
+    margin: 0;
+    column-gap: @space-2x;
+    &.margin {
+      dt {
+        font-weight: 700;
+        // color: @text-color;
+      }
+      dd {
+        font-weight: 700;
+        color: @primary-color;
+      }
+    }
+    dt {
+      display: flex;
+      align-items: center;
+    }
+    dd {
+      margin: 0;
+      color: var(--text-black, #000);
+      display: flex;
+      align-items: center;
+      column-gap: @space;
+      .font-number;
+      .impact {
+        .font-default;
+      }
+      svg {
+        height: 16px;
+        path {
+          fill: var(--text-black, #000);
+        }
+      }
+    }
+
+    &.text-primary {
+      color: @primary-color;
+      dt,
+      dd {
+        color: @primary-color;
+      }
+    }
+  }
+  &-line {
+    flex: 1;
+    border-bottom: 1px solid var(--border-light-line-1, #c3e7e7);
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

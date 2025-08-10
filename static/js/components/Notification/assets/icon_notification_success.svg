@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconNotificationSuccess = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 41,
+    height: 41,
+    viewBox: "0 0 41 41",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M36.7213 20.9258C36.7213 30.1308 29.2597 37.5925 20.0547 37.5925C10.8497 37.5925 3.388 30.1308 3.388 20.9258C3.388 11.7208 10.8497 4.25912 20.0547 4.25912C29.2597 4.25912 36.7213 11.7208 36.7213 20.9258ZM26.7713 15.8758C27.0054 16.1102 27.1369 16.4279 27.1369 16.7591C27.1369 17.0904 27.0054 17.4081 26.7713 17.6425L18.438 25.9758C18.2036 26.2099 17.8859 26.3414 17.5547 26.3414C17.2234 26.3414 16.9057 26.2099 16.6713 25.9758L13.338 22.6425C13.2152 22.528 13.1167 22.39 13.0484 22.2367C12.98 22.0834 12.9433 21.9178 12.9403 21.75C12.9374 21.5822 12.9683 21.4154 13.0311 21.2598C13.094 21.1041 13.1876 20.9628 13.3063 20.8441C13.425 20.7254 13.5664 20.6318 13.722 20.5689C13.8777 20.5061 14.0444 20.4752 14.2122 20.4781C14.38 20.4811 14.5456 20.5178 14.6989 20.5862C14.8522 20.6545 14.9902 20.753 15.1047 20.8758L17.5547 23.3258L21.2797 19.5991L25.0047 15.8758C25.239 15.6417 25.5567 15.5102 25.888 15.5102C26.2193 15.5102 26.537 15.6417 26.7713 15.8758Z",
+    fill: "#14B84B"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconNotificationSuccess);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_notification_success.b34f3192a89a26e25d21711852c62481.svg";

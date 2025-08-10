@@ -1,0 +1,35 @@
+.syn-mint-toaster {
+  position: fixed;
+  bottom: 56px;
+  padding: @space-4x;
+  width: 100%;
+  z-index: 1000;
+  &-content {
+    background-color: @primary-color;
+
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-title {
+    color: #ffffff;
+    .font16;
+    padding: @space-4x @space-6x;
+    flex: 1;
+  }
+  &-btn {
+    color: #ffffff;
+    .font14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: @space-4x @space-6x;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

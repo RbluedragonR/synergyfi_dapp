@@ -1,0 +1,45 @@
+@import '~@/themes/func.less';
+@odessy-prefix: ~'@{syn-prefix}-odyssey';
+.@{odessy-prefix} {
+  // height: calc(var(--doc-height) - 65px);
+  background-size: cover;
+  position: relative;
+  overflow: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  height: unset !important;
+  &-container {
+    width: 1232px;
+    margin: auto;
+    color: var(--text-black, #000);
+    position: relative;
+    height: 1112px;
+    overflow: hidden;
+    display: flex;
+    column-gap: 32px;
+    &-skeleton {
+      margin-top: 144px;
+      margin-left: 76px;
+    }
+    &.long {
+      overflow: auto;
+    }
+    &.modal_open {
+      min-height: unset;
+    }
+  }
+  &-tabs {
+    position: absolute;
+    left: 50%;
+    top: 96px;
+    transform: translateX(-50%);
+    z-index: 100;
+  }
+  .font-number {
+    .fontOxanium;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

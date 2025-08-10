@@ -1,0 +1,24 @@
+@import '~@/themes/func.less';
+.syn-csv-export-button {
+  cursor: pointer;
+  color: var(--text-black, #000);
+  .font14;
+  display: flex;
+  align-items: center;
+  gap: @space-2x;
+  svg path {
+    fill: var(--text-black, #000);
+  }
+}
+
+html[data-theme='light-theme'] {
+  .syn-csv-export-button {
+    .syn-btn-loading-icon {
+      circle {
+        stroke: rgba(0, 191, 191, 1);
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

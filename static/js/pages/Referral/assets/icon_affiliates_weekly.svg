@@ -1,0 +1,38 @@
+var _path, _path2;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconAffiliatesWeekly = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5.33338 1.33499C5.70064 1.33499 5.99838 1.63272 5.99838 1.99999V2.66832H10.0017V1.99999C10.0017 1.63272 10.2994 1.33499 10.6667 1.33499C11.034 1.33499 11.3317 1.63272 11.3317 1.99999V2.66832H12C12.53 2.66832 13.0383 2.87886 13.4131 3.25362C13.7878 3.62838 13.9984 4.13667 13.9984 4.66666V6.66666C13.9984 7.03393 13.7006 7.33166 13.3334 7.33166C12.9661 7.33166 12.6684 7.03393 12.6684 6.66666V4.66666C12.6684 4.48941 12.598 4.31941 12.4726 4.19408C12.3473 4.06874 12.1773 3.99832 12 3.99832H11.3317V4.66666C11.3317 5.03393 11.034 5.33166 10.6667 5.33166C10.2994 5.33166 10.0017 5.03393 10.0017 4.66666V3.99832H5.99838V4.66666C5.99838 5.03393 5.70064 5.33166 5.33338 5.33166C4.96611 5.33166 4.66838 5.03393 4.66838 4.66666V3.99832H4.00004C3.82279 3.99832 3.6528 4.06874 3.52746 4.19408C3.40212 4.31941 3.33171 4.4894 3.33171 4.66666V6.66832H11C11.3673 6.66832 11.665 6.96606 11.665 7.33332C11.665 7.70059 11.3673 7.99832 11 7.99832H3.33171V12.6667C3.33171 12.8439 3.40212 13.0139 3.52746 13.1392C3.6528 13.2646 3.82279 13.335 4.00004 13.335H8.66671C9.03398 13.335 9.33171 13.6327 9.33171 14C9.33171 14.3673 9.03398 14.665 8.66671 14.665H4.00004C3.47005 14.665 2.96177 14.4545 2.58701 14.0797C2.21225 13.7049 2.00171 13.1966 2.00171 12.6667V4.66666C2.00171 4.13667 2.21225 3.62838 2.58701 3.25362C2.96177 2.87886 3.47005 2.66832 4.00004 2.66832H4.66838V1.99999C4.66838 1.63272 4.96611 1.33499 5.33338 1.33499Z",
+    fill: "black"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M12.6668 8.66833C13.0341 8.66833 13.3318 8.96607 13.3318 9.33333V9.335H14.0001C14.3674 9.335 14.6651 9.63273 14.6651 10C14.6651 10.3673 14.3674 10.665 14.0001 10.665H12.3335C12.2446 10.665 12.1594 10.7003 12.0966 10.7631C12.0338 10.8259 11.9985 10.9112 11.9985 11C11.9985 11.0888 12.0338 11.1741 12.0966 11.2369C12.1594 11.2997 12.2446 11.335 12.3335 11.335H13.0001C13.4417 11.335 13.8652 11.5104 14.1775 11.8227C14.4897 12.1349 14.6651 12.5584 14.6651 13C14.6651 13.4416 14.4897 13.8651 14.1775 14.1773C13.9446 14.4102 13.6498 14.567 13.3318 14.6316V14.6667C13.3318 15.0339 13.0341 15.3317 12.6668 15.3317C12.2995 15.3317 12.0018 15.0339 12.0018 14.6667V14.665H11.3335C10.9662 14.665 10.6685 14.3673 10.6685 14C10.6685 13.6327 10.9662 13.335 11.3335 13.335H13.0001C13.089 13.335 13.1742 13.2997 13.237 13.2369C13.2998 13.1741 13.3351 13.0888 13.3351 13C13.3351 12.9112 13.2998 12.8259 13.237 12.7631C13.1742 12.7003 13.089 12.665 13.0001 12.665H12.3335C11.8919 12.665 11.4684 12.4896 11.1561 12.1773C10.8439 11.8651 10.6685 11.4416 10.6685 11C10.6685 10.5584 10.8439 10.1349 11.1561 9.82267C11.389 9.58978 11.6838 9.43301 12.0018 9.36836V9.33333C12.0018 8.96607 12.2995 8.66833 12.6668 8.66833Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconAffiliatesWeekly);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_affiliates_weekly.62a3eacf05c957427d0bba1e2d358e15.svg";

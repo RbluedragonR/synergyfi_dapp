@@ -1,0 +1,42 @@
+var _path, _path2, _path3, _path4;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconTradeNavChartShow = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M8 2C8 1.44772 7.55228 1 7 1C6.44772 1 6 1.44772 6 2V4H4.8C3.80589 4 3 4.80589 3 5.8V12C3 12.5523 3.44772 13 4 13C4.55228 13 5 12.5523 5 12V6H9V12C9 12.5523 9.44772 13 10 13C10.5523 13 11 12.5523 11 12V5.8C11 4.80589 10.1941 4 9.2 4H8V2Z",
+    fill: "#1F292E"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M17 5C17.5523 5 18 5.44772 18 6V11H19.2C20.1941 11 21 11.8059 21 12.8V18.2C21 19.1941 20.1941 20 19.2 20H18V22C18 22.5523 17.5523 23 17 23C16.4477 23 16 22.5523 16 22V19C16 18.4477 16.4477 18 17 18H19V13H15V15C15 15.5523 14.5523 16 14 16C13.4477 16 13 15.5523 13 15V12.8C13 11.8059 13.8059 11 14.8 11H16V6C16 5.44772 16.4477 5 17 5Z",
+    fill: "#1F292E"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "M8.5 18.5C8.5 18.8978 8.34196 19.2794 8.06066 19.5607C7.77936 19.842 7.39782 20 7 20C6.60218 20 6.22064 19.842 5.93934 19.5607C5.65804 19.2794 5.5 18.8978 5.5 18.5C5.5 18.1022 5.65804 17.7206 5.93934 17.4393C6.22064 17.158 6.60218 17 7 17C7.39782 17 7.77936 17.158 8.06066 17.4393C8.34196 17.7206 8.5 18.1022 8.5 18.5Z",
+    fill: "#1F292E"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M7 14C4.21585 14 2.00315 15.743 1.06851 18.1362C0.977162 18.3701 0.977162 18.6299 1.06851 18.8638C2.00315 21.257 4.21585 23 7 23C9.78415 23 11.9969 21.257 12.9315 18.8638C13.0228 18.6299 13.0228 18.3701 12.9315 18.1362C11.9969 15.743 9.78415 14 7 14ZM7 21C5.25722 21 3.82089 20.003 3.09052 18.5C3.82089 16.997 5.25722 16 7 16C8.74278 16 10.1791 16.997 10.9095 18.5C10.1791 20.003 8.74278 21 7 21Z",
+    fill: "#1F292E"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconTradeNavChartShow);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_trade_nav_chart_show.faef5d11ecb7d838e4ebd9277b9c1c3a.svg";

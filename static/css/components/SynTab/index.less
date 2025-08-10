@@ -1,0 +1,82 @@
+@import '~@/themes/func.less';
+@syn-tab-prefix: ~'@{syn-prefix}-syn-tab';
+.@{syn-tab-prefix} {
+  &.ant-tabs {
+    width: 100%;
+    &.disabled {
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+    .ant-tabs-nav {
+      &-list {
+        background-color: var(--solid-1);
+        border-radius: 8px;
+      }
+      flex: 1;
+      margin: 0;
+      height: 36px;
+      border-radius: 8px;
+      &::before {
+        display: none;
+      }
+      .ant-tabs-nav-wrap {
+        .ant-tabs-nav-list {
+          flex: 1;
+          position: relative;
+          padding: 2px;
+        }
+        .ant-tabs-tab {
+          display: flex;
+          flex: 1;
+          margin: 0;
+          height: 32px;
+          z-index: 10;
+          .font14;
+          justify-content: center;
+          align-items: center;
+          border-radius: 6px;
+          font-weight: 700;
+          color: var(--text-weak-prompt, #94b8bf);
+          border: none;
+          cursor: pointer;
+          transition: background-color 500ms ease;
+          z-index: 2;
+          .ant-tabs-tab-btn {
+            color: var(--text-weak-prompt, #94b8bf);
+          }
+          &.ant-tabs-tab-active {
+            background: var(--solid-white-card);
+            .ant-tabs-tab-btn {
+              color: @primary-color;
+            }
+          }
+        }
+        .ant-tabs-ink-bar {
+          position: absolute;
+          top: 2px;
+          height: calc(100% - 4px);
+          transition: all 0.2s ease-in-out;
+          border-radius: 6px;
+          background: @bg-tab-active;
+          z-index: 1;
+          bottom: 2px;
+        }
+      }
+    }
+  }
+}
+
+.syn-syn-tab-rounded {
+  .ant-tabs {
+    width: unset;
+  }
+  .ant-tabs-nav,
+  .ant-tabs-nav-wrap {
+    border-radius: 999px !important;
+  }
+  .ant-tabs-ink-bar {
+    border-radius: 999px !important;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

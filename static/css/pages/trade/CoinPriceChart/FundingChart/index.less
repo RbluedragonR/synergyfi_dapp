@@ -1,0 +1,23 @@
+@import '~@/themes/func.less';
+@import '~@/themes/variable.less';
+.syn-funding-chart {
+  width: 100%;
+  height: 100%;
+  .recharts-tooltip-cursor {
+    stroke: var(--border-light-line-1, #c3e7e7);
+  }
+  .recharts-cartesian-axis-ticks {
+    text {
+      fill: var(--text-main-body, #333);
+    }
+  }
+
+  &-line {
+    width: calc(100% - 24px);
+    height: 1px;
+    background-color: var(--border-light-line-1, #c3e7e7);
+    position: absolute;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

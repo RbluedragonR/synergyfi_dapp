@@ -1,0 +1,35 @@
+.syn-spot-title {
+  display: flex;
+  height: 48px;
+  padding: var(--spacing-8, 8px) 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  &-left {
+    color: var(--text-black, #fff);
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 100% */
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    &-item {
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      svg {
+        path {
+          fill: var(--icon-black);
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

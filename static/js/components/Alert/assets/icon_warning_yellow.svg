@@ -1,0 +1,42 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconWarningYellow = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 17,
+    height: 17,
+    viewBox: "0 0 17 17",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_1049_27106)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M3.59601 8.09978C5.54134 4.65045 6.51467 2.92578 8.05467 2.92578C9.59534 2.92578 10.568 4.65045 12.5133 8.09978L12.756 8.52978L12.7572 8.53195C14.3731 11.3972 15.1812 12.83 14.4507 13.8778C13.72 14.9258 11.912 14.9258 8.29734 14.9258H7.81201C4.19734 14.9258 2.38934 14.9258 1.65867 13.8778C0.928192 12.83 1.73627 11.3972 3.35212 8.53195L3.35334 8.52978L3.59601 8.09978ZM8.585 5.64545C8.44434 5.5048 8.25358 5.42578 8.05466 5.42578C7.85575 5.42578 7.66498 5.5048 7.52433 5.64545C7.38368 5.7861 7.30466 5.97687 7.30466 6.17578V9.92578C7.30466 10.1247 7.38368 10.3155 7.52433 10.4561C7.66498 10.5968 7.85575 10.6758 8.05466 10.6758C8.25358 10.6758 8.44434 10.5968 8.585 10.4561C8.72565 10.3155 8.80467 10.1247 8.80467 9.92578V6.17578C8.80467 5.97687 8.72565 5.7861 8.585 5.64545ZM8.76178 13.1329C8.57424 13.3204 8.31988 13.4258 8.05466 13.4258C7.78945 13.4258 7.53509 13.3204 7.34755 13.1329C7.16001 12.9454 7.05466 12.691 7.05466 12.4258C7.05466 12.1606 7.16001 11.9062 7.34755 11.7187C7.53509 11.5311 7.78945 11.4258 8.05466 11.4258C8.31988 11.4258 8.57424 11.5311 8.76178 11.7187C8.94931 11.9062 9.05467 12.1606 9.05467 12.4258C9.05467 12.691 8.94931 12.9454 8.76178 13.1329Z",
+    fill: "#FFAA00"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_1049_27106"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 16,
+    height: 16,
+    fill: "white",
+    transform: "translate(0.0546875 0.925781)"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconWarningYellow);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_warning_yellow.507ca38b067fd928540733981bee891f.svg";

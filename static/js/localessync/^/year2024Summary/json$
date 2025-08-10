@@ -1,0 +1,30 @@
+var map = {
+	"./en/year2024Summary.json": 97854,
+	"./es/year2024Summary.json": 87263,
+	"./fr/year2024Summary.json": 97233,
+	"./ja/year2024Summary.json": 34052,
+	"./kr/year2024Summary.json": 2869,
+	"./th/year2024Summary.json": 35464,
+	"./tr/year2024Summary.json": 53000,
+	"./vi/year2024Summary.json": 47326
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 215;

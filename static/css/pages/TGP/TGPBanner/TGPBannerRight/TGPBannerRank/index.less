@@ -1,0 +1,120 @@
+.syn-tgp-banner-rank {
+  &-table {
+    border-radius: 12px;
+    background: var(--border-light-line-1, #c3e7e7);
+    padding: 2px;
+    overflow: hidden;
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 16px;
+    }
+    &-cell {
+      // flex: 1;
+      text-align: right;
+      &:first-child {
+        text-align: left;
+        width: 50px;
+      }
+      &.rank {
+        width: 50px;
+      }
+      &.score {
+        width: 50px;
+      }
+      &.pnl {
+        width: 80px;
+      }
+      &.prize {
+        width: 128px;
+      }
+    }
+    &-header {
+      background: var(--border-light-line-1, #c3e7e7);
+      .syn-tgp-banner-rank-table-row {
+        height: 24px;
+      }
+      .syn-tgp-banner-rank-table-cell {
+        color: var(--text-strong-prompt);
+        text-align: right;
+        font-family: Oxanium;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px; /* 100% */
+        &.prize {
+          padding-right: 52px;
+        }
+      }
+    }
+    &-body {
+      border-radius: 10px;
+      background: var(--solid-white-card, #fff);
+      padding: 8px;
+      &-wrap {
+        .syn-tgp-banner-rank-table-cell {
+          leading-trim: both;
+          text-edge: cap;
+          font-family: Oxanium;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px; /* 100% */
+          &.week {
+            color: var(--text-black, #000);
+            font-weight: 700;
+          }
+          &.rank {
+            color: var(--hlight, #00bfbf);
+          }
+          &.pnl {
+            color: var(--text-black, #000);
+          }
+          &.prize {
+            color: var(--text-black, #000);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 8px;
+          }
+        }
+        .syn-tgp-banner-rank-table-row {
+          &:hover {
+            border-radius: 99px;
+            background: rgba(0, 191, 191, 0.1);
+          }
+        }
+      }
+      .syn-odyssey-empty {
+        height: 96px;
+      }
+    }
+  }
+  &.master {
+    .syn-tgp-banner-rank-table-body {
+      .syn-tgp-banner-rank-table-cell {
+        line-height: 19px;
+      }
+    }
+  }
+  &-claimed-tag {
+    color: var(--cyan-disable, #1a444d);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Oxanium;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 191, 191, 0.2);
+    display: flex;
+    padding: 0px 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

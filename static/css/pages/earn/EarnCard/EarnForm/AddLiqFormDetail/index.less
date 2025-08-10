@@ -1,0 +1,111 @@
+.syn-add-liq-form-detail {
+  background: var(--solid-2, #f4fbfb);
+  border-radius: 8px;
+  padding: 16px;
+  &-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    &-top {
+      padding: @space-6x 0;
+      display: flex;
+      flex-direction: column;
+      row-gap: @space-6x;
+      &-title {
+        text-align: center;
+      }
+      &-value {
+        text-align: center;
+      }
+    }
+    &-middle {
+      display: flex;
+      justify-content: center;
+      padding: @space-2x;
+      background-color: @lose-color;
+    }
+  }
+  &-middle {
+    display: flex;
+    padding: @space;
+    flex-direction: column;
+    justify-content: center;
+    &-title {
+      text-align: center;
+    }
+    &-value {
+      text-align: center;
+    }
+  }
+  &-content {
+    display: flex;
+  }
+  &-msg {
+    .font12;
+    color: var(--text-strong-prompt, #006a80);
+    display: flex;
+    flex-direction: column;
+    row-gap: @space-2x;
+    dl {
+      display: flex;
+      margin: 0;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: @space-2x;
+      dt,
+      dd {
+        font-weight: 400;
+        margin-left: 0;
+      }
+      dt {
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+      }
+      dd {
+        color: @text-color;
+        display: flex;
+        column-gap: 4px;
+        align-items: center;
+        .divider {
+          color: var(--text-weak-prompt, #94b8bf);
+        }
+      }
+    }
+  }
+  &-line {
+    flex: 1;
+    border-bottom: 1px solid var(--border-light-line-1, #c3e7e7);
+  }
+  &-btns {
+    display: flex;
+    padding: 8px 0;
+    background: var(--solid-2, #f4fbfb);
+    .syn-btn {
+      flex: 1;
+      height: 16px;
+      padding: 0;
+      .font12;
+      &:first-of-type {
+        border-right: 1px solid var(--border-light-line-1, #c3e7e7);
+      }
+    }
+  }
+  &.mobile {
+    border-radius: 8px;
+    background: var(--solid-white-card, #fff);
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid var(--border-light-line-1, #c3e7e7);
+    margin-top: @space-2x;
+
+    .syn-add-liq-form-detail {
+      &-msg {
+        padding: 16px;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

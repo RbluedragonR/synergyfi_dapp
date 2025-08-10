@@ -1,0 +1,30 @@
+@import '~@/themes/func.less';
+@mobile-footer-prefix: ~'@{syn-prefix}-mobile-footer';
+.@{mobile-footer-prefix} {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-top: 1px solid var(--border-light-line-1, #c3e7e7);
+  .font16;
+  line-height: 24px;
+  a {
+    width: 109px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-item {
+    border-radius: 8px;
+    &-selected {
+      color: @primary-color;
+      font-weight: 700;
+    }
+    &.disabled {
+      color: var(--text-weak-prompt, #94b8bf);
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

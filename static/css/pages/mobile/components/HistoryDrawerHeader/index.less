@@ -1,0 +1,24 @@
+@import '~@/themes/func.less';
+@trade-history-drawer-header-prefix: ~'@{syn-prefix}-history-drawer-header';
+.@{trade-history-drawer-header-prefix} {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 16px;
+  .syn-btn {
+    padding: 0;
+    height: 24px;
+    svg {
+      width: 23px;
+      height: 24px;
+    }
+  }
+  svg.icon {
+    path {
+      fill: var(--text-black, #000);
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

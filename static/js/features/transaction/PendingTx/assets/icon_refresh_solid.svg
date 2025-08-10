@@ -1,0 +1,47 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconRefreshSolid = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_26132_46214)"
+  }, /*#__PURE__*/React.createElement("circle", {
+    opacity: 0.3,
+    cx: 8,
+    cy: 8,
+    r: 8,
+    fill: "black"
+  }), /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M10.542 3.67936C9.58174 3.12357 8.4656 2.89945 7.36556 3.04166C6.26552 3.18387 5.24283 3.68447 4.45496 4.46614C3.66711 5.24779 3.15778 6.26713 3.0052 7.36707C2.96305 7.67099 3.17524 7.95154 3.47916 7.99369C3.78307 8.03585 4.06362 7.82365 4.10577 7.51974C4.22493 6.66071 4.62268 5.86492 5.23753 5.25491C5.85236 4.64491 6.65017 4.2545 7.50801 4.1436C8.36584 4.03271 9.23632 4.20744 9.98541 4.64101C10.479 4.92672 10.9019 5.31441 11.2282 5.77466H10.2222C9.91533 5.77466 9.6666 6.02339 9.6666 6.33021C9.6666 6.63704 9.91533 6.88577 10.2222 6.88577H12.1542C12.1626 6.88596 12.171 6.88596 12.1795 6.88577H12.4444C12.7512 6.88577 12.9999 6.63704 12.9999 6.33021V4.10383C12.9999 3.79701 12.7512 3.54828 12.4444 3.54828C12.1376 3.54828 11.8888 3.79701 11.8888 4.10383V4.81297C11.512 4.36215 11.0571 3.97749 10.542 3.67936ZM12.5207 8.00631C12.2168 7.96415 11.9362 8.17635 11.8941 8.48026C11.7749 9.33929 11.3772 10.1351 10.7623 10.7451C10.1475 11.3551 9.34969 11.7455 8.49186 11.8564C7.63403 11.9673 6.76354 11.7926 6.01445 11.359C5.52083 11.0733 5.09792 10.6856 4.77163 10.2253H5.77771C6.08454 10.2253 6.33327 9.97661 6.33327 9.66979C6.33327 9.36296 6.08454 9.11423 5.77771 9.11423H3.8457C3.83728 9.11404 3.82884 9.11404 3.82039 9.11423H3.55549C3.24866 9.11423 2.99993 9.36296 2.99993 9.66979V11.8962C2.99993 12.203 3.24866 12.4517 3.55549 12.4517C3.86231 12.4517 4.11104 12.203 4.11104 11.8962V11.187C4.4879 11.6378 4.94278 12.0225 5.45786 12.3206C6.41813 12.8764 7.53427 13.1005 8.63431 12.9583C9.73435 12.8161 10.757 12.3155 11.5449 11.5339C12.3328 10.7522 12.8421 9.73287 12.9947 8.63293C13.0368 8.32901 12.8246 8.04846 12.5207 8.00631Z",
+    fill: "white"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_26132_46214"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 16,
+    height: 16,
+    fill: "white"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconRefreshSolid);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_refresh_solid.d930ee6b16c5d4048f958ffc82a8713a.svg";

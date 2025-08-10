@@ -1,0 +1,84 @@
+.syn-vault-history-card {
+  border-radius: 16px;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-16, 16px);
+  align-self: stretch;
+  background: var(--solid-white-card, #044953);
+  .ant-skeleton-button.ant-skeleton-button-sm {
+    height: 16px !important;
+  }
+  &-table {
+    width: 100%;
+    white-space: nowrap;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      span {
+        text-transform: capitalize;
+        &:nth-child(1) {
+          text-align: start;
+          width: 58px;
+        }
+        &:nth-child(2) {
+          width: 138px;
+          text-align: left;
+        }
+        &:nth-child(3) {
+          width: 110px;
+        }
+        color: var(--text-strong-prompt, #94b8bf);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px; /* 100% */
+        font-size: 14px;
+        line-height: 16px; /* 114.286% */
+        padding-top: 12px;
+        text-align: end;
+      }
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      span {
+        color: var(--text-black);
+        &:nth-child(1) {
+          text-align: start;
+          width: 58px;
+          .ant-skeleton-button {
+            width: 58px;
+          }
+        }
+        &:nth-child(2) {
+          width: 138px;
+          text-align: left;
+          .ant-skeleton-button {
+            width: 138px;
+          }
+        }
+        &:nth-child(3) {
+          width: 110px;
+          .ant-skeleton-button {
+            width: 100px;
+          }
+        }
+      }
+    }
+    &-container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      max-height: 400px;
+      overflow: auto;
+      overflow-x: hidden;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

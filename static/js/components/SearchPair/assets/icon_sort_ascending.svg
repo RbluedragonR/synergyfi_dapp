@@ -1,0 +1,38 @@
+var _path, _path2;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconSortAscending = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 17,
+    height: 17,
+    viewBox: "0 0 17 17",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1.97144 6.25912C1.97144 5.84491 2.30722 5.50912 2.72144 5.50912H8.72144C9.13565 5.50912 9.47144 5.84491 9.47144 6.25912C9.47144 6.67334 9.13565 7.00912 8.72144 7.00912H2.72144C2.30722 7.00912 1.97144 6.67334 1.97144 6.25912ZM3.30477 9.59246C3.30477 9.17824 3.64056 8.84246 4.05477 8.84246H8.72144C9.13565 8.84246 9.47144 9.17824 9.47144 9.59246C9.47144 10.0067 9.13565 10.3425 8.72144 10.3425H4.05477C3.64056 10.3425 3.30477 10.0067 3.30477 9.59246ZM4.6381 12.9258C4.6381 12.5116 4.97389 12.1758 5.3881 12.1758H8.72144C9.13565 12.1758 9.47144 12.5116 9.47144 12.9258C9.47144 13.34 9.13565 13.6758 8.72144 13.6758H5.3881C4.97389 13.6758 4.6381 13.34 4.6381 12.9258Z",
+    fill: "#1F292E"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M11.151 2.88094C11.4572 2.77886 11.7944 2.8842 11.9881 3.14246L13.9881 5.80912C14.2367 6.14049 14.1695 6.61059 13.8381 6.85912C13.5068 7.10765 13.0367 7.04049 12.7881 6.70912L12.1381 5.84246V14.2591C12.1381 14.6733 11.8023 15.0091 11.3881 15.0091C10.9739 15.0091 10.6381 14.6733 10.6381 14.2591V3.59246C10.6381 3.26963 10.8447 2.98303 11.151 2.88094Z",
+    fill: "#1F292E"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconSortAscending);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_sort_ascending.4ee09c0d1ddb796c54b3d4250ab10e50.svg";

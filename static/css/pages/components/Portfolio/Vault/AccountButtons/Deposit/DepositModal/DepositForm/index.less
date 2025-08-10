@@ -1,0 +1,60 @@
+.syn-deposit-form {
+  .ant-alert {
+    margin-top: @space-4x;
+  }
+  &-withdraw-switch {
+    color: var(--text-strong-prompt, #6fd6d6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: @space-4x;
+  }
+  &-select {
+    padding: 0;
+    &-popup {
+      width: auto !important;
+    }
+  }
+  .syn-form-item.ant-form-item {
+    .ant-input-group {
+      .ant-input-affix-wrapper {
+        border-right: 0;
+      }
+      .ant-input-group-addon {
+        border-left: 0;
+        padding-right: @space;
+        .ant-select {
+          border-radius: @space-2x;
+          border: 1px solid var(--border-light-line-1, #c3e7e7);
+          background: @select-bg;
+          overflow: hidden;
+          /* select shadow */
+          margin-right: 1px;
+          .ant-select-selection-item {
+            line-height: 16px;
+          }
+          .token-symbol-label {
+            font-weight: bold;
+          }
+          .ant-select-arrow {
+            svg {
+              path {
+                fill: var(--text-black, #000);
+              }
+            }
+          }
+        }
+      }
+      & {
+        &:hover {
+          .ant-input-affix-wrapper,
+          .ant-input-group-addon {
+            border-color: @input-border-hover-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

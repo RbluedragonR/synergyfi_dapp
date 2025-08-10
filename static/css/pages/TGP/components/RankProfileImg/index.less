@@ -1,0 +1,27 @@
+@import '~@/themes/func.less';
+@rank-profile-img-prefix: ~'@{syn-prefix}-rank-profile-img';
+.@{rank-profile-img-prefix} {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .rank-bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+  }
+  .identicon {
+    height: 24px;
+    width: 24px;
+    border-radius: 1.125rem;
+    line-height: 1;
+    & > div {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

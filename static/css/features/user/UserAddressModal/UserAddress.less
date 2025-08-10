@@ -1,0 +1,91 @@
+@import '~@/themes/variable.less';
+.user-address {
+  display: flex;
+  column-gap: @space-6x;
+  align-items: center;
+  color: @text-color;
+  // margin-bottom: 1.714286rem /* 24/14 */;
+  // padding-bottom: 1.714286rem /* 24/14 */;
+  // border-bottom: 1px solid @bg4;
+
+  .user-address__left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: @space-4x;
+    .status-icon {
+      width: 24px;
+      height: 24px;
+    }
+    span {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: @text-color;
+    }
+  }
+  .user-address__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: @space-2x;
+    .user-address-btn {
+      color: @text-color;
+      width: @space-8x;
+      height: @space-8x;
+      border-radius: @space-2x;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      svg {
+        width: @space-4x;
+        height: @space-4x;
+        path {
+          fill: var(--text-black, #000);
+        }
+      }
+      &.external-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--button-unchecked-1, #f4fbfb);
+        justify-content: center;
+      }
+    }
+  }
+
+  &-footer {
+    background: var(--solid-1, #e1f3f3);
+    display: flex;
+    padding: var(--spacing-24, 24px) 24px;
+    flex-direction: column;
+  }
+
+  &.mobile {
+    .user-address__left {
+      span {
+        .font14;
+        font-weight: 700;
+        line-height: 16px;
+      }
+    }
+    .user-address__right {
+      .syn-copied .syn-copied-btn {
+        height: 24px;
+        width: 24px;
+      }
+      .user-address-btn {
+        height: 24px;
+        width: 24px;
+      }
+      .syn-privy-account-detail-btn {
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

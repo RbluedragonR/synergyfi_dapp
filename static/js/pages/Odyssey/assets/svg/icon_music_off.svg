@@ -1,0 +1,42 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconMusicOff = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 17,
+    height: 16,
+    viewBox: "0 0 17 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_7621_27019)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M0.751532 1.46296C0.600126 1.30048 0.5177 1.08556 0.521618 0.863506C0.525536 0.641448 0.615492 0.429579 0.772536 0.272536C0.929579 0.115492 1.14145 0.0255359 1.36351 0.0216179C1.58556 0.0177 1.80048 0.100126 1.96296 0.251532L4.95725 3.24353C5.13782 3.02982 5.3801 2.87553 5.65096 2.80125L14.3092 0.400104C14.5148 0.344653 14.7303 0.337116 14.9392 0.378073C15.1481 0.419031 15.3448 0.507391 15.5141 0.636346C15.6835 0.765301 15.821 0.93141 15.916 1.12188C16.0111 1.31235 16.0612 1.52209 16.0624 1.73496V9.94639C16.103 10.5192 15.9674 11.0907 15.6738 11.5843C15.3803 12.0778 14.9428 12.4698 14.4201 12.7075L16.2487 14.5384C16.3329 14.6169 16.4004 14.7115 16.4473 14.8166C16.4941 14.9218 16.5193 15.0353 16.5214 15.1504C16.5234 15.2655 16.5022 15.3798 16.4591 15.4865C16.416 15.5932 16.3518 15.6902 16.2704 15.7716C16.189 15.853 16.0921 15.9171 15.9854 15.9602C15.8786 16.0034 15.7643 16.0245 15.6492 16.0225C15.5341 16.0205 15.4206 15.9953 15.3155 15.9484C15.2103 15.9016 15.1157 15.834 15.0372 15.7498L0.751532 1.46296ZM10.691 8.97953C10.995 8.30891 11.5497 7.78413 12.2362 7.51772C12.9226 7.2513 13.6861 7.26447 14.363 7.55439V4.74639L8.19268 6.4801L10.691 8.97953ZM4.62582 10.3544V7.13496L6.32525 8.83439V12.743C6.36872 13.3552 6.21088 13.9649 5.87575 14.4792C5.54062 14.9934 5.04659 15.3841 4.4689 15.5915C3.89122 15.799 3.26155 15.812 2.67582 15.6284C2.09009 15.4449 1.5804 15.0749 1.2244 14.5749C0.868397 14.0749 0.685598 13.4722 0.703847 12.8587C0.722095 12.2451 0.940392 11.6544 1.32548 11.1764C1.71057 10.6984 2.24135 10.3594 2.83695 10.211C3.43256 10.0626 4.06149 10.1129 4.62582 10.3544Z",
+    fill: "#94B8BF"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_7621_27019"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 16,
+    height: 16,
+    fill: "white",
+    transform: "translate(0.5)"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconMusicOff);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_music_off.d49f2cb0d9f678f2be6d80a2ad04568d.svg";

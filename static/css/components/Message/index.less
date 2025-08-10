@@ -1,0 +1,36 @@
+@import '~@/themes/variable.less';
+@icon-size: 14px;
+.message {
+  color: var(--text-black, #000);
+  font-weight: 400;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 16px;
+  padding: @space-xs 0;
+  & > svg {
+    width: @icon-size;
+    height: @icon-size;
+    display: inline-block;
+    margin-right: @space-2x;
+    vertical-align: middle;
+    // display: flex;
+    align-items: center;
+  }
+  .text {
+    width: calc(100% - @icon-size - @space-2x);
+    &::first-letter {
+      text-transform: uppercase;
+    }
+    &.warning {
+      color: @danger-color;
+    }
+    &.success {
+      color: @success-color;
+    }
+    &.validating {
+      color: @primary-color;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

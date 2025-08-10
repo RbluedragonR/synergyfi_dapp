@@ -1,0 +1,26 @@
+@import '~@/themes/variable.less';
+.wallet-connect-btn {
+  border-radius: @space-4x;
+  gap: @space-2x;
+  height: 32px;
+  .syn-btn-icon {
+    display: flex;
+  }
+  &-mobile {
+    svg {
+      path {
+        fill: var(--text-black, #000);
+      }
+    }
+    &.disabled,
+    &:disabled {
+      svg {
+        path {
+          fill: var(--text-weak-prompt, #94b8bf);
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

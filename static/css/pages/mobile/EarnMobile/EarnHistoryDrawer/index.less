@@ -1,0 +1,19 @@
+@import '~@/themes/func.less';
+@earn-history-drawer-prefix: ~'@{syn-prefix}-earn-history-drawer';
+.@{earn-history-drawer-prefix} {
+  background: var(--solid-bg);
+  z-index: 100;
+  .syn-trade-history-mobile-table {
+    padding: 0 8px;
+    .ant-table-thead {
+      .ant-table-cell {
+        background: transparent !important;
+        &:nth-last-child(2) {
+          padding-right: 16px !important;
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

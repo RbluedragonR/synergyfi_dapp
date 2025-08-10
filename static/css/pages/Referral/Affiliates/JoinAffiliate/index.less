@@ -1,0 +1,113 @@
+.syn-join-affiliate {
+  color: var(--text-black, #fff);
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  &-top {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 16px;
+    padding-right: 362px;
+    background: var(--solid-white-card, #044953);
+    background-image: url('./assets//welcome_right_bg.png');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    &.light-theme {
+      background-image: url('./assets//welcome_right_bg_l.png');
+    }
+    &-up {
+      .font20;
+    }
+    &-middle {
+      div:first-of-type {
+        width: 800px;
+      }
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+    }
+    &-bottom {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+      .syn-btn {
+        width: 240px !important;
+      }
+      .extra {
+        width: 88px;
+        color: var(--text-strong-prompt, #6fd6d6);
+        .font14;
+        line-height: 20px; /* 142.857% */
+      }
+    }
+  }
+  &-bottom {
+    display: flex;
+    column-gap: 24px;
+    align-items: stretch;
+    &-col {
+      flex: 1;
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      &-title {
+        background: var(--solid-list-card, #013840);
+        display: flex;
+        padding: 16px 24px;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+        color: var(--text-black, #fff);
+        .font20;
+      }
+      &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 16px;
+        padding: 24px;
+        align-self: stretch;
+        background: var(--solid-white-card, #044953);
+        .font14;
+        line-height: 20px;
+        flex: 1;
+        h6 {
+          margin: 0;
+          .font16;
+          line-height: 16px;
+          font-weight: 700;
+        }
+        ul {
+          list-style: disc;
+          padding-inline-start: 24px;
+        }
+        .step {
+          display: flex;
+          column-gap: 16px;
+          &-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            line-height: 20px;
+            &-top {
+              .font16;
+              font-weight: 700;
+              color: var(--text-strong-prompt, #007580);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

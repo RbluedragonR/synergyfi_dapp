@@ -1,0 +1,55 @@
+@import '~@/themes/func.less';
+@import '~@/themes/form.less';
+.trade-form__footer {
+  .form-wrap-btn();
+  border-top: 0;
+  background: transparent;
+  padding: 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  .trade-form__btn {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    padding: @space-3x;
+    height: 48px;
+    color: #fff;
+    background: @long;
+    border: none;
+    &:hover {
+      background: @long;
+      color: #fff;
+    }
+    &[disabled] {
+      color: var(--text-white, #fff);
+      background-color: var(--button-disable, #c3e7e7);
+      text-shadow: none;
+      box-shadow: none;
+    }
+    &.syn-btn-loading {
+      background: @buy-loading-bg;
+    }
+  }
+  .trade-form__btn-short:not([disabled]) {
+    background: @short;
+    &:hover {
+      background: @short;
+    }
+    &.syn-btn-loading {
+      background: @short-loading-bg;
+    }
+  }
+
+  &.mobile {
+    .trade-form__btn {
+      font-size: 14px;
+      max-width: 100%;
+      overflow: hidden;
+      height: 40px;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

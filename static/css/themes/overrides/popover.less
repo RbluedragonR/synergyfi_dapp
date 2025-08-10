@@ -1,0 +1,22 @@
+html[data-theme='dark-theme'] {
+  .ant-popover {
+    color: @popover-text-color;
+    &-arrow {
+      display: none;
+      &-content {
+        display: none;
+      }
+    }
+    &-inner {
+      background-color: @popover-bg;
+
+      &-content {
+        color: @popover-text-color;
+      }
+    }
+    &-title {
+      color: @popover-text-color;
+      border-bottom: 0;
+    }
+  }
+}

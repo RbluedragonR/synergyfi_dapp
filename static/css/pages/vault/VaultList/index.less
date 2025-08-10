@@ -1,0 +1,86 @@
+@import '~@/themes/func.less';
+@vault-list-prefix: ~'@{syn-prefix}-vault-list';
+.ant-table-row-active-vault {
+  background: rgba(0, 191, 191, 0.05);
+  .ant-table-cell {
+    background-color: var(--table-selected) !important;
+  }
+  .syn-boost-to-launch {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff !important;
+  }
+}
+.@{vault-list-prefix} {
+  .ant-skeleton-title {
+    height: 16px !important;
+  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  &-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    &-title {
+      color: var(--theme-text, #fff);
+      /* 4 size/24B */
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px; /* 100% */
+      margin: 0;
+    }
+  }
+  &-search {
+    height: 32px;
+    border-radius: 87px;
+    width: unset;
+    &.ant-input-affix-wrapper {
+      padding: 8px;
+    }
+    .font12;
+    &::placeholder {
+      color: @text-secondary;
+    }
+  }
+  &-table.ant-card {
+    background: transparent;
+    border-radius: 16px;
+    border: 1px solid @border-line;
+    padding: 16px 16px 8px 16px;
+    margin: 0;
+    .ant-card-body {
+      padding: 0;
+      .syn-table {
+        border: none;
+        .ant-table-tbody .ant-table-row {
+          &:hover {
+            .ant-table-cell {
+              border-top: 1px solid @primary-color;
+              border-bottom: 1px solid @primary-color;
+              &:first-of-type {
+                border-left: 1px solid @primary-color;
+              }
+              &:last-of-type {
+                border-right: 1px solid @primary-color;
+              }
+            }
+          }
+          .ant-table-cell {
+            height: 60px;
+
+            &:last-of-type {
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,46 @@
+@import '~@/themes/func.less';
+@portfolio-mobile-positions-skeleton-prefix: ~'@{syn-prefix}-portfolio-mobile-positions-skeleton';
+.@{portfolio-mobile-positions-skeleton-prefix} {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  &-item {
+    border-radius: var(--spacing-8, 8px);
+    background: var(--solid-list-card, #f4fbfb);
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 16px;
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-left {
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+        .right.ant-skeleton {
+          width: 154px;
+          .ant-skeleton-title {
+            height: 16px;
+          }
+        }
+        .ant-skeleton-avatar {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      & > .right.ant-skeleton {
+        width: 60px;
+      }
+    }
+    &-bottom {
+      display: flex;
+      align-items: center;
+      column-gap: 32px;
+      justify-content: space-between;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

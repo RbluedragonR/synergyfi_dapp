@@ -1,0 +1,48 @@
+.syn-token-balance-info-btn {
+  justify-content: center;
+  background-color: unset;
+  cursor: pointer;
+  padding: 8px;
+  gap: 4px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: fit-content;
+  min-width: 131.25px;
+  color: var(--text-primary-color);
+  transition: all 100ms ease-out;
+  border: 1px solid var(--border-light-line-1, #c3e7e7);
+  &:hover {
+    background: var(--solid-list-card-hover, #044953);
+  }
+  &.selected {
+    border-color: var(--button-brand, #00bfbf);
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    .token-symbol-label {
+      font-size: 14px;
+    }
+  }
+  .bottom {
+    display: flex;
+    gap: 4px;
+    align-items: baseline;
+    .bold-token-value {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 16px;
+      color: var(--text-primary-color);
+    }
+    .usd-value {
+      color: var(--text-strong-prompt, #6fd6d6);
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,94 @@
+@import '~@/themes/func.less';
+@earn-mobile-subpage-prefix: ~'@{syn-prefix}-earn-mobile-subpage';
+.@{earn-mobile-subpage-prefix} {
+  z-index: 1000;
+  .earn-form__btn {
+    width: 100%;
+  }
+  .syn-mobile-profile-tab-title {
+    color: var(--text-brand);
+  }
+  &-chart {
+    height: 200px;
+    padding: 16px;
+    position: relative;
+    .syn-info-chart {
+      transform: translateX(8px);
+    }
+    margin-bottom: 8px;
+    background: var(--solid-2, #f4fbfb);
+    &-title {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      .font12;
+      line-height: 12px;
+      color: var(--text-black, #000);
+    }
+  }
+  &-form {
+    background: var(--solid-2, #f4fbfb);
+    padding: 16px;
+  }
+  &-tabs {
+    &.ant-tabs {
+      flex: 1;
+      height: fit-content;
+      .ant-tabs-nav {
+        margin: 0;
+
+        padding-bottom: 16px;
+        &::before {
+          display: none;
+        }
+      }
+      .ant-tabs-content-holder {
+        display: none;
+      }
+      &.history {
+        .ant-tabs-nav {
+          padding-bottom: 0;
+        }
+      }
+      .ant-tabs-nav-list {
+        .ant-tabs-tab {
+          height: fit-content;
+          padding: 0;
+          &-btn {
+            color: var(--text-black, #000) !important;
+          }
+        }
+      }
+      .ant-tabs-content {
+        // padding: @space-4x;
+        height: 100%;
+        &-holder {
+          height: 100%;
+        }
+        .ant-tabs-tabpane {
+          height: 100%;
+        }
+      }
+    }
+    &-extra {
+      position: absolute;
+      right: 0px;
+      top: 12px;
+      svg {
+        width: 24px;
+        height: 24px;
+        path {
+          fill: var(--text-black, #000);
+        }
+      }
+    }
+  }
+  .syn-pair-not-in-whitelist {
+    .ant-card {
+      background: none;
+      box-shadow: none;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

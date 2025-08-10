@@ -1,0 +1,51 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgSolarSquareTopDownLinear = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 8,
+    height: 8,
+    viewBox: "0 0 8 8",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    id: "solar:square-top-down-linear",
+    clipPath: "url(#clip0_44104_33999)"
+  }, /*#__PURE__*/React.createElement("g", {
+    id: "Group"
+  }, /*#__PURE__*/React.createElement("path", {
+    id: "Vector (Stroke)",
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5.1757 0.666504C5.1757 0.459397 5.34359 0.291504 5.5507 0.291504H7.33203C7.53914 0.291504 7.70703 0.459397 7.70703 0.666504V2.44784C7.70703 2.65494 7.53914 2.82284 7.33203 2.82284C7.12492 2.82284 6.95703 2.65494 6.95703 2.44784V1.57183L4.5972 3.93167C4.45075 4.07812 4.21331 4.07812 4.06687 3.93167C3.92042 3.78522 3.92042 3.54779 4.06687 3.40134L6.4267 1.0415H5.5507C5.34359 1.0415 5.1757 0.873611 5.1757 0.666504Z",
+    fill: "white"
+  }), /*#__PURE__*/React.createElement("path", {
+    id: "Vector (Stroke)_2",
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M2.22064 1.09916C1.80852 1.15455 1.58223 1.25691 1.41914 1.41971C1.25644 1.58259 1.15407 1.8088 1.09867 2.221C1.04181 2.64409 1.04102 3.20357 1.04102 3.99984C1.04102 4.7961 1.04181 5.35567 1.09867 5.77876C1.15409 6.19112 1.2565 6.4171 1.41909 6.57958L1.41918 6.57967C1.58208 6.74257 1.80828 6.84503 2.22054 6.90048C2.64361 6.95737 3.20308 6.95817 3.99935 6.95817C4.79562 6.95817 5.35517 6.95737 5.77824 6.90048C6.19055 6.84502 6.41651 6.74257 6.579 6.57985L6.57927 6.57958C6.74209 6.41688 6.84454 6.19083 6.89999 5.7786C6.95689 5.35557 6.95768 4.79611 6.95768 3.99984C6.95768 3.79273 7.12558 3.62484 7.33268 3.62484C7.53979 3.62484 7.70768 3.79273 7.70768 3.99984V4.0276C7.70769 4.7897 7.7077 5.39973 7.64329 5.87858C7.57666 6.37401 7.43494 6.7848 7.10942 7.11009C6.78429 7.43552 6.37351 7.57717 5.87821 7.64378C5.39933 7.70819 4.78921 7.70818 4.02711 7.70817H3.97159C3.20949 7.70818 2.59945 7.70819 2.12057 7.64378C1.62513 7.57715 1.21436 7.43546 0.888942 7.11009C0.563534 6.78491 0.421938 6.37406 0.355358 5.87866C0.290999 5.3998 0.291006 4.78969 0.291016 4.02757V3.97211C0.291006 3.20999 0.290999 2.59996 0.355358 2.1211C0.421944 1.62565 0.563538 1.21487 0.888761 0.88943L0.889032 0.889158C1.2146 0.564038 1.62529 0.422439 2.12073 0.355847C2.59955 0.291487 3.2095 0.291495 3.97161 0.291504L3.99935 0.291504C4.20646 0.291504 4.37435 0.459398 4.37435 0.666504C4.37435 0.873611 4.20646 1.0415 3.99935 1.0415C3.20308 1.0415 2.64368 1.0423 2.22064 1.09916Z",
+    fill: "white"
+  })))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_44104_33999"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 8,
+    height: 8,
+    fill: "white"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgSolarSquareTopDownLinear);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/solar_square-top-down-linear.f2325341b00b277bd21714488d8245a6.svg";

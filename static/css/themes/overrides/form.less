@@ -1,0 +1,60 @@
+// :where(.css-dev-only-do-not-override-16qm3wi).ant-input-affix-wrapper >input.ant-input
+
+.ant-form {
+  &-item {
+    color: var(--text-black, #000);
+    &-label {
+      label {
+        color: @text2;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+input.ant-input {
+  .ant-input-affix-wrapper > &,
+  & {
+    //background-color: transparent;
+    color: var(--text-black, #000);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    &::placeholder {
+      // color: @input-default-color;
+      color: #1f292e33;
+    }
+    &:focus {
+      & + .ant-input-suffix {
+        .ant-input-clear-icon {
+          display: flex;
+        }
+      }
+    }
+    &-clear-icon {
+      display: none;
+      align-items: center;
+      color: @icon-color;
+    }
+    &-affix-wrapper {
+      background-color: @input-background;
+      border-color: @input-border-color;
+      color: @input-default-color;
+      padding: @space-2x @space-4x;
+      border-radius: @space;
+      transition: all 0.3s;
+      &-lg {
+        padding: (@space-4x - 1) @space-5x;
+      }
+      &-focus {
+        background: @input-background-focus;
+        border-color: @primary-color;
+      }
+    }
+    &[disabled] {
+      color: @input-default-color;
+    }
+  }
+}

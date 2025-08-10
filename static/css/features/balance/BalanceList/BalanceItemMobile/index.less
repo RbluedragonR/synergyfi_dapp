@@ -1,0 +1,50 @@
+@import '~@/themes/func.less';
+
+.syn-balance-item-mobile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  .font14;
+  &__token {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    width: 130px;
+    color: var(--text-color);
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    column-gap: @space-4x;
+    justify-content: flex-end;
+    min-width: 48px;
+    svg {
+      width: 16px;
+      height: 16px;
+      column-gap: 4px;
+    }
+    .external-link {
+      .external-link-icon {
+        path {
+          fill: var(--text-black, #000);
+        }
+      }
+    }
+  }
+  .my-balances-text {
+    color: var(--text-color);
+  }
+  &__balance {
+    font-weight: 700;
+    color: var(--text-color);
+    &_usd {
+      color: var(--text-strong-prompt, #006a80);
+      width: 60px;
+      text-align: right;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

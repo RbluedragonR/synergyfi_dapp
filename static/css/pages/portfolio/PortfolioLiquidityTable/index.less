@@ -1,0 +1,25 @@
+@import '~@/themes/func.less';
+
+.syn-portfolio-liquidity-table {
+  .ant-table-thead {
+    .rangeAmount {
+      .ant-table-column-sorters {
+        justify-content: flex-end !important;
+      }
+    }
+  }
+  .ant-table-tbody {
+    tr {
+      cursor: pointer;
+      &.odd {
+        background: @bg-tab;
+      }
+      &.emergency {
+        border: 1px solid @emergency-border;
+        background: @emergency-bg;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

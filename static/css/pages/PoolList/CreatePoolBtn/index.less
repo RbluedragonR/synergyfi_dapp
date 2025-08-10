@@ -1,0 +1,37 @@
+@import '~@/themes/variable.less';
+.syn-CreatePoolBtn {
+  display: flex;
+  justify-content: center;
+  &-btn {
+    &.syn-btn {
+      border: none;
+      height: 32px;
+      display: flex;
+      width: 132px;
+      padding: 6px var(--spacing-8, 8px);
+      justify-content: center;
+      align-items: center;
+      gap: var(--spacing-4, 4px);
+      border-radius: 6px;
+      font-feature-settings: 'liga' off, 'clig' off;
+
+      /* 4 size/12B */
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px; /* 114.286% */
+      &:disabled {
+        color: @btn-disabled-text-color;
+      }
+
+      &:active,
+      &:focus,
+      &:visited {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

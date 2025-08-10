@@ -1,0 +1,386 @@
+.syn-trade-position {
+  display: flex;
+  color: @text-color;
+  padding: var(--spacing-16, 16px);
+  padding-right: 32px;
+  align-self: stretch;
+  border-radius: 16px;
+  background: var(--solid-2, #f4fbfb);
+
+  &-rloi {
+    border-bottom: 1px solid var(--text-color);
+    cursor: pointer;
+    &:hover {
+      border-bottom: 1px solid var(--primary-color);
+      * {
+        color: var(--primary-color);
+      }
+    }
+    &.disabled {
+      cursor: auto;
+      border-bottom: none;
+      &:hover {
+        border-bottom: none;
+        * {
+          color: var(--text-black, #000);
+        }
+      }
+    }
+  }
+  &-item {
+    padding: 12px 0;
+    &:nth-child(2) {
+      padding-left: 40px;
+    }
+    &:nth-child(3) {
+      padding-left: 48px;
+    }
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &::after,
+    &::before {
+      display: none;
+    }
+    &-manage.syn-btn {
+      height: 20px;
+      padding: 2px 6px;
+      border-radius: 6px;
+      .font12;
+      font-weight: 700;
+    }
+
+    dl {
+      text-wrap: nowrap;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      .font12;
+      gap: 12px;
+      dt {
+        color: var(--text-main-body, #333);
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+      }
+    }
+    dd {
+      display: flex;
+      align-items: center;
+      column-gap: @space;
+      .font14;
+      margin: 0;
+      & {
+        svg path {
+          fill: var(--text-black, #000);
+        }
+      }
+    }
+    &-records {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-line {
+        display: flex;
+      }
+    }
+    &-badge {
+      background-color: var(--solid-1, #e1f3f3);
+      border-radius: @space;
+      color: var(--text-main-body);
+      padding: 0 @space;
+      .font12;
+    }
+    &-after {
+      .font14;
+    }
+  }
+  &-position {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 320px;
+    border-radius: 8px;
+    padding: @space-4x;
+    height: 128px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: @space-3x;
+    border: 4px solid var(--solid-white-card);
+    .number-suffix {
+      .font-default;
+      font-weight: 400;
+    }
+    &.long {
+      background-image: url('./assets/bg_card_green.png');
+    }
+    &.short {
+      background-image: url('./assets/bg_card_red.png');
+    }
+    &.long-short {
+      background-image: url('./assets/bg_card_fusion_g-r.png');
+    }
+    &.short-long {
+      background-image: url('./assets/bg_card_fusion_r-g.png');
+    }
+    svg {
+      width: 16px;
+      height: 16px;
+      path {
+        fill: @icon-new;
+      }
+    }
+    &-value {
+      .font16;
+      font-weight: 400;
+      line-height: 20px;
+      display: flex;
+      gap: 8px;
+      &.bottom {
+        font-size: 14px;
+        line-height: 16px; /* 114.286% */
+        color: var(--text-strong-prompt, #94b8bf);
+      }
+
+      column-gap: @space;
+
+      &-left {
+        .font14;
+        display: flex;
+        color: var(--text-strong-prompt, #006a80);
+        align-items: center;
+        column-gap: @space-2x;
+      }
+      &-right {
+        border-bottom: 1px solid var(--text-black, #000);
+      }
+    }
+    &-action {
+      display: flex;
+      align-items: center;
+      column-gap: @space-2x;
+      .font20;
+      font-weight: 400;
+      .LONG {
+        color: @long;
+      }
+      .SHORT {
+        color: @short;
+      }
+      .FLAT {
+        color: @text-secondary;
+      }
+      &-none {
+        color: @text-secondary;
+      }
+    }
+    &-close-share {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      display: flex;
+      gap: 16px;
+    }
+    &-share {
+      cursor: pointer;
+    }
+    &-close-btn.syn-btn {
+      outline: none;
+      width: auto;
+      border-radius: @space-2x;
+      border: 1px solid @primary-color;
+      padding: @space-2x @space-3x;
+      display: flex;
+      flex: 1;
+      column-gap: @space-2x;
+      align-items: center;
+      .font14;
+      font-weight: 700;
+      height: 32px;
+      color: @primary-color;
+      background: @theme-panel-bg;
+      svg {
+        width: 16px;
+        height: 16px;
+        path {
+          fill: @icon-new;
+        }
+      }
+      &:hover {
+        background: @bg-hover;
+      }
+    }
+  }
+  &-btns {
+    height: 100%;
+    .ant-skeleton {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &-skeleton-items {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row !important;
+    flex: 1;
+    height: 120px;
+    justify-content: space-between;
+  }
+  .syn-trade-position-skeleton-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+  }
+
+  &-skeleton {
+    &-short-title {
+      width: 240px;
+    }
+    .syn-trade-position-item {
+      display: flex;
+      flex-direction: column;
+      row-gap: @space-2x;
+      align-items: stretch;
+    }
+    .ant-skeleton {
+      .ant-skeleton-title {
+        margin: 0;
+        height: 24px;
+      }
+      .ant-skeleton-button {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &-last-trade {
+    display: flex;
+    padding: 20px 24px;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 8px;
+
+    &-title {
+      .font14;
+      color: #fff;
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      row-gap: @space;
+
+      align-items: stretch;
+      &-item {
+        display: flex;
+        width: 100%;
+        .font12;
+        color: #fff;
+        &-time {
+          width: 72px;
+        }
+        &-side {
+          width: 60px;
+          text-align: right;
+        }
+        &-amount {
+          flex: 1;
+          text-align: right;
+        }
+      }
+      .ant-skeleton {
+        .ant-skeleton-title {
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.8) 25%,
+            rgba(255, 255, 255, 0.3) 37%,
+            rgba(255, 255, 255, 0.8) 63%
+          );
+          background-size: 400% 100%;
+          animation-name: skeleton-dark-loading;
+          animation-duration: 1.4s;
+          animation-timing-function: ease;
+          animation-iteration-count: infinite;
+        }
+      }
+    }
+  }
+  &.dark-theme {
+    .syn-trade-position-position {
+      &.long {
+        background-image: url('./assets/bg_card_green_d_dark.png');
+      }
+      &.short {
+        background-image: url('./assets/bg_card_red_d_dark.png');
+      }
+      &.long-short {
+        background-image: url('./assets/bg_card_fusion_g-r_d_dark.png');
+      }
+      &.short-long {
+        background-image: url('./assets/bg_card_fusion_r-g_d_dark.png');
+      }
+    }
+  }
+}
+
+@keyframes skeleton-dark-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.syn-trade-position-card {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    color: var(--text-brand, #00bfbf);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px; /* 114.286% */
+  }
+  &-header-btns {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    .syn-btn,
+    a {
+      border-radius: var(--spacing-32, 32px);
+      background: var(--button-unchecked-1, #f4fbfb);
+      display: flex;
+      height: var(--spacing-24, 24px);
+      padding: var(--spacing-4, 4px) var(--spacing-16, 16px);
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 12px; /* 100% */
+      color: var(--text-black, #000);
+      svg {
+        path {
+          fill: var(--text-black);
+        }
+      }
+    }
+    .syn-btn-active {
+      color: var(--text-brand, #00bfbf);
+      svg {
+        path {
+          fill: var(--text-brand, #00bfbf);
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

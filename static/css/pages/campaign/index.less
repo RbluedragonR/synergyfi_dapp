@@ -1,0 +1,53 @@
+.main-body:has(.syn-campaign-page) {
+  overflow-y: auto;
+}
+.syn-campaign-page {
+  &-bg {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  padding: 24px;
+  display: flex;
+  max-width: 1280px;
+  margin: auto;
+  flex-direction: column;
+  .syn-campaign-title-text {
+    margin-bottom: 24px;
+    margin-top: 48px;
+  }
+
+  &-banner,
+  &-ongoing-content,
+  &-upcoming-content,
+  &-expired-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &-banner {
+    gap: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    &-ongoing {
+      margin-bottom: 30px;
+    }
+    &-ongoing-content,
+    &-upcoming-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    &-expired-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    &-ongoing-content {
+      row-gap: 64px;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

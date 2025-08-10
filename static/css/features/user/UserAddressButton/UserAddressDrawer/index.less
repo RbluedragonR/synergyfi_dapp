@@ -1,0 +1,64 @@
+@import '~@/themes/func.less';
+@user-address-drawer-prefix: ~'@{syn-prefix}-user-address-drawer';
+.@{user-address-drawer-prefix} {
+  &-title {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    .status-icon {
+      width: 24px;
+      height: 24px;
+    }
+    &-address {
+      .font14;
+      font-weight: 700;
+      color: @text-emphasis;
+    }
+    &-btn.syn-btn.syn-btn-background-ghost {
+      height: 24px;
+      padding: 6px 8px;
+      .font12;
+      font-weight: 700;
+      background: @theme-panel-bg;
+    }
+  }
+  .ant-drawer-header {
+    padding: 20px 0;
+    .ant-drawer-header-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .ant-drawer-title {
+        order: 1;
+      }
+      .ant-drawer-close {
+        order: 2;
+        margin: 0;
+        svg {
+          path {
+            fill: @text-emphasis;
+          }
+        }
+      }
+    }
+  }
+  .ant-drawer-body {
+    padding: 0;
+
+    .btn-add-quote {
+      svg {
+        path {
+          fill: @text-emphasis;
+        }
+      }
+    }
+  }
+  .ant-drawer-footer {
+    padding: 0;
+    margin-top: 24px;
+    border-top: 1px solid var(--border-light-line-1, #c3e7e7);
+    padding-top: 24px;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

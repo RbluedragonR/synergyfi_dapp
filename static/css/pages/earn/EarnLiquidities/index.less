@@ -1,0 +1,119 @@
+.syn-earn-liquidities {
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    &-title {
+      height: 40px;
+      color: var(--text-brand, #00bfbf);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      svg {
+        width: @space-4x;
+        height: @space-4x;
+      }
+
+      .syn-btn {
+        .font12;
+        padding: 4px @space-2x;
+        height: 24px;
+        column-gap: @space;
+        border: none;
+        path {
+          fill: var(--icon-grey1);
+        }
+        svg {
+          width: @space-4x;
+          height: @space-4x;
+        }
+      }
+      .syn-btn-text {
+        color: var(--text-brand, #00bfbf);
+
+        &:not(:disabled):not(.syn-btn-disabled):hover {
+          background-color: transparent;
+        }
+        &:hover {
+          color: var(--text-brand, #00bfbf) !important;
+        }
+      }
+    }
+  }
+  &-row-active {
+    background: @bg-hover;
+  }
+  &-click {
+    cursor: pointer;
+    display: flex;
+    padding: 6px 8px !important;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px; /* 100% */
+    height: 24px;
+  }
+
+  &-label {
+    background: @bg-icon;
+    display: flex;
+    width: 44px;
+    padding: 2px 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: @space;
+    .font12;
+  }
+  &-table-action {
+    display: flex;
+    justify-content: flex-end;
+    svg {
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      path {
+        fill: var(--text-black, #000);
+      }
+    }
+    .syn-btn {
+      .font12;
+      font-weight: 700;
+      color: @text-color;
+      &:hover {
+        color: @text-color;
+      }
+      &:disabled {
+        cursor: not-allowed;
+        color: @text-secondary;
+      }
+    }
+  }
+  &.syn-table {
+    .ant-table {
+      .ant-table-container {
+        overflow: unset;
+      }
+      table {
+        .ant-table-thead {
+          position: sticky;
+          padding-top: 16px;
+          top: 64px;
+          z-index: 3;
+          .rangeAmount {
+            .ant-table-column-sorters {
+              justify-content: flex-end !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

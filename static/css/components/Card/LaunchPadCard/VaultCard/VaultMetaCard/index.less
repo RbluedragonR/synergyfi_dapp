@@ -1,0 +1,44 @@
+.syn-vault-meta {
+  &-horizontal-text,
+  &-vertical-text {
+    color: var(--theme-text);
+    .title {
+      color: var(--text-strong-prompt, #006a80);
+    }
+    .usd {
+      color: var(--text-strong-prompt, #94b8bf);
+    }
+  }
+  &-horizontal-text {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+  &-vertical-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .usd {
+      margin-left: 4px;
+      text-align: right;
+      font-size: 12px;
+      font-style: normal;
+      line-height: 12px; /* 100% */
+    }
+  }
+}
+
+.syn-vault-meta-card {
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

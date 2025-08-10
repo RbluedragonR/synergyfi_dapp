@@ -1,0 +1,70 @@
+@import '~@/themes/func.less';
+@day-table-prefix: ~'@{syn-prefix}-history-table';
+.@{day-table-prefix} {
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  // row-gap: @space-3x;
+  .syn-link.external-link {
+    color: var(--text-black, #000);
+    // text-decoration: none;
+    column-gap: @space;
+    position: relative;
+    width: 96px;
+    svg {
+      position: absolute;
+      left: 98px;
+      top: 50%;
+      transform: translateY(-50%);
+      path {
+        fill: var(--text-black, #000);
+      }
+    }
+  }
+  &-header {
+    padding-bottom: 8px;
+    .syn-history-refresh-simple {
+      margin-top: 8px;
+    }
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .syn-history-table-range-selector-wrap {
+        padding: 0;
+      }
+      .syn-btn.syn-btn-text {
+        .font14;
+        column-gap: 4px;
+        height: fit-content;
+        svg {
+          width: 16px;
+          height: 16px;
+          path {
+            fill: var(--text-black, #000);
+          }
+        }
+      }
+      &-right {
+        display: flex;
+        column-gap: 8px;
+        align-items: center;
+        button {
+          height: 24px !important;
+        }
+      }
+    }
+  }
+  .ant-table-tbody {
+    .ant-table-cell {
+      .highlight {
+        color: @primary-color;
+      }
+    }
+  }
+}
+.syn-show-trade-history-tabs {
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

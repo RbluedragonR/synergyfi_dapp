@@ -1,0 +1,37 @@
+@import '~@/themes/func.less';
+@import '~@/themes/form.less';
+@slider-form-prefix: ~'@{syn-prefix}-slider-form';
+
+.@{slider-form-prefix} {
+  color: @text-color;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: @space-2x;
+
+    .syn-form-item {
+      .form-input-item-label {
+        .number {
+          color: @text-color;
+        }
+      }
+    }
+  }
+  &-share-ratio {
+    display: flex;
+    justify-content: space-between;
+    .font14;
+    .title {
+      color: var(--text-strong-prompt, #6fd6d6);
+    }
+    .number {
+      color: @text-color;
+      .font12;
+      display: flex;
+      align-items: center;
+      gap: @space;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

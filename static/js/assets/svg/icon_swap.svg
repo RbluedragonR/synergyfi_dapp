@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconSwap = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 12,
+    height: 12,
+    viewBox: "0 0 12 12",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M8.89438 1.78571C8.89438 1.35178 8.54092 1 8.1049 1C7.66889 1 7.31543 1.35178 7.31543 1.78571L7.31543 10.2147C7.31543 10.5325 7.50778 10.819 7.80278 10.9406C8.09779 11.0622 8.43736 10.995 8.66315 10.7703L10.7684 8.67507C11.0767 8.36823 11.0767 7.87075 10.7684 7.56391C10.4601 7.25707 9.96023 7.25707 9.65192 7.56391L8.89438 8.31785V1.78571ZM4.68421 1.78574C4.68421 1.46794 4.49186 1.18145 4.19686 1.05983C3.90185 0.938218 3.56228 1.00544 3.33649 1.23015L1.23123 3.32539C0.922923 3.63223 0.922923 4.12971 1.23123 4.43655C1.53954 4.74339 2.03941 4.74339 2.34772 4.43655L3.10526 3.68261L3.10526 10.2143C3.10526 10.6482 3.45872 11 3.89474 11C4.33075 11 4.68421 10.6482 4.68421 10.2143L4.68421 1.78574Z",
+    fill: "black"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconSwap);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_swap.01f4c3bd5b169be97f43d1588d171ae1.svg";

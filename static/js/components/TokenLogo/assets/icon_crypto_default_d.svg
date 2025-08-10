@@ -1,0 +1,37 @@
+var _rect, _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconCryptoDefaultD = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 40,
+    height: 40,
+    viewBox: "0 0 40 40",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    width: 40,
+    height: 40,
+    rx: 20,
+    fill: "#04606E"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    opacity: 0.5,
+    d: "M18.0185 29.7475C16.3564 29.627 15.0016 29.406 13.9543 29.0846C12.9297 28.7431 12.1669 28.4619 11.666 28.2409L13.1346 24.7757C13.9315 25.1172 14.8764 25.4286 15.9693 25.7098C17.085 25.991 18.2575 26.1317 19.4871 26.1317C20.8759 26.1317 21.8208 25.971 22.3218 25.6496C22.8454 25.3081 23.1073 24.836 23.1073 24.2334C23.1073 23.8517 23.0048 23.5303 22.7999 23.2691C22.595 22.9879 22.299 22.7368 21.9119 22.5158C21.5249 22.2949 21.0353 22.084 20.4433 21.8831C19.8514 21.6621 19.1683 21.4311 18.3942 21.19C17.6428 20.949 16.9028 20.6878 16.1742 20.4066C15.4684 20.1053 14.8195 19.7437 14.2275 19.3219C13.6583 18.9 13.1915 18.3878 12.8272 17.7851C12.4857 17.1624 12.3149 16.4192 12.3149 15.5554C12.3149 14.8925 12.4174 14.2597 12.6223 13.6571C12.85 13.0344 13.1915 12.4719 13.6469 11.9697C14.1023 11.4675 14.6942 11.0457 15.4228 10.7042C16.1514 10.3426 17.0167 10.0814 18.0185 9.92074V6.6665H22.3218V9.80021C23.5057 9.90065 24.5189 10.0513 25.3614 10.2522C26.2266 10.4531 26.9096 10.6539 27.4106 10.8548L26.3518 14.4706C25.6004 14.1894 24.7238 13.9484 23.722 13.7475C22.743 13.5466 21.707 13.4462 20.6141 13.4462C19.5212 13.4462 18.7357 13.6069 18.2575 13.9283C17.7794 14.2497 17.5403 14.6715 17.5403 15.1938C17.5403 15.5152 17.6086 15.7964 17.7453 16.0375C17.9046 16.2585 18.1437 16.4593 18.4625 16.6401C18.7812 16.8209 19.1683 17.0017 19.6237 17.1825C20.1018 17.3432 20.671 17.524 21.3313 17.7249C22.3331 18.0463 23.2553 18.3978 24.0977 18.7795C24.9629 19.1612 25.7029 19.6031 26.3177 20.1053C26.9552 20.5874 27.4447 21.1599 27.7862 21.8228C28.1505 22.4857 28.3327 23.2591 28.3327 24.143C28.3327 24.7456 28.2302 25.3482 28.0253 25.9509C27.8204 26.5334 27.4789 27.0758 27.0007 27.578C26.5226 28.0802 25.8964 28.5121 25.1223 28.8737C24.3709 29.2352 23.4374 29.4964 22.3218 29.6571V33.3332H18.0185V29.7475Z",
+    fill: "white"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconCryptoDefaultD);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_crypto_default_d.d63b0d91c4b5ea5b6a2c09935129b207.svg";

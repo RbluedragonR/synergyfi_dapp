@@ -1,0 +1,73 @@
+@import '~@/themes/variable.less';
+.form-input-wrap {
+  .form-input-item {
+    margin-bottom: 0;
+    &-label {
+      display: flex;
+      align-items: center;
+      min-height: 30px;
+      .number {
+        margin: 0 @space;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    .ant-form-item-control-input-content {
+      border-radius: @space;
+      overflow: hidden;
+      &:hover {
+        .ant-input-wrapper {
+          border-color: @input-border-hover-color;
+          box-shadow: @input-wrapper-shadow;
+        }
+      }
+
+      .form-input-item {
+        margin: 0;
+      }
+    }
+  }
+  &.floating-label {
+    flex: 1;
+    .ant-form-item-label {
+      transition: 0.3s ease all;
+      z-index: 1;
+      height: 16px;
+      transform: translate(0, 12px) scale(1);
+      label {
+        .font14;
+        color: var(--text-black, #000);
+        opacity: 0.2;
+      }
+    }
+    .ant-form-item-control {
+      .ant-input-affix-wrapper {
+        background: none;
+        visibility: hidden;
+        transition: all 0s ease-in;
+      }
+    }
+    &:hover,
+    &:focus,
+    &.has-value {
+      .ant-form-item-label {
+        transform: translate(0, 0) scale(1);
+        height: 12px;
+        label {
+          .font12;
+          line-height: 12px;
+          color: @text-secondary;
+          opacity: 1;
+        }
+      }
+      .ant-form-item-control {
+        .ant-input-affix-wrapper {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

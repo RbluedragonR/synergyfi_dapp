@@ -1,0 +1,23 @@
+@import '~@/themes/func.less';
+@spot-chart-interval-prefix: ~'@{syn-prefix}-spot-chart-interval';
+.@{spot-chart-interval-prefix} {
+  width: fit-content;
+  display: flex;
+  padding: 4px 8px;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 100px;
+  background: var(--solid-white-card, #fff);
+  justify-self: flex-end;
+  &-item {
+    color: var(--text-main-body, #333);
+    .font14;
+    cursor: pointer;
+    &.active {
+      color: var(--text-brand, #00bfbf);
+      font-weight: 700;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

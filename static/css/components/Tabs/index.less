@@ -1,0 +1,70 @@
+@syn-tabs-prefix: ~'@{syn-prefix}-tabs';
+.@{syn-tabs-prefix} {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: var(--solid-1, #e1f3f3);
+  padding: 2px;
+  border-radius: @space-2x;
+  &.disabled {
+    .syn-tabs-item {
+      cursor: not-allowed;
+    }
+  }
+  &-item {
+    .font14;
+    flex: 1;
+    padding: @space-2x 0px;
+    font-weight: 700;
+    color: var(--text-weak-prompt, #94b8bf);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 500ms ease;
+    z-index: 2;
+
+    &.active {
+      color: @primary-color;
+      font-weight: 700;
+      border-radius: 6px;
+      // background: #fff;
+      background: transparent;
+      box-shadow: @card-shadow;
+      &.segment-tab {
+        background: transparent;
+        box-shadow: none;
+      }
+      &.LONG {
+        color: @long;
+      }
+      &.SHORT {
+        color: @short;
+      }
+    }
+  }
+  &-bar {
+    background-color: @primary-color;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    height: 2px;
+    width: 64px;
+    transition: all 0.2s ease-in-out;
+  }
+  &-segment {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: calc(100% - 4px);
+    width: 170px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 6px;
+    background: @bg-tab-active;
+    box-shadow: @card-shadow;
+    z-index: 1;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

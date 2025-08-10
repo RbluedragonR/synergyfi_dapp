@@ -1,0 +1,31 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconSocialTwitter = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M8.10027 20.6013C5.67953 20.6013 3.42299 19.8973 1.52368 18.6824C3.13626 18.7868 5.98209 18.5369 7.75219 16.8485C5.08938 16.7263 3.8885 14.684 3.73186 13.8113C3.95811 13.8985 5.03716 14.0033 5.64631 13.7589C2.58319 12.9909 2.11329 10.3028 2.21771 9.48237C2.79204 9.88384 3.76667 10.0235 4.14956 9.98857C1.2953 7.94631 2.32213 4.8742 2.82685 4.2109C4.87517 7.04868 7.94497 8.64248 11.7427 8.73113C11.6711 8.41709 11.6333 8.09013 11.6333 7.75431C11.6333 5.34424 13.5813 3.3905 15.9843 3.3905C17.2398 3.3905 18.3712 3.92385 19.1653 4.77698C20.0043 4.58037 21.267 4.12014 21.8843 3.72215C21.5731 4.83929 20.6045 5.7712 20.0185 6.11661C20.0234 6.12836 20.0138 6.10481 20.0185 6.11661C20.5332 6.03875 21.9259 5.77111 22.476 5.39785C22.2039 6.02545 21.177 7.06893 20.3342 7.65312C20.491 14.5686 15.1999 20.6013 8.10027 20.6013Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconSocialTwitter);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_social_twitter.1bff1271b08df82bd48da3b23507770b.svg";

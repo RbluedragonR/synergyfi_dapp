@@ -1,0 +1,22 @@
+@portfolio-asset-withdraw-limit-prefix: ~'@{syn-prefix}-portfolio-asset-withdraw-limit';
+.@{portfolio-asset-withdraw-limit-prefix} {
+  display: flex;
+  padding: 2px 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px; /* 100% */
+  text-wrap: nowrap;
+  background-color: #4d88ff26;
+  color: var(--Constant-blue, #4d88ff);
+  &.claim {
+    font-size: 12px;
+    color: var(--Constant-green, #14b84b);
+    background-color: #14b84b26;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

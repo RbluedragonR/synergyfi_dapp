@@ -1,0 +1,26 @@
+.syn-animated-input {
+  width: auto;
+  .ant-input-affix-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    input {
+      width: 100%;
+      padding: 0;
+      background: transparent;
+    }
+    &:hover {
+      border-color: @input-border-hover-color;
+    }
+    &.flexible {
+      &:not(.show) {
+        padding: 0 @space-4x;
+        cursor: pointer;
+        gap: 0;
+        border-color: @border-tick-btn;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

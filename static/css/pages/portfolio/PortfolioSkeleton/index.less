@@ -1,0 +1,45 @@
+@import '~@/themes/func.less';
+@portfolio-skeleton-prefix: ~'@{syn-prefix}-portfolio-skeleton';
+.@{portfolio-skeleton-prefix} {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  .ant-skeleton {
+    display: flex;
+    padding: var(--spacing-24, 24px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-16, 16px);
+    align-self: stretch;
+    border-radius: var(--spacing-16, 16px);
+    background: var(--solid-list-card);
+    .ant-skeleton-title {
+      width: 200px;
+      height: var(--spacing-16, 16px);
+      border-radius: var(--spacing-16, 16px);
+    }
+    .ant-skeleton-content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      .ant-skeleton-paragraph {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        li {
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          row-gap: 16px;
+          height: var(--spacing-16, 16px);
+          align-self: stretch;
+          border-radius: var(--spacing-16, 16px);
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

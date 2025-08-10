@@ -1,0 +1,232 @@
+var _path, _path2, _path3, _path4, _path5, _path6, _path7, _path8, _path9, _path10, _path11, _path12, _path13, _path14, _path15, _path16, _path17, _path18, _path19, _path20, _path21, _path22, _path23, _path24, _path25, _path26, _path27, _path28, _path29, _path30, _path31, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgRemove = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 128,
+    height: 128,
+    viewBox: "0 0 128 128",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M11.311 89.9969V41.9265C11.3113 39.898 11.8471 37.9054 12.8646 36.1491C13.882 34.3927 15.3452 32.9346 17.107 31.9213L58.8689 7.88603C60.631 6.87204 62.6296 6.33826 64.6639 6.33826C66.6983 6.33826 68.6968 6.87204 70.4589 7.88603L112.223 31.9213C113.984 32.9347 115.447 34.393 116.464 36.1493C117.481 37.9057 118.017 39.8982 118.017 41.9265V89.9969C118.017 92.0252 117.481 94.0177 116.464 95.7741C115.447 97.5304 113.984 98.9887 112.223 100.002L70.4589 124.037C68.6968 125.051 66.6983 125.585 64.6639 125.585C62.6296 125.585 60.631 125.051 58.8689 124.037L17.107 100.002C15.3451 98.9889 13.8819 97.5308 12.8644 95.7744C11.847 94.018 11.3112 92.0254 11.311 89.9969Z",
+    fill: "#B8DEDE"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M19.867 98.3204C20.9233 99.4983 22.1532 100.509 23.5145 101.318L51.8961 117.654C52.8989 118.259 54.0138 118.656 55.174 118.822L60.1757 115.946C60.6066 114.873 60.8164 113.725 60.7928 112.57V80.0395C60.7724 78.5042 60.5207 76.9806 60.0462 75.52L55.4864 67.6495C54.4439 66.4972 53.2336 65.5078 51.8961 64.7144L23.5145 48.3783C22.0783 47.5507 20.7222 47.1634 19.5204 47.166L15.5548 49.4457C14.9567 50.4731 14.6196 51.8246 14.6196 53.4622V85.9933C14.6403 87.5568 14.9004 89.108 15.391 90.5931L19.867 98.3204Z",
+    fill: "#7DB1B1"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M57.8555 86.3705L60.6687 84.6292V107.418L57.8555 102.438V86.3705Z",
+    fill: "#044953"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M112.213 39.556C101.882 45.6899 85.9497 55.0904 76.0035 60.6713C70.6323 63.6849 66.8782 66.7923 58.7395 61.8013C47.4714 54.8911 27.478 43.615 16.888 37.6889C14.3605 36.2749 14.9147 34.2369 15.7966 32.8007C16.2128 32.478 16.6506 32.1842 17.107 31.9213L58.869 7.88603C60.6311 6.87204 62.6297 6.33826 64.664 6.33826C66.6983 6.33826 68.6969 6.87204 70.459 7.88603L112.223 31.9213C113.009 32.3757 113.738 32.9206 114.396 33.545C115.278 35.234 115.541 37.5804 112.213 39.556Z",
+    fill: "#E1F3F3"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M110.311 91.5174L75.0988 111.838C74.2531 112.326 73.5693 111.924 73.5693 110.941L73.5712 69.9776C73.5712 68.9939 74.2569 67.8011 75.1026 67.3131L110.314 46.9924C111.16 46.5044 111.846 46.9061 111.846 47.8898L111.842 88.8528C111.842 89.8363 111.156 91.0293 110.311 91.5174Z",
+    fill: "#739E9E"
+  })), _path6 || (_path6 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M108.694 90.4432C109.539 89.9554 110.225 88.7623 110.225 87.7786L110.227 47.0424L75.1026 67.3127C74.2569 67.8007 73.5712 68.9936 73.5712 69.9773L73.5693 110.714L108.694 90.4432Z",
+    fill: "#044953"
+  })), _path7 || (_path7 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M92.187 63.1281C84.755 67.4081 78.7305 78.1306 78.7305 87.0779C78.7305 96.0251 84.755 99.8088 92.187 95.5291C99.6191 91.2493 105.644 80.5264 105.644 71.5792C105.644 62.6319 99.6191 58.8484 92.187 63.1281Z",
+    fill: "#FCD300"
+  })), _path8 || (_path8 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M96.2045 72.0994C95.4273 72.5466 94.7988 74.0276 94.7988 75.4076C94.7988 76.7876 95.4273 77.5437 96.2045 77.0966C96.9816 76.6496 97.6101 75.1682 97.6101 73.7884C97.6101 72.4086 96.9816 71.6523 96.2045 72.0994Z",
+    fill: "black"
+  })), _path9 || (_path9 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M88.037 76.8029C87.2598 77.2501 86.6294 78.7313 86.6294 80.1111C86.6294 81.4909 87.2598 82.2471 88.037 81.8001C88.8141 81.3531 89.4426 79.8717 89.4426 78.4919C89.4426 77.1121 88.8122 76.3558 88.037 76.8029Z",
+    fill: "black"
+  })), _path10 || (_path10 = /*#__PURE__*/React.createElement("path", {
+    d: "M102.297 74.3936L100.699 74.3354C100.699 80.2233 96.7375 87.2775 91.852 90.091C86.9665 92.9045 83.0048 90.4123 83.0048 84.5247L81.542 86.1846",
+    stroke: "black",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  })), _path11 || (_path11 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M63.0022 21.5973C50.3265 21.5973 40.0508 27.5657 40.0508 34.9282C40.0508 42.2907 50.3265 48.2591 63.0022 48.2591C75.6778 48.2591 85.9535 42.2907 85.9535 34.9282C85.9535 27.5657 75.6778 21.5973 63.0022 21.5973Z",
+    fill: "#A0A8B0"
+  })), _path12 || (_path12 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M63.0022 48.2588C73.6398 48.2588 82.5823 44.0556 85.186 38.3533C82.5823 32.6512 73.6398 28.448 63.0022 28.448C52.3646 28.448 43.424 32.6512 40.8203 38.3533C43.424 44.0556 52.3665 48.2588 63.0022 48.2588Z",
+    fill: "#153E23"
+  })), _path13 || (_path13 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M24.2285 2.78406L40.0792 36.0931C41.1363 42.8739 50.974 48.188 62.9582 48.188C75.1368 48.188 85.0963 42.7004 85.8792 35.7637L101.751 2.78406H24.2285Z",
+    fill: "url(#paint0_linear_42961_100864)"
+  })), _path14 || (_path14 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M36.9898 60.0162C27.3635 54.4805 19.5601 59.7231 19.5601 71.7259C19.5601 83.7287 27.3635 97.9464 36.9898 103.482C46.616 109.018 54.4176 103.775 54.4176 91.7726C54.4176 79.7698 46.6141 65.5521 36.9898 60.0162Z",
+    fill: "#7DB1B1"
+  })), _path15 || (_path15 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M36.8567 63.9991C28.9199 59.4441 22.4878 63.7579 22.4878 73.6345C22.4878 83.5111 28.9199 95.2103 36.8567 99.7655C44.7935 104.321 51.2256 100.007 51.2256 90.1302C51.2256 80.2536 44.7916 68.5543 36.8567 63.9991Z",
+    fill: "#303D4A"
+  })), _path16 || (_path16 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M35.7937 63.757C28.8854 58.0538 23.2856 61.9315 23.2856 72.4185C23.2856 82.9055 28.8854 96.0299 35.7937 101.733C42.7019 107.436 48.2998 103.559 48.2998 93.0718C48.2998 82.585 42.7 69.4602 35.7937 63.757Z",
+    fill: "#5B8888"
+  })), _path17 || (_path17 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M40.7002 108.058L37.2566 109.407L36.6795 107.815C35.3138 107.345 33.8605 106.501 32.352 105.253C24.4629 98.725 18.0688 83.7031 18.0688 71.7003C18.0688 67.5838 18.8212 64.3576 20.1278 62.1577L19.5602 60.5925L23.1753 59.2669L23.1772 59.2748C25.659 58.1599 28.8588 58.896 32.352 61.7869C40.2412 68.3146 46.6371 83.3365 46.6371 95.3393C46.6371 102.6 44.2944 107.086 40.7002 108.058Z",
+    fill: "#E1F3F3"
+  })), _path18 || (_path18 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M28.3593 63.2283C20.4701 56.7006 14.0742 61.1386 14.0742 73.1418C14.0742 85.1449 20.4701 100.166 28.3593 106.694C36.2485 113.222 42.6425 108.784 42.6425 96.7807C42.6425 84.7775 36.2485 69.756 28.3593 63.2283Z",
+    fill: "#AEDEDE"
+  })), _path19 || (_path19 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M27.9408 68.4894C21.842 63.4505 16.8975 66.8765 16.8975 76.1418C16.8975 85.4071 21.842 97.0027 27.9408 102.042C34.0396 107.081 38.9841 103.655 38.9841 94.3893C38.9841 85.124 34.0415 73.5283 27.9408 68.4894Z",
+    fill: "#9ECBCB"
+  })), _path20 || (_path20 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M30.0223 97.6263L27.1252 98.572L18.3999 74.4006L21.4931 73.4621C22.7254 72.8846 24.3235 73.2402 26.0681 74.6859C29.9689 77.9155 33.1307 85.3494 33.1307 91.2887C33.1307 94.9972 31.8984 97.2464 30.0223 97.6263Z",
+    fill: "#7DB1B1"
+  })), _path21 || (_path21 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M24.4684 65.4313H21.2896V74.3882C21.2896 74.3882 22.3485 75.2646 23.4894 75.0016C24.678 74.7284 24.4684 74.02 24.4684 74.02V65.4313Z",
+    fill: "#CEEFEF"
+  })), _path22 || (_path22 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M22.88 64.5729C22.0019 64.5729 21.2896 64.9849 21.2896 65.4931C21.2896 66.0013 22.0019 66.4132 22.88 66.4132C23.758 66.4132 24.4684 66.0013 24.4684 65.4931C24.4684 64.9849 23.7561 64.5729 22.88 64.5729Z",
+    fill: "#E1F3F3"
+  })), _path23 || (_path23 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M38.3897 95.6619L39.9782 92.918L32.1976 88.4396C32.1976 88.4396 30.9081 88.9145 30.5653 90.0323C30.2091 91.194 30.9291 91.3675 30.9291 91.3675L38.3897 95.6619Z",
+    fill: "#CEEFEF"
+  })), _path24 || (_path24 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M39.9305 94.7194C40.3686 93.9618 40.3667 93.1415 39.9248 92.8873C39.4829 92.6331 38.7706 93.0415 38.3325 93.7992C37.8944 94.5568 37.8944 95.3771 38.3363 95.6313C38.7782 95.8855 39.4924 95.477 39.9305 94.7194Z",
+    fill: "#7DB1B1"
+  })), _path25 || (_path25 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M10.2632 78.9083L10.2613 78.9128L10.3146 78.9436L18.0838 83.4091C18.0838 83.4091 19.3809 82.9321 19.7256 81.8099C20.0837 80.6437 19.3599 80.4697 19.3599 80.4697L11.8593 76.1572L11.8555 76.162C11.4098 75.9686 10.7337 76.3738 10.3089 77.1035C9.88417 77.8332 9.87274 78.6201 10.2632 78.9083Z",
+    fill: "#CEEFEF"
+  })), _path26 || (_path26 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M22.5826 96.9134V105.503H22.5883C22.6417 105.982 23.3293 106.362 24.1711 106.362C25.013 106.362 25.7006 105.982 25.7558 105.503H25.7596V96.5453C25.7596 96.5453 24.7025 95.6691 23.5597 95.9318C22.3731 96.205 22.5826 96.9134 22.5826 96.9134Z",
+    fill: "#CEEFEF"
+  })), _path27 || (_path27 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M22.3652 75.9299C18.4644 72.7003 15.3008 74.8961 15.3008 80.8353C15.3008 86.7744 18.4644 94.208 22.3652 97.4381C26.266 100.668 29.4278 98.4719 29.4278 92.5326C29.4278 86.5932 26.2641 79.1599 22.3652 75.9299Z",
+    fill: "#CEEFEF"
+  })), _path28 || (_path28 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M21.6795 81.4109C19.7642 79.942 18.2114 80.9408 18.2114 83.6415C18.2114 86.3423 19.7642 89.7225 21.6795 91.1915C23.5948 92.6606 25.1491 91.6617 25.1491 88.9608C25.1491 86.2599 23.5964 82.8798 21.6795 81.4109Z",
+    fill: "#7DB1B1"
+  })), _path29 || (_path29 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M75.7493 28.3168L72.9648 32.7368L72.9549 32.7302C69.9215 37.5175 62.0124 38.1017 55.0308 33.9762C48.0491 29.8507 44.591 22.5391 47.1201 17.4534L47.1081 17.4463L50.3016 12.1708L75.7493 28.3168Z",
+    fill: "url(#paint1_linear_42961_100864)"
+  })), _path30 || (_path30 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M50.1192 12.3925C52.9904 7.29794 61.1076 6.58745 68.2466 10.8096C75.3857 15.0317 78.8491 22.5851 75.9772 27.6794C73.1053 32.7738 64.9894 33.4809 57.849 29.2623C50.7087 25.0437 47.248 17.4871 50.1192 12.3925Z",
+    fill: "url(#paint2_linear_42961_100864)"
+  })), _path31 || (_path31 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M54.4259 14.9389C56.3405 11.5416 61.7533 11.0678 66.5139 13.8833C71.2744 16.6988 73.584 21.7356 71.6689 25.1327C69.7538 28.5299 64.3419 29.0013 59.5804 26.1882C54.8189 23.3751 52.5113 18.3361 54.4259 14.9389Z",
+    fill: "url(#paint3_linear_42961_100864)"
+  })), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint0_linear_42961_100864",
+    x1: 62.9906,
+    y1: 48.188,
+    x2: 62.9906,
+    y2: 2.78406,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#22DCDE"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 0.94,
+    stopColor: "#22DCDE",
+    stopOpacity: 0
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint1_linear_42961_100864",
+    x1: 45.8442,
+    y1: 21.6351,
+    x2: 75.4237,
+    y2: 29.5357,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#FEE552"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FFF19F"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint2_linear_42961_100864",
+    x1: 48.8471,
+    y1: 16.2179,
+    x2: 77.262,
+    y2: 23.8074,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#ED9F00"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FFC03F"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint3_linear_42961_100864",
+    x1: 53.5776,
+    y1: 17.4898,
+    x2: 72.5256,
+    y2: 22.5507,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#FFD174"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FFC03F"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgRemove);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/remove.657f5e4f7daa60c51f2f39411e8affc8.svg";

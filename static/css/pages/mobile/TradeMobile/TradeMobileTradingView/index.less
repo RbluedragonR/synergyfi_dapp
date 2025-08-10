@@ -1,0 +1,78 @@
+@import '~@/themes/func.less';
+@trade-mobile-trading-view-prefix: ~'@{syn-prefix}-trade-mobile-trading-view';
+.@{trade-mobile-trading-view-prefix} {
+  position: relative;
+  padding: 0 16px;
+  padding-bottom: 0;
+  margin-bottom: 8px;
+  background: var(--solid-2, #f4fbfb);
+  &-body {
+    height: 200px;
+  }
+  &-empty {
+    background: url('./assets/trade_chart_bg.png') center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .font16;
+    line-height: 16px;
+    color: var(--text-black, #000);
+  }
+  &-content {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    padding: 12px 0;
+    color: var(--text-black, #000);
+    align-items: center;
+    &-title {
+      .font14;
+    }
+    &-price {
+      position: relative;
+      padding-right: @space-6x;
+      display: flex;
+
+      justify-content: space-between;
+      &-right {
+        display: flex;
+        column-gap: @space-2x;
+        border-radius: 100px;
+        padding: 4px 8px;
+        background: var(--solid-white-card, #fff);
+        .syn-trade-charts-header-item {
+          width: 20px;
+        }
+        &-item {
+          flex-direction: column;
+          row-gap: @space;
+          align-items: center;
+          color: var(--text-weak-prompt, #94b8bf);
+          cursor: pointer;
+          .font12;
+          &:hover,
+          &.active {
+            color: @text-emphasis;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    &-depth {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      row-gap: @space-6x;
+      width: 240px;
+      padding-left: @space-6x;
+      border-left: 1px solid @border-new-color;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

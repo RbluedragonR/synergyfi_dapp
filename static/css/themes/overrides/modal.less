@@ -1,0 +1,35 @@
+.ant-modal-root {
+  .ant-modal-mask {
+    background: @modal-mask-bg;
+  }
+}
+.ant-modal {
+  .ant-modal-content {
+    background-color: var(--solid-white-card);
+    color: var(--text-black);
+    border: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* dialog shadow */
+
+    border-radius: @space-4x;
+    padding: 0;
+  }
+  .ant-modal-header {
+    background: @dialog-title-bg;
+    color: @text-color;
+    border-bottom: 0;
+    padding: @card-margin;
+  }
+  .ant-modal-title {
+    color: @text-color;
+    font-size: 2rem /* 28/14 */;
+    line-height: 1.5;
+  }
+  .ant-modal-close {
+    color: var(--modal-close-color);
+  }
+  .ant-modal-body {
+    padding: 0;
+  }
+}

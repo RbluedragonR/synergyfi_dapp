@@ -1,0 +1,22 @@
+@import '~@/themes/func.less';
+@pair-not-in-whitelist-prefix: ~'@{syn-prefix}-pair-not-in-whitelist';
+.@{pair-not-in-whitelist-prefix} {
+  &.syn-earn-area.syn-card_wrapper {
+    .ant-card-body {
+      row-gap: 24px;
+    }
+  }
+  &-header {
+    text-align: center;
+    .font14;
+    margin-bottom: 24px;
+    min-height: 16px;
+    color: var(--text-black, #000);
+    a {
+      color: var(--text-brand, #00bfbf);
+      text-decoration: underline;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

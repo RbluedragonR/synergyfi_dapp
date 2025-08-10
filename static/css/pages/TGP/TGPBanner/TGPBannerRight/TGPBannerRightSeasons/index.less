@@ -1,0 +1,42 @@
+@import '~@/themes/func.less';
+@t-gPBanner-right-seasons-prefix: ~'@{syn-prefix}-tgp-banner-right-seasons';
+.@{t-gPBanner-right-seasons-prefix} {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+  &-item,
+  &-divider {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    color: var(--text-weak-prompt);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    &-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 99px;
+      background: var(--text-weak-prompt);
+    }
+    &.active {
+      color: var(--text-black, #000);
+    }
+    &.active &-dot {
+      background: var(--icon-brand, #00bfbf);
+    }
+    &.disabled {
+      cursor: not-allowed;
+    }
+  }
+  &-item {
+    cursor: pointer;
+  }
+  &-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border-light-line-1, #c3e7e7);
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

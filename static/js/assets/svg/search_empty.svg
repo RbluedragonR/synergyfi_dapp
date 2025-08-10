@@ -1,0 +1,71 @@
+var _path, _path2, _path3, _path4, _path5, _path6, _path7, _path8, _path9;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgSearchEmpty = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 128,
+    height: 128,
+    viewBox: "0 0 128 128",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 101.834C5.59787 101.56 6.24635 101.419 6.90232 101.419C7.55829 101.419 8.20674 101.56 8.80461 101.834C10.1198 102.396 11.2458 103.333 12.046 104.531C12.8463 105.729 13.2863 107.137 13.3127 108.584V119.109C13.3062 120.189 13.6539 121.24 14.3012 122.097C14.9484 122.954 15.8584 123.569 16.8879 123.844C17.4514 124.019 18.0495 124.047 18.6266 123.925C19.2036 123.803 19.7407 123.535 20.1878 123.145L79.1752 88.9055C79.1752 88.9055 80 75.1392 80 71.4183C80 64.1929 71.2017 63 71.2017 63L5 101.834Z",
+    fill: "#033550"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M90.5003 33.1368L97.5002 29.1933C98.3283 28.7275 99 29.1323 99 30.0992V38.2682C98.9762 38.786 98.828 39.2909 98.5674 39.7419C98.3068 40.1929 97.9412 40.5773 97.5002 40.8637L90.5003 44.8066C89.6717 45.2725 89 44.8678 89 43.9013V35.7323C89.0237 35.2145 89.1719 34.7095 89.4327 34.2585C89.6934 33.8074 90.0592 33.4231 90.5003 33.1368Z",
+    fill: "#6FD6D6"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M23.4912 37.999C22.2618 38.715 21.5054 39.993 21.5044 41.4157C21.4961 54.0317 21.4557 115.269 21.4557 117.891C21.4557 122.31 20 123 20 123L79.9419 88.6677C79.9419 88.6677 82 87.666 82 83.3122C82 79.4781 81.9093 29.5646 81.8752 10.9423C81.8696 7.85963 78.5259 5.94345 75.862 7.49501L23.4912 37.999Z",
+    fill: "#00BFBF"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M64.6449 71.0769C61.4233 72.8961 58.8383 71.3684 59.0667 67.6529C59.2622 64.4756 61.5548 60.7197 64.354 58.9838C65.2528 58.3639 66.3292 58.0378 67.429 58.0523C67.5896 58.0158 67.7331 57.9278 67.8366 57.8023C67.9401 57.6768 67.9976 57.521 68 57.3598V49.2621C68 46.58 66.0174 45.5249 63.5715 46.9058L55.8509 51.2658C55.5796 51.4171 55.4171 51.175 55.5734 50.8442C56.285 49.427 56.6295 47.8604 56.5766 46.2824C56.3739 43.3885 54.1555 42.2139 51.4116 43.5479C48.1369 45.1401 45.4079 49.5183 45.4079 53.0547C45.3369 54.1327 45.7032 55.1946 46.4276 56.0102C46.4812 56.1447 46.4824 56.2938 46.431 56.4291C46.3795 56.5644 46.279 56.6764 46.1486 56.744L38.4285 61.103C35.9826 62.4844 34 65.7788 34 68.4609V96.0378C34 98.7159 35.9826 99.775 38.4285 98.3932L63.5715 84.1959C66.0174 82.814 68 79.5206 68 76.8365V68.7388C68 68.4165 67.6828 68.3888 67.428 68.6929C66.6533 69.6437 65.7107 70.4511 64.6449 71.0769Z",
+    fill: "#6FD6D6"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M121.848 113.498C119.395 116.338 116.561 114.311 116.331 114.139C116.32 114.131 116.311 114.123 116.3 114.114L102.801 102.579C102.366 102.207 102.331 101.546 102.725 101.131L106.942 96.6886C107.309 96.3026 107.913 96.2712 108.318 96.6171L121.891 108.226C121.9 108.234 121.907 108.24 121.916 108.248C122.096 108.422 124.305 110.654 121.848 113.498Z",
+    fill: "#00BFBF"
+  })), _path6 || (_path6 = /*#__PURE__*/React.createElement("path", {
+    d: "M102.193 102.23C103.237 103.119 105.268 102.447 106.729 100.73C108.19 99.0129 108.528 96.9008 107.484 96.0124C106.44 95.124 104.409 95.7957 102.948 97.5127C101.487 99.2297 101.149 101.342 102.193 102.23Z",
+    fill: "#006A80"
+  })), _path7 || (_path7 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M105.908 97.034C106.188 97.3306 105.807 98.2151 105.057 99.0058C104.366 99.7372 103.609 100.133 103.274 99.9597L97 93.9651L99.3279 91L105.899 97.0291C105.9 97.0308 105.901 97.0322 105.903 97.0331C105.905 97.034 105.906 97.0343 105.908 97.034Z",
+    fill: "#CBE1E7"
+  })), _path8 || (_path8 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M103.959 78.7064C104.673 89.9841 95.8681 99.9306 84.2926 100.92C72.717 101.91 62.7545 93.5717 62.0405 82.2941C61.3266 71.0165 70.1319 61.07 81.7074 60.0798C93.283 59.0896 103.246 67.4288 103.959 78.7064ZM98.6912 79.2013C99.2414 87.7077 92.6056 95.2047 83.8705 95.9371C75.1354 96.6695 67.6071 90.375 67.0565 81.8636C66.5058 73.3522 73.142 65.8606 81.8771 65.1248C90.6122 64.389 98.1405 70.6899 98.6912 79.2013Z",
+    fill: "#FFAA00"
+  })), _path9 || (_path9 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M104.959 79.7059C105.673 90.9838 96.8685 100.931 85.2928 101.92C73.7172 102.91 63.7545 94.5716 63.0405 83.2937C62.3266 72.0158 71.132 62.07 82.7077 61.0798C94.2833 60.0896 104.246 68.429 104.959 79.7059ZM99.6916 80.2008C100.242 88.7075 93.606 96.2046 84.8708 96.937C76.1356 97.6694 68.6067 91.3748 68.0565 82.8631C67.5063 74.3515 74.1422 66.8608 82.8774 66.1249C91.6125 65.3891 99.141 71.6901 99.6916 80.2008Z",
+    fill: "#FFDA91"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgSearchEmpty);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/search_empty.18370cdc2680a32f69b3eceb1f5099fa.svg";

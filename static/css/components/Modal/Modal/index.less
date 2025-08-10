@@ -1,0 +1,28 @@
+@import '~@/themes/variable.less';
+@modal-prefix: ~'@{syn-prefix}-modal';
+
+.@{modal-prefix} {
+  &-header {
+    color: var(--text-black, #000);
+    padding: @space-4x 0;
+    margin: 0 @space-6x;
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text-black, #000);
+      .font14;
+      font-weight: 700;
+    }
+  }
+  &-close {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    svg path {
+      fill: var(--text-black, #000);
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

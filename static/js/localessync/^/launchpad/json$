@@ -1,0 +1,30 @@
+var map = {
+	"./en/launchpad.json": 45981,
+	"./es/launchpad.json": 90756,
+	"./fr/launchpad.json": 14307,
+	"./ja/launchpad.json": 40234,
+	"./kr/launchpad.json": 4216,
+	"./th/launchpad.json": 7646,
+	"./tr/launchpad.json": 2999,
+	"./vi/launchpad.json": 55302
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 26765;

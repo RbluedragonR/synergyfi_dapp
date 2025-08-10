@@ -1,0 +1,41 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconMoreDocs = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_5474_63312)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M13.3619 1.26236C14.5335 1.22155 15.4167 2.18305 15.4167 3.28887V10.7625C15.4167 11.9284 14.4749 12.8281 13.3703 12.8972C12.7347 12.9369 12.0355 13.0127 11.5247 13.1475C10.8927 13.3143 10.0957 13.6907 9.43789 14.0414C8.54219 14.5189 7.45789 14.5189 6.56219 14.0414C5.90433 13.6907 5.10742 13.3143 4.47535 13.1475C3.96461 13.0127 3.26541 12.9369 2.6298 12.8972C1.52514 12.8281 0.583374 11.9284 0.583374 10.7625V3.33194C0.583374 2.19884 1.50811 1.2281 2.70098 1.30141C3.36228 1.34206 4.19276 1.4243 4.85807 1.59986C5.64463 1.80742 6.5387 2.2348 7.20546 2.58737C7.68077 2.8387 8.26827 2.82594 8.74026 2.55278L9.10509 3.18317L8.74026 2.55278C9.32558 2.21403 10.0924 1.81386 10.7849 1.60654C11.5806 1.36834 12.5998 1.28891 13.3619 1.26236ZM13.9167 3.28887C13.9167 2.96477 13.6716 2.75248 13.4141 2.76145C12.6715 2.78732 11.8153 2.86385 11.2151 3.04353C10.6975 3.19851 10.0549 3.52503 9.49161 3.85104C9.25683 3.98692 9.00723 4.08986 8.75 4.15937V12.7083C9.4232 12.3503 10.3392 11.909 11.142 11.6971C11.8002 11.5235 12.6197 11.4412 13.2767 11.4001C13.6504 11.3767 13.9167 11.0779 13.9167 10.7625V3.28887ZM7.25 12.7083V4.1899C6.99331 4.13133 6.74244 4.03933 6.50429 3.9134C5.8562 3.5707 5.08773 3.21181 4.47535 3.05022C3.95864 2.91387 3.24949 2.83796 2.60897 2.79859C2.34037 2.78208 2.08337 3.00082 2.08337 3.33194V10.7625C2.08337 11.0779 2.34967 11.3767 2.72343 11.4001C3.38037 11.4412 4.19987 11.5235 4.85807 11.6971C5.66084 11.909 6.5768 12.3502 7.25 12.7083Z",
+    fill: "#1F292E"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_5474_63312"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 16,
+    height: 16,
+    fill: "white"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconMoreDocs);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_more_docs.81e3a0c0a7718b320aba83a1cf949358.svg";

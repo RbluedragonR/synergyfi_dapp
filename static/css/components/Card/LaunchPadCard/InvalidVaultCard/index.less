@@ -1,0 +1,42 @@
+@import '~@/themes/func.less';
+@invalid-vault-card-prefix: ~'@{syn-prefix}-invalid-vault-card';
+.@{invalid-vault-card-prefix} {
+  display: flex;
+  padding: var(--spacing-24, 24px);
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-24, 24px);
+  align-self: stretch;
+  border-radius: 16px;
+  background: var(--solid-white-card, #fff);
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-left {
+      display: flex;
+      column-gap: 4px;
+      align-items: center;
+      color: var(--text-strong-prompt, #007580);
+      .font14;
+      .project {
+        color: var(--text-black, #fff);
+        font-weight: 700;
+      }
+    }
+    .syn-btn {
+      border-radius: 8px;
+      background: var(--button-brand, #00bfbf);
+      display: flex;
+      height: 28px;
+      padding: 8px;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      color: var(--grey-0, #fff);
+      .font14;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

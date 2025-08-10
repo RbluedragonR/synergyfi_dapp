@@ -1,0 +1,46 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconAcctNew = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_5312_60880)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M10.354 1.33331C10.354 0.919099 10.6897 0.583313 11.104 0.583313H14.6666C15.0808 0.583313 15.4166 0.919099 15.4166 1.33331V4.89598C15.4166 5.31019 15.0808 5.64598 14.6666 5.64598C14.2524 5.64598 13.9166 5.31019 13.9166 4.89598V3.14397L9.19696 7.86364C8.90406 8.15654 8.42919 8.15654 8.1363 7.86364C7.8434 7.57075 7.8434 7.09588 8.1363 6.80298L12.856 2.08331H11.104C10.6897 2.08331 10.354 1.74753 10.354 1.33331Z",
+    fill: "#1F292E"
+  }), /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4.4425 2.19863C3.61827 2.30941 3.16568 2.51413 2.83949 2.83973C2.5141 3.16549 2.30937 3.61791 2.19857 4.4423C2.08484 5.28848 2.08325 6.40745 2.08325 7.99998C2.08325 9.59251 2.08484 10.7116 2.19857 11.5578C2.30941 12.3825 2.51422 12.8345 2.8394 13.1595L2.83958 13.1596C3.16538 13.4854 3.61778 13.6904 4.4423 13.8013C5.28844 13.9151 6.40738 13.9166 7.99992 13.9166C9.59246 13.9166 10.7116 13.9151 11.5577 13.8013C12.3823 13.6904 12.8342 13.4854 13.1592 13.16L13.1598 13.1595C13.4854 12.8341 13.6903 12.382 13.8012 11.5575C13.915 10.7115 13.9166 9.59253 13.9166 7.99998C13.9166 7.58577 14.2524 7.24998 14.6666 7.24998C15.0808 7.24998 15.4166 7.58577 15.4166 7.99998V8.0555C15.4166 9.5797 15.4166 10.7998 15.2878 11.7575C15.1545 12.7483 14.8711 13.5699 14.2201 14.2205C13.5698 14.8713 12.7482 15.1546 11.7576 15.2879C10.7999 15.4167 9.57964 15.4167 8.05544 15.4166H7.9444C6.4202 15.4167 5.20013 15.4167 4.24237 15.2879C3.25148 15.1546 2.42994 14.8712 1.7791 14.2205C1.12829 13.5701 0.845097 12.7484 0.711936 11.7576C0.583219 10.7999 0.583234 9.57969 0.583252 8.05544V7.94452C0.583234 6.42028 0.583219 5.20023 0.711936 4.2425C0.845109 3.25161 1.1283 2.43005 1.77874 1.77916L1.77928 1.77862C2.43041 1.12838 3.2518 0.845182 4.24268 0.711998C5.20033 0.58328 6.42022 0.583295 7.94445 0.583313L7.99992 0.583314C8.41413 0.583314 8.74992 0.9191 8.74992 1.33331C8.74992 1.74753 8.41413 2.08331 7.99992 2.08331C6.40739 2.08331 5.28859 2.08491 4.4425 2.19863Z",
+    fill: "#1F292E"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_5312_60880"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 16,
+    height: 16,
+    fill: "white"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconAcctNew);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_acct_new.e6419135ddef66f1d0418e54c5e5509f.svg";

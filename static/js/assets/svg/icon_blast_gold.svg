@@ -1,0 +1,38 @@
+var _circle, _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconBlastGold = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 25,
+    viewBox: "0 0 24 25",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _circle || (_circle = /*#__PURE__*/React.createElement("circle", {
+    cx: 12,
+    cy: 12.5,
+    r: 10.75,
+    fill: "#FCFC03"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M17.2219 7.67195L13.3421 7.25L6.75048 10.431L4.74731 15.2155L11.7509 17.75L19.2529 11.6411L17.2219 7.67195ZM8.49834 10.5805L13.4995 8.16612H13.5002L15.5469 8.38848L10.9578 11.0657L8.49834 10.5805ZM11.4483 11.8148L12.0098 16.3862L18.1287 11.4044L16.7549 8.71902L11.4483 11.8148ZM10.558 11.8985L11.1323 16.5757L5.93448 14.6948L7.36838 11.2692L10.558 11.8985Z",
+    fill: "black"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconBlastGold);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_blast_gold.69da90589b33d385686fa3e5191fcd01.svg";

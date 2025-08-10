@@ -1,0 +1,96 @@
+.syn-available-balance-tooltip {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    &-right {
+      display: flex;
+      justify-content: space-between;
+      width: fit-content;
+      align-items: center;
+      gap: 4px;
+      path {
+        fill: white;
+      }
+    }
+  }
+  &-text-blue {
+    color: rgba(140, 191, 217, 0.8);
+  }
+}
+
+.syn-available-balance {
+  color: var(--text-strong-prompt, #006a80);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  &-text-primary {
+    color: var(--text-black, #000);
+  }
+  &-left {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    .font14;
+    justify-content: space-between;
+    .balance-max {
+      color: @text-color;
+      .font12;
+    }
+  }
+  &-right {
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--border-light-line-1, #c3e7e7);
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+    padding: 8px 8px 8px 16px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    svg {
+      path {
+        fill: var(--text-black);
+      }
+    }
+  }
+  .syn-wrap-eth-button {
+    display: flex;
+    padding: 8px var(--spacing-12, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 6px;
+    border: 1px solid var(--border-brand, #00bfbf);
+    background: var(--button-white, #fff) !important;
+    width: fit-content !important;
+  }
+}
+
+.syn-available-balance-exchange-btn {
+  display: flex;
+  font-family: Ubuntu;
+  padding: 8px var(--spacing-12, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-4, 4px);
+  font-weight: 400;
+  align-self: stretch;
+  border-radius: 6px;
+  color: var(--text-brand, #00bfbf);
+  border: 1px solid var(--border-brand, #00bfbf);
+  background: var(--button-white, #fff);
+  svg path {
+    fill: #00bfbf;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

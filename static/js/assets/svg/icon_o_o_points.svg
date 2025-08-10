@@ -1,0 +1,83 @@
+var _circle, _path, _path2, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconOOPoints = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _circle || (_circle = /*#__PURE__*/React.createElement("circle", {
+    cx: 8.00002,
+    cy: 7.99999,
+    r: 6.66665,
+    fill: "url(#paint0_linear_4583_12007)"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M5.41323 6.632L7.99175 8.068L11.6364 6.032V9.968L7.99175 12L4.36365 9.968V7.968L5.4339 8.568V9.384L7.99175 10.816L10.5661 9.384V7.8L7.99175 9.248L4.36365 7.216V6.032L7.99175 4L11.0207 5.68L9.95042 6.28L7.98761 5.18L5.42976 6.632H5.41323Z",
+    fill: "url(#paint1_linear_4583_12007)"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M8.00775 7.41664L6.9375 6.81664L7.99122 6.23264L9.05733 6.81664L8.00775 7.41664Z",
+    fill: "url(#paint2_linear_4583_12007)"
+  })), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint0_linear_4583_12007",
+    x1: 8.00002,
+    y1: 1.33334,
+    x2: 8.00002,
+    y2: 14.6666,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#13ECC8"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#009999"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint1_linear_4583_12007",
+    x1: 8.00001,
+    y1: 4,
+    x2: 8.00001,
+    y2: 12,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "white"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 0.5,
+    stopColor: "white"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "white",
+    stopOpacity: 0.6
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint2_linear_4583_12007",
+    x1: 8.00001,
+    y1: 4,
+    x2: 8.00001,
+    y2: 12,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "white"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 0.5,
+    stopColor: "white"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "white",
+    stopOpacity: 0.6
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconOOPoints);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_o_o_points.91d474ca4e132225c74691c9c2ade654.svg";

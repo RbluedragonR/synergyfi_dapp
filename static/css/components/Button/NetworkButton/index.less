@@ -1,0 +1,115 @@
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@network-button-prefix: ~'@{syn-prefix}-network_button';
+.@{network-button-prefix}.syn-btn-default {
+  gap: @space-2x;
+  .syn-btn-icon {
+    display: flex;
+  }
+  padding: @space-4x;
+  position: relative;
+  border: none;
+  background: transparent;
+  &.small {
+    height: 32px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: @network-bg;
+    background-position: 0% 0%;
+    background-size: 500% auto;
+    animation: gradient 3s linear infinite;
+  }
+  &.network {
+    &::after {
+      background: @network-bg-after;
+      background-position: 0% 0%;
+      background-size: 500% auto;
+      animation: gradient 3s linear infinite;
+    }
+  }
+  &:disabled,
+  &.disabled {
+    background: var(--button-disable, #c3e7e7);
+    &::after {
+      display: none;
+    }
+  }
+  svg {
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+    path {
+      fill: #fff;
+    }
+  }
+  span {
+    z-index: 2;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+  }
+  &.mobile {
+    padding: 12px 16px;
+    span {
+      .font14;
+      font-weight: 700;
+    }
+  }
+}
+
+.syn-network_button-border.syn-btn-background-ghost {
+  // border-image: @btn-linear-border-color 1;
+  padding: @space-2x @space-3x;
+  border: 1.5px solid transparent;
+
+  // background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), @btn-linear-border-color;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-position: 0% 0%;
+  background: @network-bg-ghost;
+  background-size: 500% auto;
+  box-shadow: 2px 1000px 1px @theme-nav-bg inset;
+  animation: gradient 3s linear infinite;
+  &.small {
+    height: 32px;
+  }
+  span {
+    color: var(--text-black, #000);
+    .font14;
+    font-weight: 700;
+    line-height: 16px; /* 114.286% */
+  }
+  &:disabled {
+    background: var(--button-disable, #c3e7e7);
+    border: none;
+    color: #fff;
+    box-shadow: unset;
+    span {
+      color: #fff;
+    }
+    &:hover {
+      background: var(--button-disable, #c3e7e7);
+      border: none;
+      color: #fff;
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

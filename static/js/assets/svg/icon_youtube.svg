@@ -1,0 +1,35 @@
+var _path, _path2;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconYoutube = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M1.44968 5.11475C1.51089 4.17248 2.26846 3.43402 3.21157 3.3873C4.57724 3.31964 6.52919 3.23804 7.99992 3.23804C9.47064 3.23804 11.4226 3.31964 12.7883 3.3873C13.7314 3.43402 14.4889 4.17248 14.5502 5.11476C14.6088 6.01753 14.6666 7.12835 14.6666 7.99994C14.6666 8.87153 14.6088 9.98236 14.5502 10.8851C14.4889 11.8274 13.7314 12.5659 12.7883 12.6126C11.4226 12.6802 9.47064 12.7618 7.99992 12.7618C6.52919 12.7618 4.57724 12.6802 3.21157 12.6126C2.26847 12.5659 1.51089 11.8274 1.44968 10.8851C1.39104 9.98236 1.33325 8.87153 1.33325 7.99994C1.33325 7.12835 1.39104 6.01753 1.44968 5.11475Z",
+    fill: "#FC0D1B"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    className: "icon_youtube_middle",
+    d: "M6.57135 6.09521V9.90474L10.3809 7.99998L6.57135 6.09521Z",
+    fill: "white"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconYoutube);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_youtube.0705f6c61d83e1f4cf9da01f34d60af3.svg";

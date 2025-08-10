@@ -1,0 +1,96 @@
+@import '@/layout/index.less';
+
+.syn-trade {
+  display: flex;
+  flex: 1;
+  column-gap: 16px;
+  padding-bottom: 24px;
+  &-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px 0 24px;
+  }
+  &-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    // this is need to stop tables in tradeportfolio from expanding horizontally
+    overflow-x: hidden;
+    overflow-y: hidden;
+    .syn-trade-position-skeleton {
+      margin-top: 16px;
+    }
+  }
+  &-right {
+    min-width: 392px;
+    max-width: 392px;
+  }
+
+  &-info-area {
+    border-radius: 0;
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+  &-position-area {
+    // height: @page-position-height;
+    // max-height: @page-position-height;
+    margin-top: 16px;
+    border-radius: 0;
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+
+  &-chart-area {
+    // flex: 1;
+    // min-height: @page-charts-min-height;
+    border-radius: 0px;
+    border-bottom-left-radius: var(--spacing-16, 16px);
+    border-bottom-right-radius: var(--spacing-16, 16px);
+    background: var(--solid-2, #f4fbfb);
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    min-height: 488px;
+    align-self: stretch;
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+  @media screen and (min-width: 1280px) and (max-width: 1440px) {
+    .syn-trade-left {
+      .syn-trade-charts-content-depth {
+        .syn-order-book {
+          width: 200px;
+        }
+      }
+
+      .syn-trade-position {
+        .syn-trade-position-btns {
+          column-gap: 16px;
+          .syn-btn {
+            padding: 8px 12px;
+            svg {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .syn-trade-right {
+      width: 344px;
+    }
+  }
+  .syn-trade-card,
+  .syn-earn-card {
+    .syn-card_wrapper:not(.syn-trade-adjust) {
+      min-height: 560px;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

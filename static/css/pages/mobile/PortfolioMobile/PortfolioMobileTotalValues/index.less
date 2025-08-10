@@ -1,0 +1,33 @@
+@import '~@/themes/func.less';
+@portfolio-mobile-total-values-prefix: ~'@{syn-prefix}-portfolio-mobile-total-values';
+.@{portfolio-mobile-total-values-prefix} {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+  padding-top: 32px;
+  padding-bottom: 16px;
+  &-value {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: @text-color;
+  }
+  &-title {
+    .font14;
+    color: var(--text-weak-prompt, #94b8bf);
+  }
+}
+
+.syn-violation-account-text-PMV {
+  color: #f66;
+
+  /* 4 size/16B */
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

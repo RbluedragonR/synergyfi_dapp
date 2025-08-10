@@ -1,0 +1,42 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconScYoutube = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_33731_33181)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M1.44968 5.11482C1.51089 4.17254 2.26846 3.43408 3.21157 3.38736C4.57724 3.3197 6.52919 3.2381 7.99992 3.2381C9.47064 3.2381 11.4226 3.3197 12.7883 3.38736C13.7314 3.43408 14.4889 4.17254 14.5502 5.11482C14.6088 6.01759 14.6666 7.12841 14.6666 8C14.6666 8.87159 14.6088 9.98242 14.5502 10.8852C14.4889 11.8275 13.7314 12.5659 12.7883 12.6126C11.4226 12.6803 9.47064 12.7619 7.99992 12.7619C6.52919 12.7619 4.57724 12.6803 3.21157 12.6126C2.26847 12.5659 1.51089 11.8275 1.44968 10.8852C1.39104 9.98242 1.33325 8.87159 1.33325 8C1.33325 7.12841 1.39104 6.01759 1.44968 5.11482Z",
+    fill: "#FC0D1B"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M6.57129 6.58062V9.41933C6.57129 9.64234 6.80598 9.78739 7.00545 9.68766L9.84416 8.2683C10.0653 8.15775 10.0653 7.84221 9.84416 7.73165L7.00545 6.3123C6.80598 6.21256 6.57129 6.35761 6.57129 6.58062Z",
+    fill: "white"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_33731_33181"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 16,
+    height: 16,
+    fill: "white"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconScYoutube);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_sc_youtube.1d7eaf61b23a50cafb85039c1d545c8d.svg";

@@ -1,0 +1,31 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconFilterBold = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M12.6668 2H3.3335C2.39083 2 1.9195 2 1.62683 2.27467C1.3335 2.54933 1.3335 2.992 1.3335 3.87667V4.33667C1.3335 5.028 1.3335 5.374 1.50683 5.66067C1.68016 5.94733 1.9955 6.126 2.62816 6.482L4.57016 7.57533C4.99416 7.814 5.20683 7.93333 5.35883 8.06533C5.67483 8.33933 5.8695 8.662 5.9575 9.05867C6.00016 9.248 6.00016 9.47067 6.00016 9.91533V11.6953C6.00016 12.3013 6.00016 12.6047 6.16816 12.8407C6.33616 13.0773 6.63483 13.194 7.23083 13.4273C8.4835 13.9167 9.1095 14.1613 9.55483 13.8827C10.0002 13.6047 10.0002 12.968 10.0002 11.6947V9.91467C10.0002 9.47067 10.0002 9.248 10.0428 9.058C10.1266 8.66944 10.3375 8.31989 10.6422 8.06467C10.7935 7.93333 11.0062 7.814 11.4302 7.57467L13.3722 6.48133C14.0042 6.126 14.3208 5.948 14.4935 5.66133C14.6668 5.37467 14.6668 5.028 14.6668 4.336V3.876C14.6668 2.992 14.6668 2.54933 14.3735 2.27467C14.0815 2 13.6102 2 12.6668 2Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconFilterBold);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_filter_bold.84d193234a5c73c477b30082a16d3faa.svg";

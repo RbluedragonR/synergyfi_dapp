@@ -1,0 +1,52 @@
+var _g;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconNoLinkDark = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 48,
+    height: 48,
+    viewBox: "0 0 48 48",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    id: "Frame"
+  }, /*#__PURE__*/React.createElement("path", {
+    id: "Vector",
+    d: "M25 31.9999C22.6 31.9999 20.4 30.9999 18.6 29.3999C17.8 28.5999 17.8 27.3999 18.6 26.5999C19.4 25.7999 20.6 25.7999 21.4 26.5999C23.4 28.5999 26.6 28.5999 28.4 26.5999L36.4 18.5999C37.6 17.5999 38 16.3999 38 14.9999C38 13.5999 37.4 12.3999 36.6 11.3999C34.6 9.3999 31.4 9.3999 29.4 11.3999L28.4 12.3999C27.6 13.1999 26.4 13.1999 25.6 12.3999C24.8 11.5999 24.8 10.3999 25.6 9.5999L26.6 8.5999C30.2 4.9999 35.8 4.9999 39.4 8.5999C43 12.1999 43 17.7999 39.4 21.3999L31.4 29.3999L31.2 29.5999C29.6 31.1999 27.2 31.9999 25 31.9999Z",
+    fill: "#00A2A7"
+  }), /*#__PURE__*/React.createElement("path", {
+    id: "Vector_2",
+    d: "M15 41.9999C12.6 41.9999 10.4 41.1999 8.6 39.3999C5 35.7999 5 30.1999 8.6 26.5999L16.6 18.5999C20.2 14.9999 26 14.9999 29.4 18.5999C30.2 19.3999 30.2 20.5999 29.4 21.3999C28.6 22.1999 27.4 22.1999 26.6 21.3999C25.6 20.3999 24.4 19.9999 23 19.7999C21.6 19.7999 20.4 20.3999 19.6 21.1999L11.6 29.1999C10.4 30.3999 10 31.5999 10 32.9999C10 34.3999 10.6 35.5999 11.4 36.5999C13.4 38.5999 16.6 38.5999 18.6 36.5999L19.6 35.5999C20.4 34.7999 21.6 34.7999 22.4 35.5999C23.2 36.3999 23.2 37.5999 22.4 38.3999L21.4 39.3999C19.6 41.1999 17.4 41.9999 15 41.9999Z",
+    fill: "#00A2A7"
+  }), /*#__PURE__*/React.createElement("g", {
+    id: "Vector_3"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M30 42C30 43.2 30.8 44 32 44C33.2 44 34 43.2 34 42V38C34 36.8 33.2 36 32 36C30.8 36 30 36.8 30 38V42Z",
+    fill: "#04606E"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M38 34H42C43.2 34 44 33.2 44 32C44 30.8 43.2 30 42 30H38C36.8 30 36 30.8 36 32C36 33.2 36.8 34 38 34Z",
+    fill: "#04606E"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M6 18H10C11.2 18 12 17.2 12 16C12 14.8 11.2 14 10 14H6C4.8 14 4 14.8 4 16C4 17.2 4.8 18 6 18Z",
+    fill: "#04606E"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M14 10C14 11.2 14.8 12 16 12C17.2 12 18 11.2 18 10V6C18 4.8 17.2 4 16 4C14.8 4 14 4.8 14 6V10Z",
+    fill: "#04606E"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconNoLinkDark);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_no_link_dark.1ddf3b93643d9399ec8d4e3bc958172d.svg";

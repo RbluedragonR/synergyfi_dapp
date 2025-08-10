@@ -1,0 +1,31 @@
+@import '~@/themes/func.less';
+@ip-blocked-modal-prefix: ~'@{syn-prefix}-ip-blocker';
+.@{ip-blocked-modal-prefix} {
+  &-banner {
+    display: flex;
+    background: #7130f2;
+    padding: var(--spacing-16, 16px) var(--spacing-24, 24px);
+
+    align-items: center;
+    gap: var(--spacing-24, 24px);
+    width: 100%;
+    color: var(--element-white, #fff);
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+    &-right {
+      flex: 1;
+    }
+    a {
+      text-decoration-line: underline;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

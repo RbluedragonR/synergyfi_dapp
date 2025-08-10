@@ -1,0 +1,39 @@
+var _path, _path2, _path3;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconTitleLucky = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 32,
+    height: 32,
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M11.8286 3.14055C9.98948 3.74804 8.98816 5.55425 9.46905 7.39657C9.68518 8.22441 9.89023 8.4668 13.031 11.607L15.9985 14.5738L18.966 11.607C22.1068 8.4668 22.3118 8.22441 22.5279 7.39657C23.4547 3.84658 19.2937 1.58353 16.5981 4.17143L15.9985 4.74702L15.3989 4.17143C14.3591 3.17309 12.9562 2.76805 11.8286 3.14055ZM12.9444 20.5139C9.7388 23.7363 9.65335 23.8387 9.44863 24.7075C8.61683 28.2363 12.7326 30.4106 15.3989 27.8508L15.9985 27.2752L16.5981 27.8508C17.8008 29.0055 19.3153 29.3154 20.6473 28.6794C22.4513 27.818 23.178 25.6586 22.2552 23.9015C22.0913 23.5895 16.1388 17.4829 15.9985 17.4829C15.9772 17.4829 14.6028 18.8469 12.9444 20.5139Z",
+    fill: "#00BFBF"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M4.12546 15.3984C2.13893 13.3312 2.88933 10.1569 5.53243 9.44686C6.36829 9.22234 7.47545 9.37752 8.20988 9.82221C8.46969 9.97946 9.60308 11.06 11.5735 13.0289L14.5453 15.9983L11.5735 18.9678C8.03416 22.5044 7.83909 22.6444 6.43491 22.6567C3.26973 22.6846 1.85159 18.9645 4.12546 16.5983L4.70202 15.9983L4.12546 15.3984Z",
+    fill: "#006A80"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "M20.3966 13.0289C23.5421 9.88591 23.7849 9.68073 24.6141 9.46444C26.2815 9.02961 27.9333 9.79516 28.6746 11.3464C29.3117 12.6793 29.0013 14.1948 27.8447 15.3984L27.2681 15.9983L27.8447 16.5983C30.4369 19.2958 28.1701 23.4596 24.6141 22.5323C23.7849 22.316 23.5421 22.1108 20.3966 18.9678L17.4248 15.9983L20.3966 13.0289Z",
+    fill: "#006A80"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconTitleLucky);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_title_lucky.4e16bbcef71340b1ac8dfbe59a34e2c8.svg";

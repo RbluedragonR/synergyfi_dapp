@@ -1,0 +1,56 @@
+.syn-yds-card {
+  .ant-card-head {
+    display: none;
+  }
+  .ant-card {
+    padding-top: 24px;
+  }
+  .syn-card_wrapper-content {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  &-loading {
+    pointer-events: none;
+  }
+  &-wrapper {
+    width: 392px;
+  }
+}
+
+.syn-yds-card-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.syn-yds-card-title-text {
+  color: var(--text-black, #000);
+  /* 4 size/20B 24 */
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+}
+.syn-yds-card-title-btn {
+  cursor: pointer;
+  height: 24px;
+  svg {
+    path {
+      fill: var(--text-black);
+    }
+  }
+}
+
+.syn-launch-pad-card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.syn-launch-pad-card {
+  width: 392px;
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

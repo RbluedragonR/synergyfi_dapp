@@ -1,0 +1,38 @@
+var _path, _path2;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconAffiliatesInviteesD = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M3.64412 2.31084C4.26893 1.68604 5.11635 1.33502 5.99996 1.33502C6.88357 1.33502 7.731 1.68604 8.3558 2.31084C8.98061 2.93565 9.33163 3.78308 9.33163 4.66669C9.33163 5.5503 8.98061 6.39772 8.3558 7.02253C7.731 7.64734 6.88357 7.99836 5.99996 7.99836C5.11635 7.99836 4.26893 7.64734 3.64412 7.02253C3.01931 6.39772 2.66829 5.5503 2.66829 4.66669C2.66829 3.78308 3.01931 2.93565 3.64412 2.31084ZM5.99996 2.66502C5.46909 2.66502 4.95995 2.87591 4.58457 3.2513C4.20918 3.62668 3.99829 4.13581 3.99829 4.66669C3.99829 5.19756 4.20918 5.7067 4.58457 6.08208C4.95995 6.45747 5.46909 6.66836 5.99996 6.66836C6.53084 6.66836 7.03997 6.45747 7.41535 6.08208C7.79074 5.7067 8.00163 5.19756 8.00163 4.66669C8.00163 4.13581 7.79074 3.62668 7.41535 3.2513C7.03997 2.87591 6.53084 2.66502 5.99996 2.66502ZM4.66663 10.665C4.13575 10.665 3.62662 10.8759 3.25124 11.2513C2.87585 11.6267 2.66496 12.1358 2.66496 12.6667V14C2.66496 14.3673 2.36723 14.665 1.99996 14.665C1.63269 14.665 1.33496 14.3673 1.33496 14V12.6667C1.33496 11.7831 1.68597 10.9357 2.31078 10.3108C2.93559 9.68604 3.78301 9.33502 4.66663 9.33502H7.33329C8.21691 9.33502 9.06433 9.68604 9.68914 10.3108C10.3139 10.9357 10.665 11.7831 10.665 12.6667V14C10.665 14.3673 10.3672 14.665 9.99996 14.665C9.63269 14.665 9.33496 14.3673 9.33496 14V12.6667C9.33496 12.1358 9.12407 11.6267 8.74869 11.2513C8.3733 10.8759 7.86417 10.665 7.33329 10.665H4.66663Z",
+    fill: "white"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M10.0224 1.92172C10.1135 1.56593 10.4758 1.35135 10.8316 1.44245C11.5482 1.62594 12.1834 2.04273 12.637 2.62712C13.0906 3.2115 13.3369 3.93023 13.3369 4.67C13.3369 5.40978 13.0906 6.12851 12.637 6.71289C12.1834 7.29727 11.5482 7.71406 10.8316 7.89755C10.4758 7.98865 10.1135 7.77407 10.0224 7.41828C9.93131 7.06249 10.1459 6.70021 10.5017 6.60912C10.9322 6.49888 11.3139 6.24847 11.5864 5.89737C11.8589 5.54627 12.0069 5.11446 12.0069 4.67C12.0069 4.22555 11.8589 3.79373 11.5864 3.44264C11.3139 3.09154 10.9322 2.84113 10.5017 2.73089C10.1459 2.63979 9.93131 2.27752 10.0224 1.92172ZM11.3561 9.93376C11.4479 9.57815 11.8106 9.3643 12.1662 9.45612C12.8782 9.63994 13.5094 10.0542 13.9614 10.6342C14.4133 11.2142 14.6607 11.9275 14.6649 12.6628L14.665 12.6667L14.665 14C14.665 14.3673 14.3672 14.665 14 14.665C13.6327 14.665 13.335 14.3673 13.335 14V12.6687C13.332 12.2276 13.1834 11.7997 12.9123 11.4517C12.6407 11.1032 12.2615 10.8543 11.8337 10.7439C11.4781 10.6521 11.2643 10.2894 11.3561 9.93376Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconAffiliatesInviteesD);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_affiliates_invitees_d.ca22fd32d24e956380764c21650c92ab.svg";

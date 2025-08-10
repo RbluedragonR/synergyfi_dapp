@@ -1,0 +1,132 @@
+.syn-available-margin-drawer {
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-btn {
+      cursor: pointer;
+      outline: 0;
+      width: 80px;
+      border: 0;
+      border-radius: 24px;
+      background: #00bfbf;
+      display: flex;
+      height: 28px;
+      margin-right: 8px;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      color: #f9fbfb;
+      font-family: Ubuntu;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 12px; /* 100% */
+    }
+  }
+  &.ant-drawer-content {
+    padding-bottom: 0;
+    .ant-drawer-header {
+      border: none;
+    }
+  }
+
+  .ant-drawer-body {
+    padding: 0;
+  }
+  .ant-drawer-title {
+    .syn-available-margin-drawer-title {
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        small {
+          .font12;
+          color: var(--text-strong-prompt);
+        }
+      }
+    }
+  }
+  dl {
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--text-strong-prompt);
+    align-items: center;
+    margin: 0;
+    padding: @space-5x 0;
+    .font16;
+    &:last-child {
+      border-bottom: 0;
+    }
+    dt {
+      display: flex;
+      align-items: center;
+    }
+    dd {
+      margin: 0;
+      color: var(--text-black, #000);
+      display: flex;
+      align-items: center;
+      .font-number;
+      .impact {
+        .font-default;
+      }
+      svg {
+        height: 10px;
+        margin: 0 4px;
+        path {
+          fill: var(--text-black, #000);
+        }
+      }
+    }
+
+    &.text-primary {
+      color: @primary-color;
+      dt,
+      dd {
+        color: @primary-color;
+      }
+    }
+  }
+}
+.syn-available-margin-drawer-margin {
+  .font12;
+  display: flex;
+  column-gap: 8px;
+  width: 100%;
+  align-items: center;
+  margin: 0;
+  color: var(--text-strong-prompt, #006a80);
+  dt,
+  dd {
+    margin: 0;
+  }
+  dd {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    svg path {
+      fill: var(--text-black, #000);
+    }
+    color: var(--text-black, #000);
+    &.syn-available-margin-drawer-margin-value {
+      color: @primary-color;
+      svg path {
+        fill: @primary-color;
+      }
+    }
+  }
+
+  &-line {
+    flex: 1;
+  }
+  // &-value {
+  //   color: @primary-color;
+  //   svg path {
+  //     fill: @primary-color;
+  //   }
+  // }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

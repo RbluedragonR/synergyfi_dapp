@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconNotificationWarning = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 41,
+    height: 41,
+    viewBox: "0 0 41 41",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M20.0547 37.5925C29.2594 37.5925 36.7213 30.1305 36.7213 20.9258C36.7213 11.721 29.2594 4.25912 20.0547 4.25912C10.8499 4.25912 3.388 11.721 3.388 20.9258C3.388 30.1305 10.8499 37.5925 20.0547 37.5925ZM20.9385 13.3752C20.7041 13.1408 20.3862 13.0091 20.0547 13.0091C19.7231 13.0091 19.4052 13.1408 19.1708 13.3752C18.9364 13.6097 18.8047 13.9276 18.8047 14.2591V20.9258C18.8047 21.2573 18.9364 21.5753 19.1708 21.8097C19.4052 22.0441 19.7231 22.1758 20.0547 22.1758C20.3862 22.1758 20.7041 22.0441 20.9385 21.8097C21.173 21.5753 21.3047 21.2573 21.3047 20.9258V14.2591C21.3047 13.9276 21.173 13.6097 20.9385 13.3752ZM21.2332 27.1043C20.9206 27.4169 20.4967 27.5925 20.0547 27.5925C19.6126 27.5925 19.1887 27.4169 18.8762 27.1043C18.5636 26.7917 18.388 26.3678 18.388 25.9258C18.388 25.4838 18.5636 25.0598 18.8762 24.7473C19.1887 24.4347 19.6126 24.2591 20.0547 24.2591C20.4967 24.2591 20.9206 24.4347 21.2332 24.7473C21.5457 25.0598 21.7213 25.4838 21.7213 25.9258C21.7213 26.3678 21.5457 26.7917 21.2332 27.1043Z",
+    fill: "#FF6666"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconNotificationWarning);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_notification_warning.ad3e6d67b930d166912cde4e7035de55.svg";

@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconArrowRise16 = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 17,
+    height: 17,
+    viewBox: "0 0 17 17",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5.05469 4.92578C5.05469 4.3735 5.5024 3.92578 6.05469 3.92578H12.0547C12.607 3.92578 13.0547 4.3735 13.0547 4.92578V10.9258C13.0547 11.4781 12.607 11.9258 12.0547 11.9258C11.5024 11.9258 11.0547 11.4781 11.0547 10.9258V7.33999L4.76179 13.6329C4.37127 14.0234 3.7381 14.0234 3.34758 13.6329C2.95706 13.2424 2.95706 12.6092 3.34758 12.2187L9.64047 5.92578H6.05469C5.5024 5.92578 5.05469 5.47807 5.05469 4.92578Z",
+    fill: "#14B84B"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconArrowRise16);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_arrow_rise_16.de3ef0579dd909ae4cb9d490ca689d8a.svg";

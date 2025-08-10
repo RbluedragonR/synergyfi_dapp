@@ -1,0 +1,59 @@
+.syn-trade-side-size {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 4px;
+  font-size: 14px;
+  font-style: normal;
+  column-gap: 4px;
+  font-weight: 400;
+  line-height: 16px;
+  &-left {
+    width: 4px;
+    border-radius: 5px;
+    height: 16px;
+  }
+  &-bottom {
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+  }
+
+  &.vertical {
+    .syn-trade-side-size-left {
+      height: 32px;
+    }
+  }
+  &.LONG {
+    color: var(--function-green-6, #14b84b);
+    .syn-trade-side-size {
+      &-left {
+        background: var(--function-green-6, #14b84b);
+      }
+      &-bottom {
+        color: var(--function-green-4, #6bd28e);
+      }
+    }
+  }
+  &.SHORT {
+    color: var(--function-red-6, #f66);
+    .syn-trade-side-size {
+      &-left {
+        background: var(--function-red-6, #f66);
+      }
+      &-bottom {
+        color: var(--function-red-4, #ff9f9f);
+      }
+    }
+  }
+  &-container {
+    display: flex;
+    gap: 4px;
+    &.vertical {
+      flex-direction: column;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

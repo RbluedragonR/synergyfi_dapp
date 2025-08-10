@@ -1,0 +1,97 @@
+.syn-spot-mobile-route {
+  background: var(--solid-2, #f4fbfb);
+  padding: 24px 0;
+  padding-bottom: 30px;
+  &-message {
+    color: var(--text-strong-prompt, #007580);
+    text-align: center;
+
+    /* 4 size/16R 24 */
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    padding: var(--spacing-8, 8px) 0px;
+    align-items: center;
+    margin-top: 8px;
+  }
+  &-tokens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-wrapping-line {
+    flex: 1;
+    height: 1px;
+    background-color: var(--border-brand, #00bfbf);
+  }
+  &-empty-line {
+    position: relative;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 31px;
+    border: 1px solid var(--border-brand, #c3e7e7);
+    border-style: dashed;
+    border-top: none;
+    margin: 0 30px;
+    &-arrow {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      bottom: 0;
+      background: var(--solid-2, #f4fbfb);
+      padding: 0 7.5px;
+    }
+  }
+  &-pool-1-line {
+    position: relative;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 61px;
+    border: 1px solid var(--border-brand, #c3e7e7);
+    border-top: none;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .syn-spot-mobile-route-pool {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      bottom: 0;
+    }
+  }
+  &-pools-2 {
+    margin-bottom: 25px;
+    &-top {
+      padding-top: 8px;
+      padding-bottom: 30px;
+    }
+    border: 1px solid var(--border-brand, #c3e7e7);
+    margin: 0 30px;
+    border-top: none;
+    position: relative;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      &.left {
+        transform: translateX(-30px);
+      }
+      &.right {
+        transform: translateX(30px);
+      }
+    }
+    &-bottom {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      bottom: 0;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

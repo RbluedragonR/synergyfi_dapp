@@ -1,0 +1,43 @@
+@import '~@/themes/func.less';
+@netwerk-switch-drawer-prefix: ~'@{syn-prefix}-network-switch-drawer';
+.@{netwerk-switch-drawer-prefix} {
+  &-btn {
+    display: flex;
+    align-items: center;
+    img,
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+    .rotate {
+      transform: rotateX(180deg);
+    }
+  }
+  &-item {
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: center;
+    .font16;
+    line-height: 16px;
+    color: var(--text-black);
+    &:hover {
+      color: @primary-color;
+      font-weight: 700;
+    }
+    &:not(:last-of-type) {
+      border-bottom: 1px solid @day-border;
+    }
+  }
+  .ant-drawer-header {
+    display: none;
+  }
+  .ant-drawer-body {
+    padding: 0;
+  }
+  .ant-drawer-content {
+    padding-bottom: 0;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

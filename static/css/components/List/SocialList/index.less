@@ -1,0 +1,27 @@
+.syn-social-list {
+  display: flex;
+  align-items: center;
+  column-gap: @space-3x;
+  &-link {
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: @space-4x;
+      height: @space-4x;
+    }
+    &:not(:hover) {
+      svg {
+        path:first-of-type {
+          fill: var(--icon-grey1);
+        }
+        .icon_youtube_middle {
+          fill: var(--solid-bottom-bar);
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

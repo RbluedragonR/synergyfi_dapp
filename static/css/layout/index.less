@@ -1,0 +1,111 @@
+@import '~@/components/Notice/index.less';
+@import '~@/themes/variable.less';
+
+@header-height: 64px;
+@footer-height: 0px;
+@announcement-height: var(--top-notice-height);
+.header-container,
+.main-container,
+.footer-container {
+  width: 100%;
+}
+
+.header-container {
+  height: @header-height;
+  width: 100vw;
+  &.mobile {
+    height: @mobile-header-height;
+  }
+}
+
+main.main-container.ant-layout-content {
+  // flex: 1;
+  // min-height: auto;
+  // min-height: calc(var(--doc-height) - @header-height - @footer-height);
+  overflow-y: auto;
+  &.mobile {
+    min-height: calc(var(--doc-height) - @mobile-header-height - @mobile-footer-height - var(--top-notice-height));
+    max-height: calc(var(--doc-height) - @mobile-header-height - @mobile-footer-height - var(--top-notice-height));
+    overflow-y: auto;
+    .padding-body {
+      margin-top: 0;
+    }
+
+    &.hide-footer {
+      // height: calc(var(--doc-height) - @mobile-header-height);
+      padding-bottom: 0;
+    }
+  }
+  .top_notice + .header + & {
+    // min-height: calc(var(--doc-height) - @header-height - @footer-height - @announcement-height);
+  }
+}
+
+main.main-container {
+  // background: @body-bg;
+}
+
+.app-layout {
+  overflow-y: hidden; // temp for start
+  height: var(--doc-height);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
+  &.has-announcement {
+    // height: calc(var(--doc-height) + 56px);
+  }
+  &.desktop {
+    min-width: 1280px;
+  }
+  .layout_container {
+    height: 100%;
+    &.no-padding-top {
+      padding-top: 0;
+    }
+  }
+  &.full-width {
+    .layout_container {
+      padding-top: 0;
+      padding-bottom: 0;
+      .container {
+        max-width: 100%;
+      }
+    }
+    .main-container.ant-layout-content.mobile {
+      height: calc(var(--doc-height) - @mobile-footer-height - @mobile-header-height);
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+  &.new .main-container {
+    background: var(--solid-bg);
+  }
+
+  // height: var(--doc-height);
+  &.mobile {
+    height: -webkit-fill-available;
+    position: fixed;
+    width: 100%;
+    .layout_container {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@page-info-height: 68px;
+@page-position-height: 250px;
+
+@row-gaps: @space-4x * 2;
+@page-padding: @space-6x;
+
+@others-height: @page-info-height + @page-position-height + @header-height + @footer-height + @page-padding + @row-gaps +
+  30px;
+
+@page-charts-min-height: 356px;
+@page-charts-height: 437px;
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

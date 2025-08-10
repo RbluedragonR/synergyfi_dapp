@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconArrowRight = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M12 24.004C18.6274 24.004 24 18.6314 24 12.004C24 5.37661 18.6274 0.00402832 12 0.00402832C5.37258 0.00402832 0 5.37661 0 12.004C0 18.6314 5.37258 24.004 12 24.004ZM4.63281 12.6056C4.55469 12.4181 4.51562 12.2176 4.51562 12.004C4.52083 11.7853 4.5625 11.5848 4.64062 11.4025C4.71875 11.2202 4.82812 11.0561 4.96875 10.9103C5.10938 10.7644 5.27344 10.6525 5.46094 10.5743C5.64844 10.4962 5.84896 10.4572 6.0625 10.4572H14.2109L12.0156 8.26965C11.8698 8.12382 11.7578 7.95715 11.6797 7.76965C11.6016 7.58215 11.5625 7.38684 11.5625 7.18372C11.5625 6.97017 11.6042 6.76965 11.6875 6.58215C11.7708 6.39465 11.8802 6.23059 12.0156 6.08997C12.151 5.94934 12.3125 5.83736 12.5 5.75403C12.6875 5.67069 12.888 5.62903 13.1016 5.62903C13.3047 5.62903 13.5026 5.66809 13.6953 5.74622C13.888 5.82434 14.0573 5.93632 14.2031 6.08215L19.0078 10.8947C19.1484 11.0353 19.263 11.1941 19.3516 11.3712C19.4401 11.5483 19.4844 11.7384 19.4844 11.9415C19.4844 12.1863 19.4479 12.3999 19.375 12.5822C19.3021 12.7644 19.1797 12.9415 19.0078 13.1134L14.2031 17.9259C14.0521 18.0717 13.8828 18.1837 13.6953 18.2618C13.5078 18.34 13.3125 18.379 13.1094 18.379C12.8906 18.3738 12.6901 18.3322 12.5078 18.254C12.3255 18.1759 12.1615 18.0665 12.0156 17.9259C11.8698 17.7853 11.7578 17.6212 11.6797 17.4337C11.6016 17.2462 11.5625 17.0457 11.5625 16.8322C11.5625 16.629 11.6016 16.4311 11.6797 16.2384C11.7578 16.0457 11.8698 15.879 12.0156 15.7384L14.2109 13.5509H6.0625C5.84375 13.5457 5.64323 13.504 5.46094 13.4259C5.27865 13.3478 5.11458 13.2384 4.96875 13.0978C4.82292 12.9572 4.71094 12.7931 4.63281 12.6056Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconArrowRight);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_arrow_right.00bf995f3d27d9a2080bba103e2b8a14.svg";

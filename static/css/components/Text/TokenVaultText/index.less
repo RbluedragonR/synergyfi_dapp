@@ -1,0 +1,68 @@
+.syn-token-vault-text {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color: var(--theme-text);
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &:has(.syn-token-vault-pair-tag-container) {
+    .syn-token-vault-text-content {
+      gap: 4px;
+    }
+  }
+
+  &-details {
+    display: flex;
+    align-items: center;
+  }
+  .token-icon {
+    margin-right: 8px;
+  }
+  &-symbol {
+    margin-right: 4px;
+  }
+  &-price {
+    color: var(--text-strong-prompt, #006a80);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* 4 size/12R 16 */
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    &-value-usd {
+      margin-left: 4px;
+      color: var(--text-black, #000);
+    }
+  }
+}
+.link-to-explorer {
+  cursor: pointer;
+  .syn-token-vault-text-name {
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 120% */
+    border-bottom: 1px solid var(--border-dark-line-1, #00a2a7);
+    border-bottom-style: dashed;
+    margin-right: 4px;
+  }
+}
+.syn-token-vault-pair-tag {
+  background-color: #f5a241;
+  color: white;
+  padding: 4px 6px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  border-radius: 6px;
+  height: fit-content;
+  margin-inline-end: 0px;
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

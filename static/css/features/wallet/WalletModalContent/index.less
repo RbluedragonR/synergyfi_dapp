@@ -1,0 +1,139 @@
+@import '~@/themes/variable.less';
+.wallet-modal-content {
+  padding: 0 24px 24px 24px;
+  .wallet-list {
+    // display: flex;
+    gap: @space-2x;
+    column-count: 2;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    .wallet-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px var(--spacing-12, 12px);
+      border-radius: @space-3x;
+      border: 1px solid var(--border-light-line-1, #c3e7e7);
+      height: 72px;
+      &-wrap {
+        flex: 1 1 250px;
+      }
+
+      &:hover {
+        border-color: @primary-color;
+      }
+      .syn-big-loading {
+        width: 16px;
+        height: 16px;
+      }
+
+      & > :last-child {
+        margin-bottom: 0;
+      }
+      cursor: pointer;
+      .wallet-brand {
+        .font16;
+        line-height: 24px;
+        font-weight: 700;
+        & > img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .wallet-item-connect {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > span {
+          margin-right: @space-2x;
+        }
+        & > svg {
+          width: 24px;
+          height: 24px;
+          path {
+            fill: var(--icon-grey1);
+          }
+        }
+      }
+      &.wallet-item_error {
+        border-color: @danger-color;
+      }
+
+      .trending-wallet {
+        padding: @space @space-2x;
+        margin-right: @space-2x;
+        background: @trending-wallet-bg;
+        border-radius: 100px;
+        .font12;
+        font-weight: 700;
+        &.mobile {
+          background: transparent;
+        }
+      }
+
+      &.empty {
+        background: transparent;
+
+        &:hover {
+          border: 1px solid var(--border-light-line-1, #c3e7e7);
+
+          cursor: default;
+        }
+      }
+
+      &-installed {
+        color: var(--text-weak-prompt, #94b8bf);
+        font-feature-settings: 'liga' off, 'clig' off;
+
+        /* 4 size/12R */
+        font-family: Ubuntu;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px; /* 100% */
+      }
+    }
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+    }
+    &-line {
+      height: 1px;
+      width: 100%;
+      background: var(--border-light-line-1, #c3e7e7);
+    }
+    &-title {
+      .font14;
+      font-weight: 700;
+    }
+  }
+  .wallet-item-retry {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: @space-2x;
+    & > span {
+      margin-right: @space-2x;
+    }
+    .syn-btn.syn-btn-link.syn-btn.syn-btn-link {
+      font-size: 12px;
+      height: auto;
+      padding: 0;
+    }
+  }
+}
+
+.wallet-modal-title {
+  margin-top: 0;
+  .font12;
+  line-height: 20px;
+  color: var(--text-strong-prompt, #6fd6d6);
+  margin-bottom: @space-4x;
+  .syn-link {
+    color: var(--text-brand, #00bfbf);
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

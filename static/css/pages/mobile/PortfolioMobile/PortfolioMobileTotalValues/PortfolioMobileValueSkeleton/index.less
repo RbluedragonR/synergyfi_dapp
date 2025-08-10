@@ -1,0 +1,24 @@
+@import '~@/themes/func.less';
+@portfolio-mobile-value-skeleton-prefix: ~'@{syn-prefix}-portfolio-mobile-value-skeleton';
+.@{portfolio-mobile-value-skeleton-prefix} {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  justify-content: center;
+  .ant-skeleton {
+    &:first-of-type {
+      width: 40px;
+      height: 24px;
+    }
+    &:last-of-type {
+      width: 133px;
+      height: 40px;
+    }
+    .ant-skeleton-title {
+      height: 100% !important;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

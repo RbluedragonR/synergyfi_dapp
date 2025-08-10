@@ -1,0 +1,36 @@
+.main-container:has(.desktop-trade-fallback) {
+  overflow: hidden !important;
+}
+.desktop-trade-fallback {
+  max-width: 1440px;
+  padding: 16px 24px 0 24px;
+  .syn-loading {
+    height: 490px;
+  }
+  &-top-left,
+  &-top-right,
+  &-bottom-right {
+    border-radius: var(--spacing-16, 16px);
+    background: var(--solid-2, #f4fbfb);
+  }
+  &-top {
+    display: flex;
+    gap: 16px;
+  }
+  &-top-left {
+    height: 563px;
+    flex: 1;
+  }
+  &-top-right {
+    width: 392px;
+    height: 563px;
+  }
+  &-bottom-right {
+    margin-top: 56px;
+    height: 104px;
+    width: 392px;
+    float: right;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

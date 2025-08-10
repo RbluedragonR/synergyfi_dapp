@@ -1,0 +1,17 @@
+@import '~@/themes/func.less';
+@portfolio-overview-prefix: ~'@{syn-prefix}-portfolio-overview';
+.@{portfolio-overview-prefix} {
+  z-index: 2;
+  display: flex;
+  row-gap: @space-8x;
+  justify-content: space-between;
+  column-gap: @space-6x;
+  & > div {
+    // width: 50%;
+    flex: 1;
+    min-width: 49%;
+    min-height: 200px;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

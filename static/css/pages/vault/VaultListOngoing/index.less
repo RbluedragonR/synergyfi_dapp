@@ -1,0 +1,67 @@
+@import '~@/themes/func.less';
+@vault-list-ongoing-prefix: ~'@{syn-prefix}-vault-list-ongoing';
+.@{vault-list-ongoing-prefix} {
+  &-table {
+    &.ant-card {
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      .ant-card-body {
+        padding: 0;
+        .syn-table {
+          border: none;
+          .ant-table-tbody .ant-table-row {
+            &:hover {
+              background: rgba(0, 191, 191, 0.05);
+            }
+            .ant-table-cell {
+              height: 60px;
+
+              &:last-of-type {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+              }
+            }
+          }
+
+          .ant-table-thead {
+            .ant-table-cell.tvl,
+            .ant-table-cell.ooP {
+              .ant-table-column-sorters {
+                .ant-table-column-title {
+                  flex: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &-oo-p {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+      align-items: flex-end;
+      &-epoch {
+        display: flex;
+        column-gap: 4px;
+        align-items: center;
+        color: var(--text-strong-prompt, #007580);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 12px;
+        svg path {
+          fill: var(--text-strong-prompt, #007580);
+        }
+      }
+    }
+  }
+  &-right-icon {
+    path {
+      stroke: @text-secondary;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

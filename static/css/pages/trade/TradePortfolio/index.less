@@ -1,0 +1,145 @@
+.syn-trade-positions {
+  &.ant-card {
+    background: none;
+    flex: 1;
+    .ant-card-body {
+      background: none;
+    }
+  }
+  &-extra {
+    display: flex;
+    column-gap: @space-4x;
+    align-items: center;
+    right: 0;
+
+    svg {
+      width: @space-4x;
+      height: @space-4x;
+    }
+
+    .syn-btn {
+      .font12;
+      padding: 4px @space-2x;
+      height: 24px;
+      column-gap: @space;
+      border: none;
+      path {
+        fill: var(--icon-grey1);
+      }
+      svg {
+        width: @space-4x;
+        height: @space-4x;
+      }
+      &.syn-btn-background-ghost {
+        padding: 4px 8px;
+        border-radius: 6px;
+        .font12;
+        line-height: 12px;
+        font-weight: 700;
+        background: var(--button-white, #fff);
+        svg {
+          width: 12px;
+          height: 12px;
+          path {
+            fill: @text-emphasis;
+          }
+        }
+        &:disabled {
+          color: #c3e7e7;
+        }
+      }
+      &.syn-btn-loading {
+        font-weight: 700;
+        background: var(--Constant-confirm-gradient, linear-gradient(90deg, #57d9d9 0%, #73ace5 100%));
+        .anticon-loading {
+          margin-right: @space;
+        }
+        svg {
+          width: @space-3x;
+          height: @space-3x;
+        }
+      }
+    }
+    .syn-btn-default {
+      color: var(--text-brand, #00bfbf);
+    }
+    .syn-btn-text {
+      color: var(--text-brand, #00bfbf);
+
+      &:not(:disabled):not(.syn-btn-disabled):hover {
+        background-color: transparent;
+      }
+      &:hover {
+        color: var(--text-brand, #00bfbf) !important;
+      }
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    row-gap: 16px;
+    &-row {
+      display: flex;
+      flex-direction: column;
+      &-title {
+        color: var(--text-brand, #00bfbf);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        height: 40px;
+        padding-left: 12px;
+      }
+    }
+
+    &-header {
+      display: flex;
+      position: sticky;
+      top: -1px;
+      margin-bottom: 1px;
+      z-index: 100;
+      justify-content: space-between;
+      .ant-tabs-content-holder {
+        display: none;
+      }
+    }
+  }
+
+  dl {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-icon {
+    position: absolute;
+    top: @space-3x;
+    right: @space-4x;
+  }
+
+  .syn-trade-orders-title {
+    display: flex;
+    align-items: center;
+    gap: @space;
+    &.selected {
+      .syn-trade-orders-title-count {
+        background: @primary-color;
+      }
+    }
+    &-count {
+      border-radius: 99px;
+      background: var(--text-weak-prompt, #007580);
+      padding: 0px 5px;
+      color: var(--white, #fff);
+      .font12;
+      font-weight: 700;
+      display: flex;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

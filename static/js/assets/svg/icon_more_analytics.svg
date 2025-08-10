@@ -1,0 +1,50 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconMoreAnalytics = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_25_1597)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M13.1251 5.99999C13.1251 5.37866 12.6214 4.87499 12.0001 4.87499C11.3787 4.87499 10.8751 5.37866 10.8751 5.99999V18C10.8751 18.6213 11.3787 19.125 12.0001 19.125C12.6214 19.125 13.1251 18.6213 13.1251 18V5.99999Z",
+    fill: "white"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M8.12506 8.99998C8.12506 8.37866 7.62138 7.87498 7.00006 7.87498C6.37874 7.87498 5.87506 8.37866 5.87506 8.99998V18C5.87506 18.6213 6.37874 19.125 7.00006 19.125C7.62138 19.125 8.12506 18.6213 8.12506 18V8.99998Z",
+    fill: "white"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M18.1251 13C18.1251 12.3787 17.6214 11.875 17.0001 11.875C16.3787 11.875 15.8751 12.3787 15.8751 13V18C15.8751 18.6213 16.3787 19.125 17.0001 19.125C17.6214 19.125 18.1251 18.6213 18.1251 18V13Z",
+    fill: "white"
+  }), /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M12.0832 0.875001H11.9168C9.63046 0.874973 7.80061 0.874951 6.36414 1.06803C4.87782 1.2678 3.64574 1.6926 2.66905 2.66796C1.69338 3.6443 1.26779 4.87745 1.06803 6.36378C0.874951 7.80037 0.874973 9.63043 0.875001 11.9168V12.0832C0.874973 14.3695 0.874951 16.1999 1.06803 17.6365C1.26775 19.1225 1.69248 20.355 2.66851 21.3305C3.64481 22.3068 4.87721 22.7319 6.36367 22.9318C7.80033 23.125 9.63046 23.125 11.9168 23.125H12.0833C14.3696 23.125 16.1999 23.125 17.6366 22.9318C19.1228 22.732 20.3553 22.3069 21.3308 21.3302C22.3068 20.3544 22.732 19.1221 22.9318 17.6362C23.125 16.1997 23.125 14.3696 23.125 12.0833V11.9167C23.125 9.63044 23.125 7.80056 22.9318 6.36404C22.7319 4.87758 22.3068 3.64544 21.3308 2.66878C20.3548 1.69286 19.1223 1.26779 17.6361 1.06803C16.1996 0.874951 14.3695 0.874973 12.0832 0.875001ZM4.25927 4.25973C4.74855 3.77127 5.42744 3.46416 6.66387 3.29798C7.933 3.12739 9.61121 3.125 12 3.125C14.3888 3.125 16.0672 3.12739 17.3364 3.29798C18.5732 3.46422 19.2514 3.77141 19.7395 4.2595C20.2283 4.74881 20.5356 5.42765 20.7019 6.66397C20.8726 7.93304 20.875 9.61119 20.875 12C20.875 14.3888 20.8726 16.0672 20.7019 17.3363C20.5356 18.573 20.2282 19.2511 19.7398 19.7392C19.2523 20.2274 18.5736 20.5356 17.3367 20.7019C16.0675 20.8726 14.3888 20.875 12 20.875C9.61119 20.875 7.93279 20.8726 6.66358 20.7019C5.42679 20.5356 4.74819 20.2282 4.2595 19.7395C3.77172 19.2521 3.46424 18.5738 3.29798 17.3368C3.12739 16.0675 3.125 14.3888 3.125 12C3.125 9.61121 3.12739 7.93275 3.29798 6.66348C3.46416 5.42697 3.77122 4.74836 4.25927 4.25973Z",
+    fill: "white"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_25_1597"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 24,
+    height: 24,
+    fill: "white"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconMoreAnalytics);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_more_analytics.fb58eee7a9ee4d0789340da2042c3076.svg";

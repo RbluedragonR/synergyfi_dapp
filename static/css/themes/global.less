@@ -1,0 +1,165 @@
+@import '~@/themes/func.less';
+* {
+  box-sizing: border-box;
+  &:before {
+    box-sizing: border-box;
+  }
+  &:after {
+    box-sizing: border-box;
+  }
+  button {
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+}
+button {
+  background-color: transparent;
+}
+div {
+  outline: none;
+}
+html,
+body {
+  background: var(--solid-bg, #e1f3f3);
+  width: 100% !important;
+  overflow: auto !important;
+  .font-default;
+  font-size: 14px;
+  margin: 0;
+  &.second-layer {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+.ant-flex {
+  line-height: normal !important;
+}
+#root {
+  height: 100%;
+  & > div {
+    height: 100%;
+    & > .App {
+      height: 100%;
+      & > div {
+        height: 100%;
+      }
+    }
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+html {
+  &.mobile {
+    font-size: 12px;
+  }
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-black, #000);
+  overflow-x: auto;
+  // .remove-scrollbar();
+
+  --duration: 0.5s;
+  --timing: ease;
+
+  transition: color var(--duration) var(--timing), background-color var(--duration) var(--timing);
+}
+
+a {
+  color: var(--link-color);
+  .selected {
+    color: var(--link-selected-color);
+  }
+  &:hover {
+    color: @primary-color;
+  }
+}
+
+::selection {
+  background: @selection-color;
+}
+
+// custom scrollbar
+::-webkit-scrollbar {
+  // width: 5px;
+}
+
+// scroll bg
+::-webkit-scrollbar-track {
+  // color: @scroll-bar;
+  background: transparent;
+  // background-color: @scroll-bar;
+}
+
+// scroll bar
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: @scroll-bar;
+}
+
+.ant-spin-blur {
+  &:after {
+    background-color: @bg5;
+    opacity: 0;
+  }
+}
+
+.mobile > body {
+  height: 100vh;
+  height: -webkit-fill-available;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.number-value-container {
+  display: flex;
+  align-items: baseline;
+}
+
+// hide number input default up/down button
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.syn-scrollbar,
+.rc-virtual-list-holder {
+  /* width */
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: var(--border-light-line-1, #c3e7e7);
+  }
+}
+.rc-virtual-list-scrollbar {
+  .rc-virtual-list-scrollbar-thumb {
+    border-radius: 999px !important;
+    width: 4px !important;
+    background: var(--border-light-line-1, #c3e7e7) !important;
+  }
+}

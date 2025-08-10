@@ -1,0 +1,42 @@
+@import '~@/themes/variable.less';
+.user-address-modal.syn-modal.ant-modal {
+  .ant-modal-body {
+    max-height: 688px;
+  }
+  .syn-modal-header {
+    padding: 0;
+    margin: 0;
+
+    // padding-bottom: @space-4x;
+    .syn-modal-header-title {
+      padding: 0 24px;
+      height: 64px;
+      margin-bottom: 0;
+      // padding-bottom: @space-6x;
+      .syn-modal-close {
+        cursor: pointer;
+        svg path {
+          fill: @text-color;
+        }
+      }
+    }
+  }
+
+  .ant-modal-content {
+    .ant-modal-body {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      .user-address-modal-content {
+        flex: 1;
+        overflow: hidden;
+        .balance-list {
+          flex: 1;
+          overflow: auto;
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

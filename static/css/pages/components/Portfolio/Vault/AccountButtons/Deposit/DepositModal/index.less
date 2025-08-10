@@ -1,0 +1,59 @@
+.syn-deposit-modal {
+  .ant-modal-content {
+    border-radius: @space-4x;
+    .ant-card {
+      .syn-card_wrapper-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+      }
+    }
+  }
+
+  &-content {
+    padding: @space-8x;
+  }
+
+  .ant-card-body {
+    .token-pair {
+      margin-bottom: @space-6x;
+    }
+  }
+
+  &-drawer {
+    .ant-drawer-body {
+      padding: 0;
+      .ant-card {
+        padding: 0;
+        padding-top: 24px;
+        .syn-card_wrapper-content {
+          display: flex;
+          flex-direction: column;
+          row-gap: 8px;
+        }
+      }
+    }
+  }
+}
+.syn-deposit-modal-for-odyssey-reward {
+  .ant-modal-content,
+  .ant-card {
+    overflow: visible;
+  }
+  .syn-odyssey-reward-card {
+    position: absolute;
+    width: 424px;
+    left: 0;
+    bottom: -160px;
+  }
+}
+.syn-mobile-deposit-modal-drawer {
+  .ant-card-head {
+    display: none;
+  }
+  .ant-card {
+    padding-top: 16px !important;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

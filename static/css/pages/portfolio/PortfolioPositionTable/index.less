@@ -1,0 +1,18 @@
+@import '~@/themes/func.less';
+@portfolio-position-table-prefix: ~'@{syn-prefix}-portfolio-position-table';
+.@{portfolio-position-table-prefix} {
+  .ant-table-tbody {
+    tr {
+      cursor: pointer;
+      &.odd {
+        background: @bg-tab;
+      }
+      &.emergency {
+        border: 1px solid @emergency-border;
+        background: @emergency-bg;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

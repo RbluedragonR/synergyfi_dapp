@@ -1,0 +1,118 @@
+.syn-tgp-modal {
+  min-height: 288px;
+  &.ant-modal {
+    .ant-modal-content {
+      height: 100%;
+      border-radius: 24px;
+      border: 1px solid var(--cyan, #00bfbf);
+      background: linear-gradient(180deg, rgba(4, 12, 22, 0.6) 0%, #001b24 71.43%);
+
+      /* blur 10 */
+      backdrop-filter: blur(5px);
+      .ant-modal-body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 48px;
+      }
+    }
+  }
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .font24;
+    font-weight: 700;
+    width: 100%;
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+    .close {
+      cursor: pointer;
+    }
+    &-left {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+      padding-left: 32px;
+      flex: 1;
+      justify-content: center;
+    }
+  }
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+  }
+  &-body {
+    width: 100%;
+  }
+  &-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    margin: 0 -40px;
+    &-content {
+      flex: 1;
+      text-align: center;
+      gap: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+    &-title {
+      color: var(--white, #fff);
+      text-align: center;
+      font-family: Oxanium;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      margin: 0;
+    }
+    &-num {
+      color: var(--hlight, #00bfbf);
+      text-align: center;
+      font-family: Oxanium;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px; /* 100% */
+      margin: 0;
+    }
+  }
+  &-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--white, #fff);
+    font-family: Oxanium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    width: 100%;
+    b {
+      color: var(--hlight, #00bfbf);
+    }
+    .highlight {
+      .font12;
+      display: flex;
+      height: 16px;
+      padding: 0px 4px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      color: var(--hlight, #00bfbf);
+      background: var(--cyan-disable, #1a444d);
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,109 @@
+@import '~@/themes/func.less';
+@leader-table-pagination-prefix: ~'@{syn-prefix}-leader-table-pagination';
+.@{leader-table-pagination-prefix} {
+  margin-top: 24px;
+  display: flex;
+  border-top: 1px solid var(--border-light-line-1, #c3e7e7);
+  height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-strong-prompt, #006a80);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  &.master {
+    justify-content: center;
+  }
+  &-left {
+    width: 300px;
+    color: var(--text-strong-prompt, #006a80);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    width: 300px;
+    justify-content: flex-end;
+    svg {
+      path {
+        fill: var(--text-strong-prompt);
+      }
+    }
+  }
+  .ant-pagination {
+    display: flex;
+    align-items: center;
+    li.ant-pagination-item {
+      height: 24px;
+      background: none;
+      border: none;
+      &:hover {
+        background-color: transparent;
+      }
+      .ant-pagination-item-ellipsis {
+        display: none;
+      }
+      a {
+        margin: 0 8px;
+        border-radius: 6px;
+        border: 1px solid var(--border-brand, #00bfbf);
+        .font12;
+        min-width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 12px;
+        color: var(--text-black, #000);
+      }
+      &.ant-pagination-item-active {
+        a {
+          background: var(--cyan, #00bfbf);
+          border-color: transparent;
+          color: var(--text-black);
+          font-weight: 700;
+        }
+      }
+    }
+    li {
+      svg path {
+        fill: var(--text-black);
+      }
+      &.ant-pagination-disabled {
+        svg path {
+          fill: var(--button-disabled);
+        }
+      }
+      &.ant-pagination-jump-next,
+      &.ant-pagination-jump-prev {
+        .ant-pagination-item-link-icon {
+          opacity: 1;
+        }
+      }
+    }
+    .ant-pagination-total-text {
+      display: flex;
+      align-items: center;
+    }
+
+    .ant-pagination-prev {
+      margin-right: 8px;
+      height: 24px;
+    }
+    .ant-pagination-next {
+      margin-left: 8px;
+      height: 24px;
+    }
+    .ant-pagination-jump-next,
+    .ant-pagination-jump-prev {
+      .ant-pagination-item-ellipsis {
+        display: none;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,59 @@
+@import '~@/themes/func.less';
+@spot-history-item-prefix: ~'@{syn-prefix}-spot-history-item';
+.@{spot-history-item-prefix} {
+  display: flex;
+  padding: 12px var(--spacing-8, 8px);
+  border-radius: var(--radius-8, 8px);
+  background: var(--solid-list-card, #f4fbfb);
+  align-items: center;
+  height: 40px;
+  color: var(--text-black, #000);
+  .font14;
+  &-left {
+    width: 27%;
+    &-time {
+      text-decoration: underline;
+      cursor: pointer;
+      color: var(--text-strong-prompt, #007580);
+      .font12;
+    }
+  }
+  &-middle {
+    span {
+      display: flex;
+    }
+    .number-suffix {
+      display: block;
+      width: 70px; /* Set the desired width */
+      white-space: nowrap; /* Prevent text from wrapping to the next line */
+      overflow: hidden; /* Hide the overflowed text */
+      text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+    }
+    width: 38%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    svg {
+      path {
+        fill: var(--text-black);
+      }
+    }
+  }
+  &-right {
+    width: 35%;
+    text-align: right;
+    span {
+      justify-content: flex-end;
+      display: flex;
+    }
+    .number-suffix {
+      display: block;
+      max-width: 70px; /* Set the desired width */
+      white-space: nowrap; /* Prevent text from wrapping to the next line */
+      overflow: hidden; /* Hide the overflowed text */
+      text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

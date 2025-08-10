@@ -1,0 +1,46 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconAcctNew = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_5462_67094)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M10.3533 1.33301C10.3533 0.918794 10.6891 0.583008 11.1033 0.583008H14.666C15.0802 0.583008 15.416 0.918794 15.416 1.33301V4.89567C15.416 5.30989 15.0802 5.64567 14.666 5.64567C14.2518 5.64567 13.916 5.30989 13.916 4.89567V3.14367L9.19635 7.86334C8.90345 8.15623 8.42858 8.15623 8.13569 7.86334C7.84279 7.57044 7.84279 7.09557 8.13569 6.80268L12.8554 2.08301H11.1033C10.6891 2.08301 10.3533 1.74722 10.3533 1.33301Z",
+    fill: "#94B8BF"
+  }), /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4.44225 2.19832C3.61802 2.30911 3.16543 2.51383 2.83925 2.83943C2.51385 3.16519 2.30912 3.6176 2.19833 4.44199C2.0846 5.28817 2.08301 6.40715 2.08301 7.99967C2.08301 9.5922 2.0846 10.7113 2.19833 11.5575C2.30916 12.3822 2.51397 12.8342 2.83916 13.1592L2.83934 13.1593C3.16514 13.4851 3.61753 13.6901 4.44206 13.801C5.2882 13.9147 6.40713 13.9163 7.99967 13.9163C9.59222 13.9163 10.7113 13.9147 11.5575 13.801C12.3821 13.69 12.834 13.4851 13.159 13.1597L13.1595 13.1592C13.4852 12.8338 13.6901 12.3817 13.801 11.5572C13.9147 10.7111 13.9163 9.59222 13.9163 7.99967C13.9163 7.58546 14.2521 7.24967 14.6663 7.24967C15.0806 7.24967 15.4163 7.58546 15.4163 7.99967V8.05519C15.4164 9.57939 15.4164 10.7995 15.2876 11.7572C15.1543 12.748 14.8709 13.5696 14.2198 14.2202C13.5696 14.871 12.748 15.1543 11.7574 15.2876C10.7996 15.4164 9.5794 15.4164 8.0552 15.4163H7.94415C6.41995 15.4164 5.19988 15.4164 4.24212 15.2876C3.25124 15.1543 2.4297 14.8709 1.77886 14.2202C1.12805 13.5698 0.844853 12.7481 0.711692 11.7573C0.582975 10.7996 0.58299 9.57938 0.583008 8.05514V7.94421C0.58299 6.41997 0.582975 5.19992 0.711692 4.24219C0.844865 3.25131 1.12805 2.42975 1.7785 1.77886L1.77904 1.77832C2.43017 1.12808 3.25156 0.844877 4.24243 0.711693C5.20008 0.582975 6.41997 0.58299 7.9442 0.583008L7.99967 0.583009C8.41389 0.583009 8.74967 0.918795 8.74967 1.33301C8.74967 1.74722 8.41389 2.08301 7.99967 2.08301C6.40715 2.08301 5.28834 2.0846 4.44225 2.19832Z",
+    fill: "#94B8BF"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_5462_67094"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 16,
+    height: 16,
+    fill: "white"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconAcctNew);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_acct_new.7fee4177a533b81762f5dcf5b97516c2.svg";

@@ -1,0 +1,36 @@
+var _path, _path2;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconCalendar20 = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 20,
+    height: 21,
+    viewBox: "0 0 20 21",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M6.66667 12.1667C6.20643 12.1667 5.83333 12.5398 5.83333 13V14.6667C5.83333 15.1269 6.20643 15.5 6.66667 15.5H8.33333C8.79357 15.5 9.16667 15.1269 9.16667 14.6667V13C9.16667 12.5398 8.79357 12.1667 8.33333 12.1667H6.66667Z",
+    fill: "white"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M7.5 3C7.5 2.53976 7.1269 2.16666 6.66667 2.16666C6.20643 2.16666 5.83333 2.53976 5.83333 3V3.83333H5C4.33696 3.83333 3.70107 4.09672 3.23223 4.56556C2.76339 5.0344 2.5 5.67029 2.5 6.33333V16.3333C2.5 16.9964 2.76339 17.6323 3.23223 18.1011C3.70107 18.5699 4.33696 18.8333 5 18.8333H15C15.663 18.8333 16.2989 18.5699 16.7678 18.1011C17.2366 17.6323 17.5 16.9964 17.5 16.3333V6.33333C17.5 5.67029 17.2366 5.0344 16.7678 4.56556C16.2989 4.09672 15.663 3.83333 15 3.83333H14.1667V3C14.1667 2.53976 13.7936 2.16666 13.3333 2.16666C12.8731 2.16666 12.5 2.53976 12.5 3V3.83333H7.5V3ZM5 5.5H5.83333V6.33333C5.83333 6.79357 6.20643 7.16666 6.66667 7.16666C7.1269 7.16666 7.5 6.79357 7.5 6.33333V5.5H12.5V6.33333C12.5 6.79357 12.8731 7.16666 13.3333 7.16666C13.7936 7.16666 14.1667 6.79357 14.1667 6.33333V5.5H15C15.221 5.5 15.433 5.5878 15.5893 5.74408C15.7455 5.90036 15.8333 6.11232 15.8333 6.33333V8.83333H4.16667V6.33333C4.16667 6.11232 4.25446 5.90036 4.41074 5.74408C4.56702 5.5878 4.77899 5.5 5 5.5ZM4.16667 10.5H15.8333V16.3333C15.8333 16.5543 15.7455 16.7663 15.5893 16.9226C15.433 17.0789 15.221 17.1667 15 17.1667H5C4.77899 17.1667 4.56702 17.0789 4.41074 16.9226C4.25446 16.7663 4.16667 16.5543 4.16667 16.3333V10.5Z",
+    fill: "white"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconCalendar20);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_calendar_20.c8e4ce20e60d6fdc13149baf4598bcf3.svg";

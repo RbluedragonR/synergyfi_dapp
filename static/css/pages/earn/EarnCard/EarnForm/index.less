@@ -1,0 +1,77 @@
+.syn-earn-form {
+  &-amount,
+  &-limit {
+    display: flex;
+    column-gap: @space-2x;
+    .form-input-wrap {
+      flex: 1;
+      margin: 0;
+    }
+  }
+  .ant-card-head {
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+  }
+  .syn-tabs {
+    column-gap: 0;
+    &-item {
+      flex: 1;
+      text-align: center;
+      border: 1px solid @border-color;
+    }
+    &-bar {
+      display: none;
+    }
+  }
+  &-section {
+    margin-top: @space-6x;
+    &-title {
+      margin: @space-2x 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .rotate {
+        rotate: 180deg;
+      }
+    }
+  }
+  .ant-card {
+    row-gap: 0;
+  }
+}
+
+.syn-earn-area {
+  position: relative;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: @space-6x;
+    align-items: center;
+    img {
+      width: 128px;
+      height: 128px;
+    }
+    &-titles {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: @space-2x;
+      width: 70%;
+      .font16;
+      color: @text-color;
+      &-sub {
+        .font14;
+        // color: var(--text-weak-prompt, #94b8bf);
+        text-align: center;
+      }
+    }
+  }
+  .ant-card-body {
+    padding-top: @space-6x;
+    row-gap: 48px;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

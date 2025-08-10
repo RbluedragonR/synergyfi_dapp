@@ -1,0 +1,65 @@
+.syn-trade-form {
+  .syn-tabs {
+    &-bar {
+      display: none;
+    }
+  }
+  &-tab {
+    border-radius: var(--spacing-32, 32px);
+    background: var(--solid-2, #f4fbfb);
+    color: var(--text-strong-prompt, #006a80);
+    border: 1px solid var(--solid-2, #f4fbfb);
+    padding: 0 12px;
+    position: relative;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    column-gap: 4px;
+    &.disabled {
+      opacity: 0.2;
+    }
+    &-label {
+      // position: absolute;
+      top: 50%;
+      right: 0;
+      // transform: translate(calc(100% + 4px), -50%);
+    }
+    &-label-points {
+      //  position: absolute;
+      top: 50%;
+      right: 0;
+      // transform: translate(calc(100% + 4px), -50%);
+    }
+  }
+  .ant-card-head {
+    min-height: 0;
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+    .ant-tabs-tab {
+      padding: 0 !important;
+      margin: 0 0 0 8px !important;
+    }
+    .ant-tabs-tab:first-child {
+      margin: 0 !important;
+    }
+
+    .ant-tabs-tab-active {
+      .syn-trade-form-tab {
+        text-shadow: none;
+        color: var(--text-brand, #00bfbf);
+        font-weight: 400;
+        background: transparent;
+        border: 1px solid var(--border-brand, #00bfbf);
+      }
+    }
+    .ant-tabs-nav {
+      height: 48px;
+    }
+  }
+  .ant-card {
+    row-gap: 0;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,94 @@
+@import '~@/themes/func.less';
+@remove-liq-form-detail-prefix: ~'@{syn-prefix}-remove-liq-form-detail';
+.@{remove-liq-form-detail-prefix} {
+  display: flex;
+  flex-direction: column;
+  row-gap: @space-4x;
+
+  dl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .font12;
+    column-gap: @space-2x;
+    font-weight: 400;
+    margin: 0;
+    &.res-position {
+      margin-top: 16px !important;
+    }
+
+    dd {
+      display: flex;
+      column-gap: @space;
+      margin: 0;
+      color: @text-color;
+    }
+  }
+
+  &-container {
+    padding: @space-4x;
+    border-radius: @space-2x;
+    display: flex;
+    flex-direction: column;
+    row-gap: @space-4x;
+    border-radius: 8px;
+    background: var(--solid-2, #f4fbfb);
+    &-data {
+      display: flex;
+      flex-direction: column;
+      row-gap: @space;
+      .syn-trade-side {
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        align-items: center;
+        border-radius: 4px;
+        .ant-tag {
+          .font12;
+          font-weight: 400;
+          padding: 0px 4px;
+          text-transform: uppercase;
+          width: auto;
+          border-radius: 4px;
+        }
+      }
+      dt {
+        color: var(--text-strong-prompt, #006a80);
+      }
+    }
+    &-title {
+      color: var(--text-strong-prompt, #006a80);
+      .font12;
+      font-weight: 400;
+    }
+  }
+  &-change {
+    dl {
+      width: 100%;
+      dt {
+        display: flex;
+        flex-direction: column;
+        row-gap: @space;
+        align-items: flex-start;
+      }
+      dd {
+        color: @text-color;
+        .font14;
+      }
+    }
+    &-title {
+      color: var(--text-black, #000);
+      .font14;
+    }
+    &-subtitle {
+      color: var(--text-strong-prompt, #006a80);
+    }
+  }
+  &-line {
+    height: 1px;
+    background: var(--border-light-line-1, #c3e7e7);
+    flex: 1;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

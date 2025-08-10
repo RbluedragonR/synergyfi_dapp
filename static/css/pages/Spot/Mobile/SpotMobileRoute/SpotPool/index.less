@@ -1,0 +1,46 @@
+.syn-spot-mobile-route-pool {
+  display: flex;
+  min-width: 140px;
+  width: fit-content;
+  height: 32px;
+  padding: 0px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-8, 8px);
+  border-radius: 24px;
+  background: var(--solid-2, #f4fbfb);
+  border: 1px solid currentColor;
+  .ratio {
+    color: var(--text-black, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* 4 size/12B */
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px; /* 100% */
+  }
+  .pool-info {
+    color: var(--text-black, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    background: var(--solid-list-card, #f4fbfb);
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 100% */
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4, 4px);
+    img {
+      display: flex;
+      width: 16px;
+      height: 16px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

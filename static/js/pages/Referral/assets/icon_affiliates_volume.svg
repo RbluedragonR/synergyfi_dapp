@@ -1,0 +1,38 @@
+var _path, _path2;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconAffiliatesVolume = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1.99996 1.33499C2.36723 1.33499 2.66496 1.63272 2.66496 1.99999V13.335H4.66829V10.6667C4.66829 10.2994 4.96603 10.0017 5.33329 10.0017C5.70056 10.0017 5.99829 10.2994 5.99829 10.6667V13.335H7.33496V8.66666C7.33496 8.29939 7.63269 8.00166 7.99996 8.00166C8.36723 8.00166 8.66496 8.29939 8.66496 8.66666V13.335H10.0016V10.6667C10.0016 10.2994 10.2994 10.0017 10.6666 10.0017C11.0339 10.0017 11.3316 10.2994 11.3316 10.6667V13.335H12.6683V12C12.6683 11.6327 12.966 11.335 13.3333 11.335C13.7006 11.335 13.9983 11.6327 13.9983 12V13.335H14C14.3672 13.335 14.665 13.6327 14.665 14C14.665 14.3673 14.3672 14.665 14 14.665H1.99996C1.63269 14.665 1.33496 14.3673 1.33496 14V1.99999C1.33496 1.63272 1.63269 1.33499 1.99996 1.33499Z",
+    fill: "black"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5.94589 6.17281C5.69712 6.47765 5.40105 6.80644 5.01846 7.0979C4.72631 7.32046 4.30905 7.26405 4.08649 6.9719C3.86393 6.67975 3.92034 6.26249 4.21249 6.03993C4.47578 5.83935 4.69587 5.60099 4.91547 5.3319C4.98657 5.24478 5.06656 5.14246 5.15069 5.03484C5.29704 4.84764 5.45593 4.6444 5.60233 4.47725C5.85599 4.18766 6.16073 3.89479 6.56019 3.67832C6.96708 3.45783 7.43787 3.33499 7.9999 3.33499C8.83057 3.33499 9.43776 3.60341 9.92562 4.00996C10.2858 4.31008 10.5886 4.69946 10.8475 5.03239C10.907 5.10891 10.9641 5.18245 11.0192 5.25124C11.3371 5.6486 11.6496 5.98692 12.0822 6.23648C12.5075 6.48186 13.0975 6.66832 13.9999 6.66832C14.3672 6.66832 14.6649 6.96606 14.6649 7.33332C14.6649 7.70059 14.3672 7.99832 13.9999 7.99832C12.9023 7.99832 12.0756 7.76812 11.4176 7.3885C10.7668 7.01306 10.3294 6.51805 9.98062 6.08208C9.89872 5.97971 9.82385 5.88393 9.7536 5.79406C9.50459 5.4755 9.31369 5.23129 9.07417 5.03169C8.81203 4.81324 8.50255 4.66499 7.9999 4.66499C7.64255 4.66499 7.39207 4.74025 7.19384 4.84767C6.98818 4.95912 6.80394 5.12396 6.60281 5.35358C6.47228 5.5026 6.36383 5.64213 6.242 5.79886C6.15456 5.91136 6.06022 6.03272 5.94589 6.17281Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconAffiliatesVolume);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_affiliates_volume.01b1d7f2bc1814b5a1c8fce1aa7cbd7a.svg";

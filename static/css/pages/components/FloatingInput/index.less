@@ -1,0 +1,82 @@
+@import '~@/themes/func.less';
+@floating-input-prefix: ~'@{syn-prefix}-floating-input';
+.@{floating-input-prefix} {
+  &-container {
+    position: relative;
+      height: 56px;
+      &-suffix {
+        height: 24px;
+        top: 15px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 10;
+        color: var(--text-black, #000);
+      }
+  }
+  display: flex;
+  padding: 8px 16px;
+  width: 100%;
+  height: 100%;
+  column-gap: 16px;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 4px;
+  background: var(--solid-2, #F4FBFB);
+  border: 1px solid var(--border-light-line-1, #C3E7E7);
+  
+  &-title {
+    transition: 0.3s ease all;
+    z-index: 1;
+    transform: translate(0, 10px);
+    .font16;
+    line-height: 16px;
+    color:  var(--text-weak-prompt, #94B8BF);
+    max-width: 100px;
+  }
+  input {
+    border: none;
+    background: none;
+    .font16;
+    border: none;
+    line-height: 16px;
+    padding: 0;
+    height: 16px;
+    transition: all 0s ease-in;
+    max-width: 100px;
+    &::placeholder {
+      color: transparent;
+    }
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &:hover, &.focus {
+    border-color: @primary-color;
+    background: var(--solid-white-card, #FFF);
+  }
+
+  &:hover, &.focus, &.has-value {
+    .@{floating-input-prefix}{
+      &-title {
+        transform: translate(0, 0);
+        .font12;
+        line-height: 12px;
+        color: var(--text-weak-prompt, #94B8BF);
+        opacity: 1;
+      }
+    } 
+    input::placeholder {
+       color: var(--text-black, #000);
+       opacity: 0.2;
+    }
+  }
+  &.disabled {
+    pointer-events: none;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

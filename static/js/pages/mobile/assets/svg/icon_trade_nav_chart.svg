@@ -1,0 +1,38 @@
+var _path, _path2;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconTradeNavChart = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M8 2C8 1.44772 7.55228 1 7 1C6.44772 1 6 1.44772 6 2V4H4.8C3.80589 4 3 4.80589 3 5.8V14.2C3 15.1941 3.80589 16 4.8 16H6V18C6 18.5523 6.44772 19 7 19C7.55228 19 8 18.5523 8 18V16H9.2C10.1941 16 11 15.1941 11 14.2V5.8C11 4.80589 10.1941 4 9.2 4H8V2ZM9 14V6H5V14H9Z",
+    fill: "#1F292E"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M17 5C17.5523 5 18 5.44772 18 6V11H19.2C20.1941 11 21 11.8059 21 12.8V18.2C21 19.1941 20.1941 20 19.2 20H18V22C18 22.5523 17.5523 23 17 23C16.4477 23 16 22.5523 16 22V20H14.8C13.8059 20 13 19.1941 13 18.2V12.8C13 11.8059 13.8059 11 14.8 11H16V6C16 5.44772 16.4477 5 17 5ZM19 18V13H15V18H19Z",
+    fill: "#1F292E"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconTradeNavChart);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_trade_nav_chart.d21ae05e3f7087127e12a189922c1c02.svg";

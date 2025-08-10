@@ -1,0 +1,36 @@
+var _g;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgDownloadIcon = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 17,
+    height: 16,
+    viewBox: "0 0 17 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    id: "solar:download-minimalistic-linear"
+  }, /*#__PURE__*/React.createElement("path", {
+    id: "Vector (Stroke)",
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M8.5 1.25C8.91422 1.25 9.25 1.58579 9.25 2V8.73486L10.6131 7.24392C10.8926 6.93822 11.367 6.91698 11.6727 7.19648C11.9784 7.47598 11.9997 7.95038 11.7202 8.25608L9.05352 11.1727C8.91144 11.3281 8.71057 11.4167 8.5 11.4167C8.28943 11.4167 8.08857 11.3281 7.94648 11.1727L5.27981 8.25608C5.00032 7.95038 5.02156 7.47598 5.32726 7.19648C5.63296 6.91698 6.10736 6.93822 6.38686 7.24392L7.75 8.73486V2C7.75 1.58579 8.08579 1.25 8.5 1.25ZM2.5 9.25C2.91422 9.25 3.25 9.58579 3.25 10C3.25 10.9639 3.2516 11.6115 3.31656 12.0945C3.37863 12.5561 3.48589 12.7534 3.61603 12.8834L3.61663 12.884C3.74663 13.0141 3.94392 13.1214 4.40547 13.1834C4.88853 13.2484 5.53613 13.25 6.5 13.25H10.5C11.4639 13.25 12.1115 13.2484 12.5945 13.1834C13.0561 13.1214 13.2534 13.0141 13.3834 12.884L13.384 12.8834C13.5141 12.7534 13.6214 12.5561 13.6834 12.0945C13.7484 11.6115 13.75 10.9639 13.75 10C13.75 9.58579 14.0858 9.25 14.5 9.25C14.9142 9.25 15.25 9.58579 15.25 10V10.052C15.25 10.9503 15.2501 11.6996 15.1701 12.2945C15.0857 12.9221 14.9 13.489 14.4443 13.9443C13.989 14.4 13.4221 14.5856 12.7945 14.6701C12.1996 14.7501 11.4503 14.75 10.552 14.75H6.44802C5.54967 14.75 4.80038 14.7501 4.20554 14.6701C3.57775 14.5856 3.01071 14.3999 2.55537 13.944C2.09995 13.4888 1.91434 12.922 1.82994 12.2945C1.74995 11.6996 1.74997 10.9503 1.75 10.052L1.75 10C1.75 9.58579 2.08579 9.25 2.5 9.25Z",
+    fill: "white"
+  }))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgDownloadIcon);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/download_icon.217940a619094116a24ff96f7bbcffda.svg";

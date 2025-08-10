@@ -1,0 +1,48 @@
+.global-form-setting {
+  display: flex;
+  flex-direction: column;
+  row-gap: @space-4x;
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    column-gap: @space-6x;
+
+    .syn-btn {
+      flex: 1;
+      .font16;
+      font-weight: 700;
+      border-radius: @space-2x;
+      height: 48px;
+    }
+    .syn-btn-background-ghost {
+      border: 1px solid var(--border-light-line-1, #c3e7e7);
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  &__warning {
+    background: @global-form-warning;
+    color: #cc8800;
+    .font12;
+    padding: @space-2x;
+    border-radius: @space-2x;
+    display: flex;
+    align-items: center;
+    column-gap: @space;
+    margin-top: @space-4x;
+  }
+
+  &.mobile {
+    margin: 0;
+    .global-form-setting__item {
+      padding: 0;
+    }
+    .global-form-setting__footer {
+      margin-top: @space-2x;
+      column-gap: @space-4x;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

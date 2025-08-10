@@ -1,0 +1,54 @@
+.ant-message {
+  // ant-message-notice syn-message
+  top: auto !important;
+  bottom: 76px !important;
+  &-notice {
+    text-align: right;
+    margin-right: @space-9x;
+    &-content {
+      // min-width: 360px;
+      border-radius: 8px;
+      border: 1px solid @border-color;
+      cursor: pointer;
+    }
+    &.mobile {
+      margin-right: 0;
+    }
+  }
+  &-custom-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+  }
+
+  &-info,
+  &-loading {
+    .anticon {
+      color: @primary-color;
+    }
+  }
+}
+
+.syn-message {
+  bottom: 0;
+  &-content {
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: @space-3x;
+    }
+    flex: 1;
+    &-close {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .anticon {
+        color: #a1a7b2;
+        .font14;
+      }
+    }
+  }
+}

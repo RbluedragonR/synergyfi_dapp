@@ -1,0 +1,46 @@
+.syn-tgp-banner-btn {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 104px;
+  height: 32px;
+  &-claim {
+    width: 144px;
+  }
+
+  &-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  span {
+    z-index: 2;
+    color: var(--text-black, #000);
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Oxanium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 114.286% */
+  }
+  &-claimed {
+    // width: 144px;
+    span {
+      color: var(--cyan, #00bfbf);
+      .font12;
+      font-weight: 700;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

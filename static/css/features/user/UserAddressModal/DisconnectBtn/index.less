@@ -1,0 +1,26 @@
+.syn-disconnect-btn.syn-btn {
+  &:hover {
+    color: #29b5bc;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  .font12;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 1px solid var(--button-disable, #c3e7e7);
+  background: var(--button-white, #fff);
+  &:not(:disabled):hover {
+    border: 1px solid var(--border-light-line-1, #c3e7e7);
+    background: var(--button-white, #fff);
+  }
+  &.mobile {
+    padding: 6px 8px;
+    height: 24px;
+    .font12;
+    font-weight: 700;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

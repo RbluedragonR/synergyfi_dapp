@@ -1,0 +1,54 @@
+@import '~@/themes/func.less';
+@trade-mobile-banner-prefix: ~'@{syn-prefix}-mobile-banner';
+.@{trade-mobile-banner-prefix} {
+  &-wrapper {
+    position: fixed;
+    z-index: 100;
+    background-color: var(--solid-bg, #e1f3f3);
+    .rfm-marquee-container {
+      .rfm-marquee {
+        min-width: unset !important;
+      }
+    }
+  }
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  column-gap: 8px;
+  dl {
+    margin: 0;
+    display: flex;
+    .font12;
+    column-gap: 4px;
+    align-items: center;
+    dd,
+    dt {
+      margin: 0;
+    }
+    dt {
+      color: var(--text-weak-prompt, #94b8bf);
+    }
+    dd {
+      color: var(--text-black, #000);
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+    }
+  }
+  &-divider {
+    color: var(--border-light-line-1, #c3e7e7);
+    .font12;
+  }
+  .ant-skeleton {
+    width: auto;
+    .ant-skeleton-content {
+      width: auto;
+      .ant-skeleton-title {
+        width: 92px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,68 @@
+.user-wallet-modal {
+  &.syn-modal .ant-modal-content {
+    .syn-modal-header {
+      background-color: transparent;
+      padding: 16px 0;
+      padding-top: 24px;
+      padding-bottom: 8px;
+
+      .syn-modal-header-title {
+        .font14;
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .ant-modal-body {
+    padding: 0;
+  }
+}
+.user-wallet-drawer {
+  &.ant-drawer-content {
+    .ant-drawer-header {
+      padding: 20px 0;
+      .ant-drawer-header-title {
+        display: flex;
+        justify-content: space-between;
+        .ant-drawer-title {
+          order: 1;
+        }
+        .ant-drawer-close {
+          order: 2;
+        }
+      }
+    }
+    .ant-drawer-wrapper-body {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      .ant-drawer-body {
+        padding: 0;
+        .wallet-modal-title {
+          .font14;
+          line-height: 24px;
+        }
+        .wallet-modal-content {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+.syn-mobile-user-wallet-drawer {
+  &.ant-drawer-content {
+    .ant-drawer-header {
+      padding-top: 24px;
+      padding-bottom: 16px;
+    }
+    .ant-drawer-body {
+      padding: 0;
+      margin-top: 0px;
+      .wallet-modal-content {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

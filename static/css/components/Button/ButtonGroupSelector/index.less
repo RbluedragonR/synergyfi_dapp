@@ -1,0 +1,50 @@
+@ButtonGroupSelector-prefix: ~'@{syn-prefix}-button_group_selector';
+.@{ButtonGroupSelector-prefix} {
+  display: flex;
+  align-items: center;
+  .@{ButtonGroupSelector-prefix}-item {
+    &.syn-btn-background-ghost {
+      margin-right: @space-2x;
+      padding: @space-2x @space-3x;
+      border-radius: 8px;
+      svg {
+        display: none;
+      }
+      span {
+        color: var(--text-black, #000);
+      }
+      &:focus {
+        border-color: @border-color;
+
+        span {
+          color: var(--text-black, #000);
+        }
+      }
+      &:hover {
+        border-color: @border-color;
+        span {
+          color: var(--text-black, #000);
+        }
+      }
+
+      &.active {
+        border-color: @primary-color;
+        svg {
+          display: inline-block;
+        }
+        span {
+          color: @primary-color;
+          font-weight: 700;
+        }
+        & > span {
+          margin-left: @space;
+        }
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

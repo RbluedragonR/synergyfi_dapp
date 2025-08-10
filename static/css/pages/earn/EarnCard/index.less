@@ -1,0 +1,38 @@
+@trade-info-height: 76px;
+
+.syn-earn-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: @space-4x;
+  // TODO: may need unhide
+  //position: sticky;
+  top: 0;
+
+  &-balance {
+    height: @trade-info-height;
+    border-radius: 0;
+    .ant-card-body {
+      display: flex;
+      flex-direction: column;
+      padding: 0 24px;
+      justify-content: center;
+    }
+  }
+  .ant-card-body {
+    row-gap: 13px;
+  }
+  &-oyster {
+    .font12;
+    position: relative;
+    display: flex;
+    column-gap: @space;
+    justify-content: center;
+    color: @text-secondary;
+    &-title {
+      color: @text-color;
+      font-weight: 700;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

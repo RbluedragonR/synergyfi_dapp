@@ -1,0 +1,132 @@
+.syn-SynSlider {
+  width: 100%;
+
+  .ant-slider {
+    padding: 0;
+    // width: 256px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+    border-radius: @space;
+    .ant-slider-track {
+      background: url('./assets/rainbow_bar.svg') left no-repeat;
+      // background-size: 256px 12px;
+      background-size: cover;
+      height: @space-3x;
+      left: 0 !important;
+      border-radius: 4px;
+    }
+    .ant-slider-rail {
+      height: @space-3x;
+      width: 100%;
+      border-radius: @space;
+      background: var(--solid-1, #e1f3f3) !important;
+    }
+    .ant-slider-step {
+      height: 6px;
+      bottom: 0;
+      .ant-slider-dot {
+        background: var(--border-light-line-1, #c3e7e7);
+        &:first-of-type,
+        &:last-of-type {
+          display: none;
+        }
+        border: 0;
+        width: 1px;
+        top: 0px;
+        bottom: 0;
+        height: 8px;
+        border-radius: 0;
+        &.ant-slider-dot-active {
+          // border: 1px solid #ffffff66;
+          background: @slider-dot-active-bg;
+        }
+      }
+    }
+    .ant-slider-handle {
+      background: url('./assets/control_vline.svg') center no-repeat;
+      background-color: #fff;
+      background-size: contain;
+      box-shadow: @slider-shadow;
+      border-radius: 4px;
+      margin-top: -5px;
+      border: none;
+      height: @space-5x;
+      width: 10px;
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+    .ant-slider-mark-text {
+      .font12;
+      .font-number;
+      margin-top: @space;
+      color: var(--text-strong-prompt, #006a80);
+      &:first-of-type {
+        transform: none !important;
+      }
+      &:last-of-type {
+        transform: translateX(-100%) !important;
+      }
+    }
+  }
+  &.disabled,
+  &.disabled.mobile {
+    .ant-slider {
+      pointer-events: none;
+    }
+  }
+  &.disabled.mobile {
+    .ant-slider {
+      .ant-slider-track {
+        background: @slider-bar-disabled !important;
+      }
+      .ant-slider-handle {
+        display: none;
+      }
+      .ant-slider-mark {
+        .ant-slider-mark-text-active {
+          opacity: 0.4;
+          &.highlight {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  &.mobile {
+    .ant-slider-track,
+    .ant-slider-rail,
+    .ant-slider {
+      height: 8px;
+    }
+
+    .ant-slider-handle {
+      height: 16px;
+      width: 16px;
+      margin-top: 0px;
+      transform: translate(-50%, -4px) !important;
+      border-radius: 99px;
+      top: 0;
+    }
+    .ant-slider-step {
+      display: none;
+    }
+    .ant-slider-track {
+      border-radius: @space 0 0 @space;
+      background: url('./assets/leverage_bar_mb.png') left no-repeat;
+      background-size: cover;
+      border-radius: 4px;
+      height: 8px;
+    }
+    .ant-slider-mark {
+      top: 8px;
+    }
+    .ant-slider-mark-text {
+      line-height: 12px;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

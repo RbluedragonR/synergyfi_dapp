@@ -1,0 +1,63 @@
+var _path, _path2, _rect, _path3, _path4, _rect2, _path5, _path6, _path7;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgBtnDisable = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 80,
+    height: 32,
+    viewBox: "0 0 80 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M68.6863 32.0002C70.808 32.0002 72.8429 31.1574 74.3431 29.6571L77.6569 26.3433C79.1572 24.843 80 22.8082 80 20.6865V8.00024C80 3.58197 76.4183 0.000244141 72 0.000244141H68V32.0002H68.6863Z",
+    fill: "#1A444D"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M74.3431 29.6571C72.8429 31.1574 70.808 32.0002 68.6863 32.0002H68V24.0002H71C73.2091 24.0002 75 25.7911 75 28.0002V29.0002L74.3431 29.6571Z",
+    fill: "#00BFBF"
+  })), _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    width: 56,
+    height: 23.9998,
+    transform: "translate(12 0.000244141)",
+    fill: "#1A444D"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "M12 24H46V28H12V24Z",
+    fill: "#1A444D"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    d: "M12 28H46V32H12V28Z",
+    fill: "#00BFBF"
+  })), _rect2 || (_rect2 = /*#__PURE__*/React.createElement("rect", {
+    width: 22,
+    height: 8,
+    transform: "translate(46 24)",
+    fill: "#1A444D"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    d: "M50.8284 25.1716C51.5786 24.4214 52.596 24 53.6569 24H68V32H46V28H46.3431C47.404 28 48.4214 27.5786 49.1716 26.8284L50.8284 25.1716Z",
+    fill: "#00BFBF"
+  })), _path6 || (_path6 = /*#__PURE__*/React.createElement("path", {
+    d: "M11.3137 0.000244141C9.19199 0.000244141 7.15715 0.843107 5.65685 2.34342L2.34312 5.65719C0.842843 7.15747 0 9.19229 0 11.314L0 24.0002C0 28.4185 3.58172 32.0002 8 32.0002H12V0.000244141H11.3137Z",
+    fill: "#1A444D"
+  })), _path7 || (_path7 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M12 28.0002H6C2.68629 28.0002 0 25.314 0 22.0002V24.0002C0 28.4185 3.58172 32.0002 8 32.0002H12V28.0002Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgBtnDisable);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/btn_disable.d374b3b165282f4d9ee7269fd022c069.svg";

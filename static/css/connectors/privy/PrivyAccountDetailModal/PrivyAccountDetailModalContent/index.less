@@ -1,0 +1,70 @@
+.syn-privy-account {
+  &-detail-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: @space-6x;
+    padding: @space-6x 0;
+    &.mobile {
+      .syn-privy-account-address {
+        .font12;
+      }
+    }
+  }
+  &-addrs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: @space-4x;
+    h2 {
+      .font20;
+      font-weight: 700;
+      line-height: 24px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &-address {
+    border-radius: 8px;
+    background: var(--solid-2, #f4fbfb);
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    &-copy {
+      width: 12px;
+      height: 12px;
+      display: flex;
+      .syn-copied-btn {
+        width: 12px;
+        height: 12px;
+        svg {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+  &-qrcode {
+    padding: 16px;
+    border: var(--spacing-0, 1px) solid var(--border-light-line-1, #c3e7e7);
+    border-radius: 16px;
+  }
+  &-export-key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    svg {
+      path {
+        fill: @text-color;
+      }
+    }
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

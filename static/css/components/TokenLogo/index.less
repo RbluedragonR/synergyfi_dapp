@@ -1,0 +1,53 @@
+.token-icon {
+  // background-color: #ffffff;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &_logo {
+    z-index: 2;
+    border-radius: 50px;
+  }
+  &_bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: white;
+    border-radius: 50%;
+  }
+  &_chain {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    // border: 2px solid #fff;
+    z-index: 2;
+    &-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    #token-icon_chain-bg {
+      z-index: -2;
+      top: 0px;
+      left: 0px;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      border-radius: 6.3px;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

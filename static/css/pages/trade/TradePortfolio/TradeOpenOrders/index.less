@@ -1,0 +1,209 @@
+@trade-open-orders-prefix: ~'@{syn-prefix}-trade-open-orders';
+.@{trade-open-orders-prefix} {
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    &-title {
+      height: 40px;
+      color: var(--text-brand, #00bfbf);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      svg {
+        width: @space-4x;
+        height: @space-4x;
+      }
+      &-right {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        .syn-btn {
+          .font12;
+          padding: 4px @space-2x;
+          height: 24px;
+          column-gap: @space;
+          border: none;
+          path {
+            fill: var(--icon-grey1);
+          }
+          svg {
+            width: @space-4x;
+            height: @space-4x;
+          }
+          &.syn-btn-background-ghost {
+            padding: 4px 8px;
+            border-radius: 6px;
+            .font12;
+            line-height: 12px;
+            font-weight: 700;
+            background: var(--button-white, #fff);
+            svg {
+              width: 12px;
+              height: 12px;
+              path {
+                fill: @text-emphasis;
+              }
+            }
+            &:disabled {
+              color: #c3e7e7;
+            }
+          }
+          &.syn-btn-loading {
+            font-weight: 700;
+            background: var(--Constant-confirm-gradient, linear-gradient(90deg, #57d9d9 0%, #73ace5 100%));
+            .anticon-loading {
+              margin-right: @space;
+            }
+            svg {
+              width: @space-3x;
+              height: @space-3x;
+            }
+          }
+        }
+        .syn-btn-default {
+          color: var(--text-brand, #00bfbf);
+        }
+        .syn-btn-text {
+          color: var(--text-brand, #00bfbf);
+
+          &:not(:disabled):not(.syn-btn-disabled):hover {
+            background-color: transparent;
+          }
+          &:hover {
+            color: var(--text-brand, #00bfbf) !important;
+          }
+        }
+      }
+    }
+  }
+  &-loading {
+    // animation: loading 3s linear infinite;
+    width: 16px;
+    height: 16px;
+  }
+  &-checkbox {
+    &-header,
+    &-row {
+      display: flex;
+      align-items: center;
+      column-gap: @space;
+      svg {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+      }
+      .disabled {
+        cursor: not-allowed;
+        svg {
+          cursor: not-allowed;
+          path {
+            // fill: @day-border;
+          }
+        }
+      }
+    }
+    &-header.disabled {
+      cursor: not-allowed;
+      svg {
+        cursor: not-allowed;
+        path {
+          // fill: @day-border;
+        }
+      }
+    }
+  }
+  &-action {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-cancel-btn {
+    cursor: pointer;
+    &.syn-btn-background-ghost {
+      height: 24px;
+      column-gap: 4px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      .font12;
+      line-height: 12px;
+      font-weight: 700;
+      border: 1px solid var(--button-disable, #c3e7e7);
+      background: var(--button-white, #fff);
+
+      color: var(--text-black, #000);
+      &:not(:disabled):not(.syn-btn-disabled):hover {
+        border: 1px solid var(--button-disable, #c3e7e7);
+        color: var(--text-black, #000);
+      }
+      &:disabled {
+        cursor: not-allowed;
+        color: var(--text-white, #fff);
+        background-color: var(--button-disable, #c3e7e7);
+        &:hover {
+          background-color: var(--button-disable, #c3e7e7);
+        }
+      }
+      &.syn-btn-loading {
+        border: 1px solid var(--button-disable, #c3e7e7);
+        background: var(--button-disable, #c3e7e7);
+        &::before {
+          background: var(--button-disable, #c3e7e7);
+        }
+        .syn-btn-loading-icon {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .syn-btn-loading-icon {
+        margin-right: 0;
+        width: 12px;
+        height: 12px;
+        svg {
+          width: 12px;
+          height: 12px;
+          path {
+            fill: @text-emphasis;
+          }
+          circle {
+            stroke: var(--text-white, #fff);
+          }
+        }
+      }
+    }
+  }
+  &.syn-table {
+    .ant-table {
+      .ant-table-container {
+        overflow: unset;
+      }
+      .filled-bottom {
+        margin-top: 4px;
+        color: var(--text-strong-prompt, #006a80);
+        font-family: Ubuntu;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+    }
+  }
+}
+@keyframes loading {
+  25% {
+    rotate: (90deg);
+  }
+  50% {
+    rotate: (180deg);
+  }
+  75% {
+    rotate: (270deg);
+  }
+  100% {
+    rotate: (360deg);
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

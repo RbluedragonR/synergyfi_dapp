@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconWalletMobile = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9.9183 2.875H13.0807C14.8972 2.87497 16.3741 2.87494 17.5385 3.03154C18.7525 3.19482 19.7939 3.54671 20.6233 4.37685C21.6017 5.35454 21.9221 6.63673 22.0429 8.17194C22.6327 8.50772 23.0659 9.10633 23.1196 9.85437L23.1204 9.86482C23.1247 9.9338 23.1246 10.0083 23.1245 10.0659C23.1245 10.0718 23.1245 10.0775 23.1245 10.083V13.917C23.1245 13.9225 23.1245 13.9282 23.1245 13.9341C23.1246 13.9917 23.1246 14.0662 23.1203 14.1352L23.1198 14.1434C23.0674 14.8935 22.6331 15.4922 22.0432 15.8279C21.9228 17.3638 21.6016 18.6456 20.6233 19.6232C19.7939 20.4533 18.7525 20.8052 17.5385 20.9685C16.3741 21.1251 14.8972 21.125 13.0807 21.125H9.91832C8.10187 21.125 6.62492 21.1251 5.46056 20.9685C4.24687 20.8052 3.20568 20.4535 2.37636 19.6238C1.54622 18.7944 1.19433 17.753 1.03105 16.539C0.87445 15.3746 0.874478 13.8977 0.874513 12.0812V11.9188C0.874478 10.1023 0.87445 8.62541 1.03105 7.46104C1.19431 6.24719 1.54612 5.20588 2.37602 4.37651C3.2054 3.54661 4.24671 3.1948 5.46056 3.03154C6.62492 2.87494 8.10186 2.87497 9.9183 2.875ZM19.7524 16.125H18.2295C15.9051 16.125 13.8745 14.3554 13.8745 12C13.8745 9.64464 15.9041 7.875 18.2305 7.875H19.7519C19.6264 6.84172 19.3936 6.32863 19.0325 5.96799C18.6909 5.62613 18.203 5.39118 17.2386 5.26146C16.2417 5.12739 14.9168 5.125 12.9995 5.125H9.99951C8.0822 5.125 6.7573 5.12739 5.76047 5.26146C4.79599 5.39118 4.30892 5.6253 3.96735 5.96716C3.62549 6.30872 3.39069 6.79648 3.26097 7.76096C3.1269 8.75779 3.12451 10.0827 3.12451 12C3.12451 13.9173 3.1269 15.2422 3.26097 16.239C3.39069 17.2035 3.62481 17.6906 3.96667 18.0322C4.30824 18.374 4.79599 18.6088 5.76047 18.7385C6.7573 18.8726 8.0822 18.875 9.99951 18.875H12.9995C14.9168 18.875 16.2417 18.8726 17.2386 18.7385C18.203 18.6088 18.6901 18.3747 19.0317 18.0328C19.3929 17.6721 19.6271 17.1579 19.7524 16.125ZM20.8745 10.1251L20.8325 10.125H18.2305C16.9869 10.125 16.1245 11.0414 16.1245 12C16.1245 12.9586 16.9879 13.875 18.2295 13.875H20.8325L20.8745 13.8749V10.1251ZM6.99951 7.875C7.62083 7.875 8.12451 8.37868 8.12451 9V15C8.12451 15.6213 7.62083 16.125 6.99951 16.125C6.37819 16.125 5.87451 15.6213 5.87451 15V9C5.87451 8.37868 6.37819 7.875 6.99951 7.875Z",
+    fill: "#1F292E"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconWalletMobile);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_wallet_mobile.f8a6ee9e7d2606b2927dfcb80b877aca.svg";

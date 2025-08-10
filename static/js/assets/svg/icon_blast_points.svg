@@ -1,0 +1,38 @@
+var _circle, _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconBlastPoints = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _circle || (_circle = /*#__PURE__*/React.createElement("circle", {
+    cx: 12,
+    cy: 12,
+    r: 10.75,
+    fill: "#FCFC03"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M17.8262 10.908L15.7863 11.9231L15.7723 11.9509L17.1578 12.9661L16.4198 15.2467L14.352 16.2687L15.5913 12.4655H11.1772L11.6019 11.1444H16.016L16.6009 9.33661H5.59351L7.75877 7.73047H17.123L18.5294 8.75256L17.8262 10.908ZM9.97972 10.6715L8.70563 14.6347H14.8812L14.352 16.2687H6.44289L8.56638 9.61467L9.97972 10.6715Z",
+    fill: "black"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconBlastPoints);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_blast_points.f9a86ab01c861b6ed6868e4b0f8e4bed.svg";

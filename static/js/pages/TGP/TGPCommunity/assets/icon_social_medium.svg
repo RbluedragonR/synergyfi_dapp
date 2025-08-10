@@ -1,0 +1,31 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconSocialMedium = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M13.5375 11.996C13.5375 15.7235 10.5075 18.746 6.768 18.746C5.8804 18.7472 5.00125 18.5735 4.18076 18.235C3.36026 17.8964 2.61449 17.3995 1.98603 16.7727C1.35756 16.1459 0.858704 15.4015 0.517941 14.5819C0.177178 13.7623 0.00118111 12.8836 0 11.996C0 8.26698 3.03 5.24598 6.768 5.24598C7.65573 5.2446 8.53504 5.41811 9.3557 5.7566C10.1764 6.09509 10.9223 6.59193 11.5509 7.21875C12.1796 7.84556 12.6786 8.59007 13.0194 9.40976C13.3603 10.2295 13.5363 11.1083 13.5375 11.996ZM20.9625 11.996C20.9625 15.506 19.4475 18.35 17.5785 18.35C15.7095 18.35 14.1945 15.5045 14.1945 11.996C14.1945 8.48598 15.7095 5.64198 17.5785 5.64198C19.4475 5.64198 20.9625 8.48748 20.9625 11.996ZM24 11.996C24 15.14 23.4675 17.6885 22.809 17.6885C22.152 17.6885 21.6195 15.1385 21.6195 11.996C21.6195 8.85198 22.152 6.30348 22.8105 6.30348C23.4675 6.30348 24 8.85198 24 11.996Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconSocialMedium);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_social_medium.416c00c21a94ce6593008b2d8c7a4ba2.svg";

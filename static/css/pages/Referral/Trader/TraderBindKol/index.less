@@ -1,0 +1,74 @@
+@import '~@/themes/func.less';
+.syn-trader-bind-kol {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 40px;
+  height: 384px;
+  border-radius: 16px;
+  background: url('./assets/code_bg_l.png') no-repeat center;
+  background-size: cover;
+  &.dark-theme {
+    background: url('./assets/code_bg.png') no-repeat center;
+    background-size: cover;
+  }
+  &__unconnect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
+    color: var(--text-black, #fff);
+    &-title {
+      .font20;
+      font-weight: 400;
+    }
+    .syn-btn {
+      width: 280px !important;
+    }
+  }
+  &-title {
+    color: var(--text-black, #fff);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &-middle {
+    display: flex;
+    row-gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    .ant-input {
+      display: flex;
+      width: 280px;
+      height: 48px;
+      padding: 16px var(--spacing-12, 12px);
+      align-items: center;
+      gap: 8px;
+      border-radius: 8px;
+      border: 1px solid var(--border-light-line-1, #04606e);
+      background: var(--solid-2, #013840);
+      text-align: center;
+      .font14;
+      &::placeholder {
+        color: var(--text-weak-prompt, #007580);
+        text-align: center;
+      }
+    }
+  }
+  &-message {
+    color: var(--text-strong-prompt, #6fd6d6);
+    text-align: center;
+    .font14;
+    &.error {
+      color: var(--function-red-6, #f66);
+    }
+  }
+  &-button {
+    width: 280px;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

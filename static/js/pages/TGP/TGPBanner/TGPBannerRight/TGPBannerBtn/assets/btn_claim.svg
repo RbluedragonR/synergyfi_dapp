@@ -1,0 +1,63 @@
+var _path, _path2, _rect, _path3, _path4, _rect2, _path5, _path6, _path7;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgBtnClaim = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 144,
+    height: 32,
+    viewBox: "0 0 144 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M132.686 32.0002C134.808 32.0002 136.843 31.1574 138.343 29.6571L141.657 26.3433C143.157 24.843 144 22.8082 144 20.6865V8.00024C144 3.58197 140.418 0.000244141 136 0.000244141H132V32.0002H132.686Z",
+    fill: "#00BFBF"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M138.343 29.6571C136.843 31.1574 134.808 32.0002 132.686 32.0002H132V24.0002H135C137.209 24.0002 139 25.7911 139 28.0002V29.0002L138.343 29.6571Z",
+    fill: "#13ECC8"
+  })), _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    width: 120,
+    height: 23.9998,
+    transform: "translate(12 0.000244141)",
+    fill: "#00BFBF"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "M12 24H110V28H12V24Z",
+    fill: "#00BFBF"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    d: "M12 28H110V32H12V28Z",
+    fill: "#13ECC8"
+  })), _rect2 || (_rect2 = /*#__PURE__*/React.createElement("rect", {
+    width: 22,
+    height: 8,
+    transform: "translate(110 24)",
+    fill: "#00BFBF"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    d: "M114.828 25.1716C115.579 24.4214 116.596 24 117.657 24H132V32H110V28H110.343C111.404 28 112.421 27.5786 113.172 26.8284L114.828 25.1716Z",
+    fill: "#13ECC8"
+  })), _path6 || (_path6 = /*#__PURE__*/React.createElement("path", {
+    d: "M11.3137 0.000244141C9.19199 0.000244141 7.15715 0.843107 5.65685 2.34342L2.34312 5.65719C0.842843 7.15747 0 9.19229 0 11.314L0 24.0002C0 28.4185 3.58172 32.0002 8 32.0002H12V0.000244141H11.3137Z",
+    fill: "#00BFBF"
+  })), _path7 || (_path7 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M12 28.0002H6C2.68629 28.0002 0 25.314 0 22.0002V24.0002C0 28.4185 3.58172 32.0002 8 32.0002H12V28.0002Z",
+    fill: "#13ECC8"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgBtnClaim);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/btn_claim.cdb8ce868cd7a69867a491cc1797ffe6.svg";

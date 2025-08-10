@@ -1,0 +1,41 @@
+.market_custom_pairs_selector {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  &-link {
+    color: var(--text-black, #000);
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0px;
+    &-icon {
+      display: flex;
+      align-items: center;
+      svg {
+        height: 20px;
+        width: 20px;
+        path {
+          fill: @text-color;
+        }
+      }
+    }
+    &.selected {
+      color: @primary-color;
+      font-weight: 700;
+      border-color: @primary-color;
+      .margin_type_selector-link-icon {
+        color: @primary-color;
+        svg {
+          path {
+            fill: @primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

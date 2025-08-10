@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconChevronLeft = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 25,
+    height: 25,
+    viewBox: "0 0 25 25",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M15.779 4.22203C16.2508 4.62638 16.3054 5.33659 15.901 5.80833L10.5286 12.0762L15.901 18.3441C16.3054 18.8158 16.2508 19.526 15.779 19.9304C15.3073 20.3347 14.5971 20.2801 14.1927 19.8083L8.19271 12.8083C7.8316 12.387 7.8316 11.7654 8.19271 11.3441L14.1927 4.34405C14.5971 3.87231 15.3073 3.81768 15.779 4.22203Z",
+    fill: "#ABB5BA"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconChevronLeft);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_chevron_left.b4756d1c6d6018ed896d7377b0803ee0.svg";

@@ -1,0 +1,40 @@
+.syn-underline-tooltip {
+  cursor: help;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    height: 1px;
+    width: 100%;
+    // background-color: currentColor;
+    border-bottom: 1px dashed currentColor;
+  }
+}
+
+.syn-underline-tooltip-text-ellipsis-extra-tooltip {
+  position: absolute;
+  bottom: -50px;
+  display: block;
+  background-color: #333;
+  color: white;
+  padding: 0.25em 0.5em;
+}
+
+.syn-underline-tooltip-text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.syn-underline-tooltip-text-ellipsis-extra-underline {
+  display: block;
+  height: 1px;
+  transform: translateY(-4px);
+  border-bottom: 1px dashed currentColor;
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

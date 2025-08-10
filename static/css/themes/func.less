@@ -1,0 +1,28 @@
+.fixTop(@position: fixed, @top: 0, @zIndex: 999) {
+  position: @position;
+  top: @top;
+  z-index: @zIndex;
+}
+
+.linear-gradient-bg {
+  background: linear-gradient(45deg, #8095ff 0%, #29b5bc 50%, #1262b2 100%) 0% 0% repeat;
+  background-size: 200% 100%;
+}
+
+// scrollbar hidden
+.remove-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+}
+
+.word-ecllipis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.f-a-c {
+  display: flex;
+  align-items: center;
+}

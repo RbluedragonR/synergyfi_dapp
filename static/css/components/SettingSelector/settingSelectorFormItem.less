@@ -1,0 +1,99 @@
+.settings_form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  row-gap: @space-2x;
+  justify-content: space-between;
+  &-label {
+    .font14;
+    color: var(--text-strong-prompt, #94b8bf);
+    display: flex;
+    align-items: center;
+  }
+  &-selector_wrap {
+    width: 100%;
+    display: flex;
+    column-gap: @space-2x;
+    &.with-custom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .syn-input.syn-form-input {
+        height: 32px;
+        width: 80px;
+        border-radius: @space-2x;
+        padding: 0 @space-2x;
+        box-sizing: border-box;
+        padding: 4px 8px;
+        color: @text-color;
+        border: 1px solid var(--border-light-line-1, #c3e7e7);
+        background: var(--solid-white-card, #fff);
+      }
+      .ant-input-suffix {
+        color: var(--text-black, #000);
+      }
+    }
+
+    &-warning {
+      border-color: @warning-border;
+    }
+  }
+
+  .ant-input-affix-wrapper {
+    width: 96px;
+    border-radius: @space-2x;
+  }
+  .syn-button-segments {
+    flex: 1;
+    .syn-segmented-group {
+      column-gap: @space-2x;
+      .syn-button-segments-item {
+        flex: 1;
+        border-radius: @space-2x;
+        border: 1px solid var(--border-light-line-1, #c3e7e7);
+        .syn-button-segments-item-label {
+          .font14;
+          padding: 8px 16px;
+          height: auto;
+        }
+        &:hover {
+          background: transparent;
+          color: @primary-color;
+          &::after {
+            background-color: transparent;
+          }
+        }
+        &-selected {
+          border-color: @primary-color;
+          background: var(--bg-hover);
+          .syn-button-segments-label {
+            font-weight: 700;
+            color: @primary-color;
+          }
+        }
+      }
+    }
+
+    .syn-button-segments {
+      flex: 1;
+      &-item {
+        flex: 1;
+        &.selected {
+          border-color: @primary-color;
+          color: @primary-color;
+        }
+      }
+    }
+  }
+
+  &.mobile {
+    .settings_form-selector_wrap {
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,42 @@
+var _path, _path2, _path3, _path4;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconTitleLeaderboard = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 32,
+    height: 32,
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M6.83357 1.62147C5.97616 2.05966 6.17285 3.04526 7.24125 3.6648C8.4579 4.37032 9.50487 3.87019 9.19861 2.72976C9.00632 2.01374 7.47246 1.29499 6.83357 1.62147ZM15.417 1.6621C15.2034 1.78623 15.1067 1.94338 14.4996 3.15313L13.821 4.50551L12.8339 4.64776C10.7294 4.95115 10.6229 4.98674 10.3783 5.46748C10.0554 6.10208 10.2003 6.3949 11.4558 7.64503L12.4822 8.6671L12.2401 10.0867C11.9422 11.8339 11.9719 12.0427 12.5711 12.4089C13.0234 12.6855 13.3071 12.6167 14.6801 11.8976C16.1546 11.1255 15.8434 11.1255 17.3199 11.8976C18.6924 12.6154 18.951 12.6783 19.4259 12.4108C20.0181 12.077 20.0587 11.788 19.7569 10.0559L19.5151 8.66822L20.5421 7.64559C21.798 6.39482 21.9429 6.10208 21.6201 5.46748C21.3751 4.98601 21.1751 4.92175 18.9706 4.61562L18.1645 4.50367L17.5522 3.24689C17.2154 2.55563 16.9033 1.94434 16.8586 1.88841C16.5571 1.51104 15.8642 1.4023 15.417 1.6621ZM24.022 1.68494C22.6274 2.4206 22.329 3.26123 23.2414 3.88389C23.9619 4.37561 25.6772 3.41662 25.6772 2.52221C25.6772 1.69592 24.8217 1.2631 24.022 1.68494ZM5.46203 6.6539C4.84599 7.03054 4.84599 8.03097 5.46203 8.40761C5.76485 8.59273 7.25204 8.59273 7.55486 8.40761C8.1709 8.03097 8.1709 7.03054 7.55486 6.6539C7.25204 6.46878 5.76485 6.46878 5.46203 6.6539ZM24.4435 6.6539C24.0008 6.92452 23.8398 7.62516 24.1159 8.07913C24.5245 8.75108 26.4552 8.75108 26.8639 8.07913C27.1399 7.62516 26.9789 6.92452 26.5363 6.6539C26.2335 6.46878 24.7463 6.46878 24.4435 6.6539ZM7.22646 11.4054C6.15655 12.0349 5.97744 13.0269 6.8581 13.4459C7.50819 13.7551 9.00808 13.0412 9.19861 12.3318C9.50671 11.1844 8.44759 10.6869 7.22646 11.4054ZM23.3357 11.1097C22.4168 11.618 22.562 12.5153 23.6705 13.1784C24.7517 13.8251 25.6772 13.5211 25.6772 12.5193C25.6772 11.7197 24.0279 10.7268 23.3357 11.1097Z",
+    fill: "#006A80"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M2.96002 20.56C2.96002 19.8531 3.5331 19.28 4.24002 19.28H8.72002C9.42695 19.28 10 19.8531 10 20.56V29.04C10 29.747 9.42695 30.32 8.72002 30.32H4.24002C3.5331 30.32 2.96002 29.747 2.96002 29.04V20.56Z",
+    fill: "#00BFBF"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "M12 16.56C12 15.8531 12.5731 15.28 13.28 15.28H18.72C19.4269 15.28 20 15.8531 20 16.56V29.04C20 29.747 19.4269 30.32 18.72 30.32H13.28C12.5731 30.32 12 29.747 12 29.04V16.56Z",
+    fill: "#00BFBF"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    d: "M22 21.68C22 20.9731 22.5731 20.4 23.28 20.4H27.76C28.4669 20.4 29.04 20.9731 29.04 21.68V29.04C29.04 29.747 28.4669 30.32 27.76 30.32H23.28C22.5731 30.32 22 29.747 22 29.04V21.68Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconTitleLeaderboard);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_title_leaderboard.3c1b2a21310801017a8b1fd3addfecc3.svg";

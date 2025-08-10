@@ -1,0 +1,115 @@
+@import '~@/themes/func.less';
+@pair-info-right-prefix: ~'@{syn-prefix}-pair-info-right';
+.@{pair-info-right-prefix} {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  column-gap: 16px;
+  &-arrow {
+    position: absolute;
+    z-index: 100;
+    box-shadow: @box-shadow;
+    background: var(--grey-0);
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 99px;
+    cursor: pointer;
+    transition: display 0.3s ease-in;
+    display: none;
+    &.show {
+      display: flex;
+    }
+    &.left {
+      left: 0;
+    }
+    &.right {
+      right: 0;
+    }
+    svg {
+      path {
+        fill: #000;
+      }
+    }
+  }
+  &-wrap {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  &-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    &.right {
+      mask: linear-gradient(to right, #000 90%, #0000 100%);
+      mask-composite: exclude;
+    }
+    &.left {
+      mask: linear-gradient(to left, #000 90%, #0000 100%);
+      mask-composite: exclude;
+    }
+    &-inner {
+      display: flex;
+      column-gap: 16px;
+      width: fit-content;
+      position: absolute;
+      transition: all 0.3s ease-in;
+      height: 100%;
+    }
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    &-title {
+      .font12;
+      color: var(--text-main-body, #333);
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+    }
+    &-value {
+      .font-number;
+      font-size: 12px;
+
+      line-height: 16px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      small {
+        margin-left: @space;
+      }
+    }
+  }
+  &-funding {
+    &-rate {
+      display: flex;
+      column-gap: 4px;
+      align-items: center;
+    }
+    .divider {
+      color: @text-glass;
+    }
+    &-line {
+      height: 1px;
+      width: 100%;
+      margin: 8px 0;
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+  &-btns {
+    display: flex;
+    align-items: center;
+    column-gap: @space-4x;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

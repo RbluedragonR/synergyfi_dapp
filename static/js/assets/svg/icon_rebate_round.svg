@@ -1,0 +1,41 @@
+var _path, _path2, _path3;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconRebateRound = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 26,
+    height: 26,
+    viewBox: "0 0 26 26",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5.89165 6.73052C7.63064 4.76677 10.1667 3.52084 12.9999 3.52084C18.237 3.52084 22.4791 7.76295 22.4791 13C22.4791 18.2371 18.237 22.4792 12.9999 22.4792C8.57914 22.4792 4.87172 19.4568 3.81735 15.3696C3.70526 14.9351 3.96663 14.492 4.40114 14.3799C4.83565 14.2678 5.27875 14.5292 5.39084 14.9637C6.26481 18.3516 9.33905 20.8542 12.9999 20.8542C17.3395 20.8542 20.8541 17.3396 20.8541 13C20.8541 8.66041 17.3395 5.14584 12.9999 5.14584C10.6558 5.14584 8.55597 6.17406 7.11001 7.8058L4.94523 10.2845C4.65005 10.6225 4.13678 10.6572 3.7988 10.362C3.46082 10.0668 3.42612 9.55352 3.7213 9.21554L5.89165 6.73052Z",
+    fill: "#00BFBF"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M3.79167 10.8333C3.49251 10.8333 3.25 10.5908 3.25 10.2917L3.25 7.8077C3.25 7.32513 3.83345 7.08345 4.17468 7.42468L6.65865 9.90865C6.99988 10.2499 6.75821 10.8333 6.27563 10.8333H3.79167Z",
+    fill: "#00BFBF"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M12.9999 18.4167C15.9915 18.4167 18.4166 15.9916 18.4166 13C18.4166 10.0085 15.9915 7.58334 12.9999 7.58334C10.0084 7.58334 7.58325 10.0085 7.58325 13C7.58325 15.9916 10.0084 18.4167 12.9999 18.4167ZM13.6499 10.4C13.6499 10.041 13.3589 9.75001 12.9999 9.75001C12.6409 9.75001 12.3499 10.041 12.3499 10.4V10.4328C12.04 10.4961 11.7528 10.649 11.5258 10.876C11.2211 11.1807 11.0499 11.594 11.0499 12.025C11.0499 12.456 11.2211 12.8693 11.5258 13.1741C11.8306 13.4788 12.2439 13.65 12.6749 13.65H13.3249C13.4111 13.65 13.4937 13.6843 13.5547 13.7452C13.6156 13.8062 13.6499 13.8888 13.6499 13.975C13.6499 14.0612 13.6156 14.1439 13.5547 14.2048C13.4937 14.2658 13.4111 14.3 13.3249 14.3H11.6999C11.3409 14.3 11.0499 14.591 11.0499 14.95C11.0499 15.309 11.3409 15.6 11.6999 15.6H12.3499C12.3499 15.959 12.6409 16.25 12.9999 16.25C13.3589 16.25 13.6499 15.959 13.6499 15.6V15.5672C13.9597 15.5039 14.2469 15.351 14.4739 15.1241C14.7787 14.8193 14.9499 14.406 14.9499 13.975C14.9499 13.544 14.7787 13.1307 14.4739 12.826C14.1692 12.5212 13.7558 12.35 13.3249 12.35H12.6749C12.5887 12.35 12.506 12.3158 12.4451 12.2548C12.3841 12.1939 12.3499 12.1112 12.3499 12.025C12.3499 11.9388 12.3841 11.8562 12.4451 11.7952C12.506 11.7343 12.5887 11.7 12.6749 11.7H14.2999C14.6589 11.7 14.9499 11.409 14.9499 11.05C14.9499 10.691 14.6589 10.4 14.2999 10.4H13.6499Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconRebateRound);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_rebate_round.6b76c5a8f5d9455df1a9060d1344ceee.svg";

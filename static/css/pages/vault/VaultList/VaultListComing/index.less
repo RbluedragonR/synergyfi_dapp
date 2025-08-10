@@ -1,0 +1,41 @@
+@import '~@/themes/func.less';
+@vault-list-coming-prefix: ~'@{syn-prefix}-vault-list-coming';
+.@{vault-list-coming-prefix} {
+  &-table.ant-card {
+    background: transparent;
+    border-radius: 16px;
+    margin: 0;
+    .ant-card-body {
+      padding: 0;
+      .syn-table {
+        border: none;
+        .ant-table-tbody .ant-table-row {
+          &:hover {
+            background: rgba(0, 191, 191, 0.05);
+          }
+          .ant-table-cell {
+            height: 60px;
+
+            &:last-of-type {
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+            }
+          }
+        }
+        .ant-table-thead {
+          .ant-table-cell.tvl,
+          .ant-table-cell.launchTarget {
+            .ant-table-column-sorters {
+              .ant-table-column-title {
+                flex: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconLinearTelegram24 = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M21.6612 3.24979C21.9416 3.49696 22.0608 3.87988 21.9701 4.24252L17.9701 20.2425C17.8828 20.592 17.6141 20.8675 17.2669 20.9637C16.9197 21.0599 16.5476 20.9618 16.2929 20.7071L12.1082 16.5224L9.80001 19.6C9.57684 19.8975 9.20697 20.0467 8.83982 19.9871C8.47268 19.9275 8.16894 19.6691 8.05132 19.3162L6.18231 13.7092L2.55279 11.8944C2.19901 11.7175 1.98274 11.3487 2.00108 10.9536C2.01942 10.5585 2.26892 10.2113 2.63756 10.068L20.6376 3.06798C20.9859 2.9325 21.3808 3.00263 21.6612 3.24979ZM12.7193 14.3051C12.7119 14.2974 12.7044 14.2899 12.6967 14.2825L12.4142 14L15.7071 10.7071C16.0976 10.3166 16.0976 9.6834 15.7071 9.29288C15.3166 8.90236 14.6834 8.90236 14.2929 9.29288L10.2929 13.2929C9.90237 13.6834 9.90237 14.3166 10.2929 14.7071L10.6796 15.0938L9.34515 16.8731L7.94869 12.6838C7.86482 12.4322 7.68444 12.2242 7.44722 12.1056L5.46487 11.1144L19.5611 5.63252L16.4582 18.044L12.7193 14.3051Z",
+    fill: "black"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconLinearTelegram24);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_linear_telegram_24.5e5c8d141c7c72b8cc69ede6d3428416.svg";

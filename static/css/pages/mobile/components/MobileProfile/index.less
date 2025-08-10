@@ -1,0 +1,91 @@
+@import '~@/themes/func.less';
+
+.syn-mobile-profile {
+  padding: 0 8px;
+  padding-bottom: 35px;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    .syn-btn {
+      path {
+        fill: var(--text-black);
+      }
+      padding-right: 0px;
+    }
+  }
+  &-tabs {
+    &.ant-tabs {
+      .ant-tabs-nav {
+        margin: 0;
+      }
+      .ant-tabs-nav-wrap {
+        padding: 0 16px;
+        .ant-tabs-tab-btn {
+          align-items: center;
+          .font14;
+          padding: 4px 0;
+        }
+        .ant-tabs-nav-list {
+          .ant-tabs-tab {
+            text-align: center;
+            &:first-of-type {
+              width: 56px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-extra {
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    svg {
+      width: 24px;
+      height: 24px;
+      path {
+        fill: var(--text-black, #000);
+      }
+    }
+    .syn-btn:disabled {
+      svg {
+        path {
+          fill: #94b8bf;
+        }
+      }
+    }
+  }
+  &-tab {
+    &-title {
+      display: flex;
+      align-content: center;
+      column-gap: @space;
+    }
+
+    &-count {
+      background: @social-icon-fill;
+      color: #fff;
+      border-radius: 99px;
+      padding: 0px 5px;
+      height: 16px;
+      .font12;
+      display: flex;
+      align-items: center;
+      line-height: 12px;
+    }
+  }
+  .selected {
+    .syn-mobile-profile-tab-count {
+      background: #00bfbf;
+    }
+  }
+  .syn-mobile-profile-tabs {
+    .ant-tabs-content-holder {
+      padding: 0 8px 16px 8px;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

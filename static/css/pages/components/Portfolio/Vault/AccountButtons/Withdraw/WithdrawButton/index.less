@@ -1,0 +1,19 @@
+.syn-account-withdraw-button {
+  &.syn-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &[disabled] {
+      opacity: 0.3;
+      background: var(--button-disable, #c3e7e7);
+      color: var(--text-white, #fff);
+    }
+    svg {
+      path {
+        fill: @icon-2-color;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

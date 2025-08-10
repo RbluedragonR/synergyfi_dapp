@@ -1,0 +1,20 @@
+@import '~@/themes/func.less';
+@settings-drawer-prefix: ~'@{syn-prefix}-settings-drawer';
+.@{settings-drawer-prefix} {
+  &.ant-drawer-content {
+    .ant-drawer-body {
+      padding: 0;
+      padding-top: 16px;
+    }
+  }
+  &-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    svg path {
+      fill: var(--text-black, #000);
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,183 @@
+.syn-violation-account-text {
+  color: var(--color-risk);
+}
+.syn-portfolio-asset {
+  &.is-blacklisted {
+    border: 1px solid var(--color-risk);
+  }
+  padding: 0 24px 24px 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  background: var(--portfolio-bg);
+  height: fit-content;
+  &-sub-header {
+    color: #00bfbf;
+    font-size: 14px;
+    line-height: 16px; /* 114.286% */
+    font-weight: 400;
+    margin-left: 8px;
+  }
+  &-header {
+    margin: @space-4x 0;
+    .font16;
+    line-height: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-black, #000);
+    .title {
+      display: flex;
+      align-items: center;
+    }
+    &-right {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      svg {
+        cursor: pointer;
+        path {
+          stroke: var(--text-black, #000);
+        }
+        &.rotate {
+          transform: rotateY(180deg);
+        }
+        &.disable {
+          opacity: 0.3;
+          cursor: not-allowed;
+        }
+      }
+    }
+    .deposit-withdraw-btns {
+      display: flex;
+      gap: 8px;
+      .syn-btn-primary {
+        font-size: 12px;
+        line-height: 16px; /* 133.333% */
+        padding: 4px 8px;
+        height: fit-content;
+        min-width: 72px;
+      }
+    }
+  }
+
+  &-card-segments {
+    display: flex;
+    column-gap: 12px;
+    flex: 1;
+    overflow: hidden;
+    &-item {
+      overflow: hidden;
+      cursor: pointer;
+      display: flex;
+      width: 154px;
+      height: 100%;
+      padding: 20px;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+      background: @detail-bg;
+      border-radius: 12px;
+      transition: all 0.15s ease-in;
+      border: 1px solid transparent;
+      &-balance {
+        color: var(--text-black, #000);
+        .font24;
+        font-weight: 700;
+        line-height: 24px;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        row-gap: 8px;
+        &-small {
+          color: @text-day-gray-2;
+          font-weight: 400;
+          .font12;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        &-icons {
+          display: flex;
+          align-items: center;
+          column-gap: 8px;
+          path {
+            fill: var(--text-black, #000);
+          }
+          &.hide {
+            display: none;
+          }
+        }
+      }
+      &-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        .token-symbol {
+          column-gap: 8px;
+          justify-content: flex-start;
+        }
+        &-top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+      &-bottom {
+        display: flex;
+        column-gap: 8px;
+        &.hide {
+          display: none;
+        }
+        .syn-btn {
+          height: 24px;
+          border-radius: 8px;
+          .font12;
+          font-weight: 700;
+          display: flex;
+          column-gap: 4px;
+          padding: 4px 8px;
+          svg path {
+            fill: #fff;
+          }
+          &[disabled] {
+            svg path {
+              fill: @btn-disabled-text-color;
+            }
+          }
+        }
+      }
+      &.selected {
+        width: 224px;
+        background: @liq-chart-price-bg;
+        box-shadow: @card-shadow;
+        border-radius: 12px;
+        border-color: @border-line;
+        .syn-portfolio-asset-card-segments-item {
+          &-top {
+            flex: unset;
+            row-gap: 12px;
+          }
+          &-balance {
+            flex-direction: row;
+            align-items: baseline;
+            column-gap: 4px;
+          }
+        }
+      }
+      &.empty {
+        cursor: default;
+      }
+    }
+  }
+}
+
+.syn-portfolio-asset-token-balance-infos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

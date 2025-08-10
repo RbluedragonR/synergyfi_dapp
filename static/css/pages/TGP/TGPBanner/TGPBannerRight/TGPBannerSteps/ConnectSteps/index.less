@@ -1,0 +1,58 @@
+.syn-tgp-connect-steps {
+  // border-top: 1px solid var(--cyan, #00bfbf);
+  // border-bottom: 1px solid var(--cyan, #00bfbf);
+  padding: 0 12px;
+  height: 56px;
+  width: 438px;
+  border-radius: 14px;
+  // background: var(--solid-white-card, #fff);
+
+  position: relative;
+  --connect-step-current: var(--cyan, #00bfbf);
+  --connect-step-current-bg: transparent;
+  --connect-step-arrow-color1: #1a444d;
+  --connect-step-arrow-color2: #00bfbf;
+  &-left {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    &-number {
+      &-arrow {
+        display: flex;
+      }
+    }
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  }
+  &-content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-corner {
+    position: absolute;
+    right: -28px;
+    top: 0px;
+  }
+  &-current {
+    .syn-tgp-connect-steps-left {
+      .syn-tgp-connect-steps-left-number {
+        color: var(--orange, #d6855c);
+      }
+    }
+    background: var(--solid-white-card, #fff);
+    --connect-step-current: url(#paint1_linear_1555_5093);
+    --connect-step-current-bg: url(#paint0_linear_1555_5093);
+    --connect-step-arrow-color1: #d6855c;
+    --connect-step-arrow-color2: #e6b85c;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,101 @@
+.syn-odyssey-reward-card-image {
+  .ant-image-preview-mask {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .ant-image-preview-operations {
+    .ant-image-preview-operations-operation:not(:first-child) {
+      display: none;
+    }
+  }
+}
+.syn-odyssey-reward-card {
+  .ant-image {
+    display: none;
+  }
+  --title-left-text-color: rgba(140, 191, 217, 0.8);
+  &.light-theme {
+    --title-left-text-color: #1f292e99;
+    .syn-odyssey-reward-card-title {
+      background-image: url('../../../assets/images/eligible_title_bg_light.png');
+    }
+  }
+  &.dark-theme {
+    .syn-odyssey-reward-card-title {
+      background-image: url('../../../assets/images/eligible_title_bg_dark.png');
+    }
+  }
+
+  border-radius: 16px;
+  background-color: var(--solid-2);
+  color: var(--text-primary-color);
+  overflow: hidden;
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background-image: url('../../../assets/images/eligible_title_bg_dark.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 14px;
+  }
+  &-title-left {
+    display: flex;
+    align-items: center;
+    color: var(--text-strong-prompt, #006a80);
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    gap: 12px;
+  }
+  &-view-rule {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &-view-rule-btn {
+    margin-right: 4px;
+  }
+  &-content {
+    padding: 16px 24px 24px 24px;
+  }
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .font12;
+    margin-top: 12px;
+    &:nth-child(1) {
+      margin-top: 0px;
+    }
+  }
+  &-row-left {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    white-space: nowrap;
+    img {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &-row-right {
+    white-space: nowrap;
+  }
+  .syn-odyssey-boost-tag-container {
+    margin-left: 8px;
+    .ant-tag {
+      margin-left: 0px;
+    }
+  }
+}
+
+.oopoint-right-tooltip .ant-tooltip-inner {
+  white-space: nowrap;
+  width: 280px !important;
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

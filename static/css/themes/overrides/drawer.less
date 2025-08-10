@@ -1,0 +1,55 @@
+.ant-drawer {
+  .ant-drawer-mask {
+    background: rgba(#000000, 0.5);
+  }
+  .ant-drawer-content {
+    padding: 0px 24px 24px 24px;
+    border-radius: 16px 16px 0px 0px;
+    overflow: hidden;
+    max-height: calc(100svh - 65px - 40px);
+    background-color: var(--solid-white-card);
+    &.reverse-header {
+      .ant-drawer-header {
+        padding: 16px 0;
+        .ant-drawer-header-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .ant-drawer-title {
+            order: 1;
+          }
+          .ant-drawer-close {
+            order: 2;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    .ant-drawer-header {
+      padding: @space-4x 0;
+      .ant-drawer-title {
+        color: var(--text-black);
+        .font14;
+        font-weight: 700;
+      }
+      .ant-drawer-close {
+        .font14;
+        height: 16px;
+        width: 16px;
+        padding: 0;
+        svg {
+          path {
+            fill: var(--text-black);
+          }
+        }
+      }
+    }
+    .ant-drawer-body {
+      overflow-y: auto;
+      .syn-scrollbar();
+      padding-right: 2px;
+    }
+  }
+}

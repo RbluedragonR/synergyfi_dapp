@@ -1,0 +1,55 @@
+@import '~@/themes/func.less';
+@portfolio-mobile-orders-skeleton-prefix: ~'@{syn-prefix}-portfolio-mobile-account-skeleton';
+.@{portfolio-mobile-orders-skeleton-prefix} {
+  width: 100%;
+  &-item {
+    border-top: 1px solid @day-border;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    &-left {
+      display: flex;
+      column-gap: 8px;
+      .ant-skeleton-avatar {
+        width: 32px;
+        height: 32px;
+      }
+      .ant-skeleton {
+        .ant-skeleton-content {
+          width: 56px;
+          display: flex;
+          flex-direction: column;
+          row-gap: 8px;
+          .ant-skeleton-title {
+            width: 100% !important;
+            height: 14px;
+            border-radius: 99px;
+          }
+          .ant-skeleton-paragraph {
+            margin-block-start: 0;
+            li {
+              width: 100% !important;
+              height: 10px;
+              border-radius: 99px;
+            }
+          }
+        }
+      }
+    }
+    &-right {
+      display: flex;
+      column-gap: 12px;
+      .ant-skeleton {
+        width: 77px;
+        .ant-skeleton-content {
+          .ant-skeleton-title {
+            height: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

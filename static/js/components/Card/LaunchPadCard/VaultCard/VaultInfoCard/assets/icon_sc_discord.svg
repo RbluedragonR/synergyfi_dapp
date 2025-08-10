@@ -1,0 +1,31 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconScDiscord = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M13.0152 4.37977C12.0978 3.60401 10.9969 3.21614 9.83478 3.15149L9.65129 3.34543C10.691 3.60401 11.6085 4.12119 12.4647 4.8323C11.425 4.25048 10.2629 3.8626 9.03967 3.73331C8.6727 3.66866 8.36689 3.66866 7.99992 3.66866C7.63294 3.66866 7.32713 3.66866 6.96016 3.73331C5.73692 3.8626 4.57484 4.25048 3.53509 4.8323C4.39136 4.12119 5.30879 3.60401 6.34854 3.34543L6.16506 3.15149C5.00298 3.21614 3.90206 3.60401 2.98463 4.37977C1.94487 6.44846 1.39441 8.77573 1.33325 11.1676C2.25068 12.202 3.53509 12.8485 4.88065 12.8485C4.88065 12.8485 5.30879 12.3313 5.6146 11.8788C4.81949 11.6848 4.08554 11.2323 3.59625 10.5212C4.02438 10.7798 4.45252 11.0384 4.88065 11.2323C5.43111 11.4909 5.98157 11.6202 6.53203 11.7495C7.02132 11.8141 7.51062 11.8788 7.99992 11.8788C8.48921 11.8788 8.97851 11.8141 9.46781 11.7495C10.0183 11.6202 10.5687 11.4909 11.1192 11.2323C11.5473 11.0384 11.9755 10.7798 12.4036 10.5212C11.9143 11.2323 11.1803 11.6848 10.3852 11.8788C10.691 12.3313 11.1192 12.8485 11.1192 12.8485C12.4647 12.8485 13.7492 12.202 14.6666 11.1676C14.6054 8.77573 14.055 6.44846 13.0152 4.37977ZM5.98157 10.004C5.36995 10.004 4.81949 9.42219 4.81949 8.71108C4.81949 7.99997 5.36995 7.41815 5.98157 7.41815C6.59319 7.41815 7.14365 7.99997 7.14365 8.71108C7.14365 9.42219 6.59319 10.004 5.98157 10.004ZM10.0183 10.004C9.40664 10.004 8.85619 9.42219 8.85619 8.71108C8.85619 7.99997 9.40664 7.41815 10.0183 7.41815C10.6299 7.41815 11.1803 7.99997 11.1803 8.71108C11.1803 9.42219 10.6299 10.004 10.0183 10.004Z",
+    fill: "#687EC9"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconScDiscord);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_sc_discord.c04e208f5ff53032ff6e12940adbb19e.svg";

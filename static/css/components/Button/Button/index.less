@@ -1,0 +1,130 @@
+@import '~@/themes/font.less';
+@import '~@/themes/variable.less';
+@btn-prefix: ~'@{syn-prefix}-btn';
+.@{btn-prefix} {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  outline: inherit;
+  cursor: pointer;
+  .font-default;
+  height: 48px;
+  transition: background-color 500ms ease;
+  &-icon {
+    display: flex;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+  &-link {
+    border: none;
+    background: none;
+  }
+  &.@{btn-prefix}-sm {
+    border-radius: @border-radius;
+    padding: @space-2x @space-4x;
+    height: 32px;
+  }
+  &-primary {
+    background: #00bfbf;
+    border-color: #00bfbf;
+    box-shadow: none;
+    color: #fff;
+    text-shadow: none;
+  }
+  &-outline {
+    border-radius: 8px;
+    border: 1px solid var(--border-light-line-1, #04606e);
+    background: var(--button-white, #fff);
+  }
+  &-secondary {
+    color: @primary-color;
+    background: none;
+    border: 2px solid rgba(30, 135, 140, 0.5);
+    box-shadow: none;
+    &:hover {
+      color: @text-color;
+      background: @bg-secondary-hover;
+      box-shadow: none;
+    }
+  }
+  &-rounded-s {
+    border-radius: 4px;
+    border-color: @border-color;
+    color: @text-color;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    padding: @space-2x;
+    &:hover {
+      border-color: @primary-color;
+    }
+  }
+
+  &-loading-icon {
+    height: @space-4x;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+    circle {
+      stroke: rgba(255, 255, 255, 1);
+      stroke-dasharray: 45;
+      stroke-dashoffset: 45;
+      animation: loadpath_btn_loading 1.6s linear infinite forwards;
+    }
+  }
+  &-loading {
+    pointer-events: none;
+  }
+  &-radio {
+    color: @text-color;
+    background-color: @button-radio-bg;
+    border: 1px solid @button-radio-bg;
+    border-radius: 32px;
+    &:hover {
+      color: @text-color;
+      background: @radio-bg;
+      border-color: @button-radio-bg;
+    }
+  }
+  &-radio-checked {
+    color: @text-color;
+    background: @radio-bg;
+    border-color: @button-radio-bg;
+  }
+  &.mobile {
+    height: 40px;
+    padding: 12px 20px;
+    .font14;
+    border-radius: 8px;
+  }
+  &-ghost {
+    &:disabled {
+      border-color: transparent;
+    }
+  }
+  &-suffix {
+    margin-left: 8px;
+  }
+}
+
+@keyframes loadpath_btn_loading {
+  to {
+    stroke-dashoffset: -45;
+  }
+}
+
+html[data-theme='dark-theme'] {
+  .syn-btn-outline {
+    background: transparent;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

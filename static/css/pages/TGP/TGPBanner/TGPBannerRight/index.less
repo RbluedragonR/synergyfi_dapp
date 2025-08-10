@@ -1,0 +1,33 @@
+.syn-tgp-banner-right {
+  width: 100%;
+  height: 100%;
+  padding: 32px 64px;
+  padding-left: 0;
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  &-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      & > span {
+        color: var(--text-black, #000);
+        font-family: Oxanium;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+      }
+    }
+    &-right {
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

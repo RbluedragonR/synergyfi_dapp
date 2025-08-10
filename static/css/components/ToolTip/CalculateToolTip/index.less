@@ -1,0 +1,25 @@
+@tip-prefix: ~'@{syn-prefix}-calculate-tooltip';
+.@{tip-prefix} {
+  &-content {
+      min-width: 220px;
+  }
+  &-items{}
+  &-item{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      dd,dt{
+          margin: 0;
+      }
+  }
+  &-footer{
+    .@{tip-prefix}-item{
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: @space;
+        margin-top: @space;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,57 @@
+// Declare mixin
+.font(@fontFamily: Ubuntu; @fontWeight: normal; @fontStyle: normal) {
+  font-family: @fontFamily, 'Roboto', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-style: @fontStyle;
+  // font-weight: @fontWeight;
+}
+
+.fontOxanium {
+  .font(Oxanium);
+}
+.font-default {
+  .font();
+}
+.font-number {
+  .font(Ubuntu);
+}
+.font12 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.font14 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.font16 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.font20 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.font24 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.font32 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.font28 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+}

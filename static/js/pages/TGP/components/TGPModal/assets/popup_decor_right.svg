@@ -1,0 +1,37 @@
+var _path, _path2, _path3;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgPopupDecorRight = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 144,
+    height: 64,
+    viewBox: "0 0 144 64",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M84.8284 64C83.0466 64 82.1543 61.8457 83.4142 60.5858L93.6569 50.3431C95.1572 48.8429 97.192 48 99.3137 48H144V64H84.8284Z",
+    fill: "#00BFBF"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M37.6569 50.3431C39.1571 48.8429 41.192 48 43.3137 48L67.1716 48C68.9534 48 69.8457 50.1543 68.5858 51.4142L58.3431 61.6569C56.8429 63.1572 54.808 64 52.6863 64H28.8284C27.0466 64 26.1543 61.8457 27.4142 60.5858L37.6569 50.3431Z",
+    fill: "white"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "M144 0H32L3.41426 28.5858C2.15433 29.8457 3.04667 32 4.82848 32H144V0Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgPopupDecorRight);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/popup_decor_right.9fec23839ee53be77574c240327cff2b.svg";

@@ -1,0 +1,59 @@
+@import '~@/themes/func.less';
+@total-values-prefix: ~'@{syn-prefix}-total-values';
+.@{total-values-prefix} {
+  .syn-total-overview-tooltip {
+    position: absolute;
+    display: none;
+    z-index: 2;
+  }
+  border-radius: 16px;
+  background: var(--portfolio-bg);
+  padding: 16px 24px 23.28px 24px;
+  .ant-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+  &-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    color: var(--theme-day-text);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  &-content {
+    transform: translateX(-10px);
+    display: flex;
+    column-gap: 80px;
+    &-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 16px;
+    }
+  }
+}
+
+.syn-total-overview-csv-btn {
+  margin-left: 8px;
+  color: #00bfbf;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 114.286% */
+  display: flex;
+  column-gap: 2px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.syn-total-overview-volume {
+  display: flex;
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

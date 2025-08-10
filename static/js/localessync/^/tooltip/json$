@@ -1,0 +1,30 @@
+var map = {
+	"./en/tooltip.json": 68598,
+	"./es/tooltip.json": 41761,
+	"./fr/tooltip.json": 86964,
+	"./ja/tooltip.json": 51386,
+	"./kr/tooltip.json": 9098,
+	"./th/tooltip.json": 62726,
+	"./tr/tooltip.json": 49730,
+	"./vi/tooltip.json": 5573
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 79711;

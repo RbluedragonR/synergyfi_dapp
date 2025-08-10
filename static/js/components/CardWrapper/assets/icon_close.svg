@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconClose = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 17,
+    viewBox: "0 0 16 17",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M2.46967 3.34858C2.76256 3.05568 3.23744 3.05568 3.53033 3.34858L8 7.81825L12.4697 3.34858C12.7626 3.05568 13.2374 3.05568 13.5303 3.34858C13.8232 3.64147 13.8232 4.11634 13.5303 4.40924L9.06066 8.87891L13.5303 13.3486C13.8232 13.6415 13.8232 14.1163 13.5303 14.4092C13.2374 14.7021 12.7626 14.7021 12.4697 14.4092L8 9.93957L3.53033 14.4092C3.23744 14.7021 2.76256 14.7021 2.46967 14.4092C2.17678 14.1163 2.17678 13.6415 2.46967 13.3486L6.93934 8.87891L2.46967 4.40924C2.17678 4.11634 2.17678 3.64147 2.46967 3.34858Z",
+    fill: "#1F292E"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconClose);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_close.c833536fefd9580d6dbdfc6b5c475089.svg";

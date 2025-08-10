@@ -1,0 +1,346 @@
+// The prefix to use on all css classes from syn.
+@syn-prefix: syn;
+// colors
+@theme-panel-color: var(--theme-panel);
+@primary-color: var(--primary-color);
+@primary-secondary-color: var(--primary-secondary-color);
+@secondary-color: var(--secondary-color);
+@danger-color: var(--danger-color);
+@warning-color: var(--warning-color);
+@success-color: var(--success-color);
+@favorite-color: var(--favorite);
+@risk-color: var(--color-risk);
+@green1: var(--green1);
+@green2: var(--green2);
+@green4: var(--green4);
+@red1: var(--red1);
+@red2: var(--red2);
+// color status
+@primary_hover: var(--primary_hover);
+@primary_block_hover: var(--primary_block_hover);
+
+@secondary_hover: var(--secondary_hover);
+@success_hover: var(--success_hover);
+@danger_hover: var(--danger_hover);
+@primary_hover_bg: var(--primary_hover_bg);
+@secondary_hover_bg: var(--secondary_hover_bg); // same with primary
+@success_hover_bg: var(--success_hover_bg);
+@danger_hover_bg: var(--danger_hover_bg);
+@ghost_disabled: var(--ghost_disabled);
+@solid_disabled: var(--solid_disabled);
+@slider-disabled-bg: var(--slider-disabled-bg);
+@mobile-input-bg: var(--mobile-input-bg);
+@border-opacity-bg: var(--theme-border-opacity);
+@price-warn-bg: var(--price-warn-bg);
+@price-warn-bg-hover: var(--price-warn-hover);
+@slider-bar-disabled: var(--slider-bar-disabled);
+
+// link colors
+@link-color: var(--link-color);
+@link-selected-color: var(--link-selected-color);
+@link-hover-color: var(--primary_hover);
+@link-visited-color: var(--primary_hover);
+
+// border
+@border-color: var(--border-color);
+@border-light: var(--theme-night-border-light);
+@second-border-color: var(--second-border-color);
+@third-border-color: var(--third-border-color);
+@btn-linear-border-color: var(--btn-linear-border-color);
+@nav-border: var(--nav-border);
+@border-light-color: var(--theme-border-light);
+@border-table: var(--table-border);
+@quote-border: var(--quote-border);
+@emergency-border: var(--emergency-border);
+@emergency-bg: var(--emergency-bg);
+@mobile-trade-border-color: var(--mobile-trade-border-color);
+@border-opacity: var(--theme-night-border-opacity);
+
+//text
+@text-color: var(--text-color);
+@text-primary-color: var(--text-primary-color);
+@text-primary-solid-color: var(--text-primary-solid-color);
+@text-color-black: var(--text-color-black);
+@text-chart-label: var(--text-chart-label);
+@text-chart-label-solid: var(--text-chart-label-solid);
+@text-blue: var(--text-blue);
+@text3: var(--text3);
+@text4: var(--text4);
+@text2: var(--text2);
+@blue1: var(--blue1);
+@text-gray: var(--theme-gray-text);
+@text-light-gray: var(--text-gray-color2);
+@text-glass: var(--theme-glass);
+
+@text-green: var(--text-green);
+@third-text: var(--third-text);
+@text-bg: var(--text-bg);
+@text-bg-short: var(--text-bg-short);
+//input
+@input-background-color: var(--primary-nav-bg);
+@input-background: var(--input-background);
+@input-background-focus: var(--input-background-focus);
+@input-border-color: var(--input-border-color);
+@input-border-hover-color: var(--input-border-hover-color);
+@input-default-color: var(--secondary-text);
+
+// container
+@page-padding: 24px;
+
+// bg
+@bg: var(--bg);
+@bg1: var(--bg1);
+@bg2: var(--bg2);
+@bg3: var(--bg3);
+@bg4: var(--bg4);
+@bg5: var(--bg5);
+@bg6: var(--bg6);
+@bg7: var(--bg7);
+@bg8: var(--bg8);
+@bg10: var(--bg10);
+@bgl: var(--bgl);
+@bgPairTitle: var(--bgPairTitle);
+@primary-bg: var(--primary-bg);
+@primary-nav-bg: var(--primary-nav-bg);
+@dialog-title-bg: var(--dialog-title-bg);
+@dialog-content-bg: var(--theme-panel);
+@dialog-content-text: var(--dialog-content-text);
+@pair-banner-bg: var(--pair-banner-bg);
+@pair-banner-footer-bg: var(--theme-panel);
+@scroll-bar: var(--scroll-bar);
+@input-background: var(--input-background);
+@card-wrapper-footer-bg: var(--card-wrapper-footer-bg);
+@card-background: var(--table-td-hover-bg);
+@card-wrapper-sub-bg: var(--card-wrapper-sub-bg);
+@card-wrapper-box-shadow: var(--card-wrapper-box-shadow);
+@body-bg: var(--body-bg);
+@pair-card-hover-bg: var(--pair-card-hover-bg);
+@chart-tooltip-shadow: var(--chart-tooltip-shadow);
+// tick
+@tick-body: var(--tick-body);
+@tick-active: var(--tick-active);
+
+@expiry-bg: var(--expiry-bg);
+@campaign-bar-bg: var(--campaign-bar-bg);
+@campaign-bar-hover: var(--campaign-bar-hover);
+
+@mobile-bg-line: var(--mobile-bg-line);
+@chart-line: var(--chart-line);
+@chart-cover-bg: var(--chart-cover-bg);
+@chart-tips-bg: var(--chart-tips-bg);
+
+// space
+@space-xs: 2px;
+@space-basic: 4px;
+@space: @space-basic; // 4px
+@space-2x: 2 * @space-basic; // 8px
+@space-3x: 3 * @space-basic; // 12px
+@space-4x: 4 * @space-basic; // 16px
+@space-5x: 5 * @space-basic; // 20px
+@space-6x: 6 * @space-basic; // 24px
+@space-7x: 7 * @space-basic; // 28px
+@space-8x: 8 * @space-basic; // 32px
+@space-9x: 9 * @space-basic; // 36px
+@space-10x: 10 * @space-basic; // 40px
+@space-12x: 12 * @space-basic; // 48px
+@space-16x: 16 * @space-basic; // 64px
+
+// card
+@card-margin: @space-8x;
+
+@card-header-background: var(--linear_gradient_bg_1);
+
+// table
+@row-height: 48px;
+@table-5-rows: @row-height * 5;
+@table-6-rows: @row-height * 6;
+@table-10-rows: @row-height * 10;
+@table-3-rows: @row-height * 3;
+
+// switch
+@switch-slider-bg: var(--switch-slider-bg);
+@switch-border-color: var(--switch-border-color);
+@switch-bg: var(--switch-bg);
+@switch-btn-bg: var(--switch-btn-bg);
+@switch-icon: var(--switch-icon);
+@switch-btn-active-bg: var(--switch-btn-active-bg);
+
+// icon
+@icon-color: var(--icon-color);
+@icon-reverse-color: var(--icon-reverse-color);
+@icon-1-color: var(--icon-1-color);
+@icon-2-color: var(--icon-2-color);
+@icon-4-color: var(--icon-4-color);
+@icon-5-color: var(--icon-5-color);
+
+// button
+@trade-buy-button: var(--trade-buy-button);
+@trade-sell-button: var(--trade-sell-button);
+@form-bg: var(--form-bg);
+@form-content-bg: var(--form-content-bg);
+
+@search-input-bg: var(--search-input-bg);
+@search-input-show-bg: var(--search-input-show-bg);
+@btn-disabled-text-color: var(--btn-disabled-text-color);
+
+// chart
+@chart-tooltip-background: var(--chart-tooltip-background);
+
+// slider
+@slider-bar-dot: var(--slider-bar-dot);
+
+@border-radius-sm: 4px;
+@border-radius: 8px;
+@border-radius-lg: 12px;
+
+// mobile dimensions
+@mobile-footer-height: 57px;
+@mobile-header-height: 57px;
+@mobile-tradeMarket-header-height: 64px;
+@mobile-tradeMarket-table-header-height: 49px;
+
+//change
+@gain-color: var(--gain-color);
+@lose-color: var(--lose-color);
+
+//ripple {
+@use-1: var(--use-1);
+@use-2: var(--use-2);
+@use-3: var(--use-3);
+
+@mobile-tab-bg: var(--mobile-tab-bg);
+
+// content-width
+@content-width: 1200px;
+@content-width-l: 1080px;
+@content-width-m: 768px;
+@content-width-s: 640px;
+@content-width-xs: 480px;
+@content-width-xss: 414px;
+@content-width-xxs: 390px;
+
+//guidance
+@guidance-close-bg: var(--guidance-close-bg);
+
+@emergency-row-bg: var(--emergency-row-bg);
+
+// new colors
+// icon
+
+@sorter-icon-fill: var(--sorter-icon-fill);
+// border
+@border-new-color: var(--border-new-color);
+@day-border: var(--theme-border);
+@warning-border: var(--warning-border);
+@border-line: var(--border-line);
+@border-position: var(--position-border);
+@border-leverage: var(--leverage-border);
+@border-tick-btn: var(--tick-btn-border);
+@border-table: var(--table-border);
+//text
+@text-emphasis: var(--theme-text);
+@long: var(--long);
+@short: var(--short);
+@text-day-gray-2: var(--theme-gray-text);
+@text-secondary: var(--theme-gray-text);
+@text-blue: var(--text-blue);
+@chart-price-color: var(--chat-price);
+@popover-text-color: var(--popover-text-color);
+
+//shadow
+@box-shadow: var(--box-shadow);
+@header-dropdown-shadow: var(--header-dropdown-shadow);
+@card-shadow: var(--card-shadow);
+@input-wrapper-shadow: var(--input-wrapper-shadow);
+@confirm-shadow: var(--confirm-shadow);
+@input-number-shadow: var(--input-number-shadow);
+@slider-shadow: var(--slider-shadow);
+@flex-table-shadow: var(--flex-table-shadow);
+@header-menu-pop-shadow: var(--header-menu-pop-shadow);
+@pair-banner-shadow: var(--pair-banner-shadow);
+@signup-wrapper-shadow: var(--signup-wrapper-shadow);
+@toast-shadow: var(--toast-shadow);
+
+//bg
+@bg-hover: var(--bg-hover);
+@bg-icon: var(--bg-icon);
+@bg-badge: var(--bg-badge);
+@bg-tab: var(--bg-tab);
+@bg-tab-active: var(--tab-active);
+@bg-input: var(--bg-input);
+@bg-white-40: var(--bg-white-40);
+@bg-secondary-hover: var(--bg-secondary-hover);
+@radio-bg: var(--radio-bg);
+@network-bg: var(--network-bg);
+@network-bg-after: var(--network-bg-after);
+@network-bg-ghost: var(--network-bg-ghost);
+@guidance-bg: var(--guidance-bg);
+@table-td-bg: var(--table-td-bg);
+@trending-wallet-bg: var(--trending-wallet-bg);
+@sidebar-header-bg: var(--sidebar-header-bg);
+@side-menu-bg: var (--side-menu-bg);
+@sidebar-container-bg: var(--sidebar-container-bg);
+@global-form-warning: var(--global-form-warning);
+@overview-bg: var(--overview-bg);
+@rail-bg: var(--rail-bg);
+@rail-step-bg: var(--rail-step-bg);
+@liq-red-bg: var(--liq-red-bg);
+@confirm-bg: var(--confirm-bg);
+@day-tooltip-bg: var(--day-tooltip-bg);
+@liq-chart-cover-bg: var(--liq-chart-cover-bg);
+@liq-chart-cover-base-bg: var(--liq-chart-cover-base-bg);
+@price-range-bg: var(--price-range-bg);
+@portfolio-ad-bg: var(--portfolio-ad-bg);
+@short-loading-bg: var(--short-loading-bg);
+@buy-loading-bg: var(--buy-loading-bg);
+@button-radio-bg: var(--button-radio-bg);
+@empty-mask-bg: var(--empty-mask-bg);
+@goerli-indicator-bg: var(--goerli-indicator-bg);
+@portfolio-allocation-position-bg: var(--portfolio-allocation-position-bg);
+@portfolio-allocation-range-bg: var(--portfolio-allocation-range-bg);
+@portfolio-allocation-order-bg: var(--portfolio-allocation-order-bg);
+@portfolio-assets-bg: var(--portfolio-assets-bg);
+@portfolio-assets-bg-hover: var(--portfolio-assets-bg-hover);
+@popover-bg: var(--popover-bg);
+@main-bg: var(--main-bg);
+@theme-panel-bg: var(--theme-panel);
+@header-dropdown-bg: var(--header-dropdown-bg);
+@theme-nav-bg: var(--theme-nav-bg);
+@portfolio-asset-selected-bg: var(--portfolio-asset-selected-bg);
+@tag-bg: var(--tag-bg);
+@table-td-hover-bg: var(--table-td-hover-bg);
+@gray-icon-bg: var(--theme-gray-icon);
+@slider-dot-active-bg: var(--slider-dot-active);
+@slider-bar-bg: var(--slider-bar-bg);
+@leverage-bg: var(--leverage-bg);
+@liq-chart-price-bg: var(--liq-chart-price-bg);
+@detail-bg: var(--theme-gray-light);
+@order-disabled-bg: var(--order-disabled-bg);
+@tooltip-bg: var(--tooltip-bg);
+@modal-mask-bg: var(--modal-mask-bg);
+@select-bg: var(--select-bg);
+@price-line-bg: var(--price-line-bg);
+@earn-footer-bg: var(--earn-footer-bg);
+@drawer-mask-bg: var(--drawer-mask);
+@subpage-bg: var(--subpage-bg);
+@size-bg: var(--size-bg);
+@size-bottom-bg: var(--size-bottom-bg);
+@banner-item-hover: var(--banner-item-hover);
+@skeleton-bg: var(--skeleton-bg);
+@skeleton-bg-light: var(--skeleton-bg-light);
+@banner-title-bg: var(--banner-title-bg);
+
+// icon
+@icon-new: var(--icon-new);
+@social-icon-fill: var(--social-icon-fill);
+//tag
+@tag-color: var(--tag);
+@tag-error: var(--tag-error);
+@tag-success: var(--tag-success);
+//alert
+@alert-error: var(--alert-error);
+@alert-warning: var(--alert-warning);
+//selection
+@selection-color: var(--selection-color);
+
+@chart-curve-stroke: var(--chart-curve-stroke);

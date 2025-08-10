@@ -1,0 +1,86 @@
+.syn-token-exchange-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+  align-self: stretch;
+  &-close {
+    position: absolute;
+    right: 24px;
+  }
+  &-img {
+    width: 128px;
+    height: 128px;
+  }
+  &-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+  }
+  &-black {
+    color: var(--theme-text);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 100% */
+  }
+  &-green {
+    color: #00bfbf;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 100% */
+  }
+  &-description {
+    color: var(--text-strong-prompt, #6fd6d6);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+  }
+  &-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    button {
+      font-size: 16px !important;
+      font-style: normal;
+      font-weight: 700 !important;
+      line-height: 24px !important;
+      flex: 1;
+    }
+  }
+}
+.syn-token-exchange-modal {
+  width: 440px !important;
+  .syn-token-exchange-content {
+    padding: 24px;
+  }
+}
+.syn-token-exchange-drawer {
+  padding: 0 !important;
+  .ant-drawer-body {
+    padding: 24px !important;
+  }
+  .ant-drawer-header {
+    display: none;
+  }
+}
+
+.syn-token-exchange-content-btns-cancel {
+  border-radius: 8px;
+  border: 1px solid var(--border-light-line-1, #04606e) !important;
+  background: var(--button-white, #04606e) !important;
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

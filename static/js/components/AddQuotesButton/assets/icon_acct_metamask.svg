@@ -1,0 +1,44 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconAcctMetamask = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_5312_61130)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M5.2352 7.99995C5.2352 7.58108 5.57279 7.24152 5.98923 7.24152H7.24596V5.9775C7.24596 5.55863 7.58355 5.21907 7.99999 5.21907C8.41644 5.21907 8.75403 5.55863 8.75403 5.9775V7.24152H10.0108C10.4272 7.24152 10.7648 7.58108 10.7648 7.99995C10.7648 8.41882 10.4272 8.75838 10.0108 8.75838H8.75403V10.0225C8.75403 10.4413 8.41644 10.7809 7.99999 10.7809C7.58355 10.7809 7.24596 10.4413 7.24596 10.0225V8.75838H5.98923C5.57279 8.75838 5.2352 8.41882 5.2352 7.99995Z",
+    fill: "#1F292E"
+  }), /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1.14459 0.574313C1.32908 0.485502 1.54152 0.475884 1.7332 0.547665L6.2207 2.22818L9.77914 2.22817L14.2608 0.547771C14.4522 0.476004 14.6644 0.485418 14.8488 0.573859C15.0332 0.6623 15.174 0.8222 15.239 1.01697L15.9608 3.1786C16.0034 3.30633 16.0115 3.44318 15.9841 3.57507L15.501 5.90211C15.4974 5.91942 15.4932 5.93661 15.4884 5.95363L14.9202 7.97326L15.8491 10.8453C15.8963 10.991 15.8984 11.1478 15.8552 11.2948L14.9289 14.4488C14.8125 14.845 14.4023 15.0746 14.0062 14.9653L11.1591 14.1792L10.8353 14.445C10.8197 14.4579 10.8035 14.4701 10.7869 14.4816L9.5139 15.3657C9.38795 15.4532 9.23853 15.5 9.08548 15.5H6.90886C6.75527 15.5 6.60535 15.4528 6.47915 15.3648L5.21182 14.4807C5.19569 14.4695 5.18 14.4576 5.16478 14.4451L4.84072 14.1791L1.99351 14.9653C1.59692 15.0748 1.18623 14.8444 1.07039 14.4475L0.149931 11.2935C0.107367 11.1476 0.109356 10.9923 0.15564 10.8476L1.07492 7.97361L0.511088 5.95194C0.506495 5.93547 0.502457 5.91885 0.498981 5.90211L0.015918 3.57507C-0.0113372 3.44378 -0.00348817 3.30756 0.0386647 3.18031L0.754735 1.01868C0.819389 0.823508 0.960096 0.663124 1.14459 0.574313ZM1.93868 2.24319L1.53377 3.46551L1.97 5.56696L2.58825 7.78373C2.62823 7.92709 2.62538 8.07912 2.58004 8.22086L1.66227 11.0901L2.30874 13.3053L4.81654 12.6128C5.05184 12.5478 5.30385 12.6014 5.4929 12.7566L6.09546 13.2512L7.14474 13.9831H8.85046L9.90513 13.2507L10.5068 12.7567C10.6958 12.6015 10.9479 12.5479 11.1832 12.6128L13.6922 13.3056L14.3427 11.0908L13.4151 8.22325C13.3689 8.08029 13.3659 7.92673 13.4067 7.78207L14.0302 5.5661L14.466 3.46646L14.0575 2.24284L10.1785 3.69725C10.0942 3.72884 10.005 3.74502 9.91512 3.74502L6.08489 3.74504C5.99507 3.74504 5.90597 3.72889 5.82179 3.69737L1.93868 2.24319Z",
+    fill: "#1F292E"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_5312_61130"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 16,
+    height: 16,
+    fill: "white"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconAcctMetamask);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_acct_metamask.4b529c4c2972984a84378edebdbc7094.svg";

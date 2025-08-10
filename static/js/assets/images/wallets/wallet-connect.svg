@@ -1,0 +1,31 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgWalletConnect = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 40,
+    height: 40,
+    viewBox: "0 0 40 40",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M8.18372 12.8494C14.6973 6.82794 25.3862 6.82794 31.8998 12.8494L32.7349 13.5185C33.0689 13.853 33.0689 14.3548 32.7349 14.6893L30.0626 17.1983C29.8956 17.3656 29.5616 17.3656 29.3946 17.1983L28.3925 16.1947C23.8831 12.0131 16.3674 12.0131 11.858 16.1947L10.6889 17.3656C10.5219 17.5328 10.1879 17.5328 10.0209 17.3656L7.34864 14.8566C7.01461 14.5221 7.01461 14.0203 7.34864 13.6858L8.18372 12.8494ZM37.4113 18.0346L39.7495 20.2091C40.0835 20.5436 40.0835 21.0454 39.7495 21.3799L28.8935 31.4158C28.5595 31.7503 28.0585 31.7503 27.7244 31.4158L20.0418 24.2234C20.0418 24.2234 19.8747 24.2234 19.7077 24.2234L12.0251 31.4158C11.691 31.7503 11.19 31.7503 10.856 31.4158L0 21.3799C0 21.2126 0 20.7109 0.167015 20.3763L2.50522 18.2019C2.83925 17.8674 3.34029 17.8674 3.67432 18.2019L11.357 25.3942C11.357 25.3942 11.524 25.3942 11.691 25.3942L19.3737 18.2019C19.7077 17.8674 20.2088 17.8674 20.5428 18.2019L28.2255 25.3942C28.2255 25.3942 28.3925 25.3942 28.5595 25.3942L36.2422 18.2019C36.5762 17.8674 37.0772 17.8674 37.4113 18.0346Z",
+    fill: "#3B99FC"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgWalletConnect);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/wallet-connect.46421d5dce2bf8d4e6326c031700eaf6.svg";

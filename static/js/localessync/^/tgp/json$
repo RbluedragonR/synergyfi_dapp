@@ -1,0 +1,30 @@
+var map = {
+	"./en/tgp.json": 21510,
+	"./es/tgp.json": 64371,
+	"./fr/tgp.json": 50841,
+	"./ja/tgp.json": 13498,
+	"./kr/tgp.json": 87099,
+	"./th/tgp.json": 31645,
+	"./tr/tgp.json": 88463,
+	"./vi/tgp.json": 27425
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 48833;

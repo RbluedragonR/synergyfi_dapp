@@ -1,0 +1,52 @@
+.syn-cross-market-detail {
+  &-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: @space-4x;
+  }
+  &-alert {
+  }
+  &-market-part {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: @space-4x;
+    width: 100%;
+    & > div {
+      width: 100%;
+    }
+    &-market-name {
+    }
+    &-market-simulation {
+    }
+  }
+  &-limit-part {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: @space-4x;
+    width: 100%;
+    & > div {
+      width: 100%;
+    }
+    &-limit-name {
+    }
+    &-limit-simulation {
+    }
+  }
+  &-market-title {
+    .font12;
+    line-height: 16px;
+    color: var(--text-black, #000);
+    margin-bottom: @space-4x;
+    .long {
+      color: @long;
+    }
+    .short {
+      color: @short;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

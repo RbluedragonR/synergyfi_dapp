@@ -1,0 +1,42 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgBtnTrade = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 104,
+    height: 32,
+    viewBox: "0 0 104 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_1782_16051)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M5.65685 2.34317C7.15715 0.842863 9.19199 0 11.3137 0H96C100.418 0 104 3.58172 104 8V20.6862C104 22.808 103.157 24.8428 101.657 26.3431L98.3431 29.6568C96.8429 31.1571 94.808 32 92.6863 32L70 31.9999L12 32H8C3.58172 32 0 28.4183 0 24V11.3138C0 9.19205 0.842843 7.15723 2.34312 5.65694L5.65685 2.34317Z",
+    fill: "#D6855C"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M6 28L70.3431 27.9999C71.404 27.9999 72.4214 27.5785 73.1716 26.8283L74.8284 25.1714C75.5786 24.4213 76.596 23.9999 77.6569 23.9999L95 24C97.2091 24 99 25.7909 99 28V29L98.3431 29.6568C96.8429 31.1571 94.808 32 92.6863 32H8C3.58172 32 0 28.4183 0 24V22C0 25.3137 2.68629 28 6 28Z",
+    fill: "#E6B85C"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_1782_16051"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 104,
+    height: 32,
+    fill: "white"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgBtnTrade);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/btn_trade.b9a7ad0890cd722f9ebb53e537c861a4.svg";

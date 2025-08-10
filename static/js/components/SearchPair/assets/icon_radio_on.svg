@@ -1,0 +1,36 @@
+var _path, _path2;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconRadioOn = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 17,
+    height: 17,
+    viewBox: "0 0 17 17",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M8.0547 15.5925C11.7366 15.5925 14.7214 12.6077 14.7214 8.92579C14.7214 5.24389 11.7366 2.25912 8.0547 2.25912C4.3728 2.25912 1.38803 5.24389 1.38803 8.92579C1.38803 12.6077 4.3728 15.5925 8.0547 15.5925Z",
+    fill: "#00BFBF"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M10.9184 6.72879C11.2112 7.02169 11.2112 7.49656 10.9184 7.78945L7.58502 11.1228C7.29213 11.4157 6.81726 11.4157 6.52436 11.1228L5.19103 9.78945C4.89814 9.49656 4.89814 9.02169 5.19103 8.72879C5.48392 8.4359 5.9588 8.4359 6.25169 8.72879L7.05469 9.5318L9.8577 6.72879C10.1506 6.4359 10.6255 6.4359 10.9184 6.72879Z",
+    fill: "white"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconRadioOn);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_radio_on.82d99385d48d28deefe3471bc8c7d79f.svg";

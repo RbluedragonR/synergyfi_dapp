@@ -1,0 +1,53 @@
+var _path, _path2, _path3, _path4, _path5;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconEmpty = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M6.72 5.4C6.96301 5.4 7.16 5.59699 7.16 5.84V18.16C7.16 18.403 6.96301 18.6 6.72 18.6C6.47699 18.6 6.28 18.403 6.28 18.16V5.84C6.28 5.59699 6.47699 5.4 6.72 5.4Z",
+    fill: "#00BFBF"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1.44 8.92C1.68301 8.92 1.88 9.11699 1.88 9.36V14.64C1.88 14.883 1.68301 15.08 1.44 15.08C1.19699 15.08 1 14.883 1 14.64V9.36C1 9.11699 1.19699 8.92 1.44 8.92Z",
+    fill: "#00BFBF"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M12 1C12.243 1 12.44 1.19699 12.44 1.44V22.56C12.44 22.803 12.243 23 12 23C11.757 23 11.56 22.803 11.56 22.56V1.44C11.56 1.19699 11.757 1 12 1Z",
+    fill: "#00BFBF"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M17.28 5.4C17.523 5.4 17.72 5.59699 17.72 5.84V18.16C17.72 18.403 17.523 18.6 17.28 18.6C17.037 18.6 16.84 18.403 16.84 18.16V5.84C16.84 5.59699 17.037 5.4 17.28 5.4Z",
+    fill: "#00BFBF"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M22.56 8.92C22.803 8.92 23 9.11699 23 9.36V14.64C23 14.883 22.803 15.08 22.56 15.08C22.317 15.08 22.12 14.883 22.12 14.64V9.36C22.12 9.11699 22.317 8.92 22.56 8.92Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconEmpty);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_empty.07f6a56cf52d09686a011a101fcbd7c4.svg";

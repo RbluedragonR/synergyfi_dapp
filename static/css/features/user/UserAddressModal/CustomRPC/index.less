@@ -1,0 +1,88 @@
+.syn-custom-rpc {
+  display: flex;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-12, 12px);
+  align-self: stretch;
+
+  &-input {
+    color: var(--text-weak-prompt, #94b8bf);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* 4 size/14R 16 */
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+
+    display: flex;
+    height: 48px;
+    padding: 16px var(--spacing-12, 12px);
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid var(--border-light-line-1, #c3e7e7);
+    background: var(--solid-2, #f4fbfb);
+    width: 100%;
+    box-shadow: none;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+      color: var(--text-primary-color);
+    }
+  }
+
+  &-title {
+    color: var(--text-strong-prompt, #007580);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* 4 size/14R 16 */
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+  }
+  &-footer {
+    color: var(--text-strong-prompt, #007580);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* 4 size/14R 16 */
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+  }
+  &-form {
+    display: flex;
+    height: 48px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid var(--border-light-line-1, #c3e7e7);
+    background: var(--solid-2, #f4fbfb);
+
+    .syn-custom-rpc-btn {
+      display: flex;
+      padding: 8px 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      position: absolute;
+      right: 12px;
+      top: 8px;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

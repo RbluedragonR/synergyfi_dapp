@@ -1,0 +1,108 @@
+@import '~@/themes/font.less';
+@import '~@/themes/variable.less';
+@import '~@/themes/func.less';
+.syn-language-select {
+  &.ant-select {
+    display: flex;
+    outline: none;
+    align-items: center;
+    .ant-select-selector {
+      border-radius: 99px;
+      border: 1px solid var(--button-weak-button, #94b8bf);
+      width: 32px;
+      height: 32px;
+      padding: 0px;
+      .syn-language-label {
+        display: none;
+      }
+      background: transparent;
+    }
+    .ant-select-selection-item {
+      display: flex;
+      align-items: center;
+      .font14;
+      font-weight: 700;
+      color: var(--text-black);
+      overflow: unset;
+      padding-inline-end: 0;
+      .syn-language-img {
+        display: none;
+      }
+    }
+  }
+}
+.syn-language {
+  &-label-short {
+    text-transform: uppercase;
+    overflow: unset;
+    .font14;
+  }
+  &-img {
+    width: 24px;
+    height: 24px;
+  }
+}
+.syn-lang-item {
+  color: var(--text-black);
+  display: flex;
+  height: 48px;
+  padding: 0px 16px;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  .font14;
+  &:hover,
+  &.selected {
+    background: var(--solid-2, #013840);
+  }
+  img {
+    width: 20px;
+    height: 18px;
+  }
+  &-selected {
+    display: flex;
+    width: var(--spacing-32, 32px);
+
+    height: var(--spacing-32, 32px);
+
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-4, 4px);
+    border-radius: 100px;
+    border: 1px solid var(--button-weak-button, #94b8bf);
+    color: var(--text-black, #000);
+    font-feature-settings: 'liga' off, 'clig' off;
+    /* 4 size/14R 16 */
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+}
+.ant-dropdown.syn-language__dropdown {
+  border-radius: 8px;
+  overflow: hidden;
+  .ant-dropdown-menu {
+    padding: 0;
+    box-shadow: none;
+    .ant-dropdown-menu-item {
+      padding: 0;
+      border-radius: 0;
+    }
+  }
+
+  .ant-dropdown-menu-title-content {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    column-gap: 8px;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

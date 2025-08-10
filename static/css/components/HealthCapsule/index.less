@@ -1,0 +1,18 @@
+@health-capsule-prefix: ~'@{syn-prefix}-health_capsule';
+.@{health-capsule-prefix} {
+  background-color: @slider-bar-dot;
+  border-radius: 4px;
+  display: inline-flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  height: 16px;
+  width: 6px;
+  &-item {
+    width: 100%;
+    height: 33.33%;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

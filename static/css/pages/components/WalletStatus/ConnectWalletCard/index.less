@@ -1,0 +1,51 @@
+.syn-connect-wallet-card {
+  display: flex;
+  padding: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-24, 24px);
+  align-self: stretch;
+  &-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-16, 16px);
+    max-width: 270px;
+
+    .syn-btn.syn-network_button {
+      padding: 8px 12px;
+      max-width: 180px;
+      height: 32px;
+
+      span {
+        color: var(--text-white, #fff);
+        font-feature-settings: 'liga' off, 'clig' off;
+
+        /* 4 size/14B 16 */
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px; /* 114.286% */
+      }
+
+      .syn-btn-icon svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  &-title {
+    color: var(--text-strong-prompt, #007580);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* 4 size/14R 16 */
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

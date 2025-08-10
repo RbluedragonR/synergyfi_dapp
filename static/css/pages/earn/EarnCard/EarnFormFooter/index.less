@@ -1,0 +1,47 @@
+@import '~@/themes/func.less';
+@import '~@/themes/form.less';
+.earn-form__footer {
+  .form-wrap-btn();
+  border-top: 0;
+  background: transparent;
+  padding: 0px;
+  position: relative;
+  .syn-btn {
+    width: 100%;
+  }
+  .earn-form__btn.syn-btn-default {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    padding: @space-3x;
+    color: #fff;
+    background: @primary-color;
+    border: none;
+    &:hover {
+      background: @primary-color;
+      color: #fff;
+    }
+    &[disabled] {
+      color: var(--text-white, #fff);
+      background-color: var(--button-disable, #c3e7e7);
+      text-shadow: none;
+      box-shadow: none;
+    }
+    &.remove-liq {
+      &.syn-btn-loading {
+        background: @confirm-bg;
+      }
+    }
+    &.syn-btn-loading {
+      background: @confirm-bg;
+    }
+  }
+  .earn-form__btn-short:not([disabled]) {
+    background: @lose-color;
+    &:hover {
+      background: @lose-color;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

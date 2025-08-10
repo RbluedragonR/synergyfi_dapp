@@ -1,0 +1,32 @@
+@import '~@/themes/func.less';
+@t-gPLucky-draw-prefix: ~'@{syn-prefix}-t-gPLucky-draw';
+.@{t-gPLucky-draw-prefix} {
+  display: flex;
+  row-gap: 24px;
+  align-items: stretch;
+  flex-direction: column;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-left {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 32px;
+    }
+  }
+  &-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--solid-list-card, #f4fbfb);
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

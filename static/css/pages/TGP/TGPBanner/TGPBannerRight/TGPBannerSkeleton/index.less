@@ -1,0 +1,39 @@
+.syn-tgp-banner-skeleton {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  width: 100%;
+  align-items: stretch;
+  padding: 8px;
+
+  .ant-skeleton {
+    .ant-skeleton-content {
+      display: flex;
+      .ant-skeleton-title {
+        width: 200px;
+        border-radius: 99px;
+        height: 20px;
+        // background: linear-gradient(90deg, #c3e7e7 0%, #c3e7e7 50%, #e1e1f3 100%);
+        background-size: 400% 100%;
+      }
+    }
+    &:nth-last-of-type(2) {
+      .ant-skeleton-content {
+        .ant-skeleton-title {
+          width: 320px;
+        }
+      }
+    }
+    &:last-of-type {
+      .ant-skeleton-content {
+        .ant-skeleton-title {
+          width: 440px;
+          border-radius: 12px;
+          height: 144px;
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

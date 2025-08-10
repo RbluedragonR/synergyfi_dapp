@@ -1,0 +1,25 @@
+.token-pair__symbol {
+  color: @text-color;
+  display: flex;
+  align-items: flex-start;
+  font-size: 16px;
+  line-height: 16px;
+
+  &-quote {
+    margin-left: 0;
+    color: var(--text-strong-prompt, #006a80);
+  }
+
+  &-base {
+    font-weight: 700;
+  }
+  &-margin-icon {
+    width: 9px;
+    height: 9px;
+    path {
+      fill: var(--text-strong-prompt, #006a80);
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

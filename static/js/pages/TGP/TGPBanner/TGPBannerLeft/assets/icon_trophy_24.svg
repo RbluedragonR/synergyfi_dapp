@@ -1,0 +1,40 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconTrophy24 = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 25,
+    viewBox: "0 0 24 25",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_134_1686)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M15.8889 3.61115H8.11112C7.19098 3.61115 6.44098 4.36809 6.47571 5.28475C6.48265 5.46878 6.48959 5.65281 6.50001 5.83336H2.83335C2.37155 5.83336 2.00002 6.20489 2.00002 6.66669C2.00002 9.88196 3.16321 12.1181 4.72571 13.6354C6.2639 15.1319 8.1389 15.8854 9.52084 16.2674C10.3333 16.4931 10.8889 17.1701 10.8889 17.8507C10.8889 18.5764 10.2986 19.1667 9.57292 19.1667H8.66667C8.05209 19.1667 7.55556 19.6632 7.55556 20.2778C7.55556 20.8924 8.05209 21.3889 8.66667 21.3889H15.3333C15.9479 21.3889 16.4444 20.8924 16.4444 20.2778C16.4444 19.6632 15.9479 19.1667 15.3333 19.1667H14.4271C13.7014 19.1667 13.1111 18.5764 13.1111 17.8507C13.1111 17.1701 13.6632 16.4896 14.4792 16.2674C15.8646 15.8854 17.7396 15.1319 19.2778 13.6354C20.8368 12.1181 22 9.88196 22 6.66669C22 6.20489 21.6284 5.83336 21.1666 5.83336H17.5C17.5104 5.65281 17.5173 5.47225 17.5243 5.28475C17.559 4.36809 16.809 3.61115 15.8889 3.61115ZM3.69794 7.50002H6.62848C6.94446 10.6285 7.64237 12.7188 8.43056 14.1181C7.56598 13.7361 6.66668 13.1979 5.8889 12.441C4.77779 11.3611 3.87502 9.8021 3.70141 7.50002H3.69794ZM18.1146 12.441C17.3368 13.1979 16.4375 13.7361 15.5729 14.1181C16.3611 12.7188 17.059 10.6285 17.375 7.50002H20.3055C20.1285 9.8021 19.2257 11.3611 18.118 12.441H18.1146Z",
+    fill: "white"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_134_1686"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 20,
+    height: 17.7777,
+    fill: "white",
+    transform: "translate(2.00002 3.61115)"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconTrophy24);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_trophy_24.652950a6ee74116ad9b543fd9744ccbc.svg";

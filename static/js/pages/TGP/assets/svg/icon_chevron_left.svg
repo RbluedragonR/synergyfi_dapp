@@ -1,0 +1,33 @@
+var _g;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconChevronLeft = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    opacity: 0.4
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M8.99268 12.6661C8.62647 12.2999 8.62647 11.7052 8.99268 11.339L13.6802 6.65149C14.0464 6.28528 14.6411 6.28528 15.0073 6.65149C15.3735 7.0177 15.3735 7.61243 15.0073 7.97864L10.9819 12.004L15.0044 16.0294C15.3706 16.3956 15.3706 16.9904 15.0044 17.3566C14.6382 17.7228 14.0435 17.7228 13.6772 17.3566L8.98975 12.6691L8.99268 12.6661Z",
+    fill: "black"
+  }))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconChevronLeft);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_chevron_left.341e51e1db688f20bcb375d00d8524a0.svg";

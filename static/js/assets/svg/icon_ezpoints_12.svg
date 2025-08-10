@@ -1,0 +1,46 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconEzpoints12 = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 12,
+    height: 12,
+    viewBox: "0 0 12 12",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_14219_162361)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M10.9698 6.43652C10.9698 6.44437 10.9672 6.4548 10.9672 6.46265C10.7501 8.84896 8.85134 10.7099 6.53936 10.9504C6.52369 10.953 6.50798 10.953 6.49231 10.9556L10.9698 6.43652Z",
+    fill: "var(--ezpoints-color)"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M8.18701 1.50444C8.06148 1.44432 7.93332 1.38682 7.80255 1.33717C7.54886 1.23785 7.28211 1.15943 7.0101 1.10455C6.68319 1.03659 6.34319 1 5.99534 1C5.82795 1 5.66319 1.00784 5.49842 1.02352C4.34767 1.13591 3.3146 1.64035 2.52737 2.39832L2.52476 2.40093C2.47245 2.45321 2.42014 2.50548 2.36784 2.55775L2.36522 2.56037C1.61461 3.35231 1.12031 4.39255 1.01831 5.54519C1.00523 5.69157 1 5.84054 1 5.9895C1 6.36329 1.04185 6.72658 1.11769 7.07421C1.17523 7.33816 1.25631 7.59692 1.35569 7.8426C1.41061 7.97852 1.47077 8.11183 1.53615 8.24251C1.65122 8.4673 1.78199 8.68421 1.92846 8.88811L2.74968 8.05955L8.03534 2.72503L8.85654 1.89649C8.6447 1.75013 8.42242 1.61944 8.18701 1.50444ZM2.26322 6.93044C2.25537 6.89647 2.24753 6.8625 2.23968 6.82853V6.82591C2.17953 6.55407 2.14814 6.2718 2.14814 5.9895C2.14814 5.00155 2.51691 4.07108 3.19167 3.35754L3.19429 3.35493L3.33029 3.2164L3.33291 3.21379C4.05213 2.52116 4.99627 2.14218 5.99795 2.14218C6.26211 2.14218 6.52628 2.16832 6.78258 2.22059C6.82181 2.22843 6.86104 2.23889 6.90289 2.24673L2.26322 6.93044Z",
+    fill: "var(--ezpoints-color)"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M4.27183 10.6756C4.14891 10.6312 4.0286 10.5789 3.9083 10.5267C3.66245 10.4143 3.42707 10.281 3.20215 10.1294L10.1067 3.15869C10.2558 3.37301 10.3892 3.60302 10.5016 3.84086C10.5618 3.96371 10.6141 4.09177 10.6638 4.21985L4.27183 10.6756Z",
+    fill: "var(--ezpoints-color)"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_14219_162361"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 10,
+    height: 9.96002,
+    fill: "white",
+    transform: "translate(1 1)"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconEzpoints12);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_ezpoints_12.535ef1b4d9755a9ba60c9ef0132cd5b4.svg";

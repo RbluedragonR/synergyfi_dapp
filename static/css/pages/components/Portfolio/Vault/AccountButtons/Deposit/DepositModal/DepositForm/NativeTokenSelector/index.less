@@ -1,0 +1,30 @@
+@import '~@/themes/func.less';
+@native-token-selector-prefix: ~'@{syn-prefix}-native-token-selector';
+.@{native-token-selector-prefix} {
+  &-tabs.syn-tabs {
+    .syn-tabs-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 8px;
+      .token-icon {
+        opacity: 0.4;
+      }
+      &.active {
+        color: @primary-color;
+        background: var(--solid-white-card);
+        box-shadow: unset;
+        opacity: 1;
+        .token-icon {
+          opacity: 1;
+        }
+      }
+      .syn-tabs-segment {
+        background: var(--solid-white-card);
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

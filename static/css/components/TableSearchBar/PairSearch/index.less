@@ -1,0 +1,59 @@
+@import '~@/themes/func.less';
+@pair-search-prefix: ~'@{syn-prefix}-pair-search';
+.@{pair-search-prefix} {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+  #syn-pair-search-clear {
+    padding-right: 0;
+  }
+
+  .syn-search {
+    height: 32px;
+    display: flex;
+    background: var(--solid-2);
+    width: 240px;
+    padding: var(--spacing-0, 0px) var(--spacing-16, 16px);
+    align-items: center;
+    gap: var(--spacing-8, 8px);
+
+    border-radius: var(--spacing-8, 8px);
+    border: 1px solid var(--button-weak-button, #94b8bf);
+
+    &::before {
+      display: none;
+    }
+    .ant-input-prefix {
+      width: 16px;
+      height: 16px;
+      margin: 0;
+    }
+    .ant-input {
+      &::placeholder {
+        color: #7aa9a9;
+      }
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      &::placeholder {
+        color: var(--text-weak-prompt, #94b8bf);
+      }
+    }
+    &.ant-input-affix-wrapper-focused {
+      border: 1px solid var(--brand-5, #00bfbf);
+      background: var(--solid-list-card-hover, #fff);
+      .ant-input-prefix {
+        .anticon {
+          color: #00bfbf !important;
+        }
+      }
+      #syn-pair-search-clear {
+        path {
+          fill: #00bfbf !important;
+        }
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

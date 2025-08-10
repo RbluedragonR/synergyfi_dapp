@@ -1,0 +1,61 @@
+@import '~@/themes/func.less';
+@remove-liq-form-prefix: ~'@{syn-prefix}-remove-liq-form';
+.@{remove-liq-form-prefix} {
+  // padding: @space-4x 0;
+  &-title {
+    text-align: center;
+  }
+  &-range-container {
+    margin: @space-3x 0;
+    display: flex;
+    column-gap: @space;
+    &-item {
+      flex: 1;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      row-gap: @space-4x;
+      &-liq {
+        dt {
+          flex: 1;
+        }
+        dd {
+          margin: 0;
+        }
+        background: @liq-red-bg;
+        color: #ffffff;
+        display: flex;
+        padding: @space-2x;
+        justify-content: space-between;
+      }
+    }
+    &-middle {
+      text-align: center;
+      padding: @space @space-3x;
+    }
+  }
+  &-amount {
+    dl {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &-success {
+    display: flex;
+    flex-direction: column;
+    row-gap: @space-4x;
+    align-items: center;
+    img {
+      height: 124px;
+      width: 124px;
+    }
+    &-line {
+      .font14;
+      color: @text-color;
+      text-align: center;
+      width: 70%;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

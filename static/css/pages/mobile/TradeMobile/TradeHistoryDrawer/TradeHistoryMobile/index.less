@@ -1,0 +1,45 @@
+@import '~@/themes/func.less';
+@trade-history-mobile-prefix: ~'@{syn-prefix}-trade-history-mobile';
+.@{trade-history-mobile-prefix} {
+  padding: 0 8px;
+  .syn-table.ant-table-wrapper {
+    .ant-table-thead {
+      margin-bottom: 8px;
+      .ant-table-cell {
+        background: none;
+        .font12;
+        &:first-of-type,
+        &:last-of-type {
+          border-radius: 0;
+          border-start-start-radius: 0;
+          border-end-end-radius: 0;
+        }
+        &:nth-last-child(2) {
+          padding-right: 16px;
+        }
+      }
+    }
+    .ant-table-content {
+      .ant-table-tbody {
+        .ant-table-cell {
+          .font14;
+          .syn-trade-side .ant-tag {
+            background: none;
+            .font14;
+            padding: 0;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+  .skeleton-table {
+    .ant-skeleton {
+      .ant-skeleton-title {
+        height: 16px;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,38 @@
+@import '~@/themes/func.less';
+@odyssey-square-button-prefix: ~'@{syn-prefix}-odyssey-square-button';
+.@{odyssey-square-button-prefix} {
+  &.syn-btn {
+    border: none;
+    border-radius: none;
+    height: 56px;
+    width: 200px;
+    .font16;
+    line-height: 24px;
+    font-weight: 700;
+    .fontOxanium;
+    &.syn-btn-primary {
+      background: url('./assets/btn_large_solid_on.svg') center no-repeat;
+      background-size: contain;
+      &:disabled {
+        background-image: url('./assets/btn_large_solid_off.svg');
+      }
+      &:hover {
+        background: url('./assets/btn_large_solid_on.svg') center no-repeat;
+        background-size: contain;
+      }
+    }
+    &.syn-btn-background-ghost.syn-btn-default {
+      background: url('./assets/btn_large_ghost_on.svg') center no-repeat;
+      background-size: contain;
+      &:disabled {
+        background-image: url('./assets/btn_large_ghost_off.svg');
+      }
+      &:hover {
+        background: url('./assets/btn_large_ghost_on.svg') center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

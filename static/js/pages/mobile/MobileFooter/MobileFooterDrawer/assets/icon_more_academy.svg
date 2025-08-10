@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconMoreAcademy = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M8.00004 2.75034C7.60003 2.75034 7.20502 2.83933 6.84366 3.01086L6.84042 3.0124L2.37975 5.10372C2.21905 5.17899 2.08337 5.37618 2.08337 5.66665C2.08337 5.95712 2.21881 6.1542 2.37951 6.22947L6.84373 8.32247C7.20517 8.49408 7.60026 8.58313 8.00037 8.58313C8.40048 8.58313 8.79558 8.49409 9.15702 8.32248L9.16029 8.32092L13.6203 6.2296C13.781 6.15433 13.9167 5.95712 13.9167 5.66665C13.9167 5.37618 13.7813 5.17911 13.6206 5.10384L9.15642 3.01087C8.79505 2.83933 8.40005 2.75034 8.00004 2.75034ZM0.583374 5.66665C0.583374 4.94253 0.933199 4.12503 1.743 3.74558L6.2021 1.65498C6.76402 1.38855 7.37814 1.25034 8.00004 1.25034C8.62194 1.25034 9.23606 1.38855 9.79799 1.65498C9.79854 1.65525 9.7991 1.65551 9.79966 1.65578L14.2568 3.74547C14.2568 3.74543 14.2569 3.74551 14.2568 3.74547C15.0666 4.12491 15.4167 4.94253 15.4167 5.66665C15.4167 6.39085 15.0668 7.20844 14.2568 7.58784L13.4167 7.98178V11.0833C13.4167 11.9998 12.957 12.8954 12.1068 13.366C11.5993 13.6476 10.9297 13.9876 10.222 14.259C9.52644 14.5258 8.7345 14.75 8.00004 14.75C7.26549 14.75 6.4735 14.5256 5.77804 14.2588C5.07035 13.9874 4.40066 13.6475 3.89354 13.3669C3.04517 12.896 2.58337 12.0007 2.58337 11.084V7.98172L2.08337 7.7473V9.33332C2.08337 9.74753 1.74759 10.0833 1.33337 10.0833C0.91916 10.0833 0.583374 9.74753 0.583374 9.33332L0.583374 5.66665ZM4.08337 8.68498V11.084C4.08337 11.5097 4.29416 11.8734 4.62015 12.0546C5.09232 12.3159 5.69552 12.6206 6.31521 12.8583C6.94725 13.1007 7.53725 13.25 8.00004 13.25C8.46292 13.25 9.05297 13.1008 9.68487 12.8585C10.3046 12.6208 10.9077 12.3159 11.3795 12.0542C11.7051 11.874 11.9167 11.5107 11.9167 11.0833V8.68515L9.8004 9.67749C9.79982 9.67777 9.79924 9.67804 9.79866 9.67832C9.23664 9.94485 8.6224 10.0831 8.00037 10.0831C7.37834 10.0831 6.76409 9.94485 6.20207 9.67831L4.08337 8.68498Z",
+    fill: "#1F292E"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconMoreAcademy);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_more_academy.53dfbdaf64e650fa796a9c138af264b8.svg";

@@ -1,0 +1,40 @@
+var _path, _path2, _path3, _path4;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgTitleDecor = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 87,
+    height: 24,
+    viewBox: "0 0 87 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M57 21.004L75 3.00403H84L66 21.004H57Z",
+    fill: "#00BFBF"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M39 21.004L57 3.00403H66L48 21.004H39Z",
+    fill: "#00BFBF"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "M21 21.004L39 3.00403H48L30 21.004H21Z",
+    fill: "#006A80"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    d: "M3 21.004L21 3.00403H30L12 21.004H3Z",
+    fill: "#006A80"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgTitleDecor);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/title_decor.49b44ce805ae18e59e6ba4658f2ee4de.svg";

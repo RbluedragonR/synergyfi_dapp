@@ -1,0 +1,77 @@
+.syn-total-overiew-skeleton-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  .ant-skeleton-header {
+    padding: 0;
+  }
+  .ant-skeleton-title {
+    border-radius: 99px !important;
+  }
+  .ant-skeleton-avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .ant-skeleton-title {
+    margin: 0;
+  }
+  &.big {
+    gap: 24px;
+    .ant-skeleton-avatar {
+      width: 96px;
+      height: 96px;
+    }
+    .top {
+      .ant-skeleton-title {
+        width: 72px;
+        height: 16px;
+      }
+    }
+    .bottom {
+      .ant-skeleton-title {
+        width: 146px;
+        height: 24px;
+      }
+    }
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: fit-content;
+    height: fit-content;
+    .top {
+      .ant-skeleton-title {
+        width: 52px;
+        height: 12px;
+      }
+    }
+    .bottom {
+      .ant-skeleton-title {
+        width: 96px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.syn-total-overiew-skeleton {
+  display: flex;
+  gap: 48px;
+  &-right {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+.big-circle {
+  background-color: var(--big-circle);
+  width: 40px;
+  height: 40px;
+  border-radius: 99px;
+  position: absolute;
+  left: 52px;
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

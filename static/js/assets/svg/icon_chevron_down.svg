@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconChevronDown = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M3.46978 6.46967C3.76268 6.17678 4.23755 6.17678 4.53044 6.46967L8.00011 9.93934L11.4698 6.46967C11.7627 6.17678 12.2375 6.17678 12.5304 6.46967C12.8233 6.76256 12.8233 7.23744 12.5304 7.53033L8.53044 11.5303C8.23755 11.8232 7.76268 11.8232 7.46978 11.5303L3.46978 7.53033C3.17689 7.23744 3.17689 6.76256 3.46978 6.46967Z",
+    fill: "#94B8BF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconChevronDown);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_chevron_down.e3f866c22798a32281a343a809509f68.svg";

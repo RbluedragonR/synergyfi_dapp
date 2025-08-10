@@ -1,0 +1,31 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgMarginIcon = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 9,
+    height: 9,
+    viewBox: "0 0 9 9",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M2.688 6.5696H3.36V4.2656C3.36 4.0224 3.3504 3.792 3.3312 3.5744C3.312 3.3568 3.2832 3.1648 3.2448 2.9984L3.2064 3.0464L4.4736 6.5696H5.0784L6.3072 3.0464L6.2592 3.0368C6.2464 3.1392 6.2336 3.2992 6.2208 3.5168C6.2144 3.728 6.2112 3.9776 6.2112 4.2656V6.5696H6.9216V2.528H5.952L4.8768 5.36C4.8512 5.4368 4.832 5.5136 4.8192 5.5904C4.8064 5.6608 4.7904 5.7344 4.7712 5.8112H4.8096C4.8032 5.7344 4.7936 5.6608 4.7808 5.5904C4.768 5.5136 4.7488 5.4368 4.7232 5.36L3.6672 2.528H2.688V6.5696ZM4.8 8.528C4.256 8.528 3.744 8.4256 3.264 8.2208C2.784 8.016 2.3616 7.7344 1.9968 7.376C1.6384 7.0112 1.3568 6.5888 1.152 6.1088C0.9472 5.6288 0.8448 5.1168 0.8448 4.5728C0.8448 4.0288 0.9472 3.52 1.152 3.0464C1.3568 2.5664 1.6384 2.144 1.9968 1.7792C2.3616 1.4144 2.784 1.1296 3.264 0.924799C3.744 0.719999 4.256 0.617599 4.8 0.617599C5.3504 0.617599 5.8624 0.719999 6.336 0.924799C6.816 1.1296 7.2352 1.4144 7.5936 1.7792C7.9584 2.144 8.2432 2.5664 8.448 3.0464C8.6528 3.52 8.7552 4.0288 8.7552 4.5728C8.7552 5.1168 8.6528 5.6288 8.448 6.1088C8.2432 6.5888 7.9584 7.0112 7.5936 7.376C7.2352 7.7344 6.816 8.016 6.336 8.2208C5.8624 8.4256 5.3504 8.528 4.8 8.528Z",
+    fill: "#A1A7B2"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgMarginIcon);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/margin_icon.8e25f81a534d96dd83082532256ac339.svg";

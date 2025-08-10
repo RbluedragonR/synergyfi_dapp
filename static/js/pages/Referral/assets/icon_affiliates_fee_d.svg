@@ -1,0 +1,36 @@
+var _path, _path2;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconAffiliatesFeeD = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M8.00055 1.33508C6.00833 1.33508 4.22509 2.21132 3.0027 3.59171L2.36833 4.31805V4.00008C2.36833 3.63281 2.0706 3.33508 1.70333 3.33508C1.33606 3.33508 1.03833 3.63281 1.03833 4.00008V5.60008C1.03833 6.18827 1.51515 6.66508 2.10333 6.66508H3.70333C4.0706 6.66508 4.36833 6.36735 4.36833 6.00008C4.36833 5.63281 4.0706 5.33508 3.70333 5.33508H3.24591L3.99987 4.4718C4.98243 3.36315 6.40856 2.66508 8.00055 2.66508C10.9483 2.66508 13.3356 5.05235 13.3356 8.00008C13.3356 10.9478 10.9483 13.3351 8.00055 13.3351C5.51403 13.3351 3.42565 11.6353 2.83197 9.33397C2.74023 8.97834 2.37756 8.76442 2.02194 8.85616C1.66631 8.94791 1.45239 9.31057 1.54413 9.6662C2.28545 12.5399 4.89207 14.6651 8.00055 14.6651C11.6828 14.6651 14.6656 11.6824 14.6656 8.00008C14.6656 4.31781 11.6828 1.33508 8.00055 1.33508Z",
+    fill: "white"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M8.00338 4.33502C8.37065 4.33502 8.66838 4.63275 8.66838 5.00002V5.08502H9.50338C9.87065 5.08502 10.1684 5.38275 10.1684 5.75002C10.1684 6.11729 9.87065 6.41502 9.50338 6.41502H7.62838C7.50638 6.41502 7.38938 6.46349 7.30311 6.54975C7.21684 6.63602 7.16838 6.75302 7.16838 6.87502C7.16838 6.99702 7.21684 7.11402 7.30311 7.20029C7.38938 7.28656 7.50638 7.33502 7.62838 7.33502H8.37838C8.85312 7.33502 9.30841 7.52361 9.6441 7.8593C9.97979 8.19499 10.1684 8.65028 10.1684 9.12502C10.1684 9.59976 9.97979 10.0551 9.6441 10.3907C9.37755 10.6573 9.0356 10.8311 8.66838 10.8914V11C8.66838 11.3673 8.37065 11.665 8.00338 11.665C7.63611 11.665 7.33838 11.3673 7.33838 11V10.915H6.50338C6.13611 10.915 5.83838 10.6173 5.83838 10.25C5.83838 9.88275 6.13611 9.58502 6.50338 9.58502H8.37838C8.50038 9.58502 8.61738 9.53656 8.70365 9.45029C8.78991 9.36402 8.83838 9.24702 8.83838 9.12502C8.83838 9.00302 8.78991 8.88602 8.70365 8.79975C8.61738 8.71349 8.50038 8.66502 8.37838 8.66502H7.62838C7.15364 8.66502 6.69835 8.47643 6.36266 8.14074C6.02697 7.80505 5.83838 7.34976 5.83838 6.87502C5.83838 6.40028 6.02697 5.94499 6.36266 5.6093C6.6292 5.34275 6.97116 5.16895 7.33838 5.10866V5.00002C7.33838 4.63275 7.63611 4.33502 8.00338 4.33502Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconAffiliatesFeeD);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_affiliates_fee_d.8c8df7f9d13a8b8717e96389df759a38.svg";

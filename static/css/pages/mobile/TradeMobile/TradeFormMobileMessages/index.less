@@ -1,0 +1,46 @@
+@import '~@/themes/func.less';
+@trade-form-mobile-messages-prefix: ~'@{syn-prefix}-trade-form-mobile-messages';
+.@{trade-form-mobile-messages-prefix} {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  &-bottom {
+    border-radius: 8px;
+    background: var(--solid-white-card, #fff);
+    overflow: hidden;
+    border: 1px solid var(--border-light-line-1, #c3e7e7);
+  }
+  &-btns {
+    display: flex;
+    padding: 8px 0;
+    background: var(--solid-2, #f4fbfb);
+    .syn-btn {
+      flex: 1;
+      height: 16px;
+      padding: 0;
+      .font12;
+      &:first-of-type {
+        border-right: 1px solid var(--border-light-line-1, #c3e7e7);
+        border-radius: 0;
+      }
+    }
+  }
+  &-alert {
+    display: flex;
+    column-gap: @space;
+    align-items: baseline;
+    a {
+      font-weight: 700;
+      color: @primary-color;
+    }
+  }
+  &.hide {
+    .@{trade-form-mobile-messages-prefix} {
+      &-btns {
+        display: none;
+      }
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,77 @@
+.syn-social-wallet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: @space-4x;
+  padding: 16px var(--spacing-12, 12px);
+  border: 1px solid var(--border-light-line-1, #c3e7e7);
+  border-radius: 12px;
+
+  height: 72px;
+  &-wrap {
+    flex: 1 1 250px;
+  }
+
+  &:hover {
+    border-color: @primary-color;
+  }
+  .syn-big-loading {
+    width: 16px;
+    height: 16px;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+  cursor: pointer;
+  .wallet-brand {
+    .font16;
+    line-height: 24px;
+    font-weight: 700;
+    & > img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .syn-social-wallet-connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > span {
+      margin-right: @space-2x;
+    }
+    & > svg {
+      width: 24px;
+      height: 24px;
+      path {
+        fill: var(--icon-grey1);
+      }
+    }
+  }
+  &.syn-social-wallet_error {
+    border-color: @danger-color;
+  }
+
+  .trending-wallet {
+    padding: @space @space-2x;
+    margin-right: @space-2x;
+    background: @trending-wallet-bg;
+    border-radius: 100px;
+    .font12;
+    font-weight: 700;
+    &.mobile {
+      background: transparent;
+    }
+  }
+
+  &.empty {
+    background: var(--solid-2, #f4fbfb);
+    &:hover {
+      border: 1px solid var(--border-light-line-1, #c3e7e7);
+
+      cursor: default;
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

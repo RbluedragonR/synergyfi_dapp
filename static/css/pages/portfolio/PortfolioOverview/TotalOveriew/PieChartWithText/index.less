@@ -1,0 +1,51 @@
+@import '~@/themes/func.less';
+
+.syn-pie-chart-with-text {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  &-right {
+    display: flex;
+    align-items: center;
+  }
+  &-title {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    &-bottom {
+      .font32;
+      font-weight: 700;
+      line-height: 32px;
+      color: var(--text-black, #000);
+    }
+    &-top {
+      .font14;
+      color: var(--text-strong-prompt, #6fd6d6);
+    }
+  }
+
+  &-pie-chart-wrap {
+    position: relative;
+  }
+  &.small {
+    column-gap: 6px;
+    .syn-pie-chart-with-text-title {
+      row-gap: 4px;
+    }
+    .syn-pie-chart-with-text-title-bottom {
+      .font20;
+    }
+  }
+  .syn-pie-chart-with-text-pie-chart-pnl-wrap {
+    margin-right: 14px;
+    margin-left: 11px;
+  }
+}
+
+.syn-pie-chart-with-text-tooltip {
+  .ant-tooltip-inner {
+    padding: 0;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,39 @@
+var _path, _path2, _path3;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconMoreTutorial = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M7.99982 5.87502C7.3785 5.87502 6.87482 6.3787 6.87482 7.00002C6.87482 7.62134 7.3785 8.12502 7.99982 8.12502H15.9998C16.6211 8.12502 17.1248 7.62134 17.1248 7.00002C17.1248 6.3787 16.6211 5.87502 15.9998 5.87502H7.99982Z",
+    fill: "#1F292E"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M7.99982 9.37502C7.3785 9.37502 6.87482 9.8787 6.87482 10.5C6.87482 11.1213 7.3785 11.625 7.99982 11.625H12.9998C13.6211 11.625 14.1248 11.1213 14.1248 10.5C14.1248 9.8787 13.6211 9.37502 12.9998 9.37502H7.99982Z",
+    fill: "#1F292E"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9.92189 0.875002H14.0779C15.4254 0.874959 16.5493 0.874924 17.4416 0.994918C18.3833 1.12156 19.2338 1.40017 19.9168 2.08396C20.6006 2.76697 20.8783 3.61663 21.005 4.55831C21.125 5.45055 21.1249 6.57447 21.1249 7.92196V16.078C21.1249 17.4255 21.125 18.5495 21.005 19.4417C20.8784 20.3832 20.5998 21.2336 19.9164 21.9165C19.2334 22.6 18.3831 22.8785 17.4416 23.0051C16.5493 23.1251 15.4254 23.125 14.078 23.125H9.92184C8.57437 23.125 7.45042 23.1251 6.55819 23.0051C5.6165 22.8785 4.76595 22.5998 4.08294 21.916C3.39915 21.233 3.12144 20.3834 2.9948 19.4417C2.8748 18.5495 2.87484 17.4255 2.87488 16.0781V7.92201C2.87484 6.57452 2.8748 5.45055 2.9948 4.55831C3.12144 3.61663 3.40005 2.76607 4.08384 2.08306C4.76685 1.39927 5.6165 1.12156 6.55819 0.994918C7.45043 0.874924 8.57439 0.874959 9.92189 0.875002ZM6.85808 3.22484C6.16576 3.31795 5.86982 3.47884 5.67483 3.67405C5.47962 3.86904 5.31783 4.16588 5.22472 4.8582C5.12727 5.58279 5.12488 6.5542 5.12488 8V15.2751C5.3505 15.1677 5.58628 15.0806 5.82952 15.0154C6.35778 14.8743 6.96553 14.8744 7.75171 14.8749L18.8749 14.875V8C18.8749 6.5542 18.8725 5.58279 18.775 4.8582C18.6819 4.16588 18.5211 3.86994 18.3258 3.67495C18.1309 3.47974 17.834 3.31795 17.1417 3.22484C16.4171 3.1274 15.4457 3.12501 13.9999 3.12501H9.99988C8.55407 3.12501 7.58267 3.1274 6.85808 3.22484ZM5.22472 19.1418C5.19162 18.8957 5.16949 18.6211 5.15469 18.3091C5.24865 18.0719 5.39033 17.8556 5.57176 17.6741C5.80431 17.4415 6.09397 17.2741 6.41167 17.1888C6.61508 17.1346 6.89671 17.125 7.8979 17.125H18.8722C18.8658 17.979 18.8447 18.6236 18.775 19.1418C18.6819 19.8341 18.5201 20.131 18.3249 20.326C18.1299 20.5212 17.834 20.6821 17.1417 20.7752C16.4171 20.8726 15.4457 20.875 13.9999 20.875H9.99988C8.55407 20.875 7.58267 20.8726 6.85808 20.7752C6.16576 20.6821 5.86891 20.5203 5.67393 20.3251C5.47871 20.1301 5.31783 19.8341 5.22472 19.1418Z",
+    fill: "#1F292E"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconMoreTutorial);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_more_tutorial.bcac189dc7795e7d100e767d67fe7f76.svg";

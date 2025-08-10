@@ -1,0 +1,122 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconLangEs = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 32,
+    height: 32,
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_1800_5694)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M32 4.5H0V27.5H32V4.5Z",
+    fill: "url(#paint0_linear_1800_5694)"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M32 4.5H0V10.6333H32V4.5Z",
+    fill: "url(#paint1_linear_1800_5694)"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M32 21.3667H0V27.5H32V21.3667Z",
+    fill: "url(#paint2_linear_1800_5694)"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M32 10.6333H0V21.3667H32V10.6333Z",
+    fill: "url(#paint3_linear_1800_5694)"
+  }), /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M8.38086 15.2333H9.90467V16H8.38086V15.2333Z",
+    fill: "#FFEDB1"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M7.48965 17.4713C7.52717 17.9243 7.93318 18.3 8.38103 18.3C8.82942 18.3 9.23504 17.9227 9.27242 17.4713L9.45776 15.2333H7.30431L7.48965 17.4713ZM6.53918 15.2263C6.50444 14.8068 6.82784 14.4667 7.24719 14.4667H9.51488C9.94065 14.4667 10.2584 14.7975 10.2229 15.2263L10.0317 17.5349C9.96164 18.3809 9.22848 19.0667 8.38103 19.0667C7.53946 19.0667 6.80101 18.3879 6.73037 17.5349L6.53918 15.2263Z",
+    fill: "#A41517"
+  }), /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M6.85693 16H9.90455V16.7667H9.14265L8.38074 18.3L7.61884 16.7667H6.85693V16Z",
+    fill: "#A41517"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M6.0951 13.7H4.57129V19.0667H6.0951V13.7Z",
+    fill: "#A41517"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M12.1903 13.7H10.6665V19.0667H12.1903V13.7Z",
+    fill: "#A41517"
+  }), /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M6.85693 12.9333C6.85693 12.5099 7.18308 12.1667 7.62598 12.1667H9.13551C9.56024 12.1667 9.90455 12.5223 9.90455 12.9333V13.3131C9.90455 13.5268 9.7407 13.7 9.53085 13.7H7.23063C7.02424 13.7 6.85693 13.5359 6.85693 13.3131V12.9333Z",
+    fill: "#A41517"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint0_linear_1800_5694",
+    x1: 16,
+    y1: 4.5,
+    x2: 16,
+    y2: 27.5,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "white"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#F0F0F0"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint1_linear_1800_5694",
+    x1: 16,
+    y1: 4.5,
+    x2: 16,
+    y2: 10.6333,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#DD172C"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#C60B1F"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint2_linear_1800_5694",
+    x1: 16,
+    y1: 21.3667,
+    x2: 16,
+    y2: 27.5,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#DD172C"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#C60B1F"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint3_linear_1800_5694",
+    x1: 16,
+    y1: 10.6333,
+    x2: 16,
+    y2: 21.3667,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#FFD133"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FFC500"
+  })), /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_1800_5694"
+  }, /*#__PURE__*/React.createElement("rect", {
+    y: 4.5,
+    width: 32,
+    height: 23,
+    rx: 4,
+    fill: "white"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconLangEs);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_lang_es.387a321410736359755c133a6d96a3bf.svg";

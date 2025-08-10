@@ -1,0 +1,28 @@
+@import '~@/themes/variable.less';
+.ant-alert {
+  .font12;
+  //   padding: @space-2x;
+  border-radius: @space-2x;
+  border: 0;
+  align-items: flex-start;
+  &-error {
+    color: @text-color;
+    .font12;
+    background: @alert-error;
+    .ant-alert-message {
+      color: @text-color;
+    }
+  }
+  &-warning {
+    color: @warning-color;
+    background: @alert-warning;
+    .ant-alert-message {
+      color: @warning-color;
+    }
+  }
+  .ant-alert-message {
+    b {
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.ant-card {
+  color: var(--text-black, #000);
+  border-radius: 24px;
+  box-shadow: none;
+  border-width: 0;
+  &-bordered {
+    border-color: @border-line;
+    border-radius: 16px;
+  }
+  &-head {
+    color: @primary-color;
+    border-color: @border-line;
+    border: 0;
+    padding: @card-margin;
+    padding-bottom: 24px;
+    &-wrapper {
+      &-title {
+        padding: 0;
+        .syn-card-title {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 24px;
+          color: @primary-color;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          & > span {
+            font-weight: 700;
+          }
+          .syn-card-rows-length {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            color: @bg2;
+            padding: 2px 6px;
+            margin-left: 8px;
+            background: @primary-color;
+            border-radius: 4px;
+          }
+          .syn-card-rows-loading {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+  &-extra {
+    padding: 0;
+  }
+  &-body {
+    padding: @card-margin;
+    padding-top: 0;
+    height: 100%;
+  }
+}

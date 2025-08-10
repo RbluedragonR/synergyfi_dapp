@@ -1,0 +1,39 @@
+var _path, _path2, _path3;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconTradeNavInfo = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M12 11.5C12.5523 11.5 13 11.9477 13 12.5V16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16V12.5C11 11.9477 11.4477 11.5 12 11.5Z",
+    fill: "#1F292E"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M11.3055 7.71066C11.5111 7.57331 11.7528 7.5 12 7.5C12.3315 7.5 12.6495 7.6317 12.8839 7.86612C13.1183 8.10054 13.25 8.41848 13.25 8.75C13.25 8.99723 13.1767 9.2389 13.0393 9.44446C12.902 9.65002 12.7068 9.81024 12.4784 9.90485C12.2499 9.99946 11.9986 10.0242 11.7561 9.97598C11.5137 9.92775 11.2909 9.8087 11.1161 9.63388C10.9413 9.45907 10.8223 9.23634 10.774 8.99386C10.7258 8.75139 10.7505 8.50005 10.8452 8.27165C10.9398 8.04324 11.1 7.84801 11.3055 7.71066Z",
+    fill: "#1F292E"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3Z",
+    fill: "#1F292E"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconTradeNavInfo);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_trade_nav_info.d20ea4e3cec0fcb724e104c9e6b4cef7.svg";

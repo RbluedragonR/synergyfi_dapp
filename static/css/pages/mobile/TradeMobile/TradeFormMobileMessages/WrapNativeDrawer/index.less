@@ -1,0 +1,34 @@
+@import '~@/themes/func.less';
+@wrap-native-drawer-prefix: ~'@{syn-prefix}-wrap-native-drawer';
+.@{wrap-native-drawer-prefix} {
+  &.ant-drawer-content {
+    .ant-drawer-body {
+      padding: 0;
+      padding-top: 16px;
+      .syn-card_wrapper {
+        border-radius: 0;
+        .ant-card {
+          border-radius: 0;
+          padding: 0;
+          box-shadow: none;
+          background: transparent;
+        }
+      }
+    }
+  }
+  &.ant-drawer {
+    .ant-drawer-header {
+      border-bottom: 0;
+    }
+    .ant-card {
+      .ant-card-head {
+        display: none;
+      }
+    }
+  }
+  &-btn {
+    color: @primary-color;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

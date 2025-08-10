@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconMoreWhitepaper = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4.50731 2.17432C3.86432 2.2608 3.5396 2.41688 3.31189 2.64478L3.31166 2.64501L3.31144 2.64523C3.08353 2.87295 2.92745 3.19766 2.84098 3.84065C2.7516 4.5052 2.75 5.38847 2.75 6.66668V9.33334C2.75 10.6116 2.7516 11.4948 2.84098 12.1594C2.92745 12.8024 3.08353 13.1271 3.31144 13.3548L3.31166 13.355L3.31189 13.3552C3.5396 13.5831 3.86432 13.7392 4.50731 13.8257C5.17186 13.9151 6.05513 13.9167 7.33334 13.9167H8.66667C9.94488 13.9167 10.8281 13.9151 11.4927 13.8257C12.1357 13.7392 12.4604 13.5831 12.6881 13.3552L12.6886 13.3548C12.9165 13.1271 13.0725 12.8024 13.159 12.1594C13.2484 11.4948 13.25 10.6116 13.25 9.33334V6.66668C13.25 5.38847 13.2484 4.5052 13.159 3.84065C13.0725 3.19766 12.9165 2.87295 12.6886 2.64523L12.6883 2.64501L12.6881 2.64478C12.4604 2.41688 12.1357 2.2608 11.4927 2.17432C10.8281 2.08494 9.94488 2.08334 8.66667 2.08334H7.33334C6.05513 2.08334 5.17186 2.08494 4.50731 2.17432ZM7.27919 0.583344H8.72081C9.93177 0.583321 10.9164 0.583303 11.6926 0.687704C12.5019 0.796553 13.1962 1.03113 13.7492 1.5845C13.7492 1.58452 13.7492 1.58455 13.7492 1.58457C14.3023 2.13746 14.5368 2.83158 14.6456 3.64071C14.75 4.41695 14.75 5.40157 14.75 6.61252V9.3875C14.75 10.5985 14.75 11.5831 14.6456 12.3593C14.5368 13.1684 14.3023 13.8626 13.7492 14.4154C13.1963 14.9689 12.502 15.2035 11.6926 15.3123C10.9164 15.4167 9.93176 15.4167 8.72078 15.4167H7.27922C6.06825 15.4167 5.08361 15.4167 4.30736 15.3123C3.49802 15.2035 2.80373 14.9689 2.25078 14.4154C1.69768 13.8626 1.46318 13.1684 1.35436 12.3593C1.24996 11.5831 1.24998 10.5984 1.25 9.38749V6.61253C1.24998 5.40157 1.24996 4.41695 1.35436 3.64071C1.4632 2.83148 1.69774 2.13728 2.25099 1.58436C2.80391 1.03109 3.49812 0.796544 4.30736 0.687704C5.08361 0.583303 6.06823 0.583321 7.27919 0.583344ZM4.58333 5.33334C4.58333 4.91913 4.91912 4.58334 5.33333 4.58334H10.6667C11.0809 4.58334 11.4167 4.91913 11.4167 5.33334C11.4167 5.74756 11.0809 6.08334 10.6667 6.08334H5.33333C4.91912 6.08334 4.58333 5.74756 4.58333 5.33334ZM4.58333 8.00001C4.58333 7.5858 4.91912 7.25001 5.33333 7.25001H10.6667C11.0809 7.25001 11.4167 7.5858 11.4167 8.00001C11.4167 8.41423 11.0809 8.75001 10.6667 8.75001H5.33333C4.91912 8.75001 4.58333 8.41423 4.58333 8.00001ZM4.58333 10.6667C4.58333 10.2525 4.91912 9.91668 5.33333 9.91668H8.66667C9.08088 9.91668 9.41667 10.2525 9.41667 10.6667C9.41667 11.0809 9.08088 11.4167 8.66667 11.4167H5.33333C4.91912 11.4167 4.58333 11.0809 4.58333 10.6667Z",
+    fill: "#1F292E"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconMoreWhitepaper);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_more_whitepaper.29498032a8163104353570773c563e29.svg";

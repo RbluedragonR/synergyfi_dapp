@@ -1,0 +1,21 @@
+.syn-input {
+  .ant-input::placeholder {
+    color: var(--text-weak-prompt, #94b8bf);
+  }
+  &.syn-search {
+    &.ant-input-affix-wrapper-focused {
+      border-color: @primary-color;
+    }
+  }
+
+  &.ant-input-affix-wrapper {
+    &.ant-input-affix-wrapper-focused {
+      // background: @input-background-focus;
+      // border: 1px solid @input-border-hover-color;
+    }
+  }
+}
+.syn-search {
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

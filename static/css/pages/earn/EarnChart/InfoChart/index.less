@@ -1,0 +1,63 @@
+@import '~@/themes/func.less';
+@info-chart-prefix: ~'@{syn-prefix}-info-chart';
+.@{info-chart-prefix} {
+  position: relative;
+  height: 100%;
+
+  &-label {
+    position: absolute;
+    .font12;
+    line-height: 12px;
+  }
+  &-custom-tooltip {
+    border: none !important;
+    padding: 6px @space-2x;
+    background: @chart-tooltip-background;
+    border-radius: @space;
+    .font12;
+    &__label {
+      .font-number;
+      .font12;
+      color: var(--text-weak-prompt, #94b8bf);
+    }
+    &__content {
+      display: flex;
+      column-gap: @space;
+      color: var(--text-black, #000);
+    }
+  }
+  .syn-loading {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .recharts-surface {
+    .recharts-cartesian-axis-tick {
+      .recharts-cartesian-axis-tick-value {
+        font-family: Ubuntu;
+        .font12;
+        tspan {
+          fill: var(--text-weak-prompt, #94b8bf);
+        }
+      }
+    }
+    .recharts-xAxis {
+      .recharts-cartesian-axis-tick {
+        &:first-of-type {
+          transform: translateX(@space);
+        }
+      }
+    }
+    .recharts-cartesian-axis-line {
+      stroke: var(--border-light-line-1, #c3e7e7);
+    }
+    .recharts-curve.recharts-tooltip-cursor {
+      stroke: var(--border-dark-line-1, #184858);
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

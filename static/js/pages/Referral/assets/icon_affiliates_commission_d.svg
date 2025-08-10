@@ -1,0 +1,46 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconAffiliatesCommissionD = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_35848_162272)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M13.4066 5.96296C12.8771 5.94799 12.3633 6.14356 11.9778 6.50672L10.5037 7.87553C10.4045 7.64512 10.2619 7.43324 10.081 7.25241C9.70597 6.87734 9.19726 6.66663 8.66683 6.66663H6.66683C6.1441 6.66663 5.60028 6.83821 5.23744 7.28551L2.00854 10.3991L1.80482 10.1954C1.54447 9.93501 1.12236 9.93501 0.86201 10.1954C0.601661 10.4557 0.601661 10.8778 0.86201 11.1382L4.86201 15.1382C5.12236 15.3985 5.54447 15.3985 5.80482 15.1382C6.06517 14.8778 6.06517 14.4557 5.80482 14.1954L5.64203 14.0326L6.17242 13.5685C6.20731 13.538 6.23893 13.5039 6.26675 13.4668C6.30457 13.4163 6.4077 13.3334 6.66675 13.3334H9.33342C10.2212 13.3334 11.0719 13.0108 11.681 12.3293L14.7246 9.41797L14.7262 9.41647C15.111 9.05204 15.3356 8.54982 15.3506 8.01998C15.3656 7.48943 15.1692 6.97464 14.8046 6.58887C14.4401 6.2031 13.9372 5.97796 13.4066 5.96296ZM2.95151 11.3421L4.69713 13.0877L5.24904 12.6047C5.61181 12.168 6.1496 12.0001 6.66675 12.0001H9.33342C9.90212 12.0001 10.3754 11.7969 10.6984 11.4278C10.7114 11.4129 10.725 11.3986 10.7393 11.385L13.8088 8.44889C13.9376 8.32721 14.0128 8.15939 14.0178 7.98231C14.0228 7.80523 13.9572 7.63342 13.8355 7.50466C13.7139 7.37591 13.546 7.30076 13.369 7.29576C13.1919 7.29075 13.0201 7.3563 12.8913 7.47797L12.8871 7.48198L10.087 10.082C10.0699 10.0979 10.0522 10.1127 10.0339 10.1265C9.66389 10.473 9.17534 10.6666 8.66683 10.6666H7.3335C6.96531 10.6666 6.66683 10.3681 6.66683 9.99996C6.66683 9.63177 6.96531 9.33329 7.3335 9.33329H8.66683C8.84364 9.33329 9.01321 9.26305 9.13824 9.13803C9.26326 9.01301 9.3335 8.84344 9.3335 8.66663C9.3335 8.48982 9.26326 8.32025 9.13824 8.19522C9.01321 8.0702 8.84364 7.99996 8.66683 7.99996H6.66683C6.40778 7.99996 6.30465 8.08287 6.26683 8.13329C6.24548 8.16177 6.22187 8.18848 6.19625 8.21319L2.95151 11.3421Z",
+    fill: "white"
+  }), /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M8.00016 2.00002C7.26378 2.00002 6.66683 2.59697 6.66683 3.33335C6.66683 4.06973 7.26378 4.66669 8.00016 4.66669C8.73654 4.66669 9.3335 4.06973 9.3335 3.33335C9.3335 2.59697 8.73654 2.00002 8.00016 2.00002ZM5.3335 3.33335C5.3335 1.86059 6.5274 0.666687 8.00016 0.666687C9.47292 0.666687 10.6668 1.86059 10.6668 3.33335C10.6668 4.80611 9.47292 6.00002 8.00016 6.00002C6.5274 6.00002 5.3335 4.80611 5.3335 3.33335Z",
+    fill: "#00BFBF"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_35848_162272"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 16,
+    height: 16,
+    fill: "white"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconAffiliatesCommissionD);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_affiliates_commission_d.ab66130d476d84f920a03a560f275211.svg";

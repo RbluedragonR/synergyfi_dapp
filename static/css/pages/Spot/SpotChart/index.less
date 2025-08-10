@@ -1,0 +1,97 @@
+@import '~@/themes/func.less';
+.syn-spot-chart {
+  flex: 1;
+  width: 100%;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  &-container {
+    position: relative;
+  }
+  &-reference_label {
+    position: absolute;
+    color: var(--grey-0, #fff);
+    .font12;
+    line-height: 12px;
+    right: 0;
+    border-radius: var(--spacing-4, 4px);
+    background: var(--solid-brand, #00bfbf);
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(calc(-50% - 6px));
+    z-index: 10;
+  }
+  .recharts-wrapper {
+    .recharts-surface {
+      overflow: unset;
+    }
+    // for the tooltip line
+    .recharts-tooltip-cursor {
+      stroke: var(--border-light-line-1, #c3e7e7);
+    }
+    .recharts-xAxis,
+    .recharts-cartesian-grid,
+    .recharts-yAxis {
+      line {
+        stroke-width: 1px;
+        stroke: var(--border-light-line-1, #c3e7e7);
+        opacity: 0.5;
+      }
+      .recharts-cartesian-axis-tick-value {
+        tspan {
+          fill: var(--text-main-body, #333);
+          .font12;
+          line-height: 12px;
+          height: 12px;
+        }
+      }
+    }
+    .recharts-yAxis {
+      .recharts-cartesian-axis-tick .recharts-cartesian-axis-tick-value {
+        transform: translateY(-6px);
+      }
+    }
+  }
+  &-tooltip {
+    display: flex;
+    padding: var(--spacing-8, 8px) 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--solid-white-card, #fff);
+    color: var(--text-main-body, #333);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    .top {
+      display: flex;
+      gap: 4px;
+      color: var(--text-black);
+      align-items: center;
+      .price {
+        font-weight: 700;
+      }
+    }
+  }
+  &-mobile {
+    padding: 0px;
+  }
+}
+.syn-spot-chart-empty {
+  position: relative;
+  width: 100%;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

@@ -1,0 +1,30 @@
+var map = {
+	"./en/modal.json": 65712,
+	"./es/modal.json": 46797,
+	"./fr/modal.json": 29587,
+	"./ja/modal.json": 36371,
+	"./kr/modal.json": 37421,
+	"./th/modal.json": 81527,
+	"./tr/modal.json": 14984,
+	"./vi/modal.json": 77005
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 43325;

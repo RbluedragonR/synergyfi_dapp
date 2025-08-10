@@ -1,0 +1,41 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconTableCheck = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 12,
+    height: 12,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_3608_10552)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M17.9919 5.4477C18.1695 5.34109 18.3816 5.30728 18.5837 5.35336C18.7857 5.39944 18.9621 5.52183 19.0756 5.69484L19.8692 6.90257C19.9726 7.06034 20.0169 7.24951 19.9942 7.43667C19.9714 7.62384 19.8832 7.79698 19.7449 7.92553L19.7425 7.92873L19.7313 7.93913L19.6856 7.98152L19.5053 8.15348C18.5073 9.11934 17.5396 10.1159 16.6036 11.1416C14.8425 13.074 12.7512 15.603 11.3436 18.0568C10.9508 18.7415 9.99131 18.8886 9.42219 18.2976L4.22393 12.9084C4.14944 12.8311 4.09127 12.7397 4.05289 12.6396C4.01451 12.5394 3.99669 12.4326 4.00051 12.3255C4.00432 12.2183 4.02968 12.1131 4.07509 12.0159C4.12049 11.9187 4.18501 11.8316 4.26481 11.7599L5.83591 10.3458C5.97398 10.2216 6.15101 10.1491 6.33672 10.1408C6.52243 10.1325 6.70526 10.1888 6.85392 10.3002L9.50635 12.2845C13.6497 8.20787 15.9992 6.64343 17.9919 5.4477Z",
+    fill: "#13ECC8"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_3608_10552"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 24,
+    height: 24,
+    fill: "white"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconTableCheck);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_table_check.429515d1683e738d431868271fd25d1a.svg";

@@ -1,0 +1,31 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgDefault = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M8.00132 3.67292L11.7549 5.82522V10.151L8.01191 12.3165L4.26094 10.1695V5.84638L8.00132 3.67292ZM8.00132 0.5L6.62482 1.29323L2.8765 3.46668L1.5 4.25992V11.7612L2.8765 12.5545L6.63012 14.7068L8.00662 15.5L9.38312 14.7068L13.1235 12.5386L14.5 11.7454V4.23347L13.1235 3.44024L9.37253 1.29323L7.99603 0.5H8.00132Z",
+    fill: "#375BD2"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgDefault);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/default.20888a5b789cb99438c9aac38478a2f2.svg";

@@ -1,0 +1,63 @@
+var _circle, _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconKelpMiles = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _circle || (_circle = /*#__PURE__*/React.createElement("circle", {
+    cx: 8,
+    cy: 8,
+    r: 6.6665,
+    fill: "url(#paint0_linear_15825_179335)"
+  })), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_15825_179335)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M9.14833 4.01931L7.90052 4.71793C7.44948 4.97046 7.40935 5.59834 7.82465 5.90509L9.09871 6.84613C9.35818 7.0378 9.33319 7.4301 9.05145 7.58803L7.90176 8.2323C7.45045 8.48523 7.41098 9.11383 7.82719 9.4201L9.04017 10.3127C9.16605 10.4053 9.24022 10.5513 9.24022 10.7065V10.7433C9.24022 10.8563 9.3635 10.9272 9.4627 10.8712L10.7171 10.1637C11.1683 9.90917 11.2053 9.27923 10.7869 8.97467L9.51373 8.0481C9.25234 7.85787 9.27525 7.4644 9.55698 7.30515L10.7194 6.64805C11.1699 6.39334 11.2068 5.76419 10.789 5.45966L9.57224 4.57281C9.44535 4.4803 9.37041 4.3336 9.37041 4.17761V4.14747C9.37041 4.03468 9.24753 3.96377 9.14833 4.01931Z",
+    fill: "#D4EEED"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M6.41213 5.12868L5.16432 5.82731C4.71328 6.07983 4.67315 6.70772 5.08844 7.01447L6.36249 7.9555C6.62198 8.14716 6.597 8.5395 6.31523 8.6974L5.16556 9.3417C4.71424 9.5946 4.67478 10.2232 5.09098 10.5295L6.30397 11.422C6.42983 11.5147 6.504 11.6607 6.504 11.8159V11.8527C6.504 11.9657 6.62729 12.0365 6.72649 11.9806L7.98086 11.2731C8.43212 11.0186 8.4691 10.3886 8.05067 10.0841L6.77752 9.15746C6.51615 8.96723 6.53906 8.5738 6.82078 8.41453L7.98316 7.75743C8.43373 7.5027 8.47058 6.87356 8.05278 6.56903L6.83605 5.68218C6.70914 5.58967 6.63421 5.44297 6.63421 5.28698V5.25684C6.63421 5.14406 6.51133 5.07314 6.41213 5.12868Z",
+    fill: "#D4EEED"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("linearGradient", {
+    id: "paint0_linear_15825_179335",
+    x1: 4.5,
+    y1: 1,
+    x2: 11,
+    y2: 15,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#065A5A"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 0.505,
+    stopColor: "#009293"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#065A5A"
+  })), /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_15825_179335"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 6.4,
+    height: 8,
+    fill: "white",
+    transform: "translate(4.80005 4)"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconKelpMiles);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_kelp_miles.fd4fc56134fa0e452b1a9e8857287dbd.svg";

@@ -1,0 +1,33 @@
+var _path;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconSocialYoutube = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4.09922 4.38507C2.5431 4.46217 1.2931 5.68063 1.19211 7.23538C1.09536 8.72495 1 10.5578 1 11.9959C1 13.4341 1.09536 15.2669 1.19211 16.7565C1.2931 18.3112 2.5431 19.5297 4.09922 19.6068C6.35259 19.7184 9.5733 19.8531 12 19.8531C14.4267 19.8531 17.6474 19.7184 19.9008 19.6068C21.4569 19.5297 22.7069 18.3112 22.8079 16.7565C22.9046 15.2669 23 13.4341 23 11.9959C23 10.5578 22.9046 8.72495 22.8079 7.23538C22.7069 5.68063 21.4569 4.46217 19.9008 4.38507C17.6474 4.27344 14.4267 4.13879 12 4.13879C9.5733 4.13879 6.35259 4.27344 4.09922 4.38507ZM15.9289 11.9959L9.64317 15.1388V8.85304L15.9289 11.9959Z",
+    fill: "#00BFBF"
+  })));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconSocialYoutube);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_social_youtube.f21affe39c864dd8bd0f3a0429ffe082.svg";

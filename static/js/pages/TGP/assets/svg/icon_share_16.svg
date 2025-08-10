@@ -1,0 +1,40 @@
+var _g, _defs;
+const _excluded = ["title", "titleId"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
+import * as React from "react";
+import { forwardRef } from "react";
+const SvgIconShare16 = (_ref, ref) => {
+  let {
+      title,
+      titleId
+    } = _ref,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 12,
+    height: 13,
+    viewBox: "0 0 12 13",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: ref,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#clip0_111_2005)"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M6.99609 2.1797C6.77149 2.27931 6.625 2.50392 6.625 2.75002V4.00001H4.43751C2.53907 4.00001 1.00002 5.53907 1.00002 7.4375C1.00002 9.65039 2.59181 10.6387 2.95704 10.8379C3.00587 10.8652 3.06056 10.875 3.11524 10.875C3.32813 10.875 3.50001 10.7012 3.50001 10.4902C3.50001 10.3437 3.41602 10.209 3.3086 10.1094C3.12501 9.93555 2.87501 9.59375 2.87501 9C2.87501 7.96485 3.71485 7.12501 4.75001 7.12501H6.625V8.375C6.625 8.6211 6.76953 8.8457 6.99609 8.94531C7.22266 9.04492 7.48437 9.00391 7.66797 8.83984L10.793 6.02735C10.9238 5.90821 11 5.74024 11 5.56251C11 5.38477 10.9258 5.21681 10.793 5.09767L7.66797 2.28517C7.57841 2.20407 7.46713 2.15089 7.34777 2.13215C7.22842 2.11342 7.10619 2.12994 6.99609 2.1797Z",
+    fill: "#36717D"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "clip0_111_2005"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 9.99998,
+    height: 9.99998,
+    fill: "white",
+    transform: "translate(1.00002 1.50002)"
+  })))));
+};
+const ForwardRef = /*#__PURE__*/forwardRef(SvgIconShare16);
+export { ForwardRef as ReactComponent };
+export default __webpack_public_path__ + "static/media/icon_share_16.ed927ade3fb1086d9afeeffc3e0d56b3.svg";

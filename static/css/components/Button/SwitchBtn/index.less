@@ -1,0 +1,39 @@
+@import '../Button/index.less';
+// @btn-prefix
+.syn-switch-btn {
+  padding: 0;
+  &.syn-btn {
+    height: 14px;
+    &:hover,
+    &:focus {
+      background: none;
+    }
+  }
+  .syn-btn-switch {
+    font-weight: 700;
+  }
+  &:hover {
+    background: none;
+  }
+  .ant-switch {
+    position: relative;
+    background-color: var(--button-weak-button) !important;
+    .ant-switch-handle {
+      width: 10px;
+      height: 10px;
+      left: 2px;
+    }
+    &-checked {
+      background-color: @primary-color !important;
+      .ant-switch-handle {
+        left: calc(100% - 12px);
+      }
+    }
+
+    &:not(.ant-switch-disabled) {
+      background: var(--solid-2);
+    }
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';

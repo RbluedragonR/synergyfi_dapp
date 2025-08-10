@@ -1,0 +1,41 @@
+.syn-tgp {
+  .fontOxanium;
+  height: calc(var(--doc-height) - 65px);
+  // background: url('../Odyssey/assets/images/bg_galaxy.png') center no-repeat;
+  // background-size: cover;
+  overflow: auto;
+  color: var(--text-black, #000);
+  .font-number {
+    .fontOxanium;
+  }
+  &-container-wrap {
+    background: url('./assets/images/bg_galaxy_w.png') center no-repeat;
+    background-size: 2560px auto;
+    background-position: center 0;
+    background-color: var(--solid-bg);
+    position: relative;
+    &.dark-theme {
+      background: url('./assets/images/bg_galaxy_w_d.png') center no-repeat;
+      background-size: 2560px auto;
+      background-position: center 0;
+    }
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1280px;
+    padding: 24px;
+    margin: 0 auto;
+    row-gap: @space-6x;
+    margin: auto;
+    color: var(--text-black, #000);
+    min-height: 736px;
+    overflow: hidden;
+  }
+  &-section {
+    width: 100%;
+  }
+}
+
+@primary-color: #00BFBF;@link-color: #00BFBF;@hack: true; @import '~@/themes/variable.less'; @import '~@/themes/font.less';
