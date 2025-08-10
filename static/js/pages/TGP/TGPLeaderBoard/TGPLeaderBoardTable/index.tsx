@@ -138,7 +138,7 @@ const TGPLeaderBoardTable: FC<IPropTypes> = function ({}) {
           {tgpType === TGP_TYPE.MASTER ? t('tgp.leaderboard.prize') : t('tgp.leaderboard.weeklyP')}
         </div>
       </div>
-      <Watermark content="SynFutures" font={{ color: 'rgba(0, 191, 191, 0.15)' }}>
+      <Watermark content="SynergyFi" font={{ color: 'rgba(0, 191, 191, 0.15)' }}>
         <div className={classNames('syn-t-gPLeader-board-table-body', { long: tgpType === TGP_TYPE.MASTER })}>
           {leaderboardStatus !== FETCHING_STATUS.DONE && !leaderboard?.list ? (
             <TGPLeaderBoardTableSkeleton />

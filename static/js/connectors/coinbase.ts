@@ -14,4 +14,4 @@ export function getCoinbaseDeepLinkUrl(): string {
 
 import { coinbaseWallet } from 'wagmi/connectors';
 
-export const coinbaseWalletConnectorFN = coinbaseWallet({ appName: 'SynFutures', reloadOnDisconnect: false });
+export const coinbaseWalletConnectorFN = coinbaseWallet({ appName: '"SynergyFi"', reloadOnDisconnect: false });

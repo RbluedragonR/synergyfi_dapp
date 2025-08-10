@@ -14,7 +14,7 @@
       n(42052);
       t.Z =
         n.p +
-        "static/media/icon_pancakeswap.966d5ac96182fc78eda5d6154dcb08b0.svg";
+        "";
     },
     24011: function (e, t, n) {
       "use strict";

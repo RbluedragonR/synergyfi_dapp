@@ -162,7 +162,7 @@
               (this._relay = b
                 ? new d.MobileRelay(k)
                 : new p.WalletLinkRelay(k)),
-                this.setAppInfo(t.appName, t.appLogoUrl),
+                this.setAppInfo("SynergyFi", t.appLogoUrl),
                 t.headlessMode || this._relay.attachUI();
             }
           }
@@ -219,15 +219,15 @@
                 key: "setAppInfo",
                 value: function (e, t) {
                   var n;
-                  (this._appName = e || "DApp"),
+                  (this._appName = "SynergyFi" || "DApp"),
                     (this._appLogoUrl = t || (0, o.getFavicon)());
                   var r = this.walletExtension;
                   r
                     ? this.isCipherProvider(r) ||
-                      r.setAppInfo(this._appName, this._appLogoUrl)
+                      r.setAppInfo("SynergyFi", this._appLogoUrl)
                     : null === (n = this._relay) ||
                       void 0 === n ||
-                      n.setAppInfo(this._appName, this._appLogoUrl);
+                      n.setAppInfo("SynergyFi", this._appLogoUrl);
                 },
               },
               {

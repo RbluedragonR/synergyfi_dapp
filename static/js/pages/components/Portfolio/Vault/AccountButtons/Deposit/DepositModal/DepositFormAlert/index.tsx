@@ -128,7 +128,7 @@ const DepositFormAlert: FC<IPropTypes> = function ({ simulation, chainId, type, 
                 }}
                 components={{
                   b: <b />,
-                  a: <a href="https://discord.com/invite/synfutures" target="_blank" rel="noreferrer" />,
+                  a: <a href="https://discord.com/invite/SynergyFi" target="_blank" rel="noreferrer" />,
                 }}
               />{' '}
               <ExternalLink href={FAQ_LINKS.WITHDRAW_LIMIT}>{t('common.learnMore')}</ExternalLink>

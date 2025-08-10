@@ -53204,7 +53204,7 @@
           function e(t) {
             r(this, e),
               (this.metadata = {
-                appName: t.appName || "Dapp",
+                appName: "SynergyFi" || "Dapp",
                 appLogoUrl: t.appLogoUrl || (0, u.getFavicon)(),
                 appChainIds: t.appChainIds || [],
               }),

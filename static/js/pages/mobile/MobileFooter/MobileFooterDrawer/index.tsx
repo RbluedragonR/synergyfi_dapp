@@ -208,7 +208,7 @@ const ExtraDrawer: FC<IPropTypes> = function ({
               <IconMedium />
             </a>
             <a
-              href="https://discord.com/invite/synfutures"
+              href="https://discord.com/invite/SynergyFi"
               onClick={() => onMenuClick('discord')}
               target="_blank"
               rel="noreferrer">

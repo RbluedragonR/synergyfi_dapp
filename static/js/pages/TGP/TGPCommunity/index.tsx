@@ -44,7 +44,7 @@ const TGPCommunity: FC<IPropTypes> = function ({}) {
           <IconMedium />
         </a>
         <a
-          href="https://discord.gg/synfutures"
+          href="https://discord.gg/SynergyFi"
           onClick={() => onMenuClick('Discord')}
           target="_blank"
           rel="noreferrer"
