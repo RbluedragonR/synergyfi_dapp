@@ -228,7 +228,7 @@ export function useLiqTableColumns(): ColumnsType<WrappedRange> {
             {currentRange?.id === record.id ? (
               <CloseIcon onClick={unSelectRow} />
             ) : (
-              <Tooltip showOnMobile={true} title={ipBlocked ? t('common.ipBlocker.tooltip') : undefined}>
+              <Tooltip showOnMobile={true} title={ipBlocked ? t('') : undefined}>
                 <Button
                   type="outline"
                   disabled={isDisableBtn || ipBlocked}

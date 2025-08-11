@@ -31,7 +31,7 @@ export default function WalletConnectButton({
   const isIpBlocked = useIsIpBlocked();
 
   return isMobile && !desktopOnly ? (
-    <Tooltip showOnMobile={true} title={isIpBlocked ? t('common.ipBlocker.tooltip') : undefined}>
+    <Tooltip showOnMobile={true} title={isIpBlocked ? t('') : undefined}>
       <Button
         onClick={async () => {
           const ipBlocked = await dispatch(fetchIpIsBlocked()).unwrap();
@@ -53,7 +53,7 @@ export default function WalletConnectButton({
       />
     </Tooltip>
   ) : (
-    <Tooltip showOnMobile={true} title={isIpBlocked ? t('common.ipBlocker.tooltip') : undefined}>
+    <Tooltip showOnMobile={true} title={isIpBlocked ? t('') : undefined}>
       <NetworkButtonBorder
         ghost
         type="default"

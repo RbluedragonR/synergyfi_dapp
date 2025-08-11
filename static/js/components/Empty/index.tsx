@@ -92,7 +92,7 @@ export default function Empty({
     if (isUnConnect && showUnconnected) {
       return (
         <section>
-          <Tooltip showOnMobile={true} title={isIpBlocked ? t('common.ipBlocker.tooltip') : undefined}>
+          <Tooltip showOnMobile={true} title={isIpBlocked ? t('') : undefined}>
             <a
               className={isIpBlocked ? 'disabled' : ''}
               onClick={() => {

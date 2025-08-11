@@ -105,7 +105,7 @@ const TradeOrdersMobile: FC<IPropTypes> = function ({}) {
           <div onClick={() => setSelectedOrder(order)} key={order.id} className="syn-trade-orders-mobile-order">
             <div className="syn-trade-orders-mobile-order-top">
               <TradeSide side={order.wrappedSide} />
-              <Tooltip showOnMobile={true} title={ipBlocked ? t('common.ipBlocker.tooltip') : undefined}>
+              <Tooltip showOnMobile={true} title={ipBlocked ? t('') : undefined}>
                 <Button
                   ghost
                   disabled={ipBlocked}

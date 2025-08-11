@@ -164,7 +164,7 @@ const TradeOpenOrders: FC<IPropTypes> = function ({}) {
         const isShowFill = record.size.abs().eq(record.taken.abs());
         return (
           <div className="syn-trade-open-orders-action">
-            <Tooltip showOnMobile={true} title={ipBlocked ? t('common.ipBlocker.tooltip') : undefined}>
+            <Tooltip showOnMobile={true} title={ipBlocked ? t('') : undefined}>
               <Button
                 chainIconProps={
                   chainId && {
@@ -278,7 +278,7 @@ const TradeOpenOrders: FC<IPropTypes> = function ({}) {
         <div className="syn-trade-open-orders-wrap-title-right">
           {isChosenOrder && openOrders?.length ? (
             <>
-              <Tooltip showOnMobile={true} title={ipBlocked ? t('common.ipBlocker.tooltip') : undefined}>
+              <Tooltip showOnMobile={true} title={ipBlocked ? t('') : undefined}>
                 <Button
                   loading={bulkCancelling}
                   size="small"
@@ -325,7 +325,7 @@ const TradeOpenOrders: FC<IPropTypes> = function ({}) {
                 <ChevronRight />
               </Button>
               {!!openOrders?.length && (
-                <Tooltip showOnMobile={true} title={ipBlocked ? t('common.ipBlocker.tooltip') : undefined}>
+                <Tooltip showOnMobile={true} title={ipBlocked ? t('') : undefined}>
                   <Button
                     disabled={ipBlocked}
                     chainIconProps={

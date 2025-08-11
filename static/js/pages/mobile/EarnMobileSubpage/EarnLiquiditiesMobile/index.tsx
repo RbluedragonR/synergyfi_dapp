@@ -70,7 +70,7 @@ const EarnLiquiditiesMobile: FC<IPropTypes> = function ({}) {
               isInverse={range.rootInstrument.isInverse}
               fairPrice={range.rootPair.wrapAttribute('fairPrice')}
             />
-            <Tooltip showOnMobile={true} title={ipBlocked ? t('common.ipBlocker.tooltip') : undefined}>
+            <Tooltip showOnMobile={true} title={ipBlocked ? t('') : undefined}>
               <Button
                 ghost
                 disabled={ipBlocked}

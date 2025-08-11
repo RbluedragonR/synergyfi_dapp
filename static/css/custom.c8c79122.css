@@ -30845,6 +30845,7 @@ html[data-theme="dark-theme"] .syn-table_card-fake-action-earn.syn-btn:hover {
   padding: 16px 24px;
   padding: var(--spacing-16, 16px) var(--spacing-24, 24px);
   width: 100%;
+  visibility: hidden;
 }
 .syn-ip-blocker-banner svg {
   height: 40px;

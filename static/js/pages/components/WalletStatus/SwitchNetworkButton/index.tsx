@@ -33,7 +33,7 @@ const SwitchNetworkButton: FC<NetworkButtonProps & { chainId?: CHAIN_ID }> = fun
   const { t } = useTranslation();
   const dispatch = useAppDispatch();
   return (
-    <Tooltip showOnMobile={true} title={isIpBlocked ? t('common.ipBlocker.tooltip') : undefined}>
+    <Tooltip showOnMobile={true} title={isIpBlocked ? t('') : undefined}>
       <NetworkButton
         block
         iconType="network"

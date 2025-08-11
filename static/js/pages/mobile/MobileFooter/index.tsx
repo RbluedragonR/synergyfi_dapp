@@ -59,7 +59,7 @@ const MobileFooter: FC<IPropTypes> = function () {
             {t('common.spot.spot')}
           </Link>
         )}
-        <Tooltip showOnMobile={true} title={isIpBlocked ? t('common.ipBlocker.tooltip') : undefined}>
+        <Tooltip showOnMobile={true} title={isIpBlocked ? t('') : undefined}>
           <Link
             className={classNames(
               'syn-mobile-footer-item',

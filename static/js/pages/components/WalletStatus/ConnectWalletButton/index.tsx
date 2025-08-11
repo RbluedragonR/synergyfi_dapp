@@ -18,7 +18,7 @@ const ConnectWalletButton: FC<NetworkButtonProps> = function ({ children, onClic
   const dispatch = useAppDispatch();
   const isIpBlocked = useIsIpBlocked();
   return (
-    <Tooltip showOnMobile={true} title={isIpBlocked ? t('common.ipBlocker.tooltip') : undefined}>
+    <Tooltip showOnMobile={true} title={isIpBlocked ? t('') : undefined}>
       <NetworkButton
         block
         {...props}

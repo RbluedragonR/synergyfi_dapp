@@ -150,7 +150,7 @@ export function ApproveButtonComponent({
   }, [dispatch, account, chainId, provider, marginToken?.address, spenderAddress, sdk]);
 
   return (
-    <Tooltip showOnMobile={true} title={ipBlocked ? t('common.ipBlocker.tooltip') : undefined}>
+    <Tooltip showOnMobile={true} title={ipBlocked ? t('') : undefined}>
       <Button
         {..._.omit(props, ['unConnectedText'])}
         disabled={disabledOvervided || disableBtn || balanceInsuf || ipBlocked}

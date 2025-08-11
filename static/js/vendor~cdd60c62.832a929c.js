@@ -6169,7 +6169,7 @@
             var n,
               r = e.listRef,
               o =
-                (r.querySelectorAll && r.querySelectorAll(".slick-slide")) ||
+                (r.querySelectorAll && r.querySelectorAll(".")) ||
                 [];
             if (
               (Array.from(o).every(function (r) {
@@ -6388,7 +6388,7 @@
               : (t =
                   e.currentSlide <= i && i < e.currentSlide + e.slidesToShow),
             {
-              "slick-slide": !0,
+              "": !0,
               "slick-active": t,
               "slick-center": n,
               "slick-cloned": r,
